@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mentor/p_drive/Pulpino/ips/axi/axi_mem_if_DP
+vaxi_mem_if_DP
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1467799422
+!i10b 1
+!s100 EP5l<WMScE;TST18@=`]S2
+IZPYX3oFJ?>gQ@SMD[lZHk1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 axi_mem_if_DP_mem_mux_sv_unit
+S1
+R0
+w1467799395
+8axi_mem_if_DP_mem_mux.sv
+Faxi_mem_if_DP_mem_mux.sv
+L0 14
+Z3 OL;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1467799421.000000
+!s107 axi_mem_if_DP_mem_mux.sv|
+!s90 axi_mem_if_DP_mem_mux.sv|
+!i113 0
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+naxi_mem_if_@d@p
+vaxi_mem_if_SP_mem_mux
+R1
+!s110 1467799427
+!i10b 1
+!s100 0LCB40F6E`><1oD[UWjF61
+IG@5gTQA>G_JkdD>:9@IB13
+R2
+!s105 axi_mem_if_SP_mem_mux_sv_unit
+S1
+R0
+w1467799415
+8axi_mem_if_SP_mem_mux.sv
+Faxi_mem_if_SP_mem_mux.sv
+L0 11
+R3
+r1
+!s85 0
+31
+!s108 1467799426.000000
+!s107 axi_mem_if_SP_mem_mux.sv|
+!s90 axi_mem_if_SP_mem_mux.sv|
+!i113 0
+R4
+naxi_mem_if_@s@p_mem_mux
