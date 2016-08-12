@@ -1,5 +1,2 @@
-*.swp
-sw/build/*
 progress/*
-imperio
-ipstools
+/todo.txt
