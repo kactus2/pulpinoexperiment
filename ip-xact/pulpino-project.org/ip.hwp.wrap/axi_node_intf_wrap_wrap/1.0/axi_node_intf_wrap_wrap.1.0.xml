@@ -2,7 +2,7 @@
 <ipxact:component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014/ http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
 	<ipxact:vendor>pulpino-project.org</ipxact:vendor>
 	<ipxact:library>ip.hwp.wrap</ipxact:library>
-	<ipxact:name>axi_node_intf_wrap</ipxact:name>
+	<ipxact:name>axi_node_intf_wrap_wrap</ipxact:name>
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:busInterfaces>
 		<ipxact:busInterface>
@@ -17,7 +17,7 @@
 								<ipxact:name>w_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WVALID_slave_out</ipxact:name>
+								<ipxact:name>WVALID_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -25,7 +25,7 @@
 								<ipxact:name>w_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WUSER_slave_out</ipxact:name>
+								<ipxact:name>WUSER_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -33,7 +33,7 @@
 								<ipxact:name>w_strb</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WSTRB_slave_out</ipxact:name>
+								<ipxact:name>WSTRB_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -41,7 +41,7 @@
 								<ipxact:name>w_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WREADY_slave_in</ipxact:name>
+								<ipxact:name>WREADY_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -49,7 +49,7 @@
 								<ipxact:name>w_last</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WLAST_slave_out</ipxact:name>
+								<ipxact:name>WLAST_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -57,7 +57,7 @@
 								<ipxact:name>w_data</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WDATA_slave_out</ipxact:name>
+								<ipxact:name>WDATA_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -65,7 +65,7 @@
 								<ipxact:name>r_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RVALID_slave_in</ipxact:name>
+								<ipxact:name>RVALID_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -73,7 +73,7 @@
 								<ipxact:name>r_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RUSER_slave_in</ipxact:name>
+								<ipxact:name>RUSER_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -81,7 +81,7 @@
 								<ipxact:name>r_resp</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RRESP_slave_in</ipxact:name>
+								<ipxact:name>RRESP_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -89,7 +89,7 @@
 								<ipxact:name>r_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RREADY_slave_out</ipxact:name>
+								<ipxact:name>RREADY_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -97,7 +97,7 @@
 								<ipxact:name>r_last</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RLAST_slave_in</ipxact:name>
+								<ipxact:name>RLAST_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -105,7 +105,7 @@
 								<ipxact:name>r_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RID_slave_in</ipxact:name>
+								<ipxact:name>RID_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -113,7 +113,7 @@
 								<ipxact:name>r_data</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RDATA_slave_in</ipxact:name>
+								<ipxact:name>RDATA_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -121,7 +121,7 @@
 								<ipxact:name>b_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BVALID_slave_in</ipxact:name>
+								<ipxact:name>BVALID_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -129,7 +129,7 @@
 								<ipxact:name>b_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BUSER_slave_in</ipxact:name>
+								<ipxact:name>BUSER_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -137,7 +137,7 @@
 								<ipxact:name>b_resp</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BRESP_slave_in</ipxact:name>
+								<ipxact:name>BRESP_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -145,7 +145,7 @@
 								<ipxact:name>b_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BREADY_slave_out</ipxact:name>
+								<ipxact:name>BREADY_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -153,7 +153,7 @@
 								<ipxact:name>b_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BID_slave_in</ipxact:name>
+								<ipxact:name>BID_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -161,7 +161,7 @@
 								<ipxact:name>aw_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWVALID_slave_out</ipxact:name>
+								<ipxact:name>AWVALID_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -169,7 +169,7 @@
 								<ipxact:name>aw_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWUSER_slave_out</ipxact:name>
+								<ipxact:name>AWUSER_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -177,7 +177,7 @@
 								<ipxact:name>aw_size</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWSIZE_slave_out</ipxact:name>
+								<ipxact:name>AWSIZE_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -185,7 +185,7 @@
 								<ipxact:name>aw_region</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWREGION_slave_out</ipxact:name>
+								<ipxact:name>AWREGION_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -193,7 +193,7 @@
 								<ipxact:name>aw_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWREADY_slave_in</ipxact:name>
+								<ipxact:name>AWREADY_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -201,7 +201,7 @@
 								<ipxact:name>aw_qos</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWQOS_slave_out</ipxact:name>
+								<ipxact:name>AWQOS_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -209,7 +209,7 @@
 								<ipxact:name>aw_prot</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWPROT_slave_out</ipxact:name>
+								<ipxact:name>AWPROT_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -217,7 +217,7 @@
 								<ipxact:name>aw_lock</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWLOCK_slave_out</ipxact:name>
+								<ipxact:name>AWLOCK_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -225,7 +225,7 @@
 								<ipxact:name>aw_len</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWLEN_slave_out</ipxact:name>
+								<ipxact:name>AWLEN_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -233,7 +233,7 @@
 								<ipxact:name>aw_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWID_slave_out</ipxact:name>
+								<ipxact:name>AWID_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -241,7 +241,7 @@
 								<ipxact:name>aw_cache</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWCACHE_slave_out</ipxact:name>
+								<ipxact:name>AWCACHE_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -249,7 +249,7 @@
 								<ipxact:name>aw_burst</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWBURST_slave_out</ipxact:name>
+								<ipxact:name>AWBURST_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -257,7 +257,7 @@
 								<ipxact:name>aw_addr</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWADDR_slave_out</ipxact:name>
+								<ipxact:name>AWADDR_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -265,7 +265,7 @@
 								<ipxact:name>ar_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARVALID_slave_out</ipxact:name>
+								<ipxact:name>ARVALID_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -273,7 +273,7 @@
 								<ipxact:name>ar_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARUSER_slave_out</ipxact:name>
+								<ipxact:name>ARUSER_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -281,7 +281,7 @@
 								<ipxact:name>ar_size</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARSIZE_slave_out</ipxact:name>
+								<ipxact:name>ARSIZE_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -289,7 +289,7 @@
 								<ipxact:name>ar_region</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARREGION_slave_out</ipxact:name>
+								<ipxact:name>ARREGION_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -297,7 +297,7 @@
 								<ipxact:name>ar_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARREADY_slave_in</ipxact:name>
+								<ipxact:name>ARREADY_periph_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -305,7 +305,7 @@
 								<ipxact:name>ar_qos</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARQOS_slave_out</ipxact:name>
+								<ipxact:name>ARQOS_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -313,7 +313,7 @@
 								<ipxact:name>ar_prot</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARPROT_slave_out</ipxact:name>
+								<ipxact:name>ARPROT_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -321,7 +321,7 @@
 								<ipxact:name>ar_lock</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARLOCK_slave_out</ipxact:name>
+								<ipxact:name>ARLOCK_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -329,7 +329,7 @@
 								<ipxact:name>ar_len</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARLEN_slave_out</ipxact:name>
+								<ipxact:name>ARLEN_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -337,7 +337,7 @@
 								<ipxact:name>ar_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARID_slave_out</ipxact:name>
+								<ipxact:name>ARID_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -345,7 +345,7 @@
 								<ipxact:name>ar_cache</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARCACHE_slave_out</ipxact:name>
+								<ipxact:name>ARCACHE_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -353,7 +353,7 @@
 								<ipxact:name>ar_burst</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARBURST_slave_out</ipxact:name>
+								<ipxact:name>ARBURST_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -361,7 +361,7 @@
 								<ipxact:name>ar_addr</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARADDR_slave_out</ipxact:name>
+								<ipxact:name>ARADDR_periph_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
@@ -370,7 +370,7 @@
 			<ipxact:mirroredSlave/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
-			<ipxact:name>axi_spi_master</ipxact:name>
+			<ipxact:name>axi_spi_slave</ipxact:name>
 			<ipxact:busType vendor="pulpino-project.org" library="ip.hwp.com" name="axi4_bus" version="1.0"/>
 			<ipxact:abstractionTypes>
 				<ipxact:abstractionType>
@@ -381,7 +381,7 @@
 								<ipxact:name>w_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WVALID_master_in</ipxact:name>
+								<ipxact:name>WVALID_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -389,7 +389,7 @@
 								<ipxact:name>w_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WUSER_master_in</ipxact:name>
+								<ipxact:name>WUSER_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -397,7 +397,7 @@
 								<ipxact:name>w_strb</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WSTRB_master_in</ipxact:name>
+								<ipxact:name>WSTRB_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -405,7 +405,7 @@
 								<ipxact:name>w_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WREADY_master_out</ipxact:name>
+								<ipxact:name>WREADY_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -413,7 +413,7 @@
 								<ipxact:name>w_last</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WLAST_master_in</ipxact:name>
+								<ipxact:name>WLAST_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -421,7 +421,7 @@
 								<ipxact:name>w_data</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>WDATA_master_in</ipxact:name>
+								<ipxact:name>WDATA_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -429,7 +429,7 @@
 								<ipxact:name>r_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RVALID_master_out</ipxact:name>
+								<ipxact:name>RVALID_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -437,7 +437,7 @@
 								<ipxact:name>r_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RUSER_master_out</ipxact:name>
+								<ipxact:name>RUSER_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -445,7 +445,7 @@
 								<ipxact:name>r_resp</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RRESP_master_out</ipxact:name>
+								<ipxact:name>RRESP_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -453,7 +453,7 @@
 								<ipxact:name>r_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RREADY_master_in</ipxact:name>
+								<ipxact:name>RREADY_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -461,7 +461,7 @@
 								<ipxact:name>r_last</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RLAST_master_out</ipxact:name>
+								<ipxact:name>RLAST_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -469,7 +469,7 @@
 								<ipxact:name>r_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RID_master_out</ipxact:name>
+								<ipxact:name>RID_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -477,7 +477,7 @@
 								<ipxact:name>r_data</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>RDATA_master_out</ipxact:name>
+								<ipxact:name>RDATA_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -485,7 +485,7 @@
 								<ipxact:name>b_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BVALID_master_out</ipxact:name>
+								<ipxact:name>BVALID_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -493,7 +493,7 @@
 								<ipxact:name>b_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BUSER_master_out</ipxact:name>
+								<ipxact:name>BUSER_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -501,7 +501,7 @@
 								<ipxact:name>b_resp</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BRESP_master_out</ipxact:name>
+								<ipxact:name>BRESP_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -509,7 +509,7 @@
 								<ipxact:name>b_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BREADY_master_in</ipxact:name>
+								<ipxact:name>BREADY_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -517,7 +517,7 @@
 								<ipxact:name>b_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>BID_master_out</ipxact:name>
+								<ipxact:name>BID_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -525,7 +525,7 @@
 								<ipxact:name>aw_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWVALID_master_in</ipxact:name>
+								<ipxact:name>AWVALID_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -533,7 +533,7 @@
 								<ipxact:name>aw_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWUSER_master_in</ipxact:name>
+								<ipxact:name>AWUSER_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -541,7 +541,7 @@
 								<ipxact:name>aw_size</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWSIZE_master_in</ipxact:name>
+								<ipxact:name>AWSIZE_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -549,7 +549,7 @@
 								<ipxact:name>aw_region</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWREGION_master_in</ipxact:name>
+								<ipxact:name>AWREGION_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -557,7 +557,7 @@
 								<ipxact:name>aw_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWREADY_master_out</ipxact:name>
+								<ipxact:name>AWREADY_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -565,7 +565,7 @@
 								<ipxact:name>aw_qos</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWQOS_master_in</ipxact:name>
+								<ipxact:name>AWQOS_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -573,7 +573,7 @@
 								<ipxact:name>aw_prot</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWPROT_master_in</ipxact:name>
+								<ipxact:name>AWPROT_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -581,7 +581,7 @@
 								<ipxact:name>aw_lock</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWLOCK_master_in</ipxact:name>
+								<ipxact:name>AWLOCK_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -589,7 +589,7 @@
 								<ipxact:name>aw_len</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWLEN_master_in</ipxact:name>
+								<ipxact:name>AWLEN_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -597,7 +597,7 @@
 								<ipxact:name>aw_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWID_master_in</ipxact:name>
+								<ipxact:name>AWID_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -605,7 +605,7 @@
 								<ipxact:name>aw_cache</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWCACHE_master_in</ipxact:name>
+								<ipxact:name>AWCACHE_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -613,7 +613,7 @@
 								<ipxact:name>aw_burst</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWBURST_master_in</ipxact:name>
+								<ipxact:name>AWBURST_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -621,7 +621,7 @@
 								<ipxact:name>aw_addr</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>AWADDR_master_in</ipxact:name>
+								<ipxact:name>AWADDR_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -629,7 +629,7 @@
 								<ipxact:name>ar_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARVALID_master_in</ipxact:name>
+								<ipxact:name>ARVALID_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -637,7 +637,7 @@
 								<ipxact:name>ar_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARUSER_master_in</ipxact:name>
+								<ipxact:name>ARUSER_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -645,7 +645,7 @@
 								<ipxact:name>ar_size</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARSIZE_master_in</ipxact:name>
+								<ipxact:name>ARSIZE_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -653,7 +653,7 @@
 								<ipxact:name>ar_region</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARREGION_master_in</ipxact:name>
+								<ipxact:name>ARREGION_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -661,7 +661,7 @@
 								<ipxact:name>ar_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARREADY_master_out</ipxact:name>
+								<ipxact:name>ARREADY_spi_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -669,7 +669,7 @@
 								<ipxact:name>ar_qos</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARQOS_master_in</ipxact:name>
+								<ipxact:name>ARQOS_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -677,7 +677,7 @@
 								<ipxact:name>ar_prot</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARPROT_master_in</ipxact:name>
+								<ipxact:name>ARPROT_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -685,7 +685,7 @@
 								<ipxact:name>ar_lock</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARLOCK_master_in</ipxact:name>
+								<ipxact:name>ARLOCK_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -693,7 +693,7 @@
 								<ipxact:name>ar_len</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARLEN_master_in</ipxact:name>
+								<ipxact:name>ARLEN_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -701,7 +701,7 @@
 								<ipxact:name>ar_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARID_master_in</ipxact:name>
+								<ipxact:name>ARID_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -709,7 +709,7 @@
 								<ipxact:name>ar_cache</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARCACHE_master_in</ipxact:name>
+								<ipxact:name>ARCACHE_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -717,7 +717,7 @@
 								<ipxact:name>ar_burst</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARBURST_master_in</ipxact:name>
+								<ipxact:name>ARBURST_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -725,7 +725,7 @@
 								<ipxact:name>ar_addr</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>ARADDR_master_in</ipxact:name>
+								<ipxact:name>ARADDR_spi_in</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
@@ -2197,7 +2197,7 @@
 				<ipxact:localName>axi_periph_master</ipxact:localName>
 			</ipxact:busInterfaceRef>
 			<ipxact:busInterfaceRef>
-				<ipxact:localName>axi_spi_master</ipxact:localName>
+				<ipxact:localName>axi_spi_slave</ipxact:localName>
 			</ipxact:busInterfaceRef>
 			<ipxact:busInterfaceRef>
 				<ipxact:localName>axi_data_master</ipxact:localName>
@@ -2225,9 +2225,9 @@
 			<ipxact:componentInstantiation>
 				<ipxact:name>flat_verilog_component</ipxact:name>
 				<ipxact:language>verilog</ipxact:language>
-				<ipxact:moduleName>axi_node_intf_wrap</ipxact:moduleName>
+				<ipxact:moduleName>axi_node_intf_wrap_wrap</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_d8e1c132_e88e_4dfe_b166_990ef2073a53" resolve="generated" usageCount="2" usageType="nontyped">
+					<ipxact:moduleParameter parameterId="uuid_d8e1c132_e88e_4dfe_b166_990ef2073a53" resolve="user" usageCount="2" usageType="nontyped">
 						<ipxact:name>NB_MASTER</ipxact:name>
 						<ipxact:arrays>
 							<ipxact:array>
@@ -2237,7 +2237,7 @@
 						</ipxact:arrays>
 						<ipxact:value>4</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_647d1f09_78a1_428b_974f_cee8ca456c3d" resolve="generated" usageType="nontyped">
+					<ipxact:moduleParameter parameterId="uuid_647d1f09_78a1_428b_974f_cee8ca456c3d" resolve="user" usageType="nontyped">
 						<ipxact:name>NB_SLAVE</ipxact:name>
 						<ipxact:arrays>
 							<ipxact:array>
@@ -2247,7 +2247,7 @@
 						</ipxact:arrays>
 						<ipxact:value>4</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_292b06ba_ce3f_458d_ba95_9d94e3c87bea" resolve="generated" usageCount="3" usageType="nontyped">
+					<ipxact:moduleParameter parameterId="uuid_292b06ba_ce3f_458d_ba95_9d94e3c87bea" resolve="user" usageCount="15" usageType="nontyped">
 						<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 						<ipxact:arrays>
 							<ipxact:array>
@@ -2257,7 +2257,7 @@
 						</ipxact:arrays>
 						<ipxact:value>32</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_4cf74a3c_ff3b_48f2_aca5_229b9f3f82d5" resolve="generated" usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter parameterId="uuid_4cf74a3c_ff3b_48f2_aca5_229b9f3f82d5" resolve="user" usageCount="18" usageType="nontyped">
 						<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 						<ipxact:arrays>
 							<ipxact:array>
@@ -2267,8 +2267,8 @@
 						</ipxact:arrays>
 						<ipxact:value>32</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906" resolve="generated" usageCount="1" usageType="nontyped">
-						<ipxact:name>AXI_ID_WIDTH</ipxact:name>
+					<ipxact:moduleParameter parameterId="uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906" resolve="user" usageCount="12" usageType="nontyped">
+						<ipxact:name>AXI_MASTER_ID_WIDTH</ipxact:name>
 						<ipxact:arrays>
 							<ipxact:array>
 								<ipxact:left></ipxact:left>
@@ -2277,7 +2277,17 @@
 						</ipxact:arrays>
 						<ipxact:value>10</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_fa71abf2_1c59_4acc_8fa8_c0a217a39331" resolve="generated" usageCount="2" usageType="nontyped">
+					<ipxact:moduleParameter parameterId="uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d" resolve="user" usageCount="12" usageType="nontyped">
+						<ipxact:name>AXI_SLAVE_ID_WIDTH</ipxact:name>
+						<ipxact:arrays>
+							<ipxact:array>
+								<ipxact:left></ipxact:left>
+								<ipxact:right></ipxact:right>
+							</ipxact:array>
+						</ipxact:arrays>
+						<ipxact:value>10</ipxact:value>
+					</ipxact:moduleParameter>
+					<ipxact:moduleParameter parameterId="uuid_fa71abf2_1c59_4acc_8fa8_c0a217a39331" resolve="user" usageCount="29" usageType="nontyped">
 						<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 						<ipxact:arrays>
 							<ipxact:array>
@@ -2295,7 +2305,7 @@
 		</ipxact:instantiations>
 		<ipxact:ports>
 			<ipxact:port>
-				<ipxact:name>WVALID_master_in</ipxact:name>
+				<ipxact:name>WVALID_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2316,7 +2326,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WUSER_master_in</ipxact:name>
+				<ipxact:name>WUSER_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2337,7 +2347,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WSTRB_master_in</ipxact:name>
+				<ipxact:name>WSTRB_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2358,7 +2368,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WREADY_master_out</ipxact:name>
+				<ipxact:name>WREADY_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2379,7 +2389,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WLAST_master_in</ipxact:name>
+				<ipxact:name>WLAST_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2400,7 +2410,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WDATA_master_in</ipxact:name>
+				<ipxact:name>WDATA_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2421,7 +2431,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RVALID_master_out</ipxact:name>
+				<ipxact:name>RVALID_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2442,7 +2452,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RUSER_master_out</ipxact:name>
+				<ipxact:name>RUSER_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2463,7 +2473,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RRESP_master_out</ipxact:name>
+				<ipxact:name>RRESP_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2484,7 +2494,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RREADY_master_in</ipxact:name>
+				<ipxact:name>RREADY_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2505,7 +2515,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RLAST_master_out</ipxact:name>
+				<ipxact:name>RLAST_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2526,7 +2536,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RID_master_out</ipxact:name>
+				<ipxact:name>RID_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2547,7 +2557,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RDATA_master_out</ipxact:name>
+				<ipxact:name>RDATA_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2568,7 +2578,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BVALID_master_out</ipxact:name>
+				<ipxact:name>BVALID_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2589,7 +2599,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BUSER_master_out</ipxact:name>
+				<ipxact:name>BUSER_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2610,7 +2620,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BRESP_master_out</ipxact:name>
+				<ipxact:name>BRESP_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2631,7 +2641,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BREADY_master_in</ipxact:name>
+				<ipxact:name>BREADY_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2652,7 +2662,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BID_master_out</ipxact:name>
+				<ipxact:name>BID_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2673,7 +2683,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWVALID_master_in</ipxact:name>
+				<ipxact:name>AWVALID_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2694,7 +2704,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWUSER_master_in</ipxact:name>
+				<ipxact:name>AWUSER_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2715,7 +2725,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWSIZE_master_in</ipxact:name>
+				<ipxact:name>AWSIZE_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2736,7 +2746,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWREGION_master_in</ipxact:name>
+				<ipxact:name>AWREGION_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2757,7 +2767,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWREADY_master_out</ipxact:name>
+				<ipxact:name>AWREADY_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -2778,7 +2788,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWQOS_master_in</ipxact:name>
+				<ipxact:name>AWQOS_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2799,7 +2809,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWPROT_master_in</ipxact:name>
+				<ipxact:name>AWPROT_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2820,7 +2830,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWLOCK_master_in</ipxact:name>
+				<ipxact:name>AWLOCK_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2841,7 +2851,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWLEN_master_in</ipxact:name>
+				<ipxact:name>AWLEN_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2862,7 +2872,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWID_master_in</ipxact:name>
+				<ipxact:name>AWID_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2883,7 +2893,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWCACHE_master_in</ipxact:name>
+				<ipxact:name>AWCACHE_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2904,7 +2914,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWBURST_master_in</ipxact:name>
+				<ipxact:name>AWBURST_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2925,7 +2935,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWADDR_master_in</ipxact:name>
+				<ipxact:name>AWADDR_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2946,7 +2956,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARVALID_master_in</ipxact:name>
+				<ipxact:name>ARVALID_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2967,7 +2977,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARUSER_master_in</ipxact:name>
+				<ipxact:name>ARUSER_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -2988,7 +2998,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARSIZE_master_in</ipxact:name>
+				<ipxact:name>ARSIZE_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3009,7 +3019,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARREGION_master_in</ipxact:name>
+				<ipxact:name>ARREGION_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3030,7 +3040,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARREADY_master_out</ipxact:name>
+				<ipxact:name>ARREADY_spi_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3051,7 +3061,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARQOS_master_in</ipxact:name>
+				<ipxact:name>ARQOS_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3072,7 +3082,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARPROT_master_in</ipxact:name>
+				<ipxact:name>ARPROT_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3093,7 +3103,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARLOCK_master_in</ipxact:name>
+				<ipxact:name>ARLOCK_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3114,7 +3124,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARLEN_master_in</ipxact:name>
+				<ipxact:name>ARLEN_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3135,7 +3145,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARID_master_in</ipxact:name>
+				<ipxact:name>ARID_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3156,7 +3166,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARCACHE_master_in</ipxact:name>
+				<ipxact:name>ARCACHE_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3177,7 +3187,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARBURST_master_in</ipxact:name>
+				<ipxact:name>ARBURST_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3198,7 +3208,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARADDR_master_in</ipxact:name>
+				<ipxact:name>ARADDR_spi_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3219,7 +3229,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WVALID_slave_out</ipxact:name>
+				<ipxact:name>WVALID_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3240,7 +3250,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WUSER_slave_out</ipxact:name>
+				<ipxact:name>WUSER_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3261,7 +3271,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WSTRB_slave_out</ipxact:name>
+				<ipxact:name>WSTRB_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3282,7 +3292,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WREADY_slave_in</ipxact:name>
+				<ipxact:name>WREADY_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3303,7 +3313,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WLAST_slave_out</ipxact:name>
+				<ipxact:name>WLAST_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3324,7 +3334,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>WDATA_slave_out</ipxact:name>
+				<ipxact:name>WDATA_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3345,7 +3355,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RVALID_slave_in</ipxact:name>
+				<ipxact:name>RVALID_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3366,7 +3376,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RUSER_slave_in</ipxact:name>
+				<ipxact:name>RUSER_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3387,7 +3397,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RRESP_slave_in</ipxact:name>
+				<ipxact:name>RRESP_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3408,7 +3418,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RREADY_slave_out</ipxact:name>
+				<ipxact:name>RREADY_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3429,7 +3439,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RLAST_slave_in</ipxact:name>
+				<ipxact:name>RLAST_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3450,12 +3460,12 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RID_slave_in</ipxact:name>
+				<ipxact:name>RID_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3471,7 +3481,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>RDATA_slave_in</ipxact:name>
+				<ipxact:name>RDATA_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3492,7 +3502,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BVALID_slave_in</ipxact:name>
+				<ipxact:name>BVALID_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3513,7 +3523,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BUSER_slave_in</ipxact:name>
+				<ipxact:name>BUSER_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3534,7 +3544,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BRESP_slave_in</ipxact:name>
+				<ipxact:name>BRESP_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3555,7 +3565,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BREADY_slave_out</ipxact:name>
+				<ipxact:name>BREADY_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3576,12 +3586,12 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>BID_slave_in</ipxact:name>
+				<ipxact:name>BID_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3597,7 +3607,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWVALID_slave_out</ipxact:name>
+				<ipxact:name>AWVALID_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3618,7 +3628,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWUSER_slave_out</ipxact:name>
+				<ipxact:name>AWUSER_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3639,7 +3649,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWSIZE_slave_out</ipxact:name>
+				<ipxact:name>AWSIZE_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3660,7 +3670,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWREGION_slave_out</ipxact:name>
+				<ipxact:name>AWREGION_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3681,7 +3691,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWREADY_slave_in</ipxact:name>
+				<ipxact:name>AWREADY_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3702,7 +3712,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWQOS_slave_out</ipxact:name>
+				<ipxact:name>AWQOS_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3723,7 +3733,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWPROT_slave_out</ipxact:name>
+				<ipxact:name>AWPROT_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3744,7 +3754,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWLOCK_slave_out</ipxact:name>
+				<ipxact:name>AWLOCK_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3765,7 +3775,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWLEN_slave_out</ipxact:name>
+				<ipxact:name>AWLEN_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3786,12 +3796,12 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWID_slave_out</ipxact:name>
+				<ipxact:name>AWID_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3807,7 +3817,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWCACHE_slave_out</ipxact:name>
+				<ipxact:name>AWCACHE_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3828,7 +3838,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWBURST_slave_out</ipxact:name>
+				<ipxact:name>AWBURST_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3849,7 +3859,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>AWADDR_slave_out</ipxact:name>
+				<ipxact:name>AWADDR_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3870,7 +3880,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARVALID_slave_out</ipxact:name>
+				<ipxact:name>ARVALID_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3891,7 +3901,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARUSER_slave_out</ipxact:name>
+				<ipxact:name>ARUSER_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3912,7 +3922,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARSIZE_slave_out</ipxact:name>
+				<ipxact:name>ARSIZE_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3933,7 +3943,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARREGION_slave_out</ipxact:name>
+				<ipxact:name>ARREGION_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3954,7 +3964,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARREADY_slave_in</ipxact:name>
+				<ipxact:name>ARREADY_periph_in</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
@@ -3975,7 +3985,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARQOS_slave_out</ipxact:name>
+				<ipxact:name>ARQOS_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -3996,7 +4006,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARPROT_slave_out</ipxact:name>
+				<ipxact:name>ARPROT_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -4017,7 +4027,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARLOCK_slave_out</ipxact:name>
+				<ipxact:name>ARLOCK_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -4038,7 +4048,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARLEN_slave_out</ipxact:name>
+				<ipxact:name>ARLEN_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -4059,12 +4069,12 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARID_slave_out</ipxact:name>
+				<ipxact:name>ARID_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4080,7 +4090,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARCACHE_slave_out</ipxact:name>
+				<ipxact:name>ARCACHE_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -4101,7 +4111,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARBURST_slave_out</ipxact:name>
+				<ipxact:name>ARBURST_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -4122,7 +4132,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:port>
 			<ipxact:port>
-				<ipxact:name>ARADDR_slave_out</ipxact:name>
+				<ipxact:name>ARADDR_periph_out</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
@@ -6227,7 +6237,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -6353,7 +6363,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -6563,7 +6573,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -6836,7 +6846,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -7151,7 +7161,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -7277,7 +7287,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -7487,7 +7497,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -7760,7 +7770,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_3aeda875_d2ab_4c2f_b00c_ac54b9e2f906-1</ipxact:left>
+							<ipxact:left>uuid_b3f4ef5e_3743_49ae_ace4_8f79ff6f1a9d-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -7961,11 +7971,27 @@
 		<ipxact:fileSet>
 			<ipxact:name>sv_source</ipxact:name>
 			<ipxact:file>
+				<ipxact:name>../../../../../rtl/axi_node_intf_wrap_wrap.sv</ipxact:name>
+				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>24c22016001dfef6bfc30825ce79da82</kactus2:hash>
+				</ipxact:vendorExtensions>
+			</ipxact:file>
+		</ipxact:fileSet>
+		<ipxact:fileSet>
+			<ipxact:name>includes</ipxact:name>
+			<ipxact:file>
 				<ipxact:name>../../../../../rtl/axi_node_intf_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
+	<ipxact:parameters>
+		<ipxact:parameter parameterId="uuid_f1c235fc_78c4_4c04_a234_814c6465a16e" resolve="user">
+			<ipxact:name>AXI_SLAVE_ID_WIDTH</ipxact:name>
+			<ipxact:value>10</ipxact:value>
+		</ipxact:parameter>
+	</ipxact:parameters>
 	<ipxact:vendorExtensions>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>Flat</kactus2:kts_productHier>

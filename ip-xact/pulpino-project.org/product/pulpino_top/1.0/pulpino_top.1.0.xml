@@ -1477,6 +1477,10 @@
 		<ipxact:fileSet>
 			<ipxact:name>sv_source</ipxact:name>
 			<ipxact:file>
+				<ipxact:name>../../../../../generated/pulpino_top.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
+			<ipxact:file>
 				<ipxact:name>../../../../../rtl/top.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
