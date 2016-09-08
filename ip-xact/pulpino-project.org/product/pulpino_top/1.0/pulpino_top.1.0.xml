@@ -423,6 +423,9 @@
 				<ipxact:fileSetRef>
 					<ipxact:localName>sv_source</ipxact:localName>
 				</ipxact:fileSetRef>
+				<ipxact:fileSetRef>
+					<ipxact:localName>generated</ipxact:localName>
+				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
 			<ipxact:designConfigurationInstantiation>
 				<ipxact:name>pulpino_top.designcfg_1.0</ipxact:name>
@@ -1484,6 +1487,14 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../rtl/top.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+			</ipxact:file>
+		</ipxact:fileSet>
+		<ipxact:fileSet>
+			<ipxact:name>generated</ipxact:name>
+			<ipxact:file>
+				<ipxact:name>../../../../../rtl/top.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 13:00:43 on 08.09.2016 by Kactus2. </ipxact:description>
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>

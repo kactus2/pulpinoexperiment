@@ -5808,43 +5808,10 @@
 		<ipxact:fileSet>
 			<ipxact:name>sv_source</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/axi_mem_if_SP_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>c30b5e300ad7c09614620771918498c6</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/axi_node_intf_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>426dc2a6d77cf491751a811aaefb6ee6</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/clk_rst_gen.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>7b79a680755baaebbb8015329909b0e4</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
 				<ipxact:name>../../../../../rtl/core_region.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>160e514288a418b407729ac651d5390c</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>core_region.v</ipxact:name>
-				<ipxact:fileType>verilogSource</ipxact:fileType>
-				<ipxact:description>Generated at 16:29:28 on 06.09.2016 by Kactus2. </ipxact:description>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/top.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>1df48d9ec9494e92bc07f4e71ca7a91b</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>

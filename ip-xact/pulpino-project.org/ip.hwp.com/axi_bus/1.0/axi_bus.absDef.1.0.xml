@@ -2,7 +2,7 @@
 <ipxact:abstractionDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014/ http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
 	<ipxact:vendor>pulpino-project.org</ipxact:vendor>
             <ipxact:vendorExtensions>
-                <kactus2:definitionFile>axi_bus.sv</kactus2:definitionFile>
+                <kactus2:definitionFile>../../../../../rtl/includes/axi_bus.sv</kactus2:definitionFile>
             </ipxact:vendorExtensions>
 	<ipxact:library>ip.hwp.com</ipxact:library>
 	<ipxact:name>axi_bus.absDef</ipxact:name>
