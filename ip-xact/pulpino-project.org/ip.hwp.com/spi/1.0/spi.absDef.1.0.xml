@@ -272,6 +272,7 @@
 		</ipxact:port>
 	</ipxact:ports>
 	<ipxact:vendorExtensions>
+        <kactus2:definitionFile>spi.sv</kactus2:definitionFile>
 		<kactus2:version>2,8,49,0</kactus2:version>
 	</ipxact:vendorExtensions>
 </ipxact:abstractionDefinition>

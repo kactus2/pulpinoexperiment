@@ -107,10 +107,10 @@
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>axi_master</ipxact:name>
-			<ipxact:busType vendor="pulpino-project.org" library="ip.hwp.com" name="axi4_bus" version="1.0"/>
+			<ipxact:busType vendor="pulpino-project.org" library="ip.hwp.com" name="axi_bus" version="1.0"/>
 			<ipxact:abstractionTypes>
 				<ipxact:abstractionType>
-					<ipxact:abstractionRef vendor="pulpino-project.org" library="ip.hwp.com" name="axi4_bus.absDef" version="1.0"/>
+					<ipxact:abstractionRef vendor="pulpino-project.org" library="ip.hwp.com" name="axi_bus.absDef" version="1.0"/>
 					<ipxact:portMaps>
 						<ipxact:portMap>
 							<ipxact:logicalPort>

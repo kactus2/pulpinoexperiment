@@ -56,10 +56,10 @@
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{44d2d7fa-1ed3-4e7c-864c-97fe912a35d2}</kactus2:uuid>
 				<kactus2:adHocVisibilities>
-					<kactus2:adHocVisible portName="clk_i" x="-110" y="170"/>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="160"/>
 					<kactus2:adHocVisible portName="clk_o" x="110" y="40"/>
-					<kactus2:adHocVisible portName="en_i" x="-110" y="190"/>
-					<kactus2:adHocVisible portName="test_en_i" x="-110" y="210"/>
+					<kactus2:adHocVisible portName="en_i" x="-110" y="180"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="200"/>
 				</kactus2:adHocVisibilities>
 				<kactus2:position x="720" y="380"/>
 			</ipxact:vendorExtensions>
@@ -70,12 +70,12 @@
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{44d2d7fa-1ed3-4e7c-864c-97fe912a35d2}</kactus2:uuid>
 				<kactus2:adHocVisibilities>
-					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="60"/>
 					<kactus2:adHocVisible portName="clk_o" x="110" y="40"/>
-					<kactus2:adHocVisible portName="en_i" x="-110" y="50"/>
-					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="en_i" x="-110" y="80"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="100"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:position x="720" y="640"/>
+				<kactus2:position x="720" y="630"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
@@ -89,7 +89,7 @@
 					<kactus2:adHocVisible portName="en_i" x="-110" y="50"/>
 					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:position x="720" y="760"/>
+				<kactus2:position x="720" y="780"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
@@ -98,12 +98,12 @@
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{44d2d7fa-1ed3-4e7c-864c-97fe912a35d2}</kactus2:uuid>
 				<kactus2:adHocVisibilities>
-					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
-					<kactus2:adHocVisible portName="clk_o" x="110" y="40"/>
-					<kactus2:adHocVisible portName="en_i" x="-110" y="50"/>
-					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="140"/>
+					<kactus2:adHocVisible portName="clk_o" x="110" y="50"/>
+					<kactus2:adHocVisible portName="en_i" x="-110" y="160"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="180"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:position x="720" y="880"/>
+				<kactus2:position x="720" y="900"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
@@ -117,7 +117,7 @@
 					<kactus2:adHocVisible portName="en_i" x="-110" y="50"/>
 					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:position x="720" y="1000"/>
+				<kactus2:position x="720" y="1130"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
@@ -131,7 +131,7 @@
 					<kactus2:adHocVisible portName="en_i" x="-110" y="50"/>
 					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:position x="720" y="1120"/>
+				<kactus2:position x="720" y="1250"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
@@ -176,15 +176,15 @@
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{30d2af0b-f87e-404a-86f4-de16863a308a}</kactus2:uuid>
 				<kactus2:portPositions>
-					<kactus2:portPosition busRef="apb_debug_master" x="110" y="100"/>
-					<kactus2:portPosition busRef="apb_event_unit_master" x="110" y="120"/>
+					<kactus2:portPosition busRef="apb_debug_master" x="110" y="160"/>
+					<kactus2:portPosition busRef="apb_event_unit_master" x="110" y="180"/>
 					<kactus2:portPosition busRef="apb_fll_master" x="110" y="80"/>
 					<kactus2:portPosition busRef="apb_gpio_master" x="-110" y="360"/>
-					<kactus2:portPosition busRef="apb_i2c_master" x="110" y="160"/>
+					<kactus2:portPosition busRef="apb_i2c_master" x="110" y="220"/>
 					<kactus2:portPosition busRef="apb_slave" x="110" y="40"/>
 					<kactus2:portPosition busRef="apb_soc_ctrl_master" x="-110" y="300"/>
-					<kactus2:portPosition busRef="apb_spi_master" x="110" y="60"/>
-					<kactus2:portPosition busRef="apb_timer_master" x="110" y="140"/>
+					<kactus2:portPosition busRef="apb_spi_master" x="-110" y="610"/>
+					<kactus2:portPosition busRef="apb_timer_master" x="-110" y="760"/>
 					<kactus2:portPosition busRef="apb_uart_master" x="-110" y="170"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
@@ -231,6 +231,56 @@
 				<kactus2:position x="1040" y="380"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>apb_spi_master_0</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulpino-project.org" library="ip.hwp.ifc" name="apb_spi_master" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{68042162-8472-4608-8fbf-60df822e6125}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="apb_slave" x="110" y="40"/>
+					<kactus2:portPosition busRef="spi_master" x="110" y="70"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="HCLK" x="-110" y="40"/>
+					<kactus2:adHocVisible portName="HRESETn" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="events_o" x="110" y="100"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="1040" y="630"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>apb_timer_0</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulpino-project.org" library="ip.hwp.ifc" name="apb_timer" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{73bdb950-817a-4ba6-bd0f-f29e4b9da878}</kactus2:uuid>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="HCLK" x="-110" y="40"/>
+					<kactus2:adHocVisible portName="HRESETn" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="irq_o" x="110" y="70"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="1040" y="780"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>apb_event_unit_0</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulpino-project.org" library="ip.hwp.ifc" name="apb_event_unit" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{db669922-0b5f-4fbf-bfb0-5613c7fc76fe}</kactus2:uuid>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="HCLK" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="HRESETn" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="clk_gate_core_o" x="110" y="160"/>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="core_busy_i" x="110" y="180"/>
+					<kactus2:adHocVisible portName="event_i" x="110" y="60"/>
+					<kactus2:adHocVisible portName="fetch_enable_i" x="110" y="120"/>
+					<kactus2:adHocVisible portName="fetch_enable_o" x="110" y="140"/>
+					<kactus2:adHocVisible portName="irq_i" x="110" y="80"/>
+					<kactus2:adHocVisible portName="irq_o" x="110" y="100"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="1040" y="900"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
 	</ipxact:componentInstances>
 	<ipxact:interconnections>
 		<ipxact:interconnection>
@@ -272,6 +322,21 @@
 			<ipxact:name>apb_gpio_0_apb_slave_to_periph_bus_wrap_0_apb_gpio_master</ipxact:name>
 			<ipxact:activeInterface componentRef="apb_gpio_0" busRef="apb_slave"/>
 			<ipxact:activeInterface componentRef="periph_bus_wrap_0" busRef="apb_gpio_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_spi_master_0_spi_master_to_spi_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_spi_master_0" busRef="spi_master"/>
+			<ipxact:hierInterface busRef="spi_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_spi_master_0_apb_slave_to_periph_bus_wrap_0_apb_spi_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_spi_master_0" busRef="apb_slave"/>
+			<ipxact:activeInterface componentRef="periph_bus_wrap_0" busRef="apb_spi_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_timer_0_apb_slave_to_periph_bus_wrap_0_apb_timer_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_timer_0" busRef="apb_slave"/>
+			<ipxact:activeInterface componentRef="periph_bus_wrap_0" busRef="apb_timer_master"/>
 		</ipxact:interconnection>
 	</ipxact:interconnections>
 	<ipxact:adHocConnections>
@@ -590,6 +655,55 @@
 				<ipxact:externalPortReference portRef="rst_n"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_spi_master_0_HCLK_to_core_clock_gate_3_clk_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_spi_master_0" portRef="HCLK"/>
+				<ipxact:internalPortReference componentRef="core_clock_gate_3" portRef="clk_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_spi_master_0_HRESETn_to_rst_n</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_spi_master_0" portRef="HRESETn"/>
+				<ipxact:externalPortReference portRef="rst_n"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_timer_0_HCLK_to_core_clock_gate_4_clk_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_timer_0" portRef="HCLK"/>
+				<ipxact:internalPortReference componentRef="core_clock_gate_4" portRef="clk_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_timer_0_HRESETn_to_rst_n</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_timer_0" portRef="HRESETn"/>
+				<ipxact:externalPortReference portRef="rst_n"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_event_unit_0_clk_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_event_unit_0" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_event_unit_0_HCLK_to_core_clock_gate_5_clk_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_event_unit_0" portRef="HCLK"/>
+				<ipxact:internalPortReference componentRef="core_clock_gate_5" portRef="clk_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_event_unit_0_HRESETn_to_rst_n</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_event_unit_0" portRef="HRESETn"/>
+				<ipxact:externalPortReference portRef="rst_n"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:vendorExtensions>
 		<kactus2:version>3,1,0,0</kactus2:version>
@@ -715,15 +829,43 @@
 				<kactus2:position x="1150" y="420"/>
 				<kactus2:position x="1370" y="420"/>
 			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_spi_master_0_spi_master_to_spi_master" kactus2:offPage="false">
+				<kactus2:position x="1150" y="700"/>
+				<kactus2:position x="1260" y="700"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_spi_master_0_apb_slave_to_periph_bus_wrap_0_apb_spi_master" kactus2:offPage="false">
+				<kactus2:position x="1150" y="670"/>
+				<kactus2:position x="1370" y="670"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_spi_master_0_HCLK_to_core_clock_gate_3_clk_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_spi_master_0_HRESETn_to_rst_n" kactus2:offPage="true">
+				<kactus2:position x="90" y="230"/>
+				<kactus2:position x="900" y="700"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_timer_0_HCLK_to_core_clock_gate_4_clk_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_timer_0_apb_slave_to_periph_bus_wrap_0_apb_timer_master" kactus2:offPage="false">
+				<kactus2:position x="1150" y="820"/>
+				<kactus2:position x="1370" y="820"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_timer_0_HRESETn_to_rst_n" kactus2:offPage="true">
+				<kactus2:position x="90" y="230"/>
+				<kactus2:position x="900" y="850"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_event_unit_0_clk_i_to_clk_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="1150"/>
+				<kactus2:position x="900" y="930"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_event_unit_0_HCLK_to_core_clock_gate_5_clk_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_event_unit_0_HRESETn_to_rst_n" kactus2:offPage="false"/>
 		</kactus2:routes>
 		<kactus2:adHocVisibilities>
 			<kactus2:adHocVisible portName="boot_addr_o" x="60" y="180"/>
 			<kactus2:adHocVisible portName="clk_i" x="60" y="1150"/>
-			<kactus2:adHocVisible portName="fetch_enable_i" x="1700" y="630"/>
-			<kactus2:adHocVisible portName="gpio_dir" x="1260" y="500"/>
-			<kactus2:adHocVisible portName="gpio_in" x="1260" y="440"/>
-			<kactus2:adHocVisible portName="gpio_out" x="1260" y="470"/>
-			<kactus2:adHocVisible portName="gpio_padcfg" x="1260" y="530"/>
+			<kactus2:adHocVisible portName="fetch_enable_i" x="1260" y="1020"/>
+			<kactus2:adHocVisible portName="gpio_dir" x="1260" y="510"/>
+			<kactus2:adHocVisible portName="gpio_in" x="1260" y="450"/>
+			<kactus2:adHocVisible portName="gpio_out" x="1260" y="480"/>
+			<kactus2:adHocVisible portName="gpio_padcfg" x="1260" y="540"/>
 			<kactus2:adHocVisible portName="pad_cfg_o" x="60" y="150"/>
 			<kactus2:adHocVisible portName="pad_mux_o" x="60" y="120"/>
 			<kactus2:adHocVisible portName="rst_n" x="60" y="230"/>
@@ -741,8 +883,8 @@
 		</kactus2:interfaceGraphics>
 		<kactus2:interfaceGraphics>
 			<kactus2:name>spi_master</kactus2:name>
-			<kactus2:position x="1700" y="1050"/>
-			<kactus2:direction x="1" y="0"/>
+			<kactus2:position x="1260" y="700"/>
+			<kactus2:direction x="-1" y="0"/>
 		</kactus2:interfaceGraphics>
 		<kactus2:interfaceGraphics>
 			<kactus2:name>spi_slave</kactus2:name>

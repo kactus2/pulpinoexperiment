@@ -15,7 +15,7 @@
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>core_region_i</ipxact:instanceName>
-		<ipxact:view viewRef="flat"/>
+		<ipxact:view viewRef="hierarchical"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>axi_interconnect_i</ipxact:instanceName>

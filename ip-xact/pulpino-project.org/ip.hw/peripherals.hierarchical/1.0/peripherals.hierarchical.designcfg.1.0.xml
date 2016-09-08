@@ -61,6 +61,18 @@
 		<ipxact:instanceName>apb_gpio_0</ipxact:instanceName>
 		<ipxact:view viewRef="rtl"/>
 	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>apb_spi_master_0</ipxact:instanceName>
+		<ipxact:view viewRef="rtl"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>apb_timer_0</ipxact:instanceName>
+		<ipxact:view viewRef="rtl"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>apb_event_unit_0</ipxact:instanceName>
+		<ipxact:view viewRef="rtl"/>
+	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>
 		<kactus2:version>3,1,0,0</kactus2:version>
 		<kactus2:kts_attributes>

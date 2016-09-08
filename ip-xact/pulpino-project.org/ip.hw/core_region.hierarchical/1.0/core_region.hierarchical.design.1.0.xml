@@ -769,5 +769,27 @@
 			<kactus2:position x="60" y="100"/>
 			<kactus2:direction x="1" y="0"/>
 		</kactus2:interfaceGraphics>
+		<kactus2:note>
+			<kactus2:position x="1180" y="110"/>
+			<kactus2:content>ok. Lowest level
+AXI_BUS.Slave axi_slave
+AXI_BUS.Master axi_master</kactus2:content>
+			<kactus2:associations/>
+			<kactus2:timestamp>6.9.2016 16:48:14</kactus2:timestamp>
+		</kactus2:note>
+		<kactus2:note>
+			<kactus2:position x="1180" y="270"/>
+			<kactus2:content>ifdefs
+includes 2 components</kactus2:content>
+			<kactus2:associations/>
+			<kactus2:timestamp>7.9.2016 11:25:41</kactus2:timestamp>
+		</kactus2:note>
+		<kactus2:note>
+			<kactus2:position x="1190" y="420"/>
+			<kactus2:content>ok
+includes sp_ram_wrap and boot_rom_wrap, little glue logic</kactus2:content>
+			<kactus2:associations/>
+			<kactus2:timestamp>6.9.2016 16:47:54</kactus2:timestamp>
+		</kactus2:note>
 	</ipxact:vendorExtensions>
 </ipxact:design>

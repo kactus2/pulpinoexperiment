@@ -296,80 +296,10 @@
 		<ipxact:fileSet>
 			<ipxact:name>sv_source</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/axi_mem_if_SP_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>c30b5e300ad7c09614620771918498c6</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/axi_node_intf_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>426dc2a6d77cf491751a811aaefb6ee6</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/axi_slice_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>ee368901d0187f189c720bcddd06e7fa</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/clk_rst_gen.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>7b79a680755baaebbb8015329909b0e4</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/core_region_demux.v</ipxact:name>
-				<ipxact:fileType>verilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>4b94a5923415444379da63e011448b6e8259d866</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/core_region.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>160e514288a418b407729ac651d5390c</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/core2axi_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>c4f2185829d1301c93d84e98d292b4e1</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
 				<ipxact:name>../../../../../rtl/instr_ram_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>5c8ea557c0f388307285974783921267</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/peripherals.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>aa0b87f73864afaec602097a9eb8ea8f</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/ram_mux.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>134d4ede4ae01d083cfebf2c0c346b1a</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/top.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>1df48d9ec9494e92bc07f4e71ca7a91b</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>
