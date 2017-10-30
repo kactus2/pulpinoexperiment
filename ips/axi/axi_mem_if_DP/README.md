@@ -1,6 +1,6 @@
 # AXI Memory Interface
 
-This unit provides a brige between the AXI bus and a simple memory interface
+This unit provides a bridge between the AXI bus and a simple memory interface
 that is commonly found in SRAMs.
 
 There are two versions of this IP:

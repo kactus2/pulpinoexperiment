@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+	<ipxact:library>core</ipxact:library>
+	<ipxact:name>axi_slice.design</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:componentInstances>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>aw_buffer_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="axi_aw_buffer" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_b7c9e776_95ba_48ec_9829_3befd8d7026a">uuid_32eb30ba_597e_4167_b727_5ca4902a0206</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_63389f45_6346_47a0_ba54_0748e778653c">uuid_c706ebc2_7c16_475b_b492_ed898a2ad959</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_6a8dd2db_99c8_4209_a349_a0ddf4017234">uuid_fbc5b48f_7798_4ffa_a51c_b41ffde0df03</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_35cef530_de1d_49cc_a370_12c1e25fe00e">uuid_281e4d6e_b047_41d6_9f85_66b76770764f</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{1abe4382-8737-464d-abb8-67c2b03103e8}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="aw_master" x="110" y="40"/>
+					<kactus2:portPosition busRef="aw_slave" x="-110" y="100"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="master_addr_o" x="110" y="70"/>
+					<kactus2:adHocVisible portName="master_burst_o" x="110" y="100"/>
+					<kactus2:adHocVisible portName="master_cache_o" x="110" y="130"/>
+					<kactus2:adHocVisible portName="master_id_o" x="110" y="160"/>
+					<kactus2:adHocVisible portName="master_len_o" x="110" y="190"/>
+					<kactus2:adHocVisible portName="master_lock_o" x="110" y="220"/>
+					<kactus2:adHocVisible portName="master_prot_o" x="110" y="250"/>
+					<kactus2:adHocVisible portName="master_qos_o" x="110" y="280"/>
+					<kactus2:adHocVisible portName="master_ready_i" x="110" y="310"/>
+					<kactus2:adHocVisible portName="master_region_o" x="110" y="340"/>
+					<kactus2:adHocVisible portName="master_size_o" x="110" y="370"/>
+					<kactus2:adHocVisible portName="master_user_o" x="110" y="400"/>
+					<kactus2:adHocVisible portName="master_valid_o" x="110" y="430"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="slave_addr_i" x="-110" y="130"/>
+					<kactus2:adHocVisible portName="slave_burst_i" x="-110" y="160"/>
+					<kactus2:adHocVisible portName="slave_cache_i" x="-110" y="190"/>
+					<kactus2:adHocVisible portName="slave_id_i" x="-110" y="220"/>
+					<kactus2:adHocVisible portName="slave_len_i" x="-110" y="250"/>
+					<kactus2:adHocVisible portName="slave_lock_i" x="-110" y="280"/>
+					<kactus2:adHocVisible portName="slave_prot_i" x="-110" y="310"/>
+					<kactus2:adHocVisible portName="slave_qos_i" x="-110" y="340"/>
+					<kactus2:adHocVisible portName="slave_ready_o" x="-110" y="370"/>
+					<kactus2:adHocVisible portName="slave_region_i" x="-110" y="400"/>
+					<kactus2:adHocVisible portName="slave_size_i" x="-110" y="430"/>
+					<kactus2:adHocVisible portName="slave_user_i" x="-110" y="460"/>
+					<kactus2:adHocVisible portName="slave_valid_i" x="-110" y="490"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="60"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>w_buffer_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="axi_w_buffer" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_ccb7240b_bafe_4deb_a6a7_d068f08d3bf6">uuid_32eb30ba_597e_4167_b727_5ca4902a0206</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_bb5217e4_9525_4c6c_8bb1_79bb041cdab9">uuid_ad321fc1_59ec_4672_b857_90c25c70896b</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_b4e90f99_af6e_40a4_8d6a_d3874f0a533b">uuid_fbc5b48f_7798_4ffa_a51c_b41ffde0df03</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{3dc071f9-00b3-40a4-ad1e-1b49436e7ed6}</kactus2:uuid>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="master_data_o" x="110" y="70"/>
+					<kactus2:adHocVisible portName="master_last_o" x="110" y="100"/>
+					<kactus2:adHocVisible portName="master_ready_i" x="110" y="130"/>
+					<kactus2:adHocVisible portName="master_strb_o" x="110" y="160"/>
+					<kactus2:adHocVisible portName="master_user_o" x="110" y="190"/>
+					<kactus2:adHocVisible portName="master_valid_o" x="110" y="220"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="slave_data_i" x="-110" y="100"/>
+					<kactus2:adHocVisible portName="slave_last_i" x="-110" y="170"/>
+					<kactus2:adHocVisible portName="slave_ready_o" x="-110" y="140"/>
+					<kactus2:adHocVisible portName="slave_strb_i" x="-110" y="200"/>
+					<kactus2:adHocVisible portName="slave_user_i" x="-110" y="230"/>
+					<kactus2:adHocVisible portName="slave_valid_i" x="-110" y="260"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="1120"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>b_buffer_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="axi_b_buffer" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_be237859_058f_4e64_97a2_09a749f143bd">uuid_32eb30ba_597e_4167_b727_5ca4902a0206</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_bb5deb04_fdc3_42e7_b348_b4dbe7c3bbe5">uuid_c706ebc2_7c16_475b_b492_ed898a2ad959</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_24dca55e_4df2_46e3_9f97_c7d32f622abc">uuid_fbc5b48f_7798_4ffa_a51c_b41ffde0df03</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{34553410-a7b8-47da-ab63-57372cd59ed9}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="b_slave" x="110" y="40"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="master_id_o" x="-110" y="100"/>
+					<kactus2:adHocVisible portName="master_ready_i" x="-110" y="140"/>
+					<kactus2:adHocVisible portName="master_resp_o" x="-110" y="170"/>
+					<kactus2:adHocVisible portName="master_user_o" x="-110" y="200"/>
+					<kactus2:adHocVisible portName="master_valid_o" x="-110" y="230"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="slave_id_i" x="110" y="70"/>
+					<kactus2:adHocVisible portName="slave_ready_o" x="110" y="100"/>
+					<kactus2:adHocVisible portName="slave_resp_i" x="110" y="130"/>
+					<kactus2:adHocVisible portName="slave_user_i" x="110" y="160"/>
+					<kactus2:adHocVisible portName="slave_valid_i" x="110" y="190"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="1770"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>ar_buffer_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="axi_ar_buffer" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_3bed0a06_ca57_4908_a120_5c81fdf962d7">uuid_32eb30ba_597e_4167_b727_5ca4902a0206</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_f2d54eae_ba21_431f_a7a4_8e799a9b59d3">uuid_c706ebc2_7c16_475b_b492_ed898a2ad959</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_2707f2b2_b08b_494f_84b0_8b3736e1a5cf">uuid_fbc5b48f_7798_4ffa_a51c_b41ffde0df03</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_f37d983b_3843_4629_9112_8d4b98106809">uuid_281e4d6e_b047_41d6_9f85_66b76770764f</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{7b313f0b-e6c8-4200-b7aa-996134ccd436}</kactus2:uuid>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="master_addr_o" x="110" y="70"/>
+					<kactus2:adHocVisible portName="master_burst_o" x="110" y="100"/>
+					<kactus2:adHocVisible portName="master_cache_o" x="110" y="130"/>
+					<kactus2:adHocVisible portName="master_id_o" x="110" y="160"/>
+					<kactus2:adHocVisible portName="master_len_o" x="110" y="190"/>
+					<kactus2:adHocVisible portName="master_lock_o" x="110" y="220"/>
+					<kactus2:adHocVisible portName="master_prot_o" x="110" y="250"/>
+					<kactus2:adHocVisible portName="master_qos_o" x="110" y="280"/>
+					<kactus2:adHocVisible portName="master_ready_i" x="110" y="310"/>
+					<kactus2:adHocVisible portName="master_region_o" x="110" y="340"/>
+					<kactus2:adHocVisible portName="master_size_o" x="110" y="370"/>
+					<kactus2:adHocVisible portName="master_user_o" x="110" y="400"/>
+					<kactus2:adHocVisible portName="master_valid_o" x="110" y="430"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="slave_addr_i" x="-110" y="100"/>
+					<kactus2:adHocVisible portName="slave_burst_i" x="-110" y="140"/>
+					<kactus2:adHocVisible portName="slave_cache_i" x="-110" y="170"/>
+					<kactus2:adHocVisible portName="slave_id_i" x="-110" y="200"/>
+					<kactus2:adHocVisible portName="slave_len_i" x="-110" y="230"/>
+					<kactus2:adHocVisible portName="slave_lock_i" x="-110" y="260"/>
+					<kactus2:adHocVisible portName="slave_prot_i" x="-110" y="290"/>
+					<kactus2:adHocVisible portName="slave_qos_i" x="-110" y="320"/>
+					<kactus2:adHocVisible portName="slave_ready_o" x="-110" y="350"/>
+					<kactus2:adHocVisible portName="slave_region_i" x="-110" y="380"/>
+					<kactus2:adHocVisible portName="slave_size_i" x="-110" y="410"/>
+					<kactus2:adHocVisible portName="slave_user_i" x="-110" y="440"/>
+					<kactus2:adHocVisible portName="slave_valid_i" x="-110" y="470"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="600"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>r_buffer_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="axi_r_buffer" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_1172c7f8_e5d0_4647_819f_7b468103543c">uuid_32eb30ba_597e_4167_b727_5ca4902a0206</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_8c457b56_5668_4c23_bfc1_929adcadb267">uuid_c706ebc2_7c16_475b_b492_ed898a2ad959</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_f4310c1e_79fa_4d2c_8587_ee063b96c62b">uuid_ad321fc1_59ec_4672_b857_90c25c70896b</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_92ff24d9_6f50_4cf1_ad08_dbde12d4866f">uuid_fbc5b48f_7798_4ffa_a51c_b41ffde0df03</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{bfdae1ae-8cda-4fed-b771-8bebf2fda244}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="r_slave" x="110" y="40"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="master_data_o" x="-110" y="110"/>
+					<kactus2:adHocVisible portName="master_id_o" x="-110" y="140"/>
+					<kactus2:adHocVisible portName="master_last_o" x="-110" y="170"/>
+					<kactus2:adHocVisible portName="master_ready_i" x="-110" y="200"/>
+					<kactus2:adHocVisible portName="master_resp_o" x="-110" y="230"/>
+					<kactus2:adHocVisible portName="master_user_o" x="-110" y="260"/>
+					<kactus2:adHocVisible portName="master_valid_o" x="-110" y="290"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="slave_data_i" x="110" y="70"/>
+					<kactus2:adHocVisible portName="slave_id_i" x="110" y="100"/>
+					<kactus2:adHocVisible portName="slave_last_i" x="110" y="130"/>
+					<kactus2:adHocVisible portName="slave_ready_o" x="110" y="160"/>
+					<kactus2:adHocVisible portName="slave_resp_i" x="110" y="190"/>
+					<kactus2:adHocVisible portName="slave_user_i" x="110" y="220"/>
+					<kactus2:adHocVisible portName="slave_valid_i" x="110" y="250"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="1430"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+	</ipxact:componentInstances>
+	<ipxact:adHocConnections>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_clk_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_clk_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_clk_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_clk_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_clk_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_rst_ni_to_rst_ni</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="rst_ni"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_rst_ni_to_rst_ni</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="rst_ni"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_rst_ni_to_rst_ni</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="rst_ni"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_rst_ni_to_rst_ni</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="rst_ni"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_rst_ni_to_rst_ni</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="rst_ni"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_test_en_i_to_test_en_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="test_en_i"/>
+				<ipxact:externalPortReference portRef="test_en_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_test_en_i_to_test_en_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="test_en_i"/>
+				<ipxact:externalPortReference portRef="test_en_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_test_en_i_to_test_en_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="test_en_i"/>
+				<ipxact:externalPortReference portRef="test_en_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_test_en_i_to_test_en_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="test_en_i"/>
+				<ipxact:externalPortReference portRef="test_en_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_test_en_i_to_test_en_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="test_en_i"/>
+				<ipxact:externalPortReference portRef="test_en_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_addr_i_to_axi_slave_aw_addr_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_addr_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_addr_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_burst_i_to_axi_slave_aw_burst_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_burst_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_burst_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_cache_i_to_axi_slave_aw_cache_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_cache_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_cache_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_id_i_to_axi_slave_aw_id_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_id_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_id_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_len_i_to_axi_slave_aw_len_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_len_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_len_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_lock_i_to_axi_slave_aw_lock_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_lock_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_lock_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_prot_i_to_axi_slave_aw_prot_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_prot_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_prot_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_qos_i_to_axi_slave_aw_qos_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_qos_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_qos_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_ready_o_to_axi_slave_aw_ready_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_ready_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_ready_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_region_i_to_axi_slave_aw_region_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_region_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_region_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_size_i_to_axi_slave_aw_size_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_size_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_size_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_valid_i_to_axi_slave_aw_valid_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_valid_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_valid_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_slave_user_i_to_axi_slave_aw_user_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="slave_user_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_aw_user_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_addr_o_to_axi_master_aw_addr_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_addr_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_addr_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_burst_o_to_axi_master_aw_burst_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_burst_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_burst_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_cache_o_to_axi_master_aw_cache_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_cache_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_cache_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_id_o_to_axi_master_aw_id_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_id_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_id_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_len_o_to_axi_master_aw_len_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_len_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_len_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_lock_o_to_axi_master_aw_lock_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_lock_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_lock_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_prot_o_to_axi_master_aw_prot_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_prot_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_prot_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_qos_o_to_axi_master_aw_qos_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_qos_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_qos_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_ready_i_to_axi_master_aw_ready_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_ready_i"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_ready_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_region_o_to_axi_master_aw_region_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_region_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_region_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_size_o_to_axi_master_aw_size_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_size_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_size_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_user_o_to_axi_master_aw_user_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_user_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_user_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>aw_buffer_i_master_valid_o_to_axi_master_aw_valid_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="aw_buffer_i" portRef="master_valid_o"/>
+				<ipxact:externalPortReference portRef="axi_master_aw_valid_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_addr_o_to_axi_master_ar_addr_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_addr_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_addr_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_burst_o_to_axi_master_ar_burst_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_burst_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_burst_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_cache_o_to_axi_master_ar_cache_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_cache_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_cache_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_id_o_to_axi_master_ar_id_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_id_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_id_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_len_o_to_axi_master_ar_len_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_len_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_len_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_lock_o_to_axi_master_ar_lock_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_lock_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_lock_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_prot_o_to_axi_master_ar_prot_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_prot_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_prot_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_qos_o_to_axi_master_ar_qos_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_qos_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_qos_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_ready_i_to_axi_master_ar_ready_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_ready_i"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_ready_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_region_o_to_axi_master_ar_region_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_region_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_region_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_size_o_to_axi_master_ar_size_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_size_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_size_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_user_o_to_axi_master_ar_user_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_user_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_user_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_master_valid_o_to_axi_master_ar_valid_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="master_valid_o"/>
+				<ipxact:externalPortReference portRef="axi_master_ar_valid_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_addr_i_to_axi_slave_ar_addr_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_addr_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_addr_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_burst_i_to_axi_slave_ar_burst_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_burst_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_burst_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_cache_i_to_axi_slave_ar_cache_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_cache_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_cache_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_id_i_to_axi_slave_ar_id_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_id_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_id_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_len_i_to_axi_slave_ar_len_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_len_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_len_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_lock_i_to_axi_slave_ar_lock_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_lock_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_lock_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_prot_i_to_axi_slave_ar_prot_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_prot_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_prot_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_qos_i_to_axi_slave_ar_qos_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_qos_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_qos_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_ready_o_to_axi_slave_ar_ready_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_ready_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_ready_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_region_i_to_axi_slave_ar_region_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_region_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_region_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_size_i_to_axi_slave_ar_size_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_size_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_size_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_user_i_to_axi_slave_ar_user_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_user_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_user_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>ar_buffer_i_slave_valid_i_to_axi_slave_ar_valid_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="ar_buffer_i" portRef="slave_valid_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_ar_valid_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_master_data_o_to_axi_master_w_data_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="master_data_o"/>
+				<ipxact:externalPortReference portRef="axi_master_w_data_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_master_last_o_to_axi_master_w_last_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="master_last_o"/>
+				<ipxact:externalPortReference portRef="axi_master_w_last_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_master_strb_o_to_axi_master_w_strb_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="master_strb_o"/>
+				<ipxact:externalPortReference portRef="axi_master_w_strb_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_master_user_o_to_axi_master_w_user_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="master_user_o"/>
+				<ipxact:externalPortReference portRef="axi_master_w_user_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_master_valid_o_to_axi_master_w_valid_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="master_valid_o"/>
+				<ipxact:externalPortReference portRef="axi_master_w_valid_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_slave_data_i_to_axi_slave_w_data_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="slave_data_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_w_data_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_slave_last_i_to_axi_slave_w_last_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="slave_last_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_w_last_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_slave_ready_o_to_axi_slave_w_ready_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="slave_ready_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_w_ready_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_slave_strb_i_to_axi_slave_w_strb_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="slave_strb_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_w_strb_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_slave_user_i_to_axi_slave_w_user_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="slave_user_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_w_user_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_slave_valid_i_to_axi_slave_w_valid_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="slave_valid_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_w_valid_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_master_data_o_to_axi_slave_r_data_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="master_data_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_r_data_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_master_id_o_to_axi_slave_r_id_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="master_id_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_r_id_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_master_last_o_to_axi_slave_r_last_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="master_last_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_r_last_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_master_ready_i_to_axi_slave_r_ready_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="master_ready_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_r_ready_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_master_resp_o_to_axi_slave_r_resp_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="master_resp_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_r_resp_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_master_user_o_to_axi_slave_r_user_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="master_user_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_r_user_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_master_valid_o_to_axi_slave_r_valid_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="master_valid_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_r_valid_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_slave_data_i_to_axi_master_r_data_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="slave_data_i"/>
+				<ipxact:externalPortReference portRef="axi_master_r_data_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_slave_id_i_to_axi_master_r_id_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="slave_id_i"/>
+				<ipxact:externalPortReference portRef="axi_master_r_id_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_slave_last_i_to_axi_master_r_last_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="slave_last_i"/>
+				<ipxact:externalPortReference portRef="axi_master_r_last_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_slave_ready_o_to_axi_master_r_ready_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="slave_ready_o"/>
+				<ipxact:externalPortReference portRef="axi_master_r_ready_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_slave_resp_i_to_axi_master_r_resp_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="slave_resp_i"/>
+				<ipxact:externalPortReference portRef="axi_master_r_resp_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_slave_user_i_to_axi_master_r_user_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="slave_user_i"/>
+				<ipxact:externalPortReference portRef="axi_master_r_user_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>r_buffer_i_slave_valid_i_to_axi_master_r_valid_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="r_buffer_i" portRef="slave_valid_i"/>
+				<ipxact:externalPortReference portRef="axi_master_r_valid_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_master_id_o_to_axi_slave_b_id_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="master_id_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_b_id_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_master_ready_i_to_axi_slave_b_ready_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="master_ready_i"/>
+				<ipxact:externalPortReference portRef="axi_slave_b_ready_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_master_resp_o_to_axi_slave_b_resp_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="master_resp_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_b_resp_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_master_user_o_to_axi_slave_b_user_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="master_user_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_b_user_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_master_valid_o_to_axi_slave_b_valid_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="master_valid_o"/>
+				<ipxact:externalPortReference portRef="axi_slave_b_valid_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_slave_id_i_to_axi_master_b_id_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="slave_id_i"/>
+				<ipxact:externalPortReference portRef="axi_master_b_id_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_slave_ready_o_to_axi_master_b_ready_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="slave_ready_o"/>
+				<ipxact:externalPortReference portRef="axi_master_b_ready_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_slave_resp_i_to_axi_master_b_resp_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="slave_resp_i"/>
+				<ipxact:externalPortReference portRef="axi_master_b_resp_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_slave_user_i_to_axi_master_b_user_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="slave_user_i"/>
+				<ipxact:externalPortReference portRef="axi_master_b_user_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>b_buffer_i_slave_valid_i_to_axi_master_b_valid_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="b_buffer_i" portRef="slave_valid_i"/>
+				<ipxact:externalPortReference portRef="axi_master_b_valid_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>w_buffer_i_master_ready_i_to_axi_master_w_ready_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="w_buffer_i" portRef="master_ready_i"/>
+				<ipxact:externalPortReference portRef="axi_master_w_ready_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+	</ipxact:adHocConnections>
+	<ipxact:parameters>
+		<ipxact:parameter parameterId="uuid_281e4d6e_b047_41d6_9f85_66b76770764f" usageCount="2">
+			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
+			<ipxact:value>32</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_ad321fc1_59ec_4672_b857_90c25c70896b" resolve="user" usageCount="2">
+			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
+			<ipxact:value>64</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_fbc5b48f_7798_4ffa_a51c_b41ffde0df03" resolve="user" usageCount="5">
+			<ipxact:name>SLICE_DEPTH</ipxact:name>
+			<ipxact:value>2</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_c706ebc2_7c16_475b_b492_ed898a2ad959" resolve="user" usageCount="4">
+			<ipxact:name>AXI_ID_WIDTH</ipxact:name>
+			<ipxact:value>3</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_32eb30ba_597e_4167_b727_5ca4902a0206" resolve="user" usageCount="5">
+			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
+			<ipxact:value>6</ipxact:value>
+		</ipxact:parameter>
+	</ipxact:parameters>
+	<ipxact:vendorExtensions>
+		<kactus2:version>3,4,436,0</kactus2:version>
+		<kactus2:kts_attributes>
+			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+		</kactus2:kts_attributes>
+		<kactus2:columnLayout>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
+			<kactus2:column name="AXI channels" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
+		</kactus2:columnLayout>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="aw_buffer_i_clk_i_to_clk_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="70"/>
+				<kactus2:position x="140" y="90"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ar_buffer_i_clk_i_to_clk_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="70"/>
+				<kactus2:position x="140" y="630"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="w_buffer_i_clk_i_to_clk_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="70"/>
+				<kactus2:position x="140" y="1150"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="b_buffer_i_clk_i_to_clk_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="70"/>
+				<kactus2:position x="140" y="1800"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="r_buffer_i_clk_i_to_clk_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="70"/>
+				<kactus2:position x="140" y="1460"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="aw_buffer_i_rst_ni_to_rst_ni" kactus2:offPage="true">
+				<kactus2:position x="90" y="100"/>
+				<kactus2:position x="140" y="110"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ar_buffer_i_rst_ni_to_rst_ni" kactus2:offPage="true">
+				<kactus2:position x="90" y="100"/>
+				<kactus2:position x="140" y="650"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="w_buffer_i_rst_ni_to_rst_ni" kactus2:offPage="true">
+				<kactus2:position x="90" y="100"/>
+				<kactus2:position x="140" y="1170"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="r_buffer_i_rst_ni_to_rst_ni" kactus2:offPage="true">
+				<kactus2:position x="90" y="100"/>
+				<kactus2:position x="140" y="1480"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="b_buffer_i_rst_ni_to_rst_ni" kactus2:offPage="true">
+				<kactus2:position x="90" y="100"/>
+				<kactus2:position x="140" y="1820"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="b_buffer_i_test_en_i_to_test_en_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="120"/>
+				<kactus2:position x="140" y="1840"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="r_buffer_i_test_en_i_to_test_en_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="120"/>
+				<kactus2:position x="140" y="1500"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="w_buffer_i_test_en_i_to_test_en_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="120"/>
+				<kactus2:position x="140" y="1190"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="aw_buffer_i_test_en_i_to_test_en_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="120"/>
+				<kactus2:position x="140" y="130"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="ar_buffer_i_test_en_i_to_test_en_i" kactus2:offPage="true">
+				<kactus2:position x="90" y="120"/>
+				<kactus2:position x="140" y="670"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_addr_i_to_axi_slave_aw_addr_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_burst_i_to_axi_slave_aw_burst_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_cache_i_to_axi_slave_aw_cache_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_id_i_to_axi_slave_aw_id_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_len_i_to_axi_slave_aw_len_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_lock_i_to_axi_slave_aw_lock_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_prot_i_to_axi_slave_aw_prot_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_qos_i_to_axi_slave_aw_qos_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_ready_o_to_axi_slave_aw_ready_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_region_i_to_axi_slave_aw_region_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_size_i_to_axi_slave_aw_size_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_valid_i_to_axi_slave_aw_valid_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_slave_user_i_to_axi_slave_aw_user_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_addr_o_to_axi_master_aw_addr_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_burst_o_to_axi_master_aw_burst_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_cache_o_to_axi_master_aw_cache_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_id_o_to_axi_master_aw_id_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_len_o_to_axi_master_aw_len_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_lock_o_to_axi_master_aw_lock_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_prot_o_to_axi_master_aw_prot_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_qos_o_to_axi_master_aw_qos_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_ready_i_to_axi_master_aw_ready_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_region_o_to_axi_master_aw_region_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_size_o_to_axi_master_aw_size_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_user_o_to_axi_master_aw_user_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="aw_buffer_i_master_valid_o_to_axi_master_aw_valid_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_addr_o_to_axi_master_ar_addr_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_burst_o_to_axi_master_ar_burst_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_cache_o_to_axi_master_ar_cache_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_id_o_to_axi_master_ar_id_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_len_o_to_axi_master_ar_len_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_lock_o_to_axi_master_ar_lock_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_prot_o_to_axi_master_ar_prot_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_qos_o_to_axi_master_ar_qos_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_ready_i_to_axi_master_ar_ready_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_region_o_to_axi_master_ar_region_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_size_o_to_axi_master_ar_size_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_user_o_to_axi_master_ar_user_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_master_valid_o_to_axi_master_ar_valid_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_addr_i_to_axi_slave_ar_addr_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_burst_i_to_axi_slave_ar_burst_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_cache_i_to_axi_slave_ar_cache_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_id_i_to_axi_slave_ar_id_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_len_i_to_axi_slave_ar_len_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_lock_i_to_axi_slave_ar_lock_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_prot_i_to_axi_slave_ar_prot_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_qos_i_to_axi_slave_ar_qos_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_ready_o_to_axi_slave_ar_ready_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_region_i_to_axi_slave_ar_region_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_size_i_to_axi_slave_ar_size_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_user_i_to_axi_slave_ar_user_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="ar_buffer_i_slave_valid_i_to_axi_slave_ar_valid_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_master_data_o_to_axi_master_w_data_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_master_last_o_to_axi_master_w_last_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_master_strb_o_to_axi_master_w_strb_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_master_user_o_to_axi_master_w_user_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_master_valid_o_to_axi_master_w_valid_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_slave_data_i_to_axi_slave_w_data_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_slave_last_i_to_axi_slave_w_last_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_slave_ready_o_to_axi_slave_w_ready_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_slave_strb_i_to_axi_slave_w_strb_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_slave_user_i_to_axi_slave_w_user_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_slave_valid_i_to_axi_slave_w_valid_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_master_data_o_to_axi_slave_r_data_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_master_id_o_to_axi_slave_r_id_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_master_last_o_to_axi_slave_r_last_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_master_ready_i_to_axi_slave_r_ready_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_master_resp_o_to_axi_slave_r_resp_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_master_user_o_to_axi_slave_r_user_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_master_valid_o_to_axi_slave_r_valid_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_slave_data_i_to_axi_master_r_data_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_slave_id_i_to_axi_master_r_id_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_slave_last_i_to_axi_master_r_last_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_slave_ready_o_to_axi_master_r_ready_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_slave_resp_i_to_axi_master_r_resp_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_slave_user_i_to_axi_master_r_user_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="r_buffer_i_slave_valid_i_to_axi_master_r_valid_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_master_id_o_to_axi_slave_b_id_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_master_ready_i_to_axi_slave_b_ready_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_master_resp_o_to_axi_slave_b_resp_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_master_user_o_to_axi_slave_b_user_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_master_valid_o_to_axi_slave_b_valid_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_slave_id_i_to_axi_master_b_id_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_slave_ready_o_to_axi_master_b_ready_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_slave_resp_i_to_axi_master_b_resp_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_slave_user_i_to_axi_master_b_user_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="b_buffer_i_slave_valid_i_to_axi_master_b_valid_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="w_buffer_i_master_ready_i_to_axi_master_w_ready_i" kactus2:offPage="false"/>
+		</kactus2:routes>
+		<kactus2:adHocVisibilities>
+			<kactus2:adHocVisible portName="axi_master_ar_addr_o" x="500" y="670"/>
+			<kactus2:adHocVisible portName="axi_master_ar_burst_o" x="500" y="700"/>
+			<kactus2:adHocVisible portName="axi_master_ar_cache_o" x="500" y="730"/>
+			<kactus2:adHocVisible portName="axi_master_ar_id_o" x="500" y="760"/>
+			<kactus2:adHocVisible portName="axi_master_ar_len_o" x="500" y="790"/>
+			<kactus2:adHocVisible portName="axi_master_ar_lock_o" x="500" y="820"/>
+			<kactus2:adHocVisible portName="axi_master_ar_prot_o" x="500" y="850"/>
+			<kactus2:adHocVisible portName="axi_master_ar_qos_o" x="500" y="880"/>
+			<kactus2:adHocVisible portName="axi_master_ar_ready_i" x="500" y="910"/>
+			<kactus2:adHocVisible portName="axi_master_ar_region_o" x="500" y="940"/>
+			<kactus2:adHocVisible portName="axi_master_ar_size_o" x="500" y="970"/>
+			<kactus2:adHocVisible portName="axi_master_ar_user_o" x="500" y="1000"/>
+			<kactus2:adHocVisible portName="axi_master_ar_valid_o" x="500" y="1030"/>
+			<kactus2:adHocVisible portName="axi_master_aw_addr_o" x="500" y="130"/>
+			<kactus2:adHocVisible portName="axi_master_aw_burst_o" x="500" y="160"/>
+			<kactus2:adHocVisible portName="axi_master_aw_cache_o" x="500" y="190"/>
+			<kactus2:adHocVisible portName="axi_master_aw_id_o" x="500" y="220"/>
+			<kactus2:adHocVisible portName="axi_master_aw_len_o" x="500" y="250"/>
+			<kactus2:adHocVisible portName="axi_master_aw_lock_o" x="500" y="280"/>
+			<kactus2:adHocVisible portName="axi_master_aw_prot_o" x="500" y="310"/>
+			<kactus2:adHocVisible portName="axi_master_aw_qos_o" x="500" y="340"/>
+			<kactus2:adHocVisible portName="axi_master_aw_ready_i" x="500" y="370"/>
+			<kactus2:adHocVisible portName="axi_master_aw_region_o" x="500" y="400"/>
+			<kactus2:adHocVisible portName="axi_master_aw_size_o" x="500" y="430"/>
+			<kactus2:adHocVisible portName="axi_master_aw_user_o" x="500" y="460"/>
+			<kactus2:adHocVisible portName="axi_master_aw_valid_o" x="500" y="490"/>
+			<kactus2:adHocVisible portName="axi_master_b_id_i" x="500" y="1840"/>
+			<kactus2:adHocVisible portName="axi_master_b_ready_o" x="500" y="1870"/>
+			<kactus2:adHocVisible portName="axi_master_b_resp_i" x="500" y="1900"/>
+			<kactus2:adHocVisible portName="axi_master_b_user_i" x="500" y="1930"/>
+			<kactus2:adHocVisible portName="axi_master_b_valid_i" x="500" y="1960"/>
+			<kactus2:adHocVisible portName="axi_master_r_data_i" x="500" y="1500"/>
+			<kactus2:adHocVisible portName="axi_master_r_id_i" x="500" y="1530"/>
+			<kactus2:adHocVisible portName="axi_master_r_last_i" x="500" y="1560"/>
+			<kactus2:adHocVisible portName="axi_master_r_ready_o" x="500" y="1590"/>
+			<kactus2:adHocVisible portName="axi_master_r_resp_i" x="500" y="1620"/>
+			<kactus2:adHocVisible portName="axi_master_r_user_i" x="500" y="1650"/>
+			<kactus2:adHocVisible portName="axi_master_r_valid_i" x="500" y="1680"/>
+			<kactus2:adHocVisible portName="axi_master_w_data_o" x="500" y="1190"/>
+			<kactus2:adHocVisible portName="axi_master_w_last_o" x="500" y="1220"/>
+			<kactus2:adHocVisible portName="axi_master_w_ready_i" x="500" y="1250"/>
+			<kactus2:adHocVisible portName="axi_master_w_strb_o" x="500" y="1280"/>
+			<kactus2:adHocVisible portName="axi_master_w_user_o" x="500" y="1310"/>
+			<kactus2:adHocVisible portName="axi_master_w_valid_o" x="500" y="1340"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_addr_i" x="60" y="710"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_burst_i" x="60" y="740"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_cache_i" x="60" y="770"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_id_i" x="60" y="800"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_len_i" x="60" y="830"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_lock_i" x="60" y="860"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_prot_i" x="60" y="890"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_qos_i" x="60" y="920"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_ready_o" x="60" y="950"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_region_i" x="60" y="980"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_size_i" x="60" y="1010"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_user_i" x="60" y="1040"/>
+			<kactus2:adHocVisible portName="axi_slave_ar_valid_i" x="60" y="1070"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_addr_i" x="60" y="190"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_burst_i" x="60" y="220"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_cache_i" x="60" y="250"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_id_i" x="60" y="280"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_len_i" x="60" y="310"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_lock_i" x="60" y="340"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_prot_i" x="60" y="370"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_qos_i" x="60" y="400"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_ready_o" x="60" y="430"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_region_i" x="60" y="460"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_size_i" x="60" y="490"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_user_i" x="60" y="520"/>
+			<kactus2:adHocVisible portName="axi_slave_aw_valid_i" x="60" y="550"/>
+			<kactus2:adHocVisible portName="axi_slave_b_id_o" x="60" y="1880"/>
+			<kactus2:adHocVisible portName="axi_slave_b_ready_i" x="60" y="1910"/>
+			<kactus2:adHocVisible portName="axi_slave_b_resp_o" x="60" y="1940"/>
+			<kactus2:adHocVisible portName="axi_slave_b_user_o" x="60" y="1970"/>
+			<kactus2:adHocVisible portName="axi_slave_b_valid_o" x="60" y="2000"/>
+			<kactus2:adHocVisible portName="axi_slave_r_data_o" x="60" y="1540"/>
+			<kactus2:adHocVisible portName="axi_slave_r_id_o" x="60" y="1570"/>
+			<kactus2:adHocVisible portName="axi_slave_r_last_o" x="60" y="1600"/>
+			<kactus2:adHocVisible portName="axi_slave_r_ready_i" x="60" y="1630"/>
+			<kactus2:adHocVisible portName="axi_slave_r_resp_o" x="60" y="1660"/>
+			<kactus2:adHocVisible portName="axi_slave_r_user_o" x="60" y="1690"/>
+			<kactus2:adHocVisible portName="axi_slave_r_valid_o" x="60" y="1720"/>
+			<kactus2:adHocVisible portName="axi_slave_w_data_i" x="60" y="1230"/>
+			<kactus2:adHocVisible portName="axi_slave_w_last_i" x="60" y="1290"/>
+			<kactus2:adHocVisible portName="axi_slave_w_ready_o" x="60" y="1260"/>
+			<kactus2:adHocVisible portName="axi_slave_w_strb_i" x="60" y="1320"/>
+			<kactus2:adHocVisible portName="axi_slave_w_user_i" x="60" y="1350"/>
+			<kactus2:adHocVisible portName="axi_slave_w_valid_i" x="60" y="1380"/>
+			<kactus2:adHocVisible portName="clk_i" x="60" y="70"/>
+			<kactus2:adHocVisible portName="rst_ni" x="60" y="100"/>
+			<kactus2:adHocVisible portName="test_en_i" x="60" y="120"/>
+		</kactus2:adHocVisibilities>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>axi_slave</kactus2:name>
+			<kactus2:position x="60" y="610"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>axi_master</kactus2:name>
+			<kactus2:position x="500" y="580"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>slave</kactus2:name>
+			<kactus2:position x="60" y="900"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+	</ipxact:vendorExtensions>
+</ipxact:design>

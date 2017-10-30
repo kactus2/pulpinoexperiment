@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+	<ipxact:library>core.wrapper</ipxact:library>
+	<ipxact:name>axi_mem_if_SP_wrap.design</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:componentInstances>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>axi_mem_if_SP_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="axi_mem_if_SP" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_37598e08_6f12_413e_9174_c6cd93f7e2ba">uuid_42f6b29d_1ccf_42d8_8fb5_063a95745a3a</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_1cf93aed_fff3_48a6_af79_9ca96fcabe2c">uuid_8d9ab5b5_4650_4a2f_9cfa_101f16a2f235</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_e8c0178b_1c30_4fc2_8b41_9e973ae85ce6">uuid_7efedc46_5915_49b9_9456_c19d08a05d50</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_8041c119_5a96_489f_a5b5_f6a905c25530">uuid_8d9ab5b5_4650_4a2f_9cfa_101f16a2f235</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_fb331230_118e_4d09_89e4_171952d882b2">uuid_bb61fd9b_63b9_4b14_a7c7_e217e3c51c59</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_11aa22bb_cac7_459a_a759_2eab2efd02ae">uuid_b15a49aa_975c_4cf2_ad1b_7090ecdbe948</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{2fd7079b-7ebf-49d5-9aba-08315c634bcb}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="mem" x="-110" y="120"/>
+					<kactus2:portPosition busRef="slave" x="110" y="120"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="ACLK" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="ARESETn" x="-110" y="60"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="90"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="60"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+	</ipxact:componentInstances>
+	<ipxact:interconnections>
+		<ipxact:interconnection>
+			<ipxact:name>axi_mem_if_SP_i_mem_to_mem</ipxact:name>
+			<ipxact:activeInterface componentRef="axi_mem_if_SP_i" busRef="mem"/>
+			<ipxact:hierInterface busRef="mem"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>axi_mem_if_SP_i_slave_to_slave</ipxact:name>
+			<ipxact:activeInterface componentRef="axi_mem_if_SP_i" busRef="slave"/>
+			<ipxact:hierInterface busRef="slave"/>
+		</ipxact:interconnection>
+	</ipxact:interconnections>
+	<ipxact:adHocConnections>
+		<ipxact:adHocConnection>
+			<ipxact:name>axi_mem_if_SP_i_ACLK_to_clk</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="axi_mem_if_SP_i" portRef="ACLK"/>
+				<ipxact:externalPortReference portRef="clk"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>axi_mem_if_SP_i_ARESETn_to_rst_n</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="axi_mem_if_SP_i" portRef="ARESETn"/>
+				<ipxact:externalPortReference portRef="rst_n"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>axi_mem_if_SP_i_test_en_i_to_test_en_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="axi_mem_if_SP_i" portRef="test_en_i"/>
+				<ipxact:externalPortReference portRef="test_en_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+	</ipxact:adHocConnections>
+	<ipxact:parameters>
+		<ipxact:parameter parameterId="uuid_b15a49aa_975c_4cf2_ad1b_7090ecdbe948" resolve="user" usageCount="1">
+			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
+			<ipxact:value>32</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_8d9ab5b5_4650_4a2f_9cfa_101f16a2f235" resolve="user" usageCount="2">
+			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
+			<ipxact:value>32</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_bb61fd9b_63b9_4b14_a7c7_e217e3c51c59" resolve="user" usageCount="1">
+			<ipxact:name>AXI_ID_WIDTH</ipxact:name>
+			<ipxact:value>10</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_7efedc46_5915_49b9_9456_c19d08a05d50" resolve="user" usageCount="1">
+			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
+			<ipxact:value>10</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_42f6b29d_1ccf_42d8_8fb5_063a95745a3a" resolve="user" usageCount="1">
+			<ipxact:name>MEM_ADDR_WIDTH</ipxact:name>
+			<ipxact:value>10</ipxact:value>
+		</ipxact:parameter>
+	</ipxact:parameters>
+	<ipxact:vendorExtensions>
+		<kactus2:version>3,4,436,0</kactus2:version>
+		<kactus2:kts_attributes>
+			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+		</kactus2:kts_attributes>
+		<kactus2:columnLayout>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
+			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
+		</kactus2:columnLayout>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="axi_mem_if_SP_i_ACLK_to_clk" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="axi_mem_if_SP_i_ARESETn_to_rst_n" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="axi_mem_if_SP_i_test_en_i_to_test_en_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="axi_mem_if_SP_i_mem_to_mem" kactus2:offPage="false">
+				<kactus2:position x="170" y="180"/>
+				<kactus2:position x="60" y="180"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi_mem_if_SP_i_slave_to_slave" kactus2:offPage="false">
+				<kactus2:position x="390" y="180"/>
+				<kactus2:position x="500" y="180"/>
+			</kactus2:route>
+		</kactus2:routes>
+		<kactus2:adHocVisibilities>
+			<kactus2:adHocVisible portName="clk" x="60" y="90"/>
+			<kactus2:adHocVisible portName="rst_n" x="60" y="120"/>
+			<kactus2:adHocVisible portName="test_en_i" x="60" y="150"/>
+		</kactus2:adHocVisibilities>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>mem</kactus2:name>
+			<kactus2:position x="60" y="180"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>slave</kactus2:name>
+			<kactus2:position x="500" y="180"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+	</ipxact:vendorExtensions>
+</ipxact:design>

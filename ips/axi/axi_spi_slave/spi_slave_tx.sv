@@ -1,4 +1,4 @@
-// Copyright 2015 ETH Zurich and University of Bologna.
+// Copyright 2017 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware
 // License, Version 0.51 (the “License”); you may not use this file except in
 // compliance with the License.  You may obtain a copy of the License at
@@ -102,17 +102,17 @@ module spi_slave_tx
     begin
         if (cs == 1'b1)
         begin
-            counter      = 'h0;
-            counter_trgt = 'h7;
-            data_int     = 'h0;
-            running      = 1'b0;
+            counter      <= 'h0;
+            counter_trgt <= 'h7;
+            data_int     <= 'h0;
+            running      <= 1'b0;
         end
         else
         begin
-            counter      = counter_next;
-            counter_trgt = counter_trgt_next;
-            data_int     = data_int_next;
-            running      = running_next;
+            counter      <= counter_next;
+            counter_trgt <= counter_trgt_next;
+            data_int     <= data_int_next;
+            running      <= running_next;
         end
     end
 endmodule

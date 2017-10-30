@@ -1,4 +1,4 @@
-// Copyright 2015 ETH Zurich and University of Bologna.
+// Copyright 2017 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware
 // License, Version 0.51 (the “License”); you may not use this file except in
 // compliance with the License.  You may obtain a copy of the License at
@@ -10,7 +10,7 @@
 
 `ifndef CONFIG_SV
 `define CONFIG_SV
-
+`define RISCV
 // always define ASIC when we do a synthesis run
 `ifndef PULP_FPGA_EMUL
 `ifdef SYNTHESIS

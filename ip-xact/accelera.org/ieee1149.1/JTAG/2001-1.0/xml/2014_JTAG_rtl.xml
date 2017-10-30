@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+//=============================================================
+//   Filename    : JTAG_rtl.xml
+//   Type        : ABSTRACTION DEFINITION
+//   Description : RTL abstraction for JTAG
+//   Owner       : Accellera : IP-XACT Best-Practice Working Group   
+//   Contributor : John Eaton
+//   Version     : 2001-1.0
+//   Status      : RELEASED
+//                                                             
+//   Copyright (c) 2013 Accellera Systems Initiative Inc. 
+//   1370 Trancas Street #163, Napa, CA 94558, USA
+//   
+//   Licensed under the Apache License, Version 2.0 (the 'License'); 
+//   you may not use this file except in compliance with the License.  
+//   You may obtain a copy of the License at                                            
+//                                                                
+//          http://www.apache.org/licenses/LICENSE-2.0            
+//                                                                
+//   Unless required by applicable law or agreed to in writing, software 
+//   distributed under the License is distributed on an 'AS IS' BASIS, 
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either 
+//   express or implied. See the License for the specific language 
+//   governing permissions and limitations under the License.
+//   
+//   Suggestions for improvements to the provided example 
+//   are welcome. They should be sent to the group's 
+//   email Reflector:
+//   
+//          ip-xact@lists.accellera.org
+//   
+//   The current IP-XACT Technical Committee web page is:
+//   
+//          www.accellera.org/activities/committees/ip-xact
+//   
+//   The current official IP-XACT user Forum is :
+//
+//          http://forums.accellera.org/forum/30-ip-xact/
+//   
+//=============================================================     
+-->
+<ipxact:abstractionDefinition xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ipxact:vendor>accellera.org</ipxact:vendor><ipxact:library>ieee1149.1</ipxact:library><ipxact:name>JTAG_rtl</ipxact:name><ipxact:version>2001-1.0</ipxact:version><ipxact:busType vendor="accellera.org" library="ieee1149.1" name="JTAG" version="2001-1.0" /><ipxact:ports><ipxact:port><ipxact:logicalName>TCK</ipxact:logicalName><ipxact:description>The IEEE 1149.1.1 test clock</ipxact:description><ipxact:wire><ipxact:qualifier><ipxact:isClock>true</ipxact:isClock></ipxact:qualifier><ipxact:onMaster><ipxact:presence>required</ipxact:presence><ipxact:direction>out</ipxact:direction></ipxact:onMaster><ipxact:onSlave><ipxact:presence>required</ipxact:presence><ipxact:width>1</ipxact:width><ipxact:direction>in</ipxact:direction></ipxact:onSlave><ipxact:requiresDriver driverType="clock">true</ipxact:requiresDriver></ipxact:wire></ipxact:port><ipxact:port><ipxact:logicalName>NTRST</ipxact:logicalName><ipxact:description>The IEEE 1149.1.1 test reset (Active-Low)</ipxact:description><ipxact:wire><ipxact:qualifier><ipxact:isReset>true</ipxact:isReset></ipxact:qualifier><ipxact:onMaster><ipxact:presence>required</ipxact:presence><ipxact:width>1</ipxact:width><ipxact:direction>out</ipxact:direction></ipxact:onMaster><ipxact:onSlave><ipxact:presence>optional</ipxact:presence><ipxact:width>1</ipxact:width><ipxact:direction>in</ipxact:direction></ipxact:onSlave><ipxact:requiresDriver driverType="singleShot">true</ipxact:requiresDriver></ipxact:wire></ipxact:port><ipxact:port><ipxact:logicalName>TDI</ipxact:logicalName><ipxact:description>The IEEE 1149.1.1 serial test data from tester</ipxact:description><ipxact:wire><ipxact:qualifier><ipxact:isData>true</ipxact:isData></ipxact:qualifier><ipxact:onMaster><ipxact:presence>required</ipxact:presence><ipxact:direction>out</ipxact:direction></ipxact:onMaster><ipxact:onSlave><ipxact:presence>required</ipxact:presence><ipxact:width>1</ipxact:width><ipxact:direction>in</ipxact:direction></ipxact:onSlave></ipxact:wire></ipxact:port><ipxact:port><ipxact:logicalName>TDO</ipxact:logicalName><ipxact:description>The IEEE 1149.1.1 serial test data to tester</ipxact:description><ipxact:wire><ipxact:qualifier><ipxact:isData>true</ipxact:isData></ipxact:qualifier><ipxact:onMaster><ipxact:presence>optional</ipxact:presence><ipxact:direction>in</ipxact:direction></ipxact:onMaster><ipxact:onSlave><ipxact:presence>optional</ipxact:presence><ipxact:width>1</ipxact:width><ipxact:direction>out</ipxact:direction></ipxact:onSlave></ipxact:wire></ipxact:port><ipxact:port><ipxact:logicalName>TMS</ipxact:logicalName><ipxact:description>The IEEE 1149.1.1 test mode select</ipxact:description><ipxact:wire><ipxact:onMaster><ipxact:presence>required</ipxact:presence><ipxact:direction>out</ipxact:direction></ipxact:onMaster><ipxact:onSlave><ipxact:presence>required</ipxact:presence><ipxact:width>1</ipxact:width><ipxact:direction>in</ipxact:direction></ipxact:onSlave></ipxact:wire></ipxact:port><ipxact:port><ipxact:logicalName>TDO_OE</ipxact:logicalName><ipxact:description>Internal TDO output enable (Active-High)</ipxact:description><ipxact:wire><ipxact:onMaster><ipxact:presence>illegal</ipxact:presence></ipxact:onMaster><ipxact:onSlave><ipxact:presence>optional</ipxact:presence><ipxact:width>1</ipxact:width><ipxact:direction>out</ipxact:direction></ipxact:onSlave></ipxact:wire></ipxact:port><ipxact:port><ipxact:logicalName>TDO_OEN</ipxact:logicalName><ipxact:description>internal TDO output enable (Active-Low)</ipxact:description><ipxact:wire><ipxact:onMaster><ipxact:presence>illegal</ipxact:presence></ipxact:onMaster><ipxact:onSlave><ipxact:presence>optional</ipxact:presence><ipxact:width>1</ipxact:width><ipxact:direction>out</ipxact:direction></ipxact:onSlave></ipxact:wire></ipxact:port></ipxact:ports></ipxact:abstractionDefinition>

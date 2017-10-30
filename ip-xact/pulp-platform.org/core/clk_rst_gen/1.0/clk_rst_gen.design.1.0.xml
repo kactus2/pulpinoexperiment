@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014/ http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+	<ipxact:library>core</ipxact:library>
+	<ipxact:name>clk_rst_gen.design</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:componentInstances>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>clk_mux_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="core" name="cluster_clock_mux2" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{e20b0479-3dd5-4082-acba-58ea173a95b2}</kactus2:uuid>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk0_i" x="-110" y="40"/>
+					<kactus2:adHocVisible portName="clk1_i" x="-110" y="60"/>
+					<kactus2:adHocVisible portName="clk_o" x="110" y="90"/>
+					<kactus2:adHocVisible portName="clk_sel_i" x="-110" y="80"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="60"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>i_rst_gen_soc</ipxact:instanceName>
+			<ipxact:description>Reset synchronizer</ipxact:description>
+			<ipxact:componentRef vendor="pulp-platform.org" library="core" name="rstgen" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{2cbe8cee-8df3-4b0c-93d3-4a31f992290e}</kactus2:uuid>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="40"/>
+					<kactus2:adHocVisible portName="init_no" x="110" y="80"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="60"/>
+					<kactus2:adHocVisible portName="rst_no" x="110" y="60"/>
+					<kactus2:adHocVisible portName="test_mode_i" x="-110" y="80"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="200"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+	</ipxact:componentInstances>
+	<ipxact:adHocConnections>
+		<ipxact:adHocConnection>
+			<ipxact:name>clk_int</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="clk_mux_i" portRef="clk_o"/>
+				<ipxact:externalPortReference portRef="clk_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>clk_mux_i_clk_sel_i_to_clk_sel_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="clk_mux_i" portRef="clk_sel_i"/>
+				<ipxact:externalPortReference portRef="clk_sel_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>clk_mux_i_clk0_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="clk_mux_i" portRef="clk0_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>i_rst_gen_soc_rst_ni_to_rstn_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="i_rst_gen_soc" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="rstn_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>i_rst_gen_soc_test_mode_i_to_testmode_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="i_rst_gen_soc" portRef="test_mode_i"/>
+				<ipxact:externalPortReference portRef="testmode_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>i_rst_gen_soc_rst_no_to_rstn_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="i_rst_gen_soc" portRef="rst_no"/>
+				<ipxact:externalPortReference portRef="rstn_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>clk_mux_i_clk_o_to_i_rst_gen_soc_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="clk_mux_i" portRef="clk_o"/>
+				<ipxact:internalPortReference componentRef="i_rst_gen_soc" portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>fll_req_i_to_fll_ack_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:externalPortReference portRef="fll_req_i"/>
+				<ipxact:externalPortReference portRef="fll_ack_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>fll_lock_o_to_tiedValue</ipxact:name>
+			<ipxact:tiedValue>1'b0</ipxact:tiedValue>
+			<ipxact:portReferences>
+				<ipxact:externalPortReference portRef="fll_lock_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>fll_r_data_o_to_tiedValue</ipxact:name>
+			<ipxact:tiedValue>1'b00</ipxact:tiedValue>
+			<ipxact:portReferences>
+				<ipxact:externalPortReference portRef="fll_r_data_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>scan_o_to_tiedValue</ipxact:name>
+			<ipxact:tiedValue>1'b0</ipxact:tiedValue>
+			<ipxact:portReferences>
+				<ipxact:externalPortReference portRef="scan_o"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+	</ipxact:adHocConnections>
+	<ipxact:vendorExtensions>
+		<kactus2:version>3,4,174,0</kactus2:version>
+		<kactus2:kts_attributes>
+			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+		</kactus2:kts_attributes>
+		<kactus2:columnLayout>
+			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
+			<kactus2:column name="IO in" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
+			<kactus2:column name="IO out" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
+		</kactus2:columnLayout>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="clk_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk_mux_i_clk_sel_i_to_clk_sel_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk_mux_i_clk0_i_to_clk_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="i_rst_gen_soc_rst_ni_to_rstn_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="i_rst_gen_soc_test_mode_i_to_testmode_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="i_rst_gen_soc_rst_no_to_rstn_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="_fll_req_i_to_fll_ack_o" kactus2:offPage="false">
+				<kactus2:position x="60" y="400"/>
+				<kactus2:position x="40" y="400"/>
+				<kactus2:position x="40" y="410"/>
+				<kactus2:position x="80" y="410"/>
+				<kactus2:position x="80" y="370"/>
+				<kactus2:position x="60" y="370"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="clk_mux_i_clk_o_to_i_rst_gen_soc_clk_i" kactus2:offPage="false">
+				<kactus2:position x="390" y="150"/>
+				<kactus2:position x="410" y="150"/>
+				<kactus2:position x="410" y="190"/>
+				<kactus2:position x="150" y="190"/>
+				<kactus2:position x="150" y="240"/>
+				<kactus2:position x="170" y="240"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="fll_req_i_to_fll_ack_o" kactus2:offPage="false"/>
+		</kactus2:routes>
+		<kactus2:adHocVisibilities>
+			<kactus2:adHocVisible portName="clk_i" x="60" y="100"/>
+			<kactus2:adHocVisible portName="clk_o" x="500" y="150"/>
+			<kactus2:adHocVisible portName="clk_sel_i" x="60" y="140"/>
+			<kactus2:adHocVisible portName="fll_ack_o" x="500" y="370"/>
+			<kactus2:adHocVisible portName="fll_lock_o" x="500" y="400"/>
+			<kactus2:adHocVisible portName="fll_r_data_o" x="500" y="430"/>
+			<kactus2:adHocVisible portName="fll_req_i" x="60" y="370"/>
+			<kactus2:adHocVisible portName="rstn_i" x="60" y="260"/>
+			<kactus2:adHocVisible portName="rstn_o" x="500" y="260"/>
+			<kactus2:adHocVisible portName="scan_o" x="500" y="460"/>
+			<kactus2:adHocVisible portName="testmode_i" x="60" y="280"/>
+		</kactus2:adHocVisibilities>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>fll</kactus2:name>
+			<kactus2:position x="500" y="340"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+	</ipxact:vendorExtensions>
+</ipxact:design>

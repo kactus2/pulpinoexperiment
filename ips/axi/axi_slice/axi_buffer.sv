@@ -1,4 +1,4 @@
-// Copyright 2015 ETH Zurich and University of Bologna.
+// Copyright 2017 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware
 // License, Version 0.51 (the “License”); you may not use this file except in
 // compliance with the License.  You may obtain a copy of the License at
@@ -37,12 +37,12 @@
 //                                                                               //
 //                                                                               //
 // ============================================================================= //
-//
-// Changes: parameter LOG_BUFFER_DEPTH -> localparam -Arto Oinonen
+
 module axi_buffer
 #(
    parameter DATA_WIDTH       = 32,
    parameter BUFFER_DEPTH     = 2,
+   parameter LOG_BUFFER_DEPTH = $clog2(BUFFER_DEPTH)
 )
 (
    input  logic                    clk_i,
@@ -56,7 +56,6 @@ module axi_buffer
    input  logic [DATA_WIDTH-1 : 0] data_i,
    output logic                    ready_o
 );
-   localparam LOG_BUFFER_DEPTH = $clog2(BUFFER_DEPTH)
 
    // Internal data structures
    logic [LOG_BUFFER_DEPTH-1:0]     pointer_in;  // location to which we last wrote

@@ -1,4 +1,4 @@
-// Copyright 2015 ETH Zurich and University of Bologna.
+// Copyright 2017 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware
 // License, Version 0.51 (the “License”); you may not use this file except in
 // compliance with the License.  You may obtain a copy of the License at
@@ -7,6 +7,7 @@
 // this License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR
 // CONDITIONS OF ANY KIND, either express or implied. See the License for the
 // specific language governing permissions and limitations under the License.
+
 
 `include "config.sv"
 
@@ -29,13 +30,37 @@ module instr_ram_wrap
     input  logic                    bypass_en_i
   );
 
-  logic is_boot, is_boot_q;
+  logic enable_boot, enable_ram, we_ram;
   logic [DATA_WIDTH-1:0] rdata_boot;
   logic [DATA_WIDTH-1:0] rdata_ram;
-
-
-  assign is_boot = (addr_i[ADDR_WIDTH-1] == 1'b1);
-
+  logic [DATA_WIDTH/8-1:0] be_ram;
+  logic [DATA_WIDTH-1:0]   wdata_ram;
+  logic [ADDR_WIDTH-1:0]   addr_int;
+  
+  // IP-XACT VLNV: pulp-platform.org:core.logic:inst_ram_demux:1.0
+  inst_ram_demux     inst_ram_demux(
+    // Interface: boot_rom
+    .rdata_boot          (rdata_boot),
+    // Interface: inst
+    .addr_i              (addr_i),
+    .be_i                (be_i),
+    .wdata_i             (wdata_i),
+    .we_i                (we_i),
+    .rdata_o             (rdata_o),
+    // Interface: inst_ram
+    .rdata_ram           (rdata_ram),
+    .be_out              (be_ram),
+    .wdata_out           (wdata_ram),
+    .we_out              (we_ram),
+    // There ports are contained in many interfaces
+    .addr_out            (addr_int),
+    // These ports are not in any interface
+    .clk                 (clk),
+    .en_i                (en_i),
+    .rst_n               (rst_n),
+    .enable_boot         (enable_boot),
+    .enable_ram          (enable_ram)
+);
 
   sp_ram_wrap
   #(
@@ -47,12 +72,12 @@ module instr_ram_wrap
     .clk         ( clk                        ),
     .rstn_i      ( rst_n                      ),
 
-    .en_i        ( en_i & (~is_boot)          ),
-    .addr_i      ( addr_i[ADDR_WIDTH-2:0]     ),
-    .wdata_i     ( wdata_i                    ),
+    .en_i        ( enable_ram                 ),
+    .addr_i      ( addr_int[ADDR_WIDTH-2:0]     ),
+    .wdata_i     ( wdata_ram                  ),
     .rdata_o     ( rdata_ram                  ),
-    .we_i        ( we_i                       ),
-    .be_i        ( be_i                       ),
+    .we_i        ( we_ram                     ),
+    .be_i        ( be_ram                     ),
     .bypass_en_i ( bypass_en_i                )
   );
 
@@ -64,23 +89,9 @@ module instr_ram_wrap
   (
     .clk     ( clk                         ),
     .rst_n   ( rst_n                       ),
-    .en_i    ( en_i & is_boot              ),
-    .addr_i  ( addr_i[`ROM_ADDR_WIDTH-1:0] ),
+    .en_i    ( enable_boot                 ),
+    .addr_i  ( addr_int[`ROM_ADDR_WIDTH-1:0] ),
     .rdata_o ( rdata_boot                  )
   );
-
-
-  assign rdata_o = (is_boot_q == 1'b1) ? rdata_boot : rdata_ram;
-
-
-  // Delay the boot signal for one clock cycle to correctly select the rdata
-  // from boot rom vs normal ram
-  always_ff @(posedge clk, negedge rst_n)
-  begin
-    if (rst_n == 1'b0)
-      is_boot_q <= 1'b0;
-    else
-      is_boot_q <= is_boot;
-  end
 
 endmodule

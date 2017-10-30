@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:abstractionDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>amba.com</ipxact:vendor>
+	<ipxact:library>AMBA2</ipxact:library>
+	<ipxact:name>AHB.absDef</ipxact:name>
+	<ipxact:version>r2p0_6</ipxact:version>
+	<ipxact:busType vendor="amba.com" library="AMBA2" name="AHB" version="r2p0_6"/>
+	<ipxact:vendorExtensions>
+		<kactus2:version>3,4,610,0</kactus2:version>
+	</ipxact:vendorExtensions>
+</ipxact:abstractionDefinition>

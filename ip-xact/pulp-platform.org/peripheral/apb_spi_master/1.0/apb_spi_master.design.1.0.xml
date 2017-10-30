@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+	<ipxact:library>peripheral</ipxact:library>
+	<ipxact:name>apb_spi_master.design</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:componentInstances>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>u_txfifo</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="spi_master_fifo" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_4939aa95_7d73_4053_8aba_12862886aa86">uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{ca299696-3d9a-4b31-95db-515c5c93e53c}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="data_out" x="110" y="40"/>
+					<kactus2:portPosition busRef="spi_data" x="110" y="80"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="clr_i" x="-110" y="60"/>
+					<kactus2:adHocVisible portName="ready_o" x="110" y="80"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="valid_o" x="110" y="60"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="600" y="60"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>u_spictrl</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="spi_master_controller" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{3e847e82-a718-4d27-ad4e-243e0a7f8bb3}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="rx" x="-110" y="180"/>
+					<kactus2:portPosition busRef="spi_control" x="-110" y="260"/>
+					<kactus2:portPosition busRef="spi_master" x="110" y="40"/>
+					<kactus2:portPosition busRef="tx" x="-110" y="40"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="eot" x="110" y="230"/>
+					<kactus2:adHocVisible portName="spi_status" x="-110" y="290"/>
+					<kactus2:adHocVisible portName="spi_swrst" x="-110" y="130"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="920" y="60"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>logic</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral.logic" name="spi_master_fsm" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{4c302aad-9cc9-449a-8f6c-fb73e172e1df}</kactus2:uuid>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="HCLK" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="HRESETn" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="cnt_rx" x="-110" y="280"/>
+					<kactus2:adHocVisible portName="cnt_tx" x="-110" y="200"/>
+					<kactus2:adHocVisible portName="events_o" x="110" y="40"/>
+					<kactus2:adHocVisible portName="int_cnt_en" x="-110" y="180"/>
+					<kactus2:adHocVisible portName="int_en" x="-110" y="260"/>
+					<kactus2:adHocVisible portName="int_rd_sta" x="-110" y="220"/>
+					<kactus2:adHocVisible portName="spi_ctrl_data_rx_ready" x="-110" y="150"/>
+					<kactus2:adHocVisible portName="spi_ctrl_data_rx_valid" x="-110" y="130"/>
+					<kactus2:adHocVisible portName="spi_ctrl_data_tx_ready" x="-110" y="110"/>
+					<kactus2:adHocVisible portName="spi_ctrl_data_tx_valid" x="-110" y="90"/>
+					<kactus2:adHocVisible portName="spi_ctrl_status" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="spi_status" x="-110" y="320"/>
+					<kactus2:adHocVisible portName="th_rx" x="-110" y="300"/>
+					<kactus2:adHocVisible portName="th_tx" x="-110" y="240"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="920" y="400"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>u_rxfifo</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="spi_master_fifo" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_4939aa95_7d73_4053_8aba_12862886aa86">uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{2debbfb0-1c6b-4759-9ac1-2f02a64b4dfb}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="data_in" x="110" y="40"/>
+					<kactus2:portPosition busRef="data_out" x="-110" y="90"/>
+					<kactus2:portPosition busRef="spi_ctrl" x="110" y="60"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="clr_i" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="ready_o" x="110" y="80"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="valid_o" x="110" y="60"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="600" y="200"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>u_axiregs</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="spi_master_apb_if" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_7cf8c1be_f143_4dbd_90e2_ab59ba7cba21">uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{c58fe248-1c2c-4e12-aff4-87707acbe4a6}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="apb" x="-110" y="80"/>
+					<kactus2:portPosition busRef="rx" x="110" y="230"/>
+					<kactus2:portPosition busRef="spi_control" x="110" y="260"/>
+					<kactus2:portPosition busRef="tx" x="110" y="90"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="HCLK" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="HRESETn" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="spi_int_cnt_en" x="110" y="520"/>
+					<kactus2:adHocVisible portName="spi_int_cnt_rx" x="110" y="620"/>
+					<kactus2:adHocVisible portName="spi_int_cnt_tx" x="110" y="540"/>
+					<kactus2:adHocVisible portName="spi_int_en" x="110" y="600"/>
+					<kactus2:adHocVisible portName="spi_int_rd_sta" x="110" y="560"/>
+					<kactus2:adHocVisible portName="spi_int_th_rx" x="110" y="640"/>
+					<kactus2:adHocVisible portName="spi_int_th_tx" x="110" y="580"/>
+					<kactus2:adHocVisible portName="spi_status" x="110" y="660"/>
+					<kactus2:adHocVisible portName="spi_swrst" x="110" y="130"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="60"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+	</ipxact:componentInstances>
+	<ipxact:interconnections>
+		<ipxact:interconnection>
+			<ipxact:name>u_axiregs_apb_to_spi_bus</ipxact:name>
+			<ipxact:activeInterface componentRef="u_axiregs" busRef="apb"/>
+			<ipxact:hierInterface busRef="spi_bus"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>u_axiregs_tx_to_u_txfifo_data_in</ipxact:name>
+			<ipxact:activeInterface componentRef="u_axiregs" busRef="tx"/>
+			<ipxact:activeInterface componentRef="u_txfifo" busRef="data_in"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>u_axiregs_rx_to_u_rxfifo_data_out</ipxact:name>
+			<ipxact:activeInterface componentRef="u_axiregs" busRef="rx"/>
+			<ipxact:activeInterface componentRef="u_rxfifo" busRef="data_out"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>u_rxfifo_data_in_to_u_spictrl_rx</ipxact:name>
+			<ipxact:activeInterface componentRef="u_rxfifo" busRef="data_in"/>
+			<ipxact:activeInterface componentRef="u_spictrl" busRef="rx"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>u_spictrl_tx_to_u_txfifo_data_out</ipxact:name>
+			<ipxact:activeInterface componentRef="u_spictrl" busRef="tx"/>
+			<ipxact:activeInterface componentRef="u_txfifo" busRef="data_out"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>u_axiregs_spi_control_to_u_spictrl_spi_control</ipxact:name>
+			<ipxact:activeInterface componentRef="u_axiregs" busRef="spi_control"/>
+			<ipxact:activeInterface componentRef="u_spictrl" busRef="spi_control"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>u_spictrl_spi_master_to_spi_master</ipxact:name>
+			<ipxact:activeInterface componentRef="u_spictrl" busRef="spi_master"/>
+			<ipxact:hierInterface busRef="spi_master"/>
+		</ipxact:interconnection>
+	</ipxact:interconnections>
+	<ipxact:adHocConnections>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_swrst_to_u_txfifo_clr_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_swrst"/>
+				<ipxact:internalPortReference componentRef="u_txfifo" portRef="clr_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_swrst_to_u_rxfifo_clr_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_swrst"/>
+				<ipxact:internalPortReference componentRef="u_rxfifo" portRef="clr_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_swrst_to_u_spictrl_spi_swrst</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_swrst"/>
+				<ipxact:internalPortReference componentRef="u_spictrl" portRef="spi_swrst"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_HCLK_to_HCLK</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="HCLK"/>
+				<ipxact:externalPortReference portRef="HCLK"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_txfifo_clk_i_to_HCLK</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_txfifo" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="HCLK"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_rxfifo_clk_i_to_HCLK</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_rxfifo" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="HCLK"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_HRESETn_to_HRESETn</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="HRESETn"/>
+				<ipxact:externalPortReference portRef="HRESETn"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_txfifo_rst_ni_to_HRESETn</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_txfifo" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="HRESETn"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_rxfifo_rst_ni_to_HRESETn</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_rxfifo" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="HRESETn"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>s_eot</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_spictrl" portRef="eot"/>
+				<ipxact:externalPortReference portRef="events_o">
+					<ipxact:partSelect>
+						<ipxact:range>
+							<ipxact:left>1</ipxact:left>
+							<ipxact:right>1</ipxact:right>
+						</ipxact:range>
+					</ipxact:partSelect>
+				</ipxact:externalPortReference>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>logic_events_o_to_events_o</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="logic" portRef="events_o"/>
+				<ipxact:externalPortReference portRef="events_o">
+					<ipxact:partSelect>
+						<ipxact:range>
+							<ipxact:left>0</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:range>
+					</ipxact:partSelect>
+				</ipxact:externalPortReference>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>logic_HCLK_to_HCLK</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="logic" portRef="HCLK"/>
+				<ipxact:externalPortReference portRef="HCLK"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>logic_HRESETn_to_HRESETn</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="logic" portRef="HRESETn"/>
+				<ipxact:externalPortReference portRef="HRESETn"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_spictrl_spi_status_to_logic_spi_ctrl_status</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_spictrl" portRef="spi_status"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_status"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_status_to_logic_spi_status</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_status"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="spi_status"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_txfifo_valid_o_to_logic_spi_ctrl_data_tx_valid</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_txfifo" portRef="valid_o"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_data_tx_valid"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_txfifo_ready_o_to_logic_spi_ctrl_data_tx_ready</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_txfifo" portRef="ready_o"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_data_tx_ready"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_rxfifo_ready_o_to_logic_spi_ctrl_data_rx_ready</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_rxfifo" portRef="ready_o"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_data_rx_ready"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_rxfifo_valid_o_to_logic_spi_ctrl_data_rx_valid</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_rxfifo" portRef="valid_o"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_data_rx_valid"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_int_cnt_en_to_logic_int_cnt_en</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_cnt_en"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="int_cnt_en"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_int_cnt_tx_to_logic_cnt_tx</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_cnt_tx"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="cnt_tx"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_int_rd_sta_to_logic_int_rd_sta</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_rd_sta"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="int_rd_sta"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_int_th_tx_to_logic_th_tx</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_th_tx"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="th_tx"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_int_en_to_logic_int_en</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_en"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="int_en"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_int_cnt_rx_to_logic_cnt_rx</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_cnt_rx"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="cnt_rx"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiregs_spi_int_th_rx_to_logic_th_rx</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_th_rx"/>
+				<ipxact:internalPortReference componentRef="logic" portRef="th_rx"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+	</ipxact:adHocConnections>
+	<ipxact:parameters>
+		<ipxact:parameter parameterId="uuid_b05f2ffb_44f7_46ec_99c6_b14e989e003f" resolve="user">
+			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
+			<ipxact:value>12</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8" resolve="user" usageCount="3">
+			<ipxact:name>BUFFER_DEPTH</ipxact:name>
+			<ipxact:value>10</ipxact:value>
+		</ipxact:parameter>
+	</ipxact:parameters>
+	<ipxact:vendorExtensions>
+		<kactus2:version>3,4,189,0</kactus2:version>
+		<kactus2:kts_attributes>
+			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+		</kactus2:kts_attributes>
+		<kactus2:columnLayout>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="1080"/>
+			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
+			<kactus2:column name="Buffer" contentType="2" allowedItems="2" minWidth="319" width="319" x="440"/>
+			<kactus2:column name="SPI Control" contentType="2" allowedItems="2" minWidth="319" width="319" x="760"/>
+		</kactus2:columnLayout>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="u_axiregs_apb_to_spi_bus" kactus2:offPage="false">
+				<kactus2:position x="170" y="140"/>
+				<kactus2:position x="60" y="140"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_txfifo_clr_i" kactus2:offPage="false">
+				<kactus2:position x="390" y="190"/>
+				<kactus2:position x="440" y="190"/>
+				<kactus2:position x="440" y="130"/>
+				<kactus2:position x="490" y="130"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_rxfifo_clr_i" kactus2:offPage="false">
+				<kactus2:position x="390" y="190"/>
+				<kactus2:position x="440" y="190"/>
+				<kactus2:position x="440" y="270"/>
+				<kactus2:position x="490" y="270"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_spictrl_spi_swrst" kactus2:offPage="false">
+				<kactus2:position x="390" y="190"/>
+				<kactus2:position x="810" y="190"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_tx_to_u_txfifo_data_in" kactus2:offPage="false">
+				<kactus2:position x="390" y="150"/>
+				<kactus2:position x="490" y="150"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_rx_to_u_rxfifo_data_out" kactus2:offPage="false">
+				<kactus2:position x="390" y="290"/>
+				<kactus2:position x="490" y="290"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_HCLK_to_HCLK" kactus2:offPage="true">
+				<kactus2:position x="90" y="80"/>
+				<kactus2:position x="140" y="90"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_txfifo_clk_i_to_HCLK" kactus2:offPage="true">
+				<kactus2:position x="90" y="80"/>
+				<kactus2:position x="460" y="90"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_rxfifo_clk_i_to_HCLK" kactus2:offPage="true">
+				<kactus2:position x="90" y="80"/>
+				<kactus2:position x="460" y="230"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_HRESETn_to_HRESETn" kactus2:offPage="true">
+				<kactus2:position x="90" y="110"/>
+				<kactus2:position x="140" y="110"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_txfifo_rst_ni_to_HRESETn" kactus2:offPage="true">
+				<kactus2:position x="90" y="110"/>
+				<kactus2:position x="460" y="110"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_rxfifo_rst_ni_to_HRESETn" kactus2:offPage="true">
+				<kactus2:position x="90" y="110"/>
+				<kactus2:position x="460" y="250"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_rxfifo_data_in_to_u_spictrl_rx" kactus2:offPage="false">
+				<kactus2:position x="710" y="240"/>
+				<kactus2:position x="810" y="240"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_spictrl_tx_to_u_txfifo_data_out" kactus2:offPage="false">
+				<kactus2:position x="810" y="100"/>
+				<kactus2:position x="710" y="100"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_control_to_u_spictrl_spi_control" kactus2:offPage="false">
+				<kactus2:position x="390" y="320"/>
+				<kactus2:position x="810" y="320"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="s_eot" kactus2:offPage="false">
+				<kactus2:position x="1140" y="290"/>
+				<kactus2:position x="1030" y="290"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="logic_events_o_to_events_o" kactus2:offPage="false">
+				<kactus2:position x="1140" y="290"/>
+				<kactus2:position x="1050" y="290"/>
+				<kactus2:position x="1050" y="440"/>
+				<kactus2:position x="1030" y="440"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="logic_HCLK_to_HCLK" kactus2:offPage="true">
+				<kactus2:position x="90" y="80"/>
+				<kactus2:position x="780" y="430"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="logic_HRESETn_to_HRESETn" kactus2:offPage="true">
+				<kactus2:position x="90" y="110"/>
+				<kactus2:position x="780" y="450"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_spictrl_spi_status_to_logic_spi_ctrl_status" kactus2:offPage="false">
+				<kactus2:position x="810" y="350"/>
+				<kactus2:position x="770" y="350"/>
+				<kactus2:position x="770" y="470"/>
+				<kactus2:position x="810" y="470"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_status_to_logic_spi_status" kactus2:offPage="false">
+				<kactus2:position x="390" y="720"/>
+				<kactus2:position x="810" y="720"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_txfifo_valid_o_to_logic_spi_ctrl_data_tx_valid" kactus2:offPage="false">
+				<kactus2:position x="710" y="120"/>
+				<kactus2:position x="760" y="120"/>
+				<kactus2:position x="760" y="490"/>
+				<kactus2:position x="810" y="490"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_txfifo_ready_o_to_logic_spi_ctrl_data_tx_ready" kactus2:offPage="false">
+				<kactus2:position x="710" y="140"/>
+				<kactus2:position x="750" y="140"/>
+				<kactus2:position x="750" y="510"/>
+				<kactus2:position x="810" y="510"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_rxfifo_ready_o_to_logic_spi_ctrl_data_rx_ready" kactus2:offPage="false">
+				<kactus2:position x="710" y="280"/>
+				<kactus2:position x="730" y="280"/>
+				<kactus2:position x="730" y="550"/>
+				<kactus2:position x="810" y="550"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_rxfifo_valid_o_to_logic_spi_ctrl_data_rx_valid" kactus2:offPage="false">
+				<kactus2:position x="710" y="260"/>
+				<kactus2:position x="740" y="260"/>
+				<kactus2:position x="740" y="530"/>
+				<kactus2:position x="810" y="530"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_en_to_logic_int_cnt_en" kactus2:offPage="false">
+				<kactus2:position x="390" y="580"/>
+				<kactus2:position x="810" y="580"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_tx_to_logic_cnt_tx" kactus2:offPage="false">
+				<kactus2:position x="390" y="600"/>
+				<kactus2:position x="810" y="600"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_rd_sta_to_logic_int_rd_sta" kactus2:offPage="false">
+				<kactus2:position x="390" y="620"/>
+				<kactus2:position x="810" y="620"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_tx_to_logic_th_tx" kactus2:offPage="false">
+				<kactus2:position x="390" y="640"/>
+				<kactus2:position x="810" y="640"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_en_to_logic_int_en" kactus2:offPage="false">
+				<kactus2:position x="390" y="660"/>
+				<kactus2:position x="810" y="660"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_rx_to_logic_cnt_rx" kactus2:offPage="false">
+				<kactus2:position x="390" y="680"/>
+				<kactus2:position x="810" y="680"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_rx_to_logic_th_rx" kactus2:offPage="false">
+				<kactus2:position x="390" y="700"/>
+				<kactus2:position x="810" y="700"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_spictrl_spi_master_to_spi_master" kactus2:offPage="false">
+				<kactus2:position x="1030" y="100"/>
+				<kactus2:position x="1140" y="100"/>
+			</kactus2:route>
+		</kactus2:routes>
+		<kactus2:adHocVisibilities>
+			<kactus2:adHocVisible portName="HCLK" x="60" y="80"/>
+			<kactus2:adHocVisible portName="HRESETn" x="60" y="110"/>
+			<kactus2:adHocVisible portName="events_o" x="1140" y="290"/>
+		</kactus2:adHocVisibilities>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>spi_bus</kactus2:name>
+			<kactus2:position x="60" y="140"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>spi_master0</kactus2:name>
+			<kactus2:position x="1140" y="100"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>spi_master1</kactus2:name>
+			<kactus2:position x="1140" y="130"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>spi_master2</kactus2:name>
+			<kactus2:position x="1140" y="160"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>spi_master3</kactus2:name>
+			<kactus2:position x="1140" y="190"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>event</kactus2:name>
+			<kactus2:position x="1140" y="260"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>spi_master</kactus2:name>
+			<kactus2:position x="1140" y="100"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+	</ipxact:vendorExtensions>
+</ipxact:design>

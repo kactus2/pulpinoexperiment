@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:designConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+	<ipxact:library>processor</ipxact:library>
+	<ipxact:name>pulpino_top.zero-riscy.designcfg</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:designRef vendor="pulp-platform.org" library="processor" name="pulpino_top.design" version="1.0"/>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>peripherals_i</ipxact:instanceName>
+		<ipxact:view viewRef="structural"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>core_region_i</ipxact:instanceName>
+		<ipxact:view viewRef="zerorisky"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>axi_interconnect_i</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>clk_rst_gen_i</ipxact:instanceName>
+		<ipxact:view viewRef="structural"/>
+	</ipxact:viewConfiguration>
+	<ipxact:vendorExtensions>
+		<kactus2:version>3,4,834,0</kactus2:version>
+		<kactus2:kts_attributes>
+			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+		</kactus2:kts_attributes>
+	</ipxact:vendorExtensions>
+</ipxact:designConfiguration>

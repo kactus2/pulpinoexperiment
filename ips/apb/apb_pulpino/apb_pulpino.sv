@@ -1,4 +1,4 @@
-// Copyright 2015 ETH Zurich and University of Bologna.
+// Copyright 2017 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware
 // License, Version 0.51 (the “License”); you may not use this file except in
 // compliance with the License.  You may obtain a copy of the License at
@@ -26,7 +26,7 @@
 `define REG_PADCFG7     4'b1111 //BASEADDR+0x3C
 
 // info reg
-`define VERSION          5'b00001 // Version number 1.0
+`define VERSION          5'b00010 // Version number 1.0
 `define DATA_RAM         8'b00000100 //size of data ram in multiples of 8 kBye
 `define INSTR_RAM        8'b00000100 //size of instr ram in multiples of 8 kBye
 `define ROM              5'b00000 // size of ROM in kByte - floor to nearest
@@ -62,7 +62,7 @@ module apb_pulpino
 
     logic [31:0] [5:0] pad_cfg_q, pad_cfg_n;
 
-    logic [APB_ADDR_WIDTH - 1:0]       register_adr;
+    logic [3:0]   register_adr;
 
     logic [1:0]   status_n, status_q;
 
@@ -98,59 +98,59 @@ module apb_pulpino
 
                 `REG_PADCFG0:
                 begin
-                    pad_cfg_n[0]  = PWDATA[4:0];
-                    pad_cfg_n[1]  = PWDATA[12:8];
-                    pad_cfg_n[2]  = PWDATA[20:16];
-                    pad_cfg_n[3]  = PWDATA[28:24];
+                    pad_cfg_n[0]  = PWDATA[5:0];
+                    pad_cfg_n[1]  = PWDATA[13:8];
+                    pad_cfg_n[2]  = PWDATA[21:16];
+                    pad_cfg_n[3]  = PWDATA[29:24];
                 end
                 `REG_PADCFG1:
                 begin
-                    pad_cfg_n[4]  = PWDATA[4:0];
-                    pad_cfg_n[5]  = PWDATA[12:8];
-                    pad_cfg_n[6]  = PWDATA[20:16];
-                    pad_cfg_n[7]  = PWDATA[28:24];
+                    pad_cfg_n[4]  = PWDATA[5:0];
+                    pad_cfg_n[5]  = PWDATA[13:8];
+                    pad_cfg_n[6]  = PWDATA[21:16];
+                    pad_cfg_n[7]  = PWDATA[29:24];
                 end
                 `REG_PADCFG2:
                 begin
-                    pad_cfg_n[8]  = PWDATA[4:0];
-                    pad_cfg_n[9]  = PWDATA[12:8];
-                    pad_cfg_n[10] = PWDATA[20:16];
-                    pad_cfg_n[11] = PWDATA[28:24];
+                    pad_cfg_n[8]  = PWDATA[5:0];
+                    pad_cfg_n[9]  = PWDATA[13:8];
+                    pad_cfg_n[10] = PWDATA[21:16];
+                    pad_cfg_n[11] = PWDATA[29:24];
                 end
                 `REG_PADCFG3:
                 begin
-                    pad_cfg_n[12] = PWDATA[4:0];
-                    pad_cfg_n[13] = PWDATA[12:8];
-                    pad_cfg_n[14] = PWDATA[20:16];
-                    pad_cfg_n[15] = PWDATA[28:24];
+                    pad_cfg_n[12] = PWDATA[5:0];
+                    pad_cfg_n[13] = PWDATA[13:8];
+                    pad_cfg_n[14] = PWDATA[21:16];
+                    pad_cfg_n[15] = PWDATA[29:24];
                 end
                 `REG_PADCFG4:
                 begin
-                    pad_cfg_n[16] = PWDATA[4:0];
-                    pad_cfg_n[17] = PWDATA[12:8];
-                    pad_cfg_n[18] = PWDATA[20:16];
-                    pad_cfg_n[19] = PWDATA[28:24];
+                    pad_cfg_n[16] = PWDATA[5:0];
+                    pad_cfg_n[17] = PWDATA[13:8];
+                    pad_cfg_n[18] = PWDATA[21:16];
+                    pad_cfg_n[19] = PWDATA[29:24];
                 end
                 `REG_PADCFG5:
                 begin
-                    pad_cfg_n[20] = PWDATA[4:0];
-                    pad_cfg_n[21] = PWDATA[12:8];
-                    pad_cfg_n[22] = PWDATA[20:16];
-                    pad_cfg_n[23] = PWDATA[28:24];
+                    pad_cfg_n[20] = PWDATA[5:0];
+                    pad_cfg_n[21] = PWDATA[13:8];
+                    pad_cfg_n[22] = PWDATA[21:16];
+                    pad_cfg_n[23] = PWDATA[29:24];
                 end
                 `REG_PADCFG6:
                 begin
-                    pad_cfg_n[24] = PWDATA[4:0];
-                    pad_cfg_n[25] = PWDATA[12:8];
-                    pad_cfg_n[26] = PWDATA[20:16];
-                    pad_cfg_n[27] = PWDATA[28:24];
+                    pad_cfg_n[24] = PWDATA[5:0];
+                    pad_cfg_n[25] = PWDATA[13:8];
+                    pad_cfg_n[26] = PWDATA[21:16];
+                    pad_cfg_n[27] = PWDATA[29:24];
                 end
                 `REG_PADCFG7:
                 begin
-                    pad_cfg_n[28]  = PWDATA[4:0];
-                    pad_cfg_n[29]  = PWDATA[12:8];
-                    pad_cfg_n[30]  = PWDATA[20:16];
-                    pad_cfg_n[31]  = PWDATA[28:24];
+                    pad_cfg_n[28]  = PWDATA[5:0];
+                    pad_cfg_n[29]  = PWDATA[13:8];
+                    pad_cfg_n[30]  = PWDATA[21:16];
+                    pad_cfg_n[31]  = PWDATA[29:24];
                 end
 
                 `REG_STATUS: begin

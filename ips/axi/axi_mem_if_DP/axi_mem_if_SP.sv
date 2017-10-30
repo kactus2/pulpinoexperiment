@@ -1,4 +1,4 @@
-// Copyright 2015 ETH Zurich and University of Bologna.
+// Copyright 2017 ETH Zurich and University of Bologna.
 // Copyright and related rights are licensed under the Solderpad Hardware
 // License, Version 0.51 (the “License”); you may not use this file except in
 // compliance with the License.  You may obtain a copy of the License at
@@ -440,68 +440,6 @@ module axi_mem_if_SP
 	    .grant_i        (  grant_R   ),
 	    .valid_o        (  valid_R   )
 	);
-
-
-	always_comb
-	begin : _MUX_MEM_
-		  if(valid_R & grant_R)
-		  begin
-		    CEN_o   = R_cen   ;
-		    WEN_o   = 1'b1       ;
-		    A_o     = R_addr  ;
-		    D_o     = R_wdata ;
-		    BE_o    = R_be    ;
-		  end
-		  else
-		  begin
-		    CEN_o   = W_cen   ;
-		    WEN_o   = 1'b0       ;
-		    A_o     = W_addr  ;
-		    D_o     = W_wdata ;
-		    BE_o    = W_be    ;
-		  end
-	end
-
-
-//Low Priority RR Arbiter
-always_comb
-begin
-  grant_R = 1'b0;
-  grant_W = 1'b0;
-
-  case (RR_FLAG)
-
-  1'b0: //Priority on Write
-  begin
-    if(valid_W)
-      grant_W = 1'b1;
-    else
-      grant_R = 1'b1;
-  end
-
-
-  1'b1: //Priority on Read
-  begin
-    if(valid_R)
-      grant_R = 1'b1;
-    else
-      grant_W = 1'b1;
-  end
-  endcase
-end
-
-
-always_ff @(posedge ACLK or negedge ARESETn)
-begin
-  if(~ARESETn) begin
-     RR_FLAG <= 0;
-  end
-  else
-  begin
-  		if(CEN_o == 1'b0)
-      	   RR_FLAG  <= ~RR_FLAG;
-  end
-end
 
 
 endmodule // axi_mem_if_SP_32

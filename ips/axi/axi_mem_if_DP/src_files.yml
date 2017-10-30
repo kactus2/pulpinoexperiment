@@ -1,5 +1,6 @@
 axi_mem_if_DP:
   files: [
+    axi_mem_if_MP_Hybrid_multi_bank.sv,
     axi_mem_if_multi_bank.sv,
     axi_mem_if_DP_hybr.sv,
     axi_mem_if_DP.sv,
