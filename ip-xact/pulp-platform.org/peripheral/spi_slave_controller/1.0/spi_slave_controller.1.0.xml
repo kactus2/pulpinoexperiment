@@ -4,6 +4,80 @@
 	<ipxact:library>peripheral</ipxact:library>
 	<ipxact:name>spi_slave_controller</ipxact:name>
 	<ipxact:version>1.0</ipxact:version>
+	<ipxact:busInterfaces>
+		<ipxact:busInterface>
+			<ipxact:name>ctrl_data_rx</ipxact:name>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="fifo_write" version="1.0"/>
+			<ipxact:abstractionTypes>
+				<ipxact:abstractionType>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="fifo_write.absDef" version="1.0"/>
+					<ipxact:portMaps>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>DATA</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>ctrl_data_rx</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>DATA_VALID</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>ctrl_data_rx_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>FIFO_READY</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>ctrl_data_rx_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+					</ipxact:portMaps>
+				</ipxact:abstractionType>
+			</ipxact:abstractionTypes>
+			<ipxact:master/>
+		</ipxact:busInterface>
+		<ipxact:busInterface>
+			<ipxact:name>ctrl_data_tx</ipxact:name>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="fifo_read" version="1.0"/>
+			<ipxact:abstractionTypes>
+				<ipxact:abstractionType>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="fifo_read.absDef" version="1.0"/>
+					<ipxact:portMaps>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>DATA</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>ctrl_data_tx</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>DATA_VALID</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>ctrl_data_tx_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>READY</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>ctrl_data_tx_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+					</ipxact:portMaps>
+				</ipxact:abstractionType>
+			</ipxact:abstractionTypes>
+			<ipxact:master/>
+		</ipxact:busInterface>
+	</ipxact:busInterfaces>
 	<ipxact:model>
 		<ipxact:views>
 			<ipxact:view>
@@ -422,5 +496,7 @@
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
+		<kactus2:author>pekkarie</kactus2:author>
+		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

@@ -522,6 +522,7 @@
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
+	<ipxact:description>apb 2 peripheral interconnect protocol adapter</ipxact:description>
 	<ipxact:parameters>
 		<ipxact:parameter parameterId="uuid_a72bdca1_c295_439c_b57f_a5e9d7c852b0" resolve="user" usageCount="2">
 			<ipxact:name>PER_ADDR_WIDTH</ipxact:name>
@@ -538,5 +539,7 @@
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
+		<kactus2:author>pekkarie</kactus2:author>
+		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

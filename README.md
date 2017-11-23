@@ -1,7 +1,7 @@
 # pulpinoexperiment
 An experimental repository containing IP-XACT packaging of PULPino by pulp-project.org: https://github.com/pulp-platform/pulpino
 
-Based on PULPino release version x.x (August 2017)
+Based on PULPino release in August 2017
 
 Milestones:
 - Flat design
@@ -26,6 +26,9 @@ Problems faced in the design in IP-XACT point of view:
 	== Defined staticly 3 different bus interfaces, removed extra wrapper
 - Riscv-core:
 	-- N_EXT_PERF_COUNTERS = 0 => signal ext_perf_counters_i width is 0	
+	-- Set signal width to 1, not connected
+- Zero-riscy-core: zeroriscy_cs_registers
+	-- N_EXT_CNT = 0 => signal ext_counters_i width is 0
 	-- Set signal width to 1, not connected
 - ifdefs
 	-- To be replaced with design configurations

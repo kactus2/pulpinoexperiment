@@ -5,6 +5,50 @@
 	<ipxact:name>core_region.zerorisky.designcfg</ipxact:name>
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:designRef vendor="pulp-platform.org" library="core" name="core_region.zerorisky.design" version="1.0"/>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>axi_slice_core2axi</ipxact:instanceName>
+		<ipxact:view viewRef="structural"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>core2axi_i</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>data_mem_axi_if</ipxact:instanceName>
+		<ipxact:view viewRef="structural"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>instr_mem_axi_if</ipxact:instanceName>
+		<ipxact:view viewRef="structural"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>data_mem</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>instr_mem</ipxact:instanceName>
+		<ipxact:view viewRef="structural"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>demux</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>data_ram_mux_i</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>instr_ram_mux_i</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>RISCV_CORE</ipxact:instanceName>
+		<ipxact:view viewRef="structural"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>adv_dbg_if_i</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>
 		<kactus2:version>3,4,170,0</kactus2:version>
 		<kactus2:kts_attributes>
