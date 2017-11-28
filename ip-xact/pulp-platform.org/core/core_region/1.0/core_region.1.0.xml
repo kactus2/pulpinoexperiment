@@ -1984,13 +1984,13 @@
 				<ipxact:name>zerorisky</ipxact:name>
 				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
 				<ipxact:designInstantiationRef>zerorisky</ipxact:designInstantiationRef>
-				<ipxact:designConfigurationInstantiationRef>zerorisky</ipxact:designConfigurationInstantiationRef>
+				<ipxact:designConfigurationInstantiationRef>zerorisky_configuration</ipxact:designConfigurationInstantiationRef>
 			</ipxact:view>
 			<ipxact:view>
 				<ipxact:name>riscv</ipxact:name>
 				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
 				<ipxact:designInstantiationRef>riscv</ipxact:designInstantiationRef>
-				<ipxact:designConfigurationInstantiationRef>riscv</ipxact:designConfigurationInstantiationRef>
+				<ipxact:designConfigurationInstantiationRef>riscv_configuration</ipxact:designConfigurationInstantiationRef>
 			</ipxact:view>
 		</ipxact:views>
 		<ipxact:instantiations>
@@ -2139,11 +2139,11 @@
 				</ipxact:designRef>
 			</ipxact:designInstantiation>
 			<ipxact:designConfigurationInstantiation>
-				<ipxact:name>zerorisky</ipxact:name>
+				<ipxact:name>zerorisky_configuration</ipxact:name>
 				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="core" name="core_region.zerorisky.designcfg" version="1.0"/>
 			</ipxact:designConfigurationInstantiation>
 			<ipxact:designConfigurationInstantiation>
-				<ipxact:name>riscv</ipxact:name>
+				<ipxact:name>riscv_configuration</ipxact:name>
 				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="core" name="core_region.riscv.designcfg" version="1.0"/>
 			</ipxact:designConfigurationInstantiation>
 		</ipxact:instantiations>
@@ -4414,6 +4414,7 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../rtl/core_region.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isStructural>true</ipxact:isStructural>
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>

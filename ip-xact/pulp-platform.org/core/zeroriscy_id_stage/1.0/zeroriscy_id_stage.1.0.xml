@@ -848,6 +848,9 @@
 				<ipxact:fileSetRef>
 					<ipxact:localName>rtl</ipxact:localName>
 				</ipxact:fileSetRef>
+				<ipxact:fileSetRef>
+					<ipxact:localName>include</ipxact:localName>
+				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
 		</ipxact:instantiations>
 		<ipxact:ports>
@@ -1846,25 +1849,25 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/zeroriscy_id_stage.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/zeroriscy_id_stage.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
 		<ipxact:fileSet>
 			<ipxact:name>include</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/include/zeroriscy_config.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/include/zeroriscy_config.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:description>Decode stage of the core. It decodes the instructions and hosts the register file.</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter imported="true" parameterId="uuid_307072d5_9516_4497_9595_a4d40b2ba0b1">
+		<ipxact:parameter imported="true" parameterId="uuid_307072d5_9516_4497_9595_a4d40b2ba0b1" type="string">
 			<ipxact:name>REG_S1</ipxact:name>
 			<ipxact:arrays>
 				<ipxact:array>
@@ -1872,9 +1875,9 @@
 					<ipxact:right></ipxact:right>
 				</ipxact:array>
 			</ipxact:arrays>
-			<ipxact:value>19:15</ipxact:value>
+			<ipxact:value>&quot;19:15&quot;</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_94325afc_78a0_47ec_8188_bf3079be2498">
+		<ipxact:parameter imported="true" parameterId="uuid_94325afc_78a0_47ec_8188_bf3079be2498" type="string">
 			<ipxact:name>REG_S2</ipxact:name>
 			<ipxact:arrays>
 				<ipxact:array>
@@ -1882,9 +1885,9 @@
 					<ipxact:right></ipxact:right>
 				</ipxact:array>
 			</ipxact:arrays>
-			<ipxact:value>24:20</ipxact:value>
+			<ipxact:value>&quot;24:20&quot;</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_bf787f44_fb74_476d_9e3a_a5ea2a8122a9">
+		<ipxact:parameter imported="true" parameterId="uuid_bf787f44_fb74_476d_9e3a_a5ea2a8122a9" type="string">
 			<ipxact:name>REG_D</ipxact:name>
 			<ipxact:arrays>
 				<ipxact:array>
@@ -1892,7 +1895,7 @@
 					<ipxact:right></ipxact:right>
 				</ipxact:array>
 			</ipxact:arrays>
-			<ipxact:value>11:07</ipxact:value>
+			<ipxact:value>&quot;11:07&quot;</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_7d38a6f4_fdc0_40c0_a86e_e7b0c99bf78e" resolve="user" usageCount="1">
 			<ipxact:name>RV32M</ipxact:name>
@@ -1924,12 +1927,12 @@
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>Flat</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
-		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

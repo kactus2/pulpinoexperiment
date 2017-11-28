@@ -57,7 +57,7 @@
 			</ipxact:abstractionTypes>
 			<ipxact:master>
 				<ipxact:addressSpaceRef ipxact:addressSpaceRef="instruction">
-					<ipxact:baseAddress>0</ipxact:baseAddress>
+					<ipxact:baseAddress ipxact:addressSpaceRef="instruction">0</ipxact:baseAddress>
 				</ipxact:addressSpaceRef>
 			</ipxact:master>
 		</ipxact:busInterface>
@@ -695,27 +695,27 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/zeroriscy_if_stage.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/zeroriscy_if_stage.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>20296a2ce22ee47e55bb9434dd419a79</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>
 		<ipxact:fileSet>
 			<ipxact:name>include</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/include/zeroriscy_config.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/include/zeroriscy_config.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>961bac7fcf3bb3a6df912ef0aedd8d8f</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>f8be3c03baad3970d06afa29874033b7</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>

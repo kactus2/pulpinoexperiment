@@ -682,7 +682,7 @@
 			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_e8178f02_ece1_431a_9fc2_7f0131d6a432" resolve="user" usageCount="11">
+		<ipxact:parameter parameterId="uuid_e8178f02_ece1_431a_9fc2_7f0131d6a432" resolve="user" usageCount="12">
 			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 			<ipxact:value>64</ipxact:value>
 		</ipxact:parameter>
@@ -690,7 +690,7 @@
 			<ipxact:name>AXI_ID_MASTER_WIDTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_ad5c9751_d234_4eea_a043_9244ae651636" usageCount="2">
+		<ipxact:parameter parameterId="uuid_ad5c9751_d234_4eea_a043_9244ae651636" resolve="immediate" usageCount="2">
 			<ipxact:name>DATA_ADDRR_WIDTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_fd954a88_1ab3_48a6_ada2_989bb7818d61)</ipxact:value>
 		</ipxact:parameter>
@@ -724,9 +724,13 @@
 			<ipxact:name>ZERO_RV32E</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_81dc3e30_aac6_4b98_8a2e_88f86d97a389" usageCount="1">
+		<ipxact:parameter parameterId="uuid_81dc3e30_aac6_4b98_8a2e_88f86d97a389" resolve="immediate" usageCount="1">
 			<ipxact:name>INSTR_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_7245ea63_68ec_4109_9528_76ba7aed8515)+1</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_ee4660e2_4484_45d2_b49e_c5d0ae9a6223" resolve="immediate">
+			<ipxact:name>AXI_B_WIDTH</ipxact:name>
+			<ipxact:value>$clog2(uuid_e8178f02_ece1_431a_9fc2_7f0131d6a432/8)</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_6f6324a1_714c_4875_87da_f08a11f35e16" resolve="user">
 			<ipxact:name>ZERO_RV32M</ipxact:name>

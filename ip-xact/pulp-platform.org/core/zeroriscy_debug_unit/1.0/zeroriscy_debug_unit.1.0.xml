@@ -344,6 +344,9 @@
 				<ipxact:fileSetRef>
 					<ipxact:localName>rtl</ipxact:localName>
 				</ipxact:fileSetRef>
+				<ipxact:fileSetRef>
+					<ipxact:localName>include</ipxact:localName>
+				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
 		</ipxact:instantiations>
 		<ipxact:ports>
@@ -831,7 +834,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/zeroriscy_debug_unit.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/zeroriscy_debug_unit.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>c04de5aa67974c93c35382aecb2de2e0</kactus2:hash>
@@ -841,7 +844,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>include</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>

@@ -123,23 +123,23 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_972f1eda_4e8c_4deb_b39a_ddf7055bcd26" usageCount="2">
+		<ipxact:parameter parameterId="uuid_972f1eda_4e8c_4deb_b39a_ddf7055bcd26" resolve="user" usageCount="2">
 			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_e43d6aed_afca_4c7a_bc2b_fcd2d09fa6b0" usageCount="2">
+		<ipxact:parameter parameterId="uuid_e43d6aed_afca_4c7a_bc2b_fcd2d09fa6b0" resolve="user" usageCount="2">
 			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_d3a01fb7_1bdf_48d5_a385_4e6d2d575b84" usageCount="2">
+		<ipxact:parameter parameterId="uuid_d3a01fb7_1bdf_48d5_a385_4e6d2d575b84" resolve="user" usageCount="2">
 			<ipxact:name>AXI_ID_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_56e86309_1f0d_455c_a987_8e031c41e832" usageCount="2">
+		<ipxact:parameter parameterId="uuid_56e86309_1f0d_455c_a987_8e031c41e832" resolve="user" usageCount="2">
 			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_e887ad68_c659_4c92_9c63_b855f24bd48f" usageCount="2">
+		<ipxact:parameter parameterId="uuid_e887ad68_c659_4c92_9c63_b855f24bd48f" resolve="user" usageCount="2">
 			<ipxact:name>SLICE_DEPTH</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>

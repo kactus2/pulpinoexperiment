@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ipxact:designConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
 	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
-	<ipxact:library>peripheral</ipxact:library>
-	<ipxact:name>apb_spi_master.designcfg</ipxact:name>
+	<ipxact:library>communication</ipxact:library>
+	<ipxact:name>axi_mem_if_SP.designcfg</ipxact:name>
 	<ipxact:version>1.0</ipxact:version>
-	<ipxact:designRef vendor="pulp-platform.org" library="peripheral" name="apb_spi_master.design" version="1.0"/>
+	<ipxact:designRef vendor="pulp-platform.org" library="communication" name="axi_mem_if_SP.design" version="1.0"/>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>logic</ipxact:instanceName>
-		<ipxact:view viewRef="flat"/>
-	</ipxact:viewConfiguration>
-	<ipxact:viewConfiguration>
-		<ipxact:instanceName>u_spictrl</ipxact:instanceName>
+		<ipxact:instanceName>MUX_MEM</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>u_rxfifo</ipxact:instanceName>
+		<ipxact:instanceName>READ_CTRL</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>u_txfifo</ipxact:instanceName>
+		<ipxact:instanceName>WRITE_CTRL</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>u_axiregs</ipxact:instanceName>
+		<ipxact:instanceName>Slave_b_buffer_LP</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>Slave_r_buffer_LP</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>Slave_w_buffer_LP</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>Slave_ar_buffer_LP</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>Slave_aw_buffer_LP</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>
-		<kactus2:version>3,4,189,0</kactus2:version>
+		<kactus2:version>3,4,436,0</kactus2:version>
 		<kactus2:kts_attributes>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 		</kactus2:kts_attributes>

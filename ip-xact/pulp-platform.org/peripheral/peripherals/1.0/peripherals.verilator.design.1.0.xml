@@ -8,7 +8,11 @@
 		<ipxact:componentInstance>
 			<ipxact:instanceName>periph_bus_i</ipxact:instanceName>
 			<ipxact:description>APB bus</ipxact:description>
-			<ipxact:componentRef vendor="pulp-platform.org" library="communication.bus" name="periph_bus_wrap" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication.bus" name="periph_bus_wrap" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_4a950485_645a_4041_9bec_88990f8568ff">uuid_9298b808_29be_474a_ab68_257da6dc2404</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{4c749bce-d751-4942-93c3-395af876a809}</kactus2:uuid>
 				<kactus2:portPositions>
@@ -129,7 +133,11 @@
 		<ipxact:componentInstance>
 			<ipxact:instanceName>apb_pulpino_i</ipxact:instanceName>
 			<ipxact:description>APB Slave 7: PULPino control</ipxact:description>
-			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb_pulpino" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb_pulpino" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_d50bccc8_bf2c_4236_9635_84ca621d719b">uuid_027541c7_b386_4ae7_8f01_2ac63dca7057</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{53309a69-9b2d-4023-bc6b-f8b14e8bb3d7}</kactus2:uuid>
 				<kactus2:portPositions>
@@ -149,7 +157,11 @@
 		<ipxact:componentInstance>
 			<ipxact:instanceName>apb2per_debug_i</ipxact:instanceName>
 			<ipxact:description>APB Slave 8: APB2PER for debug</ipxact:description>
-			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb2per" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb2per" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_34cf1aa4_dc9c_4719_bf19_4713d070b68f">uuid_9298b808_29be_474a_ab68_257da6dc2404</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{14fcfae7-186c-4a37-b1ea-80905d716b3d}</kactus2:uuid>
 				<kactus2:portPositions>
@@ -278,7 +290,11 @@
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
 			<ipxact:instanceName>apb_spi_master_i</ipxact:instanceName>
-			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb_spi_master" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb_spi_master" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_aef516b1_bf70_49fd_90ad_bc824602cb4a">8</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{f8366e3b-03c1-47c4-8cf2-8c98599a905b}</kactus2:uuid>
 				<kactus2:portPositions>
@@ -287,6 +303,8 @@
 					<kactus2:portPosition busRef="spi_master1" x="110" y="100"/>
 					<kactus2:portPosition busRef="spi_master2" x="110" y="70"/>
 					<kactus2:portPosition busRef="spi_master3" x="110" y="130"/>
+					<kactus2:portPosition busRef="spi_master" x="110" y="40"/>
+					<kactus2:portPosition busRef="event" x="-110" y="70"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
 					<kactus2:adHocVisible portName="HCLK" x="-110" y="30"/>
@@ -297,7 +315,14 @@
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
 			<ipxact:instanceName>axi_spi_slave_i</ipxact:instanceName>
-			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral.wrapper" name="axi_spi_slave_wrap" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral.wrapper" name="axi_spi_slave_wrap" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_7ec8a9df_6c12_4116_b272_ca72b572175c">uuid_dee8ff14_1e40_41ae_934d_2d2ab788dedf</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_283605a1_f897_46a2_a8d6_aaa369165783">uuid_ae508f73_57bf_4cec_a298_2430506a638b</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_9aa6590a_67a4_4802_b7b6_82b2b5db4263">uuid_fbe5ed5d_4cc3_4c02_be8f_50da8be4495a</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_9ae311b8_facc_4ba3_bbd0_47b8dcd67784">uuid_7523956d_15f0_49a2_821a_6f08a3d30e07</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{929282f3-5605-44fe-b04d-2e377bc67732}</kactus2:uuid>
 				<kactus2:portPositions>
@@ -314,7 +339,15 @@
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
 			<ipxact:instanceName>axi2apb_i</ipxact:instanceName>
-			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral.wrapper" name="axi2apb_wrap" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral.wrapper" name="axi2apb_wrap" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_b9c70d46_ea6d_411f_adc5_977065a62c09">uuid_dee8ff14_1e40_41ae_934d_2d2ab788dedf</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_480f4b1e_9cb3_4121_9bcd_1b67dc9b78c7">uuid_4c187c63_62a8_4e7f_9a65_6626d528a7f2</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_fc75d4f1_226e_4f82_a96e_a3e4893d0f9a">uuid_fbe5ed5d_4cc3_4c02_be8f_50da8be4495a</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_03ebeee4_8aea_40d7_bad1_837923a908dc">uuid_7523956d_15f0_49a2_821a_6f08a3d30e07</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_5a481baa_8d34_4af1_93a2_bb612df804db">uuid_9298b808_29be_474a_ab68_257da6dc2404</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{26d11841-fc1d-41e1-b190-d28e6df173f4}</kactus2:uuid>
 				<kactus2:portPositions>
@@ -331,7 +364,11 @@
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
 			<ipxact:instanceName>apb_uart_i</ipxact:instanceName>
-			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb_uart_sv" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb_uart_sv" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_e584bc2d_63ff_450f_b5b2_dae4e876726a">3</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{18bbe1ba-2f85-4cd4-bd28-5efff5aebacf}</kactus2:uuid>
 				<kactus2:portPositions>
@@ -932,6 +969,40 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
+	<ipxact:parameters>
+		<ipxact:parameter parameterId="uuid_7523956d_15f0_49a2_821a_6f08a3d30e07" resolve="user" usageCount="2">
+			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
+			<ipxact:value>32</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_fbe5ed5d_4cc3_4c02_be8f_50da8be4495a" resolve="user" usageCount="2">
+			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
+			<ipxact:value>64</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_ae508f73_57bf_4cec_a298_2430506a638b" resolve="user" usageCount="1">
+			<ipxact:name>AXI_MASTER_ID_WIDTH</ipxact:name>
+			<ipxact:value>6</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_4c187c63_62a8_4e7f_9a65_6626d528a7f2" resolve="user" usageCount="1">
+			<ipxact:name>AXI_SLAVE_ID_WIDTH</ipxact:name>
+			<ipxact:value>6</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_dee8ff14_1e40_41ae_934d_2d2ab788dedf" resolve="user" usageCount="2">
+			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
+			<ipxact:value>6</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_027541c7_b386_4ae7_8f01_2ac63dca7057" resolve="user" usageCount="1">
+			<ipxact:name>ROM_START_ADDR</ipxact:name>
+			<ipxact:value>32'h8000</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_983bc145_e13c_46db_a79d_1923b53cb028" resolve="immediate">
+			<ipxact:name>APB_NUM_SLAVES</ipxact:name>
+			<ipxact:value>8</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_9298b808_29be_474a_ab68_257da6dc2404" resolve="immediate" usageCount="3">
+			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
+			<ipxact:value>32</ipxact:value>
+		</ipxact:parameter>
+	</ipxact:parameters>
 	<ipxact:vendorExtensions>
 		<kactus2:version>3,4,174,0</kactus2:version>
 		<kactus2:kts_attributes>

@@ -6,10 +6,6 @@
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:designRef vendor="pulp-platform.org" library="core.cpu" name="zero_riscy.design" version="1.0"/>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>cluster_clock_gating_0</ipxact:instanceName>
-		<ipxact:view viewRef="flat_verilog"/>
-	</ipxact:viewConfiguration>
-	<ipxact:viewConfiguration>
 		<ipxact:instanceName>cs_registers_i</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
@@ -31,6 +27,10 @@
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>if_stage_i</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>core_clock_gate_i</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>

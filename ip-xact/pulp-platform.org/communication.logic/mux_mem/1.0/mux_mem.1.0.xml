@@ -147,6 +147,20 @@
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>
+		<ipxact:views>
+			<ipxact:view>
+				<ipxact:name>flat_verilog</ipxact:name>
+				<ipxact:componentInstantiationRef>verilog</ipxact:componentInstantiationRef>
+			</ipxact:view>
+		</ipxact:views>
+		<ipxact:instantiations>
+			<ipxact:componentInstantiation>
+				<ipxact:name>verilog</ipxact:name>
+				<ipxact:fileSetRef>
+					<ipxact:localName>rtl</ipxact:localName>
+				</ipxact:fileSetRef>
+			</ipxact:componentInstantiation>
+		</ipxact:instantiations>
 		<ipxact:ports>
 			<ipxact:port>
 				<ipxact:name>A_o</ipxact:name>
@@ -320,6 +334,7 @@
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
+	<ipxact:description>Wrapper for mux logic.</ipxact:description>
 	<ipxact:parameters>
 		<ipxact:parameter parameterId="uuid_5cb24dd6_8260_4f9c_84bb_c9c21261bd42" resolve="user" usageCount="2">
 			<ipxact:name>MEM_ADDR_WIDTH</ipxact:name>

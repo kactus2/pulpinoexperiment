@@ -176,6 +176,9 @@
 				<ipxact:fileSetRef>
 					<ipxact:localName>rtl</ipxact:localName>
 				</ipxact:fileSetRef>
+				<ipxact:fileSetRef>
+					<ipxact:localName>include</ipxact:localName>
+				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
 			<ipxact:designInstantiation>
 				<ipxact:name>design</ipxact:name>
@@ -331,19 +334,12 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/boot_rom_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-			</ipxact:file>
-			<ipxact:file>
 				<ipxact:name>../../../../../rtl/instr_ram_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>1f9f460d4f7bdcc448dbf7ca361a412d</kactus2:hash>
 				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../rtl/sp_ram_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
 		<ipxact:fileSet>
@@ -362,6 +358,7 @@
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_92a11bf3_569a_4e37_ba36_80db14aa5fa7" resolve="user" usageCount="4">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
+			<ipxact:description>one bit more than necessary, for the boot rom</ipxact:description>
 			<ipxact:value>$clog2(uuid_54b76578_5d7f_4d87_987b_ad0abc5711d9)+1</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_f39caf05_f4ab_4065_bf18_8cc76cc0c718" resolve="user" usageCount="9">

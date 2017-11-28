@@ -614,19 +614,23 @@
 				<ipxact:name>ri5cy</ipxact:name>
 				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
 				<ipxact:designInstantiationRef>ris5cy</ipxact:designInstantiationRef>
-				<ipxact:designConfigurationInstantiationRef>ri5cy</ipxact:designConfigurationInstantiationRef>
+				<ipxact:designConfigurationInstantiationRef>ri5cy_configuration</ipxact:designConfigurationInstantiationRef>
 			</ipxact:view>
 			<ipxact:view>
 				<ipxact:name>ri5cy+fpu</ipxact:name>
 				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
 				<ipxact:designInstantiationRef>ris5cy+fpu</ipxact:designInstantiationRef>
-				<ipxact:designConfigurationInstantiationRef>ri5cy+fpu</ipxact:designConfigurationInstantiationRef>
+				<ipxact:designConfigurationInstantiationRef>ri5cy+fpu_configuration</ipxact:designConfigurationInstantiationRef>
 			</ipxact:view>
 			<ipxact:view>
 				<ipxact:name>zero-riscy</ipxact:name>
 				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
 				<ipxact:designInstantiationRef>zero-riscy</ipxact:designInstantiationRef>
-				<ipxact:designConfigurationInstantiationRef>zero-riscy</ipxact:designConfigurationInstantiationRef>
+				<ipxact:designConfigurationInstantiationRef>zero-riscy_configuration</ipxact:designConfigurationInstantiationRef>
+			</ipxact:view>
+			<ipxact:view>
+				<ipxact:name>micro-riscy</ipxact:name>
+				<ipxact:description>Placeholder for micro-riscy configuration.</ipxact:description>
 			</ipxact:view>
 		</ipxact:views>
 		<ipxact:instantiations>
@@ -728,15 +732,15 @@
 				</ipxact:designRef>
 			</ipxact:designInstantiation>
 			<ipxact:designConfigurationInstantiation>
-				<ipxact:name>ri5cy</ipxact:name>
+				<ipxact:name>ri5cy_configuration</ipxact:name>
 				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="processor" name="pulpino_top.ri5cy.designcfg" version="1.0"/>
 			</ipxact:designConfigurationInstantiation>
 			<ipxact:designConfigurationInstantiation>
-				<ipxact:name>ri5cy+fpu</ipxact:name>
+				<ipxact:name>ri5cy+fpu_configuration</ipxact:name>
 				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="processor" name="pulpino_top.ri5cy+fpu.designcfg" version="1.0"/>
 			</ipxact:designConfigurationInstantiation>
 			<ipxact:designConfigurationInstantiation>
-				<ipxact:name>zero-riscy</ipxact:name>
+				<ipxact:name>zero-riscy_configuration</ipxact:name>
 				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="processor" name="pulpino_top.zero-riscy.designcfg" version="1.0"/>
 			</ipxact:designConfigurationInstantiation>
 		</ipxact:instantiations>

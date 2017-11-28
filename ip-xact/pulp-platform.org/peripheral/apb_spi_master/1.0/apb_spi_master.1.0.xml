@@ -291,6 +291,7 @@
 			<ipxact:view>
 				<ipxact:name>structural</ipxact:name>
 				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
+				<ipxact:designInstantiationRef>design</ipxact:designInstantiationRef>
 				<ipxact:designConfigurationInstantiationRef>design_configuration</ipxact:designConfigurationInstantiationRef>
 			</ipxact:view>
 		</ipxact:views>
@@ -639,6 +640,7 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/apb/apb_spi_master/apb_spi_master.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>186b8323a8da9f176ab4406ee4698ad9</kactus2:hash>
 				</ipxact:vendorExtensions>

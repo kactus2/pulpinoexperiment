@@ -41,6 +41,7 @@ module instr_ram_wrap
   inst_ram_demux     inst_ram_demux(
     // Interface: boot_rom
     .rdata_boot          (rdata_boot),
+    .enable_boot         (enable_boot),
     // Interface: inst
     .addr_i              (addr_i),
     .be_i                (be_i),
@@ -50,6 +51,7 @@ module instr_ram_wrap
     // Interface: inst_ram
     .rdata_ram           (rdata_ram),
     .be_out              (be_ram),
+    .enable_ram          (enable_ram),
     .wdata_out           (wdata_ram),
     .we_out              (we_ram),
     // There ports are contained in many interfaces
@@ -57,9 +59,7 @@ module instr_ram_wrap
     // These ports are not in any interface
     .clk                 (clk),
     .en_i                (en_i),
-    .rst_n               (rst_n),
-    .enable_boot         (enable_boot),
-    .enable_ram          (enable_ram)
+    .rst_n               (rst_n)
 );
 
   sp_ram_wrap

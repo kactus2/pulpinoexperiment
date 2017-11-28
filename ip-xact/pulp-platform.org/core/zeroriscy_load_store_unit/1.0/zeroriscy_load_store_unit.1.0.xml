@@ -89,7 +89,7 @@
 			</ipxact:abstractionTypes>
 			<ipxact:master>
 				<ipxact:addressSpaceRef ipxact:addressSpaceRef="data_and_memory_mapped">
-					<ipxact:baseAddress>'h0010_0000</ipxact:baseAddress>
+					<ipxact:baseAddress ipxact:addressSpaceRef="data_and_memory_mapped">'h0010_0000</ipxact:baseAddress>
 				</ipxact:addressSpaceRef>
 			</ipxact:master>
 		</ipxact:busInterface>
@@ -762,7 +762,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/zeroriscy_load_store_unit.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/zeroriscy_load_store_unit.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>

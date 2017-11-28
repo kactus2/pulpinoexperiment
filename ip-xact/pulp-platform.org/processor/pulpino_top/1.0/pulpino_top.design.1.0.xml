@@ -12,7 +12,7 @@
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{16194f44-aa0d-4ce5-b159-142462ca0dbc}</kactus2:uuid>
 				<kactus2:portPositions>
-					<kactus2:portPosition busRef="fll" x="110" y="240"/>
+					<kactus2:portPosition busRef="fll" x="110" y="410"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
 					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
@@ -57,12 +57,12 @@
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
 					<kactus2:adHocVisible portName="boot_addr_i" x="110" y="110"/>
-					<kactus2:adHocVisible portName="clk" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="clk" x="-110" y="40"/>
 					<kactus2:adHocVisible portName="clock_gating_i" x="110" y="130"/>
 					<kactus2:adHocVisible portName="core_busy_o" x="110" y="190"/>
 					<kactus2:adHocVisible portName="fetch_enable_i" x="110" y="150"/>
 					<kactus2:adHocVisible portName="irq_i" x="110" y="170"/>
-					<kactus2:adHocVisible portName="rst_n" x="-110" y="50"/>
+					<kactus2:adHocVisible portName="rst_n" x="-110" y="60"/>
 				</kactus2:adHocVisibilities>
 				<kactus2:position x="920" y="60"/>
 			</ipxact:vendorExtensions>
@@ -136,11 +136,11 @@
 					<kactus2:portPosition busRef="slave2" x="110" y="360"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
-					<kactus2:adHocVisible portName="clk" x="-110" y="30"/>
-					<kactus2:adHocVisible portName="end_addr_i" x="-110" y="130"/>
-					<kactus2:adHocVisible portName="rst_n" x="-110" y="50"/>
-					<kactus2:adHocVisible portName="start_addr_i" x="-110" y="110"/>
-					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="clk" x="-110" y="40"/>
+					<kactus2:adHocVisible portName="end_addr_i" x="-110" y="150"/>
+					<kactus2:adHocVisible portName="rst_n" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="start_addr_i" x="-110" y="130"/>
+					<kactus2:adHocVisible portName="test_en_i" x="-110" y="100"/>
 				</kactus2:adHocVisibilities>
 				<kactus2:position x="600" y="60"/>
 			</ipxact:vendorExtensions>
@@ -227,35 +227,35 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>clk_rst_gen_i_clk_i_to_clk</ipxact:name>
+			<ipxact:name>clk</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="clk_rst_gen_i" portRef="clk_i"/>
 				<ipxact:externalPortReference portRef="clk"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>clk_rst_gen_i_rstn_i_to_rst_n</ipxact:name>
+			<ipxact:name>rst_n</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="clk_rst_gen_i" portRef="rstn_i"/>
 				<ipxact:externalPortReference portRef="rst_n"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>clk_rst_gen_i_clk_sel_i_to_clk_sel_i</ipxact:name>
+			<ipxact:name>clk_sel_i</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="clk_rst_gen_i" portRef="clk_sel_i"/>
 				<ipxact:externalPortReference portRef="clk_sel_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>clk_rst_gen_i_clk_standalone_i_to_clk_standalone_i</ipxact:name>
+			<ipxact:name>clk_standalone_i</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="clk_rst_gen_i" portRef="clk_standalone_i"/>
 				<ipxact:externalPortReference portRef="clk_standalone_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>clk_rst_gen_i_scan_en_i_to_scan_enable_i</ipxact:name>
+			<ipxact:name>scan_enable_i</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="clk_rst_gen_i" portRef="scan_en_i"/>
 				<ipxact:externalPortReference portRef="scan_enable_i"/>
@@ -290,21 +290,21 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_pad_cfg_o_to_pad_cfg_o</ipxact:name>
+			<ipxact:name>pad_cfg_o</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="pad_cfg_o"/>
 				<ipxact:externalPortReference portRef="pad_cfg_o"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_pad_mux_o_to_pad_mux_o</ipxact:name>
+			<ipxact:name>pad_mux_o</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="pad_mux_o"/>
 				<ipxact:externalPortReference portRef="pad_mux_o"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_gpio_padcfg_to_gpio_padcfg</ipxact:name>
+			<ipxact:name>gpio_padcfg_o</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="gpio_padcfg"/>
 				<ipxact:externalPortReference portRef="gpio_padcfg"/>
@@ -332,42 +332,42 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_fetch_enable_o_to_core_region_i_fetch_enable_i</ipxact:name>
+			<ipxact:name>fetch_enable_int</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="fetch_enable_o"/>
 				<ipxact:internalPortReference componentRef="core_region_i" portRef="fetch_enable_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_irq_o_to_core_region_i_irq_i</ipxact:name>
+			<ipxact:name>irq_to_core_int</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="irq_o"/>
 				<ipxact:internalPortReference componentRef="core_region_i" portRef="irq_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_fetch_enable_i_to_fetch_enable_i</ipxact:name>
+			<ipxact:name>fetch_enable_i</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="fetch_enable_i"/>
 				<ipxact:externalPortReference portRef="fetch_enable_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_core_busy_i_to_core_region_i_core_busy_o</ipxact:name>
+			<ipxact:name>core_busy_int</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="core_busy_i"/>
 				<ipxact:internalPortReference componentRef="core_region_i" portRef="core_busy_o"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_clk_gate_core_o_to_core_region_i_clock_gating_i</ipxact:name>
+			<ipxact:name>clk_gate_core_int</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="clk_gate_core_o"/>
 				<ipxact:internalPortReference componentRef="core_region_i" portRef="clock_gating_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>peripherals_i_boot_addr_o_to_core_region_i_boot_addr_i</ipxact:name>
+			<ipxact:name>boot_addr_int</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="peripherals_i" portRef="boot_addr_o"/>
 				<ipxact:internalPortReference componentRef="core_region_i" portRef="boot_addr_i"/>
@@ -446,11 +446,11 @@
 			<kactus2:column name="Interconnect" contentType="4" allowedItems="14" minWidth="319" width="319" x="440"/>
 		</kactus2:columnLayout>
 		<kactus2:routes>
-			<kactus2:route kactus2:connRef="clk_rst_gen_i_clk_i_to_clk" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="clk_rst_gen_i_rstn_i_to_rst_n" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="clk_rst_gen_i_clk_sel_i_to_clk_sel_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="clk_rst_gen_i_clk_standalone_i_to_clk_standalone_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="clk_rst_gen_i_scan_en_i_to_scan_enable_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="rst_n" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk_sel_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk_standalone_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="scan_enable_i" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="clk_rst_gen_i_testmode_i_to_testmode_i" kactus2:offPage="true">
 				<kactus2:position x="90" y="210"/>
 				<kactus2:position x="140" y="210"/>
@@ -480,14 +480,12 @@
 				<kactus2:position x="1140" y="450"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="clk_rst_gen_i_fll_to_peripherals_i_fll" kactus2:offPage="false">
-				<kactus2:position x="390" y="300"/>
-				<kactus2:position x="420" y="300"/>
-				<kactus2:position x="420" y="470"/>
+				<kactus2:position x="390" y="470"/>
 				<kactus2:position x="810" y="470"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="peripherals_i_pad_cfg_o_to_pad_cfg_o" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="peripherals_i_pad_mux_o_to_pad_mux_o" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="peripherals_i_gpio_padcfg_to_gpio_padcfg" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="pad_cfg_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="pad_mux_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="gpio_padcfg_o" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="peripherals_i_debug_to_core_region_i_debug" kactus2:offPage="false">
 				<kactus2:position x="810" y="400"/>
 				<kactus2:position x="750" y="400"/>
@@ -520,37 +518,37 @@
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="clk_rst_gen_i_clk_o_to_axi_interconnect_i_clk" kactus2:offPage="true">
 				<kactus2:position x="420" y="100"/>
-				<kactus2:position x="460" y="90"/>
+				<kactus2:position x="460" y="100"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="clk_rst_gen_i_rstn_o_to_axi_interconnect_i_rst_n" kactus2:offPage="true">
 				<kactus2:position x="420" y="130"/>
-				<kactus2:position x="460" y="110"/>
+				<kactus2:position x="460" y="130"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="axi_interconnect_i_test_en_i_to_testmode_i" kactus2:offPage="true">
 				<kactus2:position x="90" y="210"/>
-				<kactus2:position x="460" y="130"/>
+				<kactus2:position x="460" y="160"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="core_region_i_jtag_to_jtag" kactus2:offPage="false">
 				<kactus2:position x="1030" y="140"/>
 				<kactus2:position x="1140" y="140"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="peripherals_i_fetch_enable_o_to_core_region_i_fetch_enable_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="peripherals_i_irq_o_to_core_region_i_irq_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="peripherals_i_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="peripherals_i_core_busy_i_to_core_region_i_core_busy_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="fetch_enable_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="irq_to_core_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="fetch_enable_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="core_busy_int" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="peripherals_i_spi_to_spi" kactus2:offPage="false">
 				<kactus2:position x="1030" y="570"/>
 				<kactus2:position x="1140" y="570"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="peripherals_i_clk_gate_core_o_to_core_region_i_clock_gating_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="peripherals_i_boot_addr_o_to_core_region_i_boot_addr_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk_gate_core_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="boot_addr_int" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="clk_rst_gen_i_clk_o_to_core_region_i_clk" kactus2:offPage="true">
 				<kactus2:position x="420" y="100"/>
-				<kactus2:position x="780" y="90"/>
+				<kactus2:position x="780" y="100"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="clk_rst_gen_i_rstn_o_to_core_region_i_rst_n" kactus2:offPage="true">
 				<kactus2:position x="420" y="130"/>
-				<kactus2:position x="780" y="110"/>
+				<kactus2:position x="780" y="120"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="peripherals_i_spi_master_to_spi_master" kactus2:offPage="false">
 				<kactus2:position x="1030" y="540"/>
@@ -619,5 +617,13 @@
 			<kactus2:position x="1140" y="540"/>
 			<kactus2:direction x="-1" y="0"/>
 		</kactus2:interfaceGraphics>
+		<kactus2:note>
+			<kactus2:position x="520" y="540"/>
+			<kactus2:content>Tied values for start_addr_i and end_addr_i omitted.</kactus2:content>
+			<kactus2:associations>
+				<kactus2:position x="600" y="260"/>
+			</kactus2:associations>
+			<kactus2:timestamp>28.11.2017 9:00:29</kactus2:timestamp>
+		</kactus2:note>
 	</ipxact:vendorExtensions>
 </ipxact:design>

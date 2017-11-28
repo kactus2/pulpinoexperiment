@@ -1457,6 +1457,7 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/axi/axi_spi_slave/axi_spi_slave.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>f10cb4534ed57daced7b2dd2593f8e2f</kactus2:hash>
 				</ipxact:vendorExtensions>
@@ -1529,7 +1530,7 @@
 			<ipxact:name>documentation</ipxact:name>
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/axi/axi_spi_slave/README.md</ipxact:name>
-				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:fileType user="textFile">user</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>

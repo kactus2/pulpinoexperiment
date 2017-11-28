@@ -586,7 +586,26 @@
 				<ipxact:fileSetRef>
 					<ipxact:localName>external_riscv</ipxact:localName>
 				</ipxact:fileSetRef>
+				<ipxact:fileSetRef>
+					<ipxact:localName>external_include</ipxact:localName>
+				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
+			<ipxact:designInstantiation>
+				<ipxact:name>design</ipxact:name>
+				<ipxact:designRef vendor="pulp-platform.org" library="core.cpu" name="riscv_core.design" version="1.0">
+					<ipxact:configurableElementValues>
+						<ipxact:configurableElementValue referenceId="uuid_182cb6b4_1d64_477b_8b8f_9cf8a89a1018">uuid_2051596c_90d6_4c3c_b11c_62c5f1fb4e2b</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_b7775ae0_6dde_4cf7_ba04_e6fec44c12df">uuid_e00531bc_0f68_401c_a9d7_c0f6c0bd16c2</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_70f798eb_850a_4407_9ced_789c7f7a31ca">uuid_fb2ff88f_c64d_4cde_a206_4e9d208bd4e1</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_5a59f133_c485_48b7_8eb6_929291f991f6">uuid_dde42b37_44d9_4c78_9839_9598c89ef663</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_a742cd86_6b63_4217_9ee0_377140a1fe6d">uuid_3e7063de_ffb7_4c25_a43e_4cdfdbc93397</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_3b08106c_5654_492e_93ef_76f1f795c36b">uuid_b78a08a0_542c_413d_88c1_93135605cb88</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_55aa1cb4_4061_4e11_9642_31d03db94a3d">uuid_d2de2338_2f16_4bda_91bb_1b525262ac2c</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_42e3f7f3_d76e_48b8_bab6_f669ad2198ea">uuid_c57481af_e187_44a9_9c6b_eeb5151fc9e1</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_5e587afc_409d_4b6e_b9bb_03f817e48680">uuid_79cf6367_a465_4475_b0e3_6846b372d0f8</ipxact:configurableElementValue>
+					</ipxact:configurableElementValues>
+				</ipxact:designRef>
+			</ipxact:designInstantiation>
 			<ipxact:designConfigurationInstantiation>
 				<ipxact:name>design_configuration</ipxact:name>
 				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="core.cpu" name="riscv_core.designcfg" version="1.0"/>
@@ -1610,39 +1629,39 @@
 		</ipxact:cpu>
 	</ipxact:cpus>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_2051596c_90d6_4c3c_b11c_62c5f1fb4e2b" usageCount="1">
+		<ipxact:parameter parameterId="uuid_2051596c_90d6_4c3c_b11c_62c5f1fb4e2b" usageCount="2">
 			<ipxact:name>WAPUTYPE</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_79cf6367_a465_4475_b0e3_6846b372d0f8" resolve="user">
+		<ipxact:parameter parameterId="uuid_79cf6367_a465_4475_b0e3_6846b372d0f8" resolve="user" usageCount="1">
 			<ipxact:name>FPU</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_c57481af_e187_44a9_9c6b_eeb5151fc9e1" usageCount="2">
+		<ipxact:parameter parameterId="uuid_c57481af_e187_44a9_9c6b_eeb5151fc9e1" usageCount="3">
 			<ipxact:name>INSTR_RDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_d2de2338_2f16_4bda_91bb_1b525262ac2c" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_d2de2338_2f16_4bda_91bb_1b525262ac2c" resolve="user" usageCount="2">
 			<ipxact:name>N_EXT_PERF_COUNTERS</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b78a08a0_542c_413d_88c1_93135605cb88">
+		<ipxact:parameter parameterId="uuid_b78a08a0_542c_413d_88c1_93135605cb88" usageCount="1">
 			<ipxact:name>PULP_SECURE</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_3e7063de_ffb7_4c25_a43e_4cdfdbc93397">
+		<ipxact:parameter parameterId="uuid_3e7063de_ffb7_4c25_a43e_4cdfdbc93397" usageCount="1">
 			<ipxact:name>SHARED_DSP_MULT</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_dde42b37_44d9_4c78_9839_9598c89ef663" resolve="user">
+		<ipxact:parameter parameterId="uuid_dde42b37_44d9_4c78_9839_9598c89ef663" resolve="user" usageCount="1">
 			<ipxact:name>SHARED_FP</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_fb2ff88f_c64d_4cde_a206_4e9d208bd4e1" resolve="user">
+		<ipxact:parameter parameterId="uuid_fb2ff88f_c64d_4cde_a206_4e9d208bd4e1" resolve="user" usageCount="1">
 			<ipxact:name>SHARED_FP_DIVSQRT</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_e00531bc_0f68_401c_a9d7_c0f6c0bd16c2">
+		<ipxact:parameter parameterId="uuid_e00531bc_0f68_401c_a9d7_c0f6c0bd16c2" usageCount="1">
 			<ipxact:name>SHARED_INT_DIV</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
@@ -1663,5 +1682,6 @@
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
+		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

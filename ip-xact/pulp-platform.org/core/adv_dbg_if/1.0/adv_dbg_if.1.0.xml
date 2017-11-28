@@ -1516,9 +1516,13 @@
 	<ipxact:fileSets>
 		<ipxact:fileSet>
 			<ipxact:name>doc</ipxact:name>
+			<ipxact:group>documentation</ipxact:group>
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/adv_dbg_if/doc/src/AdvancedDebugInterface.odt</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>b164a1ad7a2ea487b5b3b478b871054f</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/adv_dbg_if/doc/AdvancedDebugInterface.pdf</ipxact:name>
@@ -1530,26 +1534,44 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/adv_dbg_if/doc/src/generic_submodule.odg</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>9de6f920c5bc9d60d8a2051505be37e0</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/adv_dbg_if/doc/src/jsp_submodule.odg</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>164c3f1e202b05d5e42c8742ebc30841</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/adv_dbg_if/README.md</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>9002dfcdde602d6228814c4095271481</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/adv_dbg_if/doc/src/system_block_diagram.odg</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>2a8e2124fdda7dace0508a175ad69f41</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/adv_dbg_if/doc/src/system_block_diagram.png</ipxact:name>
 				<ipxact:fileType user="picture">user</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>bbeb559366f1abd4818ce6f529f3bf13</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/adv_dbg_if/doc/src/top_level_module.odg</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>74035b6f9bb32a8cf4ff13fed4846994</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>
 		<ipxact:fileSet>
@@ -1739,5 +1761,6 @@
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
+		<kactus2:license>LGPL2</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

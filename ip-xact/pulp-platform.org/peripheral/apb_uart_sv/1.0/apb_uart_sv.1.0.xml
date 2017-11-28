@@ -428,14 +428,15 @@
 		<ipxact:fileSet>
 			<ipxact:name>apb_uart_sv</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>C:/Users/pekkarie/Local/Data/pulpino/ip-xact/pulp-platform.org/peripheral/apb_uart/1.0/../../../../../ips/apb/apb_uart_sv/apb_uart.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/apb/apb_uart_sv/apb_uart.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>d686e717ea145388ee9b5f946588c1d3</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>C:/Users/pekkarie/Local/Data/pulpino/ip-xact/pulp-platform.org/peripheral/apb_uart/1.0/../../../../../ips/apb/apb_uart_sv/README.md</ipxact:name>
+				<ipxact:name>../../../../../ips/apb/apb_uart_sv/README.md</ipxact:name>
 				<ipxact:fileType user="textFile">user</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>2943899ef19365f6fcef9a86648d8ba6</kactus2:hash>
@@ -444,17 +445,19 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_e584bc2d_63ff_450f_b5b2_dae4e876726a" usageCount="2">
+		<ipxact:parameter parameterId="uuid_e584bc2d_63ff_450f_b5b2_dae4e876726a" resolve="user" usageCount="2">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:version>3,4,189,0</kactus2:version>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>IP</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
+		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

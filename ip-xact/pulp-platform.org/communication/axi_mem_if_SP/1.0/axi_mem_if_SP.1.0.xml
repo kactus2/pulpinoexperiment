@@ -735,7 +735,8 @@
 			<ipxact:view>
 				<ipxact:name>structural</ipxact:name>
 				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
-				<ipxact:designConfigurationInstantiationRef>_design_configuration</ipxact:designConfigurationInstantiationRef>
+				<ipxact:designInstantiationRef>design</ipxact:designInstantiationRef>
+				<ipxact:designConfigurationInstantiationRef>design_configuration</ipxact:designConfigurationInstantiationRef>
 			</ipxact:view>
 		</ipxact:views>
 		<ipxact:instantiations>
@@ -829,9 +830,13 @@
 					<ipxact:localName>rtl</ipxact:localName>
 				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
+			<ipxact:designInstantiation>
+				<ipxact:name>design</ipxact:name>
+				<ipxact:designRef vendor="pulp-platform.org" library="communication" name="axi_mem_if_SP.design" version="1.0"/>
+			</ipxact:designInstantiation>
 			<ipxact:designConfigurationInstantiation>
-				<ipxact:name>_design_configuration</ipxact:name>
-				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="communication" name="axi_mem_if_SP.designcfg" version="1.9"/>
+				<ipxact:name>design_configuration</ipxact:name>
+				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="communication" name="axi_mem_if_SP.designcfg" version="1.0"/>
 			</ipxact:designConfigurationInstantiation>
 		</ipxact:instantiations>
 		<ipxact:ports>
@@ -1636,6 +1641,7 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/axi/axi_mem_if_DP/axi_mem_if_SP.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isStructural>true</ipxact:isStructural>
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
@@ -1722,11 +1728,13 @@
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:version>3,4,436,0</kactus2:version>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>Flat</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
+		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

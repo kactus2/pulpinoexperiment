@@ -32,6 +32,9 @@
 				<ipxact:fileSetRef>
 					<ipxact:localName>rtl</ipxact:localName>
 				</ipxact:fileSetRef>
+				<ipxact:fileSetRef>
+					<ipxact:localName>include</ipxact:localName>
+				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
 		</ipxact:instantiations>
 		<ipxact:ports>
@@ -465,7 +468,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/zeroriscy_cs_registers.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/zeroriscy_cs_registers.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>18128b3cfb2e35aee4b6a32a245b6a35</kactus2:hash>
@@ -475,11 +478,11 @@
 		<ipxact:fileSet>
 			<ipxact:name>include</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/include/zeroriscy_config.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/include/zeroriscy_config.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../../Data/kactus_test_libraries/pulpinoexperiment/ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
@@ -555,7 +558,7 @@
 			</ipxact:arrays>
 			<ipxact:value>8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_7b0e1f98_830e_41db_85f1_d41a8855c39a">
+		<ipxact:parameter imported="true" parameterId="uuid_7b0e1f98_830e_41db_85f1_d41a8855c39a" type="string">
 			<ipxact:name>MSTATUS_MPP_BITS</ipxact:name>
 			<ipxact:arrays>
 				<ipxact:array>
@@ -563,7 +566,7 @@
 					<ipxact:right></ipxact:right>
 				</ipxact:array>
 			</ipxact:arrays>
-			<ipxact:value>12:11</ipxact:value>
+			<ipxact:value>&quot;12:11&quot;</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_edebd14a_48a1_4705_8cbf_843b3bb03095" resolve="user" usageCount="2">
 			<ipxact:name>N_EXT_CNT</ipxact:name>

@@ -1384,6 +1384,12 @@
 						<ipxact:value>uuid_4a950485_645a_4041_9bec_88990f8568ff</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
+				<ipxact:fileSetRef>
+					<ipxact:localName>rtl</ipxact:localName>
+				</ipxact:fileSetRef>
+				<ipxact:fileSetRef>
+					<ipxact:localName>apb_node</ipxact:localName>
+				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
 		</ipxact:instantiations>
 		<ipxact:ports>
@@ -2451,6 +2457,7 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../rtl/periph_bus_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>782c7e8e4e8f9d64d7e26a5722ac013f</kactus2:hash>
 				</ipxact:vendorExtensions>
@@ -2461,6 +2468,7 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../ips/apb/apb_node/apb_node_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>ffe2ac486ee41f2e7f46d4da4b7c4053</kactus2:hash>
 				</ipxact:vendorExtensions>

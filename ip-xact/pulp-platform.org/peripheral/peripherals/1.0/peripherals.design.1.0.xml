@@ -1004,13 +1004,17 @@
 			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_26861753_c47f_4e38_9508_c8fc55e4e4d0" usageCount="3">
+		<ipxact:parameter parameterId="uuid_26861753_c47f_4e38_9508_c8fc55e4e4d0" resolve="immediate" usageCount="3">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_2f3994f9_5bd5_4a0f_af14_de13b9f288c7" resolve="user" usageCount="1">
 			<ipxact:name>ROM_START_ADDR</ipxact:name>
 			<ipxact:value>32'h8000</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_0eaaee3b_3f35_49ec_8bab_37f8e298e46e" resolve="immediate">
+			<ipxact:name>APB_NUM_SLAVES</ipxact:name>
+			<ipxact:value>8</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
@@ -1171,11 +1175,26 @@
 				<kactus2:position x="350" y="70"/>
 				<kactus2:position x="1100" y="820"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_irq_o_to_irq_o" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_fetch_enable_o_to_fetch_enable_o" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_core_busy_i_to_core_busy_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_clk_gate_core_o_to_clk_gate_core_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_irq_o_to_irq_o" kactus2:offPage="false">
+				<kactus2:position x="1460" y="830"/>
+				<kactus2:position x="1350" y="830"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false">
+				<kactus2:position x="380" y="890"/>
+				<kactus2:position x="1130" y="890"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_fetch_enable_o_to_fetch_enable_o" kactus2:offPage="false">
+				<kactus2:position x="1460" y="890"/>
+				<kactus2:position x="1350" y="890"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_core_busy_i_to_core_busy_i" kactus2:offPage="false">
+				<kactus2:position x="380" y="920"/>
+				<kactus2:position x="1130" y="920"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_clk_gate_core_o_to_clk_gate_core_o" kactus2:offPage="false">
+				<kactus2:position x="1460" y="860"/>
+				<kactus2:position x="1350" y="860"/>
+			</kactus2:route>
 			<kactus2:route kactus2:connRef="apb_i2c_i_i2c_to_i2c" kactus2:offPage="false">
 				<kactus2:position x="1350" y="1060"/>
 				<kactus2:position x="1460" y="1060"/>
@@ -1220,9 +1239,18 @@
 				<kactus2:position x="410" y="100"/>
 				<kactus2:position x="1100" y="1400"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_pulpino_i_pad_cfg_o_to_pad_cfg_o" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="apb_pulpino_i_pad_mux_o_to_pad_mux_o" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="apb_pulpino_i_boot_addr_o_to_boot_addr_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_pulpino_i_pad_cfg_o_to_pad_cfg_o" kactus2:offPage="false">
+				<kactus2:position x="1460" y="1390"/>
+				<kactus2:position x="1350" y="1390"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_pulpino_i_pad_mux_o_to_pad_mux_o" kactus2:offPage="false">
+				<kactus2:position x="1460" y="1420"/>
+				<kactus2:position x="1350" y="1420"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_pulpino_i_boot_addr_o_to_boot_addr_o" kactus2:offPage="false">
+				<kactus2:position x="1460" y="1450"/>
+				<kactus2:position x="1350" y="1450"/>
+			</kactus2:route>
 			<kactus2:route kactus2:connRef="apb_pulpino_i_clk_gate_o_to_core_clock_gate_0_en_i" kactus2:offPage="true">
 				<kactus2:position x="1060" y="1670"/>
 				<kactus2:position x="140" y="110"/>
@@ -1259,7 +1287,12 @@
 				<kactus2:position x="1130" y="1420"/>
 				<kactus2:position x="1030" y="1420"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="peripheral_clock_gate_ctrl" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="peripheral_clock_gate_ctrl" kactus2:offPage="false">
+				<kactus2:position x="1130" y="1450"/>
+				<kactus2:position x="30" y="1450"/>
+				<kactus2:position x="30" y="110"/>
+				<kactus2:position x="50" y="110"/>
+			</kactus2:route>
 			<kactus2:route kactus2:connRef="apb2per_debug_i_debug_to_debug" kactus2:offPage="false">
 				<kactus2:position x="490" y="300"/>
 				<kactus2:position x="380" y="300"/>
@@ -1469,5 +1502,13 @@
 			<kactus2:position x="1460" y="550"/>
 			<kactus2:direction x="-1" y="0"/>
 		</kactus2:interfaceGraphics>
+		<kactus2:note>
+			<kactus2:position x="60" y="1120"/>
+			<kactus2:content>Wire split not correct for core_clock_gate_i:s</kactus2:content>
+			<kactus2:associations>
+				<kactus2:position x="30" y="1200"/>
+			</kactus2:associations>
+			<kactus2:timestamp>28.11.2017 11:22:45</kactus2:timestamp>
+		</kactus2:note>
 	</ipxact:vendorExtensions>
 </ipxact:design>
