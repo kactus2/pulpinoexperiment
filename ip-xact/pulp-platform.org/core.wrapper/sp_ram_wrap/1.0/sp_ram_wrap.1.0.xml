@@ -323,23 +323,30 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/sp_ram_wrap.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/sp_ram_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>cab7dbdfcd9bb4dcabc7853805b7ce78</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/components/sp_ram.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/components/sp_ram.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>
 		<ipxact:fileSet>
 			<ipxact:name>include</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/includes/config.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/includes/config.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isIncludeFile>true</ipxact:isIncludeFile>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
+				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>

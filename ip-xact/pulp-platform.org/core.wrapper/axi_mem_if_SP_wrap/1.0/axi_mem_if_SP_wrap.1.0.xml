@@ -1430,7 +1430,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/axi_mem_if_SP_wrap.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/axi_mem_if_SP_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 			</ipxact:file>

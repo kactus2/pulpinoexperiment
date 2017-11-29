@@ -3,17 +3,14 @@ An experimental repository containing IP-XACT packaging of PULPino by pulp-proje
 
 Based on PULPino release in August 2017
 
-Milestones:
-- Flat design
-- Hierarchical view for core region
-- Hierarchical view for peripherals
-- Hierarchical view for RISCV core
+## Setup
 
-TODO:
-- Wrapper for axi_node_intf_wrap
-- Component file sets not complete
-- peripherals.sv in progress
-- Mismatching bus definitions in the hierarchical axi_mem_if_SP_wrap
+Update submodule pulpino
+
+Update all pulpino IPs, see README.md in pulpino
+
+
+## Notes
 
 Problems faced in the design in IP-XACT point of view:
 - top.sv, peripherals.sv:

@@ -6002,7 +6002,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>C:/Users/pekkarie/Local/Data/pulpino/ip-xact/pulp-platform.org/communication.bus/axi_interconnect/1.0/../../../../../rtl/axi_node_intf_wrap.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/axi_node_intf_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>2e8f03d481feade60adaeee5ffb0528a</kactus2:hash>
@@ -6012,169 +6012,169 @@
 		<ipxact:fileSet>
 			<ipxact:name>external_axi_node</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/apb_regs_top.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/apb_regs_top.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>931a104778fb720ebb5d177377399f83</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_address_decoder_AR.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_address_decoder_AR.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>308dcbf062932b891b71105c22034189</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_address_decoder_AW.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_address_decoder_AW.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>e497def336a82835a85a437f92f65ef2</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_address_decoder_BR.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_address_decoder_BR.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>a1bec2d043891e667aef17d1af4ffecc</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_address_decoder_BW.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_address_decoder_BW.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>5c007bf7bfd5c297337354267fc1064f</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_address_decoder_DW.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_address_decoder_DW.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>4001ac95686f64aaeb383a399654c17b</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_AR_allocator.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_AR_allocator.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>de1e72eec2e8ee0b1ea399398d2b1c97</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_ArbitrationTree.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_ArbitrationTree.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>55cbe8325dee3afab9f6ee6fe85ec0eb</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_AW_allocator.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_AW_allocator.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>13446e6fd6a3e991839655c3f9ac816a</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_BR_allocator.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_BR_allocator.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>bd0e50c4d203f6dd4f654805566d6aca</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_BW_allocator.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_BW_allocator.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>1b2c465484ffb5bbef495f18798418b1</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_DW_allocator.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_DW_allocator.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>c9c3a2b35b15bd04afd5cf5bf9beabaf</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_FanInPrimitive_Req.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_FanInPrimitive_Req.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>6088403f74a7246021be22aee2f82710</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_multiplexer.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_multiplexer.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>dc32d41019a55f1806c214150839ccdb</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_node_wrap_with_slices.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_node_wrap_with_slices.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>ecfeaee9862a9496706ed3c1c18e613c</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_node_wrap.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_node_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>7d135c8965538bfa29352c7e9a49d7b1</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_node.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_node.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>0bd4b5f4bf19e9af2ba31278480690f1</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_regs_top.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_regs_top.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>921c868c7736fe1dc9f89d3a8b34a38c</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_request_block.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_request_block.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>b05cc2eec00fa77042e22508f89ce025</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_response_block.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_response_block.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>feeacaf4492aa0c24afed7c74c3f3e4c</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/axi_RR_Flag_Req.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/axi_RR_Flag_Req.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>22c540ec8230cbc6cb5b747adc1403d1</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/defines.v</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/defines.v</ipxact:name>
 				<ipxact:fileType>verilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>048d37f75c0f4133bd086d1283e289dd94bb9915</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/LICENSE</ipxact:name>
-				<ipxact:fileType>OVASource</ipxact:fileType>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/LICENSE</ipxact:name>
+				<ipxact:fileType user="textFile">user</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>8d6630ff4192e1d358d9eaa6de964dee</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_node/README.md</ipxact:name>
-				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_node/README.md</ipxact:name>
+				<ipxact:fileType user="textFile">user</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>c8a54c8a391b8f36900a939f3e7e244a</kactus2:hash>
 				</ipxact:vendorExtensions>
@@ -6212,12 +6212,12 @@
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>IP</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
-		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

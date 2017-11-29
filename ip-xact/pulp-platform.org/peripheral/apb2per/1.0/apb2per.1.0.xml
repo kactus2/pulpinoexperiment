@@ -507,14 +507,14 @@
 		<ipxact:fileSet>
 			<ipxact:name>apb2per</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb2per/apb2per.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb2per/apb2per.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>56ae345fc54a13d6100ebcf14519318d</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb2per/src_files.yml</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb2per/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>dbdcfe62b0716cfaca5db93c7950272d</kactus2:hash>
@@ -534,12 +534,12 @@
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>IP</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
-		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

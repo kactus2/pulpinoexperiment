@@ -503,21 +503,21 @@
 		<ipxact:fileSet>
 			<ipxact:name>apb_pulpino</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_pulpino/apb_pulpino.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_pulpino/apb_pulpino.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>f91cb82c834d5d7c6b8d90cefdd92aa4</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_pulpino/README.md</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_pulpino/README.md</ipxact:name>
 				<ipxact:fileType user="textFile">user</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>e9cf2a272d28290ed49531adb5726201</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_pulpino/src_files.yml</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_pulpino/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>7f1b240886362305558ef4b6974ed448</kactus2:hash>

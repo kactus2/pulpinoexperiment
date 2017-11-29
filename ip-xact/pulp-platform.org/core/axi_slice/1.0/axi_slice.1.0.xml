@@ -2800,7 +2800,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_slice/axi_slice.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice/axi_slice.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>b85d4ab9f0acdc5fc10772920929319a</kactus2:hash>

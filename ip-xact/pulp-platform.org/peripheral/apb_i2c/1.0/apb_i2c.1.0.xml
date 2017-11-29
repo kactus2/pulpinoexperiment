@@ -744,35 +744,35 @@ the current system clock by the given factor.</ipxact:description>
 		<ipxact:fileSet>
 			<ipxact:name>external_apb_i2c</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_i2c/apb_i2c.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_i2c/apb_i2c.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>ea48aaff112804a4ecfde60b673538b4</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_i2c/i2c_master_bit_ctrl.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_i2c/i2c_master_bit_ctrl.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>8aee947a4b68356eb218a67676b4f0f0</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_i2c/i2c_master_byte_ctrl.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_i2c/i2c_master_byte_ctrl.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>976debc66310f66eefc6c4966731fc75</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_i2c/i2c_master_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_i2c/i2c_master_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>0f2d0359cfbec279479cca858c33360b</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_i2c/src_files.yml</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_i2c/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>e0dd055f545db50cdebf5c39e42f79ca</kactus2:hash>
@@ -818,12 +818,12 @@ the current system clock by the given factor.</ipxact:description>
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>Flat</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
-		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

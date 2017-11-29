@@ -1743,21 +1743,21 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/riscv/include/apu_core_package.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/riscv/include/apu_core_package.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>485c5bc31a9c585413c38de658fae8fc</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/riscv/include/riscv_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/riscv/include/riscv_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>4b71ca65a25534838a8618d79138abb1</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/riscv/riscv_ex_stage.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/riscv/riscv_ex_stage.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>94a4b1f0b3b37c310343cf0fbc9969d6</kactus2:hash>

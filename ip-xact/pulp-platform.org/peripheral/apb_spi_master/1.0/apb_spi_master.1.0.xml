@@ -638,32 +638,32 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_spi_master/apb_spi_master.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_spi_master/apb_spi_master.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>186b8323a8da9f176ab4406ee4698ad9</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_spi_master/README.md</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_spi_master/README.md</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>27dbe4abcd442a04d97a3bf28c75473b</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_spi_master/spi_master_apb_if.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_spi_master/spi_master_apb_if.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>ff176820518de029701b6af6a5ec745f</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_spi_master/src_files.yml</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_spi_master/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>217a543435e0bf4b7a20dc5eaa5d48bf</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>

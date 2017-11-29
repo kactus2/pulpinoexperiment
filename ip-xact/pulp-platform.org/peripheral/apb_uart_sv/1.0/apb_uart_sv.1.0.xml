@@ -428,7 +428,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>apb_uart_sv</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart_sv/apb_uart.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart_sv/apb_uart.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
@@ -436,7 +436,7 @@
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart_sv/README.md</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart_sv/README.md</ipxact:name>
 				<ipxact:fileType user="textFile">user</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>2943899ef19365f6fcef9a86648d8ba6</kactus2:hash>

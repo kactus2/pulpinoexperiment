@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ipxact:component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014/ http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+<ipxact:component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
 	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
 	<ipxact:library>core</ipxact:library>
 	<ipxact:name>riscv_debug_unit</ipxact:name>
@@ -785,11 +785,11 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/riscv/riscv_debug_unit.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/riscv/riscv_debug_unit.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/riscv/include/riscv_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/riscv/include/riscv_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>

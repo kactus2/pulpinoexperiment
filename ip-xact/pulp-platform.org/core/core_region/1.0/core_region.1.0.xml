@@ -4412,7 +4412,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/core_region.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/core_region.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 			</ipxact:file>

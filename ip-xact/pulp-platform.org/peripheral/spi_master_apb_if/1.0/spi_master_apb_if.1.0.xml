@@ -1295,7 +1295,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_spi_master/spi_master_apb_if.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_spi_master/spi_master_apb_if.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>

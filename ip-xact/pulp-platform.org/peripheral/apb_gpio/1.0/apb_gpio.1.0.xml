@@ -639,24 +639,24 @@
 		<ipxact:fileSet>
 			<ipxact:name>external_apb_gpio</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_gpio/apb_gpio.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_gpio/apb_gpio.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>c8f85f86e3784d21c88c81369fd9ac24</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_gpio/README.md</ipxact:name>
-				<ipxact:fileType>unknown</ipxact:fileType>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_gpio/README.md</ipxact:name>
+				<ipxact:fileType user="textFile">user</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>63d08e1ead155b6ef8d753a9cd2e6ce2</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_gpio/src_files.yml</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_gpio/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>e49b6ac01d40572e9e0db40fb6dbacba</kactus2:hash>
+					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>
@@ -749,12 +749,12 @@
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>IP</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
-		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

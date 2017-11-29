@@ -325,7 +325,7 @@
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:group>generatedFiles</ipxact:group>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_mem_if_DP/mux_mem.v</ipxact:name>
+				<ipxact:name>../../../../../rtl/mux_mem.v</ipxact:name>
 				<ipxact:fileType>verilogSource</ipxact:fileType>
 				<ipxact:description>Generated at 16:51:12 on 18.09.2017 by Kactus2. </ipxact:description>
 				<ipxact:vendorExtensions>

@@ -138,7 +138,7 @@
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:group>generatedFiles</ipxact:group>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_spi_master/spi_master_fsm.sv</ipxact:name>
+				<ipxact:name>../../../../../rtl/spi_master_fsm.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:description>Generated at 09:14:07 on 28.08.2017 by Kactus2. </ipxact:description>
 			</ipxact:file>
@@ -155,12 +155,12 @@
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>Flat</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
-		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

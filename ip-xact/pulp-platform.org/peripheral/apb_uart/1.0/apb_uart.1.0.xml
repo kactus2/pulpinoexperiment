@@ -761,84 +761,84 @@
 		<ipxact:fileSet>
 			<ipxact:name>apb_uart</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/apb_uart.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/apb_uart.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>3b795499be21ee48de7de8b1fd8b6927c8fed417</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/slib_clock_div.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/slib_clock_div.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>1fe5ad3d5b8b47196c4b7b51a890018aa34f2bf6</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/slib_counter.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/slib_counter.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>e15afea89f7e6e2c1156b700f741d868cca1182a</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/slib_edge_detect.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/slib_edge_detect.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>98af96fb3ec3d20cf0c77f514f199a22612a9791</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/slib_fifo.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/slib_fifo.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>a81adcbb9aca2c40e39451cbaffc3d0e03cafe6b</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/slib_input_filter.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/slib_input_filter.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>2bac75d6b96ca1e473d951f74455a2fa3edf1fa7</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/slib_input_sync.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/slib_input_sync.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>6475e1b2dd690eeff83c2803f54f8d496ee37677</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/slib_mv_filter.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/slib_mv_filter.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>cf29e8389b49deb74d0420da95038c6c52af2a68</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/uart_baudgen.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/uart_baudgen.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>a0307c3dee599cc5885152c6ab907a6288658327</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/uart_interrupt.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/uart_interrupt.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>9dcc64c8a5454b2513ebd2b508e9b9361ca12990</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/uart_receiver.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/uart_receiver.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>61b89f169dfa77a1fd62ad486ae0f846a0236754</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart/uart_transmitter.vhd</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart/uart_transmitter.vhd</ipxact:name>
 				<ipxact:fileType>vhdlSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>501a0756503ebc8fb808ec487c133e381065ed7a</kactus2:hash>
@@ -859,12 +859,12 @@
 				<ipxact:description>Component instantiation for entity std_logic</ipxact:description>
 			</kactus2:fileDependency>
 		</kactus2:fileDependencies>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>Flat</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
-		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:license>LGPL2</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

@@ -2455,7 +2455,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/periph_bus_wrap.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/periph_bus_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
@@ -2466,7 +2466,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>apb_node</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_node/apb_node_wrap.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_node/apb_node_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
@@ -2474,14 +2474,14 @@
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_node/apb_node.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_node/apb_node.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>fa22166b88bdd262c4e757173bd4ddde</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_node/src_files.yml</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_node/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>effa094082643dea1ac2da2c4a3f2fc3</kactus2:hash>

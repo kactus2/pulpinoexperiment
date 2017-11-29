@@ -1637,27 +1637,27 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_slice/axi_ar_buffer.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice/axi_ar_buffer.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_slice/axi_aw_buffer.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice/axi_aw_buffer.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_slice/axi_b_buffer.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice/axi_b_buffer.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_slice/axi_r_buffer.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice/axi_r_buffer.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_slice/axi_w_buffer.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice/axi_w_buffer.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi2apb/axi2apb32.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi2apb/axi2apb32.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>a880e7d578f2931dbadbab7d171628026c34253b</kactus2:hash>

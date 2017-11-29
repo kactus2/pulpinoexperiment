@@ -3545,15 +3545,15 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/riscv/include/apu_core_package.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/riscv/include/apu_core_package.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/riscv/include/riscv_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/riscv/include/riscv_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/riscv/riscv_id_stage.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/riscv/riscv_id_stage.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
@@ -3630,5 +3630,7 @@
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
+		<kactus2:author>pekkarie</kactus2:author>
+		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

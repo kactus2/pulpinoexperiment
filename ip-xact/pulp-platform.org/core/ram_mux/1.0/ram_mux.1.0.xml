@@ -674,7 +674,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/ram_mux.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/ram_mux.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>88a7b81e9952b0fddc49e8474b22d46f</kactus2:hash>

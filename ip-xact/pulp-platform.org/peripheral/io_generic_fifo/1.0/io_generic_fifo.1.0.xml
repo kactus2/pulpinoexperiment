@@ -263,7 +263,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart_sv/io_generic_fifo.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_uart_sv/io_generic_fifo.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>

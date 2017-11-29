@@ -498,7 +498,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/zero-riscy/zeroriscy_ex_block.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/zero-riscy/zeroriscy_ex_block.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>1a7a0ec5da4312b6129f900e3161efe9</kactus2:hash>
@@ -508,7 +508,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>include</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/zero-riscy/include/zeroriscy_defines.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>

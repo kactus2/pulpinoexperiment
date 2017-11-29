@@ -570,21 +570,21 @@
 		<ipxact:fileSet>
 			<ipxact:name>external_apb_fll_if</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_fll_if/apb_fll_if.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_fll_if/apb_fll_if.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>ae0a26bb62c07587a749ffa51fb07645</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_fll_if/README.md</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_fll_if/README.md</ipxact:name>
 				<ipxact:fileType user="textFile">user</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>a95350d0da6173ca2cf599fbd24fcf7f</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_fll_if/src_files.yml</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_fll_if/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>2f055a7301bf913a42ad0350c51f9f71</kactus2:hash>

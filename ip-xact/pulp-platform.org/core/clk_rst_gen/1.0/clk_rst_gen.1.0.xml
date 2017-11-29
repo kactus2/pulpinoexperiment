@@ -348,7 +348,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/clk_rst_gen.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/clk_rst_gen.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>

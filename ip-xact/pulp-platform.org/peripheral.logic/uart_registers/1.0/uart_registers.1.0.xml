@@ -636,7 +636,7 @@
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:group>generatedFiles</ipxact:group>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/apb/apb_uart_sv/uart_registers.sv</ipxact:name>
+				<ipxact:name>../../../../../rtl/uart_registers.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:description>Generated at 12:19:00 on 25.08.2017 by Kactus2. </ipxact:description>
 				<ipxact:vendorExtensions>

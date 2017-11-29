@@ -954,7 +954,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_slice/axi_aw_buffer.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice/axi_aw_buffer.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>

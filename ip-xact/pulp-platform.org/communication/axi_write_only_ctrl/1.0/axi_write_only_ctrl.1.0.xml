@@ -1087,7 +1087,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_mem_if_DP/axi_write_only_ctrl.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_mem_if_DP/axi_write_only_ctrl.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>

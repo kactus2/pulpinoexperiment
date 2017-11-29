@@ -334,7 +334,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/instr_ram_wrap.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/instr_ram_wrap.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
@@ -345,8 +345,9 @@
 		<ipxact:fileSet>
 			<ipxact:name>include</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../rtl/includes/config.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/rtl/includes/config.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:isIncludeFile>true</ipxact:isIncludeFile>
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
@@ -374,5 +375,6 @@
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
+		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

@@ -1455,7 +1455,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/axi_spi_slave.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/axi_spi_slave.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
@@ -1463,63 +1463,63 @@
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/spi_slave_axi_plug.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>5ce7d3a8677c05a99b02c1cfa96b5a59</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>71c19d432e3a393dea7b4b5ecd4bf9b6</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/spi_slave_controller.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_controller.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>cd658f60bfb737d84efbeb39c2191f9b</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>87309605bb999b433785cf07a0a4c606</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/spi_slave_regs.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_regs.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>c14d5c48bdf58282a007ed9cc311c3ff</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/spi_slave_rx.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_rx.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>77f413aa3627ddf111e69e661d8f117c</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/spi_slave_syncro.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_syncro.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>e0873c49c416d7cf85026161911d8124</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/spi_slave_tx.sv</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_tx.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>48c39ccd337e221c7c6b7b5620a543a5</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/src_files.yml</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>173421f64eb8e37f5a5f56f950cd99d0</kactus2:hash>
@@ -1529,7 +1529,7 @@
 		<ipxact:fileSet>
 			<ipxact:name>documentation</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../ips/axi/axi_spi_slave/README.md</ipxact:name>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/README.md</ipxact:name>
 				<ipxact:fileType user="textFile">user</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
