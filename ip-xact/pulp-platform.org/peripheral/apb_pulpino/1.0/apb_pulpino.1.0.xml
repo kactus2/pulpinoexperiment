@@ -129,7 +129,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:slave>
+				<ipxact:memoryMapRef memoryMapRef="SOC_CONTROL"/>
+			</ipxact:slave>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:memoryMaps>

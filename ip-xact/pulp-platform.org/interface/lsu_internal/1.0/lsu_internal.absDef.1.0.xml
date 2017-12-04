@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ipxact:abstractionDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014/ http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+<ipxact:abstractionDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
 	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
 	<ipxact:library>interface</ipxact:library>
 	<ipxact:name>lsu_internal.absDef</ipxact:name>
@@ -9,166 +9,192 @@
 		<ipxact:port>
 			<ipxact:logicalName>DATA_REQ</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DATA_WE</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DATA_TYPE</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>2</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>2</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DATA_SIGN_EXT</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DATA_REG_OFFSET</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>2</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>2</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DATA_MISALIGNED</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>PREPOST_USEINCR</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DATA_MISALIGNED_LSU</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>STORE_ERR</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>LOAD_ERR</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>ALU_OPERAND_A</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>ALU_OPERAND_B</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>ALU_OPERAND_C</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>loadStoreUnit</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 	</ipxact:ports>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ipxact:abstractionDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014/ http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+<ipxact:abstractionDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
 	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
 	<ipxact:library>interface</ipxact:library>
 	<ipxact:name>csr_id.absDef</ipxact:name>
@@ -9,155 +9,179 @@
 		<ipxact:port>
 			<ipxact:logicalName>CSR_CAUSE</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>CSR_IRQ_SEC</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>CSR_RESTORE_MRET_ID</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>CSR_RESTORE_URET_ID</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>CSR_SAVE_CAUSE</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>CSR_SAVE_ID</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>CSR_SAVE_IF</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>M_IRQ_ENABLE</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>U_IRQ_ENABLE</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>PERF_JUMP</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>LD_STALL</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>JR_STALL</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>csr</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 	</ipxact:ports>

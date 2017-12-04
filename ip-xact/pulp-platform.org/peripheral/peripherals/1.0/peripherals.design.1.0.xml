@@ -111,7 +111,7 @@
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
-			<ipxact:instanceName>apb_fll_if_apb_fll_if_i</ipxact:instanceName>
+			<ipxact:instanceName>apb_fll_if_i</ipxact:instanceName>
 			<ipxact:description>APB Slave 6: FLL Ctrl</ipxact:description>
 			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="apb_fll_if" version="1.0"/>
 			<ipxact:vendorExtensions>
@@ -390,11 +390,6 @@
 			<ipxact:hierInterface busRef="spi"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
-			<ipxact:name>axi2apb_i_axi_slave_to_slave</ipxact:name>
-			<ipxact:activeInterface componentRef="axi2apb_i" busRef="axi_slave"/>
-			<ipxact:hierInterface busRef="slave"/>
-		</ipxact:interconnection>
-		<ipxact:interconnection>
 			<ipxact:name>apb_gpio_i_gpio_to_gpio</ipxact:name>
 			<ipxact:activeInterface componentRef="apb_gpio_i" busRef="gpio"/>
 			<ipxact:hierInterface busRef="gpio"/>
@@ -425,14 +420,14 @@
 			<ipxact:activeInterface componentRef="periph_bus_i" busRef="i2c_master"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
-			<ipxact:name>apb_fll_if_apb_fll_if_i_fll1_to_fll</ipxact:name>
-			<ipxact:activeInterface componentRef="apb_fll_if_apb_fll_if_i" busRef="fll1"/>
+			<ipxact:name>apb_fll_if_i_fll1_to_fll</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_fll_if_i" busRef="fll1"/>
 			<ipxact:hierInterface busRef="fll"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
-			<ipxact:name>periph_bus_i_fll_master_to_apb_fll_if_apb_fll_if_i_apb_slave</ipxact:name>
+			<ipxact:name>periph_bus_i_fll_master_to_apb_fll_if_i_apb_slave</ipxact:name>
 			<ipxact:activeInterface componentRef="periph_bus_i" busRef="fll_master"/>
-			<ipxact:activeInterface componentRef="apb_fll_if_apb_fll_if_i" busRef="apb_slave"/>
+			<ipxact:activeInterface componentRef="apb_fll_if_i" busRef="apb_slave"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
 			<ipxact:name>apb_pulpino_i_apb_slave_to_periph_bus_i_soc_ctrl_master</ipxact:name>
@@ -460,11 +455,6 @@
 			<ipxact:activeInterface componentRef="apb_spi_master_i" busRef="spi_bus"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
-			<ipxact:name>axi2apb_i_apb_master_to_periph_bus_i_apb_slave</ipxact:name>
-			<ipxact:activeInterface componentRef="axi2apb_i" busRef="apb_master"/>
-			<ipxact:activeInterface componentRef="periph_bus_i" busRef="apb_slave"/>
-		</ipxact:interconnection>
-		<ipxact:interconnection>
 			<ipxact:name>apb_i2c_i_irq_to_apb_event_unit_i_irq</ipxact:name>
 			<ipxact:activeInterface componentRef="apb_i2c_i" busRef="irq"/>
 			<ipxact:activeInterface componentRef="apb_event_unit_i" busRef="irq"/>
@@ -490,11 +480,6 @@
 			<ipxact:hierInterface busRef="spi_master"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
-			<ipxact:name>periph_bus_i_uart_master_to_apb_uart_i_apb_slave</ipxact:name>
-			<ipxact:activeInterface componentRef="periph_bus_i" busRef="uart_master"/>
-			<ipxact:activeInterface componentRef="apb_uart_i" busRef="apb_slave"/>
-		</ipxact:interconnection>
-		<ipxact:interconnection>
 			<ipxact:name>apb_uart_i_uart_to_uart</ipxact:name>
 			<ipxact:activeInterface componentRef="apb_uart_i" busRef="uart"/>
 			<ipxact:hierInterface busRef="uart"/>
@@ -503,6 +488,21 @@
 			<ipxact:name>apb_uart_i_event_to_apb_event_unit_i_irq</ipxact:name>
 			<ipxact:activeInterface componentRef="apb_uart_i" busRef="event"/>
 			<ipxact:activeInterface componentRef="apb_event_unit_i" busRef="irq"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>periph_bus_i_uart_master_to_apb_uart_i_apb_slave</ipxact:name>
+			<ipxact:activeInterface componentRef="periph_bus_i" busRef="uart_master"/>
+			<ipxact:activeInterface componentRef="apb_uart_i" busRef="apb_slave"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>axi2apb_i_axi_slave_to_slave</ipxact:name>
+			<ipxact:activeInterface componentRef="axi2apb_i" busRef="axi_slave"/>
+			<ipxact:hierInterface busRef="slave"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>axi2apb_i_apb_master_to_periph_bus_i_apb_slave</ipxact:name>
+			<ipxact:activeInterface componentRef="axi2apb_i" busRef="apb_master"/>
+			<ipxact:activeInterface componentRef="periph_bus_i" busRef="apb_slave"/>
 		</ipxact:interconnection>
 	</ipxact:interconnections>
 	<ipxact:adHocConnections>
@@ -773,37 +773,37 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>apb_fll_if_apb_fll_if_i_fll2_ack_to_tiedValue</ipxact:name>
+			<ipxact:name>apb_fll_if_i_fll2_ack_to_tiedValue</ipxact:name>
 			<ipxact:tiedValue>1'b0</ipxact:tiedValue>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="apb_fll_if_apb_fll_if_i" portRef="fll2_ack"/>
+				<ipxact:internalPortReference componentRef="apb_fll_if_i" portRef="fll2_ack"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>apb_fll_if_apb_fll_if_i_fll2_r_data_to_tiedValue</ipxact:name>
+			<ipxact:name>apb_fll_if_i_fll2_r_data_to_tiedValue</ipxact:name>
 			<ipxact:tiedValue>'0</ipxact:tiedValue>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="apb_fll_if_apb_fll_if_i" portRef="fll2_r_data"/>
+				<ipxact:internalPortReference componentRef="apb_fll_if_i" portRef="fll2_r_data"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>apb_fll_if_apb_fll_if_i_fll2_lock_to_tiedValue</ipxact:name>
+			<ipxact:name>apb_fll_if_i_fll2_lock_to_tiedValue</ipxact:name>
 			<ipxact:tiedValue>1'b0</ipxact:tiedValue>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="apb_fll_if_apb_fll_if_i" portRef="fll2_lock"/>
+				<ipxact:internalPortReference componentRef="apb_fll_if_i" portRef="fll2_lock"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>core_clock_gate_7_clk_o_to_apb_fll_if_apb_fll_if_i_HCLK</ipxact:name>
+			<ipxact:name>core_clock_gate_7_clk_o_to_apb_fll_if_i_HCLK</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="core_clock_gate_7" portRef="clk_o"/>
-				<ipxact:internalPortReference componentRef="apb_fll_if_apb_fll_if_i" portRef="HCLK"/>
+				<ipxact:internalPortReference componentRef="apb_fll_if_i" portRef="HCLK"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>apb_fll_if_apb_fll_if_i_HRESETn_to_rst_n</ipxact:name>
+			<ipxact:name>apb_fll_if_i_HRESETn_to_rst_n</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="apb_fll_if_apb_fll_if_i" portRef="HRESETn"/>
+				<ipxact:internalPortReference componentRef="apb_fll_if_i" portRef="HRESETn"/>
 				<ipxact:externalPortReference portRef="rst_n"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
@@ -1119,10 +1119,6 @@
 				<kactus2:position x="410" y="100"/>
 				<kactus2:position x="1100" y="560"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi2apb_i_axi_slave_to_slave" kactus2:offPage="false">
-				<kactus2:position x="490" y="160"/>
-				<kactus2:position x="380" y="160"/>
-			</kactus2:route>
 			<kactus2:route kactus2:connRef="axi2apb_i_rst_ni_to_rst_n" kactus2:offPage="true">
 				<kactus2:position x="410" y="100"/>
 				<kactus2:position x="460" y="110"/>
@@ -1175,26 +1171,11 @@
 				<kactus2:position x="350" y="70"/>
 				<kactus2:position x="1100" y="820"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_irq_o_to_irq_o" kactus2:offPage="false">
-				<kactus2:position x="1460" y="830"/>
-				<kactus2:position x="1350" y="830"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false">
-				<kactus2:position x="380" y="890"/>
-				<kactus2:position x="1130" y="890"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_fetch_enable_o_to_fetch_enable_o" kactus2:offPage="false">
-				<kactus2:position x="1460" y="890"/>
-				<kactus2:position x="1350" y="890"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_core_busy_i_to_core_busy_i" kactus2:offPage="false">
-				<kactus2:position x="380" y="920"/>
-				<kactus2:position x="1130" y="920"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_event_unit_i_clk_gate_core_o_to_clk_gate_core_o" kactus2:offPage="false">
-				<kactus2:position x="1460" y="860"/>
-				<kactus2:position x="1350" y="860"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_irq_o_to_irq_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_fetch_enable_o_to_fetch_enable_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_core_busy_i_to_core_busy_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_event_unit_i_clk_gate_core_o_to_clk_gate_core_o" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="apb_i2c_i_i2c_to_i2c" kactus2:offPage="false">
 				<kactus2:position x="1350" y="1060"/>
 				<kactus2:position x="1460" y="1060"/>
@@ -1215,19 +1196,19 @@
 				<kactus2:position x="1130" y="1110"/>
 				<kactus2:position x="1030" y="1110"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_fll_if_apb_fll_if_i_fll1_to_fll" kactus2:offPage="false">
+			<kactus2:route kactus2:connRef="apb_fll_if_i_fll1_to_fll" kactus2:offPage="false">
 				<kactus2:position x="1350" y="1200"/>
 				<kactus2:position x="1460" y="1200"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="periph_bus_i_fll_master_to_apb_fll_if_apb_fll_if_i_apb_slave" kactus2:offPage="false">
+			<kactus2:route kactus2:connRef="periph_bus_i_fll_master_to_apb_fll_if_i_apb_slave" kactus2:offPage="false">
 				<kactus2:position x="1030" y="1300"/>
 				<kactus2:position x="1130" y="1300"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="core_clock_gate_7_clk_o_to_apb_fll_if_apb_fll_if_i_HCLK" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="core_clock_gate_7_clk_o_to_apb_fll_if_i_HCLK" kactus2:offPage="true">
 				<kactus2:position x="300" y="940"/>
 				<kactus2:position x="1100" y="1190"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_fll_if_apb_fll_if_i_HRESETn_to_rst_n" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="apb_fll_if_i_HRESETn_to_rst_n" kactus2:offPage="true">
 				<kactus2:position x="410" y="100"/>
 				<kactus2:position x="1100" y="1210"/>
 			</kactus2:route>
@@ -1239,18 +1220,9 @@
 				<kactus2:position x="410" y="100"/>
 				<kactus2:position x="1100" y="1400"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_pulpino_i_pad_cfg_o_to_pad_cfg_o" kactus2:offPage="false">
-				<kactus2:position x="1460" y="1390"/>
-				<kactus2:position x="1350" y="1390"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_pulpino_i_pad_mux_o_to_pad_mux_o" kactus2:offPage="false">
-				<kactus2:position x="1460" y="1420"/>
-				<kactus2:position x="1350" y="1420"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="apb_pulpino_i_boot_addr_o_to_boot_addr_o" kactus2:offPage="false">
-				<kactus2:position x="1460" y="1450"/>
-				<kactus2:position x="1350" y="1450"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_pulpino_i_pad_cfg_o_to_pad_cfg_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_pulpino_i_pad_mux_o_to_pad_mux_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="apb_pulpino_i_boot_addr_o_to_boot_addr_o" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="apb_pulpino_i_clk_gate_o_to_core_clock_gate_0_en_i" kactus2:offPage="true">
 				<kactus2:position x="1060" y="1670"/>
 				<kactus2:position x="140" y="110"/>
@@ -1287,14 +1259,11 @@
 				<kactus2:position x="1130" y="1420"/>
 				<kactus2:position x="1030" y="1420"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="peripheral_clock_gate_ctrl" kactus2:offPage="false">
-				<kactus2:position x="1130" y="1450"/>
-				<kactus2:position x="30" y="1450"/>
-				<kactus2:position x="30" y="110"/>
-				<kactus2:position x="50" y="110"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="peripheral_clock_gate_ctrl" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="apb2per_debug_i_debug_to_debug" kactus2:offPage="false">
 				<kactus2:position x="490" y="300"/>
+				<kactus2:position x="400" y="300"/>
+				<kactus2:position x="400" y="300"/>
 				<kactus2:position x="380" y="300"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="apb2per_debug_i_clk_i_to_clk_i" kactus2:offPage="true">
@@ -1307,6 +1276,8 @@
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="apb2per_debug_i_apb_slave_to_periph_bus_i_debug_master" kactus2:offPage="false">
 				<kactus2:position x="710" y="250"/>
+				<kactus2:position x="790" y="250"/>
+				<kactus2:position x="790" y="250"/>
 				<kactus2:position x="810" y="250"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="axi_spi_slave_i_axi_master_to_axi_spi_master" kactus2:offPage="false">
@@ -1324,10 +1295,6 @@
 			<kactus2:route kactus2:connRef="periph_bus_i_rst_ni_to_rst_n" kactus2:offPage="true">
 				<kactus2:position x="410" y="100"/>
 				<kactus2:position x="780" y="110"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi2apb_i_apb_master_to_periph_bus_i_apb_slave" kactus2:offPage="false">
-				<kactus2:position x="710" y="140"/>
-				<kactus2:position x="810" y="140"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="i2c_event" kactus2:offPage="false">
 				<kactus2:position x="1350" y="1180"/>
@@ -1401,10 +1368,6 @@
 				<kactus2:position x="1350" y="550"/>
 				<kactus2:position x="1460" y="550"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="periph_bus_i_uart_master_to_apb_uart_i_apb_slave" kactus2:offPage="false">
-				<kactus2:position x="1030" y="300"/>
-				<kactus2:position x="1130" y="300"/>
-			</kactus2:route>
 			<kactus2:route kactus2:connRef="apb_uart_i_uart_to_uart" kactus2:offPage="false">
 				<kactus2:position x="1350" y="230"/>
 				<kactus2:position x="1460" y="230"/>
@@ -1422,6 +1385,18 @@
 			<kactus2:route kactus2:connRef="apb_uart_i_RSTN_to_rst_n" kactus2:offPage="true">
 				<kactus2:position x="410" y="100"/>
 				<kactus2:position x="1100" y="240"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="periph_bus_i_uart_master_to_apb_uart_i_apb_slave" kactus2:offPage="false">
+				<kactus2:position x="1030" y="300"/>
+				<kactus2:position x="1130" y="300"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi2apb_i_axi_slave_to_slave" kactus2:offPage="false">
+				<kactus2:position x="490" y="160"/>
+				<kactus2:position x="380" y="160"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="axi2apb_i_apb_master_to_periph_bus_i_apb_slave" kactus2:offPage="false">
+				<kactus2:position x="710" y="140"/>
+				<kactus2:position x="810" y="140"/>
 			</kactus2:route>
 		</kactus2:routes>
 		<kactus2:adHocVisibilities>

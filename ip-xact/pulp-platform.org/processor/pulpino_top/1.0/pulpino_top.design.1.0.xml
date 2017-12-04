@@ -619,11 +619,11 @@
 		</kactus2:interfaceGraphics>
 		<kactus2:note>
 			<kactus2:position x="520" y="540"/>
-			<kactus2:content>Tied values for start_addr_i and end_addr_i omitted.</kactus2:content>
+			<kactus2:content>Tied values for start_addr_i and end_addr_i omitted. Set as default values in component.</kactus2:content>
 			<kactus2:associations>
 				<kactus2:position x="600" y="260"/>
 			</kactus2:associations>
-			<kactus2:timestamp>28.11.2017 9:00:29</kactus2:timestamp>
+			<kactus2:timestamp>4.12.2017 10:12:39</kactus2:timestamp>
 		</kactus2:note>
 	</ipxact:vendorExtensions>
 </ipxact:design>

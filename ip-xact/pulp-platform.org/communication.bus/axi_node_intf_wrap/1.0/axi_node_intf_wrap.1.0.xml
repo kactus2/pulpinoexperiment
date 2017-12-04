@@ -2852,13 +2852,37 @@
 	</ipxact:busInterfaces>
 	<ipxact:channels>
 		<ipxact:channel>
-			<ipxact:name>axi_channel</ipxact:name>
+			<ipxact:name>axi_channel_0</ipxact:name>
 			<ipxact:busInterfaceRef>
 				<ipxact:localName>master0</ipxact:localName>
 			</ipxact:busInterfaceRef>
 			<ipxact:busInterfaceRef>
+				<ipxact:localName>slave0</ipxact:localName>
+			</ipxact:busInterfaceRef>
+			<ipxact:busInterfaceRef>
+				<ipxact:localName>slave1</ipxact:localName>
+			</ipxact:busInterfaceRef>
+			<ipxact:busInterfaceRef>
+				<ipxact:localName>slave2</ipxact:localName>
+			</ipxact:busInterfaceRef>
+		</ipxact:channel>
+		<ipxact:channel>
+			<ipxact:name>axi_channel_1</ipxact:name>
+			<ipxact:busInterfaceRef>
 				<ipxact:localName>master1</ipxact:localName>
 			</ipxact:busInterfaceRef>
+			<ipxact:busInterfaceRef>
+				<ipxact:localName>slave0</ipxact:localName>
+			</ipxact:busInterfaceRef>
+			<ipxact:busInterfaceRef>
+				<ipxact:localName>slave1</ipxact:localName>
+			</ipxact:busInterfaceRef>
+			<ipxact:busInterfaceRef>
+				<ipxact:localName>slave2</ipxact:localName>
+			</ipxact:busInterfaceRef>
+		</ipxact:channel>
+		<ipxact:channel>
+			<ipxact:name>axi_channel_2</ipxact:name>
 			<ipxact:busInterfaceRef>
 				<ipxact:localName>master2</ipxact:localName>
 			</ipxact:busInterfaceRef>
@@ -2935,6 +2959,11 @@
 							<ipxact:typeName>logic</ipxact:typeName>
 						</ipxact:wireTypeDef>
 					</ipxact:wireTypeDefs>
+					<ipxact:drivers>
+						<ipxact:driver>
+							<ipxact:defaultValue>{32'h1A10_0000, 32'h0010_0000, 32'h0000_0000}</ipxact:defaultValue>
+						</ipxact:driver>
+					</ipxact:drivers>
 				</ipxact:wire>
 				<ipxact:arrays>
 					<ipxact:array>
@@ -2961,6 +2990,11 @@
 							<ipxact:typeName>logic</ipxact:typeName>
 						</ipxact:wireTypeDef>
 					</ipxact:wireTypeDefs>
+					<ipxact:drivers>
+						<ipxact:driver>
+							<ipxact:defaultValue>{32'h1A11_FFFF, 32'h001F_FFFF, 32'h000F_FFFF}</ipxact:defaultValue>
+						</ipxact:driver>
+					</ipxact:drivers>
 				</ipxact:wire>
 				<ipxact:arrays>
 					<ipxact:array>

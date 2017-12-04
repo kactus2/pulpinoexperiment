@@ -213,7 +213,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>idStage</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>alu_control</ipxact:name>
@@ -405,7 +407,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:master/>
+			<ipxact:system>
+				<ipxact:group>idStage</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>id_lsu</ipxact:name>
@@ -579,7 +583,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:master/>
+			<ipxact:system>
+				<ipxact:group>idStage</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>dbg</ipxact:name>
@@ -807,7 +813,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>idStage</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>

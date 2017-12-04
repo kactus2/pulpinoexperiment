@@ -42,10 +42,6 @@
 		<ipxact:view viewRef="structural"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>apb_fll_if_apb_fll_if_i</ipxact:instanceName>
-		<ipxact:view viewRef="flat_verilog"/>
-	</ipxact:viewConfiguration>
-	<ipxact:viewConfiguration>
 		<ipxact:instanceName>apb_i2c_i</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
@@ -84,6 +80,10 @@
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>apb_uart_i</ipxact:instanceName>
 		<ipxact:view viewRef="flat_vhdl"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>apb_fll_if_i</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>
 		<kactus2:version>3,4,174,0</kactus2:version>

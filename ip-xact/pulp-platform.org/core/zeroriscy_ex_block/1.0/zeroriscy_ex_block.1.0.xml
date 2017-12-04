@@ -195,7 +195,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>exStage</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>

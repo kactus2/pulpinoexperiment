@@ -157,7 +157,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:slave>
+				<ipxact:memoryMapRef memoryMapRef="EVENT_UNIT"/>
+			</ipxact:slave>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:memoryMaps>

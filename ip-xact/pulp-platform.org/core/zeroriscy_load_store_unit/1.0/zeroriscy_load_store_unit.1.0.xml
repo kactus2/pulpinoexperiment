@@ -319,7 +319,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>loadStoreUnit</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:addressSpaces>

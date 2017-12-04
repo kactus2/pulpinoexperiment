@@ -279,7 +279,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:master/>
+			<ipxact:system>
+				<ipxact:group>ifStage</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>hwlp</ipxact:name>
@@ -315,7 +317,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>ifStage</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:addressSpaces>
@@ -1007,12 +1011,12 @@
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>Flat</kactus2:kts_productHier>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
-		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:license>solderpad</kactus2:license>
 	</ipxact:vendorExtensions>
 </ipxact:component>

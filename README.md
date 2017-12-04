@@ -1,14 +1,19 @@
 # pulpinoexperiment
-An experimental repository containing IP-XACT packaging of PULPino by pulp-project.org: https://github.com/pulp-platform/pulpino
+An experimental repository containing IP-XACT packaging of PULPino RISC-V core by pulp-project.org: https://github.com/pulp-platform/pulpino
 
 Based on PULPino release in August 2017
 
 ## Setup
 
-Update submodule pulpino
+Update submodule pulpino:
 
-Update all pulpino IPs, see README.md in pulpino
+    git submodule init
+    git submodule update
 
+Update all pulpino IPs, see README.md in pulpino for full instructions:
+
+    cd pulpino
+    ./update-ips.py
 
 ## Notes
 
@@ -30,9 +35,9 @@ Problems faced in the design in IP-XACT point of view:
 - ifdefs
 	-- To be replaced with design configurations
 	-- Omitting for now
-- generate loops
+- generate loops replaced with static instances
 - hierarchical components with additional logic, usually muxes
-	-- Split stray logic into new components
+	-- Split stray logic into new components located in directory rtl
 
 New RTL components split from stray logic in hierarchical files:
 - axi_mem_if_DP_mem_mux (check)

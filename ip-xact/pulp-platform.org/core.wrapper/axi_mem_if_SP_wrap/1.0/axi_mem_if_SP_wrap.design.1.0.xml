@@ -19,6 +19,7 @@
 			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{2fd7079b-7ebf-49d5-9aba-08315c634bcb}</kactus2:uuid>
+				<kactus2:position x="280" y="60"/>
 				<kactus2:portPositions>
 					<kactus2:portPosition busRef="mem" x="-110" y="120"/>
 					<kactus2:portPosition busRef="slave" x="110" y="120"/>
@@ -28,7 +29,6 @@
 					<kactus2:adHocVisible portName="ARESETn" x="-110" y="60"/>
 					<kactus2:adHocVisible portName="test_en_i" x="-110" y="90"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:position x="280" y="60"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 	</ipxact:componentInstances>
@@ -96,7 +96,7 @@
 		</kactus2:kts_attributes>
 		<kactus2:columnLayout>
 			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
-			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
+			<kactus2:column name="Components" contentType="4" allowedItems="10" minWidth="319" width="319" x="120"/>
 			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
 		</kactus2:columnLayout>
 		<kactus2:routes>

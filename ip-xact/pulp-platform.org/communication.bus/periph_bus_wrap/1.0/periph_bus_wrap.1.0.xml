@@ -1332,36 +1332,6 @@
 				<ipxact:localName>spi_master</ipxact:localName>
 			</ipxact:busInterfaceRef>
 		</ipxact:channel>
-		<ipxact:channel>
-			<ipxact:name>debug_channel</ipxact:name>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>debug_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>event_unit_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>fll_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>gpio_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>i2c_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>soc_ctrl_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>timer_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>uart_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-			<ipxact:busInterfaceRef>
-				<ipxact:localName>spi_master</ipxact:localName>
-			</ipxact:busInterfaceRef>
-		</ipxact:channel>
 	</ipxact:channels>
 	<ipxact:model>
 		<ipxact:views>

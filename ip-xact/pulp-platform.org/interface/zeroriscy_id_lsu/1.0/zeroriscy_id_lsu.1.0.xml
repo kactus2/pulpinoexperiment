@@ -6,4 +6,8 @@
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:directConnection>true</ipxact:directConnection>
 	<ipxact:isAddressable>false</ipxact:isAddressable>
+	<ipxact:systemGroupNames>
+		<ipxact:systemGroupName>idStage</ipxact:systemGroupName>
+		<ipxact:systemGroupName>loadStoreUnit</ipxact:systemGroupName>
+	</ipxact:systemGroupNames>
 </ipxact:busDefinition>

@@ -123,7 +123,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>csr</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>csr_id</ipxact:name>
@@ -261,7 +263,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>csr</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>

@@ -727,7 +727,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:slave>
+				<ipxact:transparentBridge masterRef="mem"/>
+			</ipxact:slave>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>

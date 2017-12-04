@@ -627,9 +627,7 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave>
-				<ipxact:transparentBridge masterRef="axi_master"/>
-			</ipxact:slave>
+			<ipxact:slave/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>axi_master</ipxact:name>

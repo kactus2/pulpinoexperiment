@@ -9,131 +9,151 @@
 		<ipxact:port>
 			<ipxact:logicalName>ALU_OPERATOR_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>ALU_OPERAND_A_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>ALU_OPERAND_B_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>MULT_EN_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DIV_EN_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>MULTDIV_OPERATOR_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>2</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>2</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>MULTDIV_SIGNED_MODE_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>2</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>2</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>MULTDIV_OPERAND_A_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>MULTDIV_OPERAND_B_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>REGFILE_WDATA_EX</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>exStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 	</ipxact:ports>

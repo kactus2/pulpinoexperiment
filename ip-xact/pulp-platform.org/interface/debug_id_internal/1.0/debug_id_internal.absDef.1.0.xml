@@ -9,157 +9,181 @@
 		<ipxact:port>
 			<ipxact:logicalName>DBG_SETTINGS</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_REQ</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_ACK</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_STALL</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_TRAP</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_REG_RREQ</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_REG_RADDR</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_REG_RDATA</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_REG_WREQ</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_REG_WADDR</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>6</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_REG_WDATA</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>32</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
 			<ipxact:logicalName>DBG_JUMP_REQ</ipxact:logicalName>
 			<ipxact:wire>
-				<ipxact:onMaster>
+				<ipxact:onSystem>
+					<ipxact:group>debugUnit</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onMaster>
-				<ipxact:onSlave>
+				</ipxact:onSystem>
+				<ipxact:onSystem>
+					<ipxact:group>idStage</ipxact:group>
 					<ipxact:width>1</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSlave>
+				</ipxact:onSystem>
 			</ipxact:wire>
 		</ipxact:port>
 	</ipxact:ports>

@@ -5,5 +5,9 @@
 	<ipxact:name>debug_id_internal</ipxact:name>
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:directConnection>true</ipxact:directConnection>
-	<ipxact:isAddressable>true</ipxact:isAddressable>
+	<ipxact:isAddressable>false</ipxact:isAddressable>
+	<ipxact:systemGroupNames>
+		<ipxact:systemGroupName>idStage</ipxact:systemGroupName>
+		<ipxact:systemGroupName>debugUnit</ipxact:systemGroupName>
+	</ipxact:systemGroupNames>
 </ipxact:busDefinition>
