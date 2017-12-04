@@ -7,10 +7,10 @@
 	<ipxact:busInterfaces>
 		<ipxact:busInterface>
 			<ipxact:name>a_in</ipxact:name>
-			<ipxact:busType vendor="pulp-platform.org" library="interface" name="fifo_write" version="1.0"/>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="fifo" version="1.0"/>
 			<ipxact:abstractionTypes>
 				<ipxact:abstractionType>
-					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="fifo_write.absDef" version="1.0"/>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="fifo.absDef" version="1.0"/>
 					<ipxact:portMaps>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
@@ -39,14 +39,16 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>read</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>b_out</ipxact:name>
-			<ipxact:busType vendor="pulp-platform.org" library="interface" name="fifo_read" version="1.0"/>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="fifo" version="1.0"/>
 			<ipxact:abstractionTypes>
 				<ipxact:abstractionType>
-					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="fifo_read.absDef" version="1.0"/>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="fifo.absDef" version="1.0"/>
 					<ipxact:portMaps>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
@@ -66,7 +68,7 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>READY</ipxact:name>
+								<ipxact:name>FIFO_READY</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>ready_b</ipxact:name>
@@ -75,7 +77,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:system>
+				<ipxact:group>write</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>
