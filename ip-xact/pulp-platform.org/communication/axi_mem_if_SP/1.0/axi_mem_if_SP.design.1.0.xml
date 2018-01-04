@@ -788,35 +788,35 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_1ec16164_dba7_4d19_a38c_82908174ae2c" resolve="user" usageCount="4">
+		<ipxact:parameter parameterId="uuid_1ec16164_dba7_4d19_a38c_82908174ae2c" resolve="user" kactus2:usageCount="4">
 			<ipxact:name>AXI4_ADDRESS_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_18b2a47d_bd77_46fa_9ce0_12634e82ed89" resolve="user" usageCount="6">
+		<ipxact:parameter parameterId="uuid_18b2a47d_bd77_46fa_9ce0_12634e82ed89" resolve="user" kactus2:usageCount="6">
 			<ipxact:name>AXI4_ID_WIDTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_80bc31f8_aa3d_41f6_aa11_d05238e831fb" resolve="user" usageCount="3">
+		<ipxact:parameter parameterId="uuid_80bc31f8_aa3d_41f6_aa11_d05238e831fb" resolve="user" kactus2:usageCount="3">
 			<ipxact:name>AXI4_RDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_e0cd858b_f537_411f_9f12_b00fcd254469" resolve="user" usageCount="7">
+		<ipxact:parameter parameterId="uuid_e0cd858b_f537_411f_9f12_b00fcd254469" resolve="user" kactus2:usageCount="7">
 			<ipxact:name>AXI4_USER_WIDTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_795461dd_410d_4309_9afe_bd86361249e5" resolve="user" usageCount="5">
+		<ipxact:parameter parameterId="uuid_795461dd_410d_4309_9afe_bd86361249e5" resolve="user" kactus2:usageCount="5">
 			<ipxact:name>AXI4_WDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_6f0d0c01_5a21_41de_9a0c_0d038a00fb3b" usageCount="3">
+		<ipxact:parameter parameterId="uuid_6f0d0c01_5a21_41de_9a0c_0d038a00fb3b" kactus2:usageCount="3">
 			<ipxact:name>AXI_NUMBYTES</ipxact:name>
 			<ipxact:value>uuid_795461dd_410d_4309_9afe_bd86361249e5/8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_52b8125b_7f10_4479_85cb_2d934df8d1c8" usageCount="5">
+		<ipxact:parameter parameterId="uuid_52b8125b_7f10_4479_85cb_2d934df8d1c8" kactus2:usageCount="5">
 			<ipxact:name>BUFF_DEPTH_SLAVE</ipxact:name>
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f5f1661a_f4eb_4683_acde_53c2738c3621" resolve="user" usageCount="3">
+		<ipxact:parameter parameterId="uuid_f5f1661a_f4eb_4683_acde_53c2738c3621" resolve="user" kactus2:usageCount="3">
 			<ipxact:name>MEM_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>13</ipxact:value>
 		</ipxact:parameter>

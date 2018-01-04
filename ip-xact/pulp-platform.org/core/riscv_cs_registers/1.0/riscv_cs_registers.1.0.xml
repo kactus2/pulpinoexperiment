@@ -282,54 +282,24 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>riscv_cs_registers</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_e8015d0e_11eb_4d62_8210_cd7a997b27ff" usageCount="3" usageType="nontyped">
-						<ipxact:name>N_HWLP</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_e8015d0e_11eb_4d62_8210_cd7a997b27ff" kactus2:usageCount="3" usageType="nontyped">
+						<ipxact:name>N_HWLP</ipxact:name> 
 						<ipxact:value>uuid_4202c3bb_5d42_480f_977b_56fd7e136363</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_da620bca_dde3_4b9c_85d5_981fdf88d39d" usageType="nontyped">
-						<ipxact:name>N_EXT_CNT</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>N_EXT_CNT</ipxact:name> 
 						<ipxact:value>uuid_b0987ccc_b828_4eb8_904e_c31cdc976262</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_08ab28ac_f985_42b3_a1b3_0d9d723176f3" usageType="nontyped">
-						<ipxact:name>APU</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>APU</ipxact:name> 
 						<ipxact:value>uuid_05bd84f3_cd84_4b82_83c5_8c91590f5fdb</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_823ccfad_c7ad_489d_bdd2_f539fb763128" usageType="nontyped">
-						<ipxact:name>FPU</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>FPU</ipxact:name> 
 						<ipxact:value>uuid_b3056227_7882_4961_a445_aa15f8392058</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_84040c3a_d9db_49fa_8244_140f9ce91616" usageType="nontyped">
-						<ipxact:name>PULP_SECURE</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>PULP_SECURE</ipxact:name> 
 						<ipxact:value>uuid_ee655342_9e96_4352_b31e_c1d0f4aef16d</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -1121,35 +1091,35 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_05bd84f3_cd84_4b82_83c5_8c91590f5fdb" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_05bd84f3_cd84_4b82_83c5_8c91590f5fdb" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>APU</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b3056227_7882_4961_a445_aa15f8392058" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_b3056227_7882_4961_a445_aa15f8392058" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>FPU</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_4202c3bb_5d42_480f_977b_56fd7e136363" usageCount="5">
+		<ipxact:parameter parameterId="uuid_4202c3bb_5d42_480f_977b_56fd7e136363" kactus2:usageCount="5">
 			<ipxact:name>N_HWLP</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f71a86f8_155d_46a3_89c2_b49ee9162cad" usageCount="1">
+		<ipxact:parameter parameterId="uuid_f71a86f8_155d_46a3_89c2_b49ee9162cad" kactus2:usageCount="1">
 			<ipxact:name>N_HWLP_BITS</ipxact:name>
 			<ipxact:value>$clog2(uuid_4202c3bb_5d42_480f_977b_56fd7e136363)</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_ee655342_9e96_4352_b31e_c1d0f4aef16d" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_ee655342_9e96_4352_b31e_c1d0f4aef16d" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>PULP_SECURE</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b0987ccc_b828_4eb8_904e_c31cdc976262" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_b0987ccc_b828_4eb8_904e_c31cdc976262" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>N_EXT_CNT</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5ee1811b_5955_40d2_87c9_c49f99ff050a" usageCount="1">
+		<ipxact:parameter parameterId="uuid_5ee1811b_5955_40d2_87c9_c49f99ff050a" kactus2:usageCount="1">
 			<ipxact:name>C_PC</ipxact:name>
 			<ipxact:value>5</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_3bde0f51_bf5c_4d8b_a92e_9a25e1b0e5a9" usageCount="1">
+		<ipxact:parameter parameterId="uuid_3bde0f51_bf5c_4d8b_a92e_9a25e1b0e5a9" kactus2:usageCount="1">
 			<ipxact:name>C_FFLAG</ipxact:name>
 			<ipxact:value>5</ipxact:value>
 		</ipxact:parameter>

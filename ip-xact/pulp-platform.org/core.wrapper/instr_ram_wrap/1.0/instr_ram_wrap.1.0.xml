@@ -149,23 +149,11 @@
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_c61a03bb_b366_434f_84ab_8ed0670b2bc3" usageType="nontyped">
 						<ipxact:name>RAM_SIZE</ipxact:name>
-						<ipxact:description>in bytes</ipxact:description>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:description>in bytes</ipxact:description> 
 						<ipxact:value>uuid_54b76578_5d7f_4d87_987b_ad0abc5711d9</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_8550d272_aa76_4e9e_acfb_6f4a28c4ea6d" usageType="nontyped">
-						<ipxact:name>DATA_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>DATA_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_f39caf05_f4ab_4065_bf18_8cc76cc0c718</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_fa5de112_de65_4ccc_83a7_3bfb06057546" usageType="nontyped">
@@ -352,17 +340,17 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_54b76578_5d7f_4d87_987b_ad0abc5711d9" resolve="user" usageCount="3">
+		<ipxact:parameter parameterId="uuid_54b76578_5d7f_4d87_987b_ad0abc5711d9" resolve="user" kactus2:usageCount="3">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:description>in bytes</ipxact:description>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_92a11bf3_569a_4e37_ba36_80db14aa5fa7" resolve="user" usageCount="4">
+		<ipxact:parameter parameterId="uuid_92a11bf3_569a_4e37_ba36_80db14aa5fa7" resolve="user" kactus2:usageCount="4">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:description>one bit more than necessary, for the boot rom</ipxact:description>
 			<ipxact:value>$clog2(uuid_54b76578_5d7f_4d87_987b_ad0abc5711d9)+1</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f39caf05_f4ab_4065_bf18_8cc76cc0c718" resolve="user" usageCount="9">
+		<ipxact:parameter parameterId="uuid_f39caf05_f4ab_4065_bf18_8cc76cc0c718" resolve="user" kactus2:usageCount="9">
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

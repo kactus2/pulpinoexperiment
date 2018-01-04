@@ -19,13 +19,7 @@
 				<ipxact:moduleName>spi_slave_syncro</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_bfd6498f_0774_4918_aac1_1e162579cfa3" usageType="nontyped">
-						<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>AXI_ADDR_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_55ff2a73_21f6_41e5_bc7b_5523af78700a</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -169,14 +163,8 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_55ff2a73_21f6_41e5_bc7b_5523af78700a" resolve="user" usageCount="3">
-			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_55ff2a73_21f6_41e5_bc7b_5523af78700a" resolve="user" kactus2:usageCount="3">
+			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name> 
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>

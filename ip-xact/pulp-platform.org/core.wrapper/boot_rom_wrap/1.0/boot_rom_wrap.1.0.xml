@@ -76,24 +76,12 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>boot_rom_wrap</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_0b33830a_7f0f_40c3_82a8_6a3b040f714a" usageCount="1" usageType="nontyped">
-						<ipxact:name>ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_0b33830a_7f0f_40c3_82a8_6a3b040f714a" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>ADDR_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_93039b7d_cc5c_4271_be46_6fcd19d479c0</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_8eabcddc_ab07_4fb8_ada3_bfabd91c76ad" usageCount="1" usageType="nontyped">
-						<ipxact:name>DATA_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_8eabcddc_ab07_4fb8_ada3_bfabd91c76ad" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>DATA_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_1d0d4b12_270d_4da4_a035_b70094012711</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -191,15 +179,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_93039b7d_cc5c_4271_be46_6fcd19d479c0" usageCount="2">
+		<ipxact:parameter parameterId="uuid_93039b7d_cc5c_4271_be46_6fcd19d479c0" kactus2:usageCount="2">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>uuid_8e7b1565_57ea_4f6c_ae26_2c6d0db95ef4</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_1d0d4b12_270d_4da4_a035_b70094012711" resolve="user" usageCount="3">
+		<ipxact:parameter parameterId="uuid_1d0d4b12_270d_4da4_a035_b70094012711" resolve="user" kactus2:usageCount="3">
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_8e7b1565_57ea_4f6c_ae26_2c6d0db95ef4" usageCount="3">
+		<ipxact:parameter parameterId="uuid_8e7b1565_57ea_4f6c_ae26_2c6d0db95ef4" kactus2:usageCount="3">
 			<ipxact:name>ROM_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>

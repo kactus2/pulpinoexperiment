@@ -66,19 +66,19 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_fe01f1a5_f873_4e4a_a13a_13dbca694f19" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_fe01f1a5_f873_4e4a_a13a_13dbca694f19" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>AXI_ADDRESS_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_306d0c57_1441_4512_a375_e8031cb194cf" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_306d0c57_1441_4512_a375_e8031cb194cf" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 			<ipxact:value>64</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_2eadb0ea_e4ac_4b68_a83c_62d3880f7f35" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_2eadb0ea_e4ac_4b68_a83c_62d3880f7f35" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>AXI_ID_WIDTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b294215e_7783_45d8_847e_38beedbf8b46" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_b294215e_7783_45d8_847e_38beedbf8b46" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>

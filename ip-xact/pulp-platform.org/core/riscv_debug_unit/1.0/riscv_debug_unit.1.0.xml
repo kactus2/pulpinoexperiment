@@ -797,7 +797,7 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_a025ec81_671a_481b_861c_67a69751d1d8" usageCount="1">
+		<ipxact:parameter parameterId="uuid_a025ec81_671a_481b_861c_67a69751d1d8" kactus2:usageCount="1">
 			<ipxact:name>DBG_SETS_W</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>

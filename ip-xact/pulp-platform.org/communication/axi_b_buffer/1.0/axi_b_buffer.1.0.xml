@@ -225,33 +225,15 @@
 				<ipxact:moduleName>axi_b_buffer</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_32498c9c_3fc2_42d9_9721_1eb83bbf7811" usageType="nontyped">
-						<ipxact:name>ID_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>ID_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_bb5deb04_fdc3_42e7_b348_b4dbe7c3bbe5</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_bc54544f_0324_4525_abfc_ea7abd7aa8e0" usageType="nontyped">
-						<ipxact:name>USER_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>USER_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_be237859_058f_4e64_97a2_09a749f143bd</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_05d865c5_119f_422a_8d6a_392957855385" usageType="nontyped">
-						<ipxact:name>BUFFER_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>BUFFER_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_24dca55e_4df2_46e3_9f97_c7d32f622abc</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -452,34 +434,16 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_bb5deb04_fdc3_42e7_b348_b4dbe7c3bbe5" resolve="user" usageCount="2">
-			<ipxact:name>ID_WIDTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_bb5deb04_fdc3_42e7_b348_b4dbe7c3bbe5" resolve="user" kactus2:usageCount="2">
+			<ipxact:name>ID_WIDTH</ipxact:name> 
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_be237859_058f_4e64_97a2_09a749f143bd" resolve="user" usageCount="2">
-			<ipxact:name>USER_WIDTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_be237859_058f_4e64_97a2_09a749f143bd" resolve="user" kactus2:usageCount="2">
+			<ipxact:name>USER_WIDTH</ipxact:name> 
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_24dca55e_4df2_46e3_9f97_c7d32f622abc" resolve="user">
-			<ipxact:name>BUFFER_DEPTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+			<ipxact:name>BUFFER_DEPTH</ipxact:name> 
 			<ipxact:value>8</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>

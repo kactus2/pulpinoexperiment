@@ -2460,11 +2460,11 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_56537cdb_ef97_44c9_94cc_1e64e2838388" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_56537cdb_ef97_44c9_94cc_1e64e2838388" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_4a950485_645a_4041_9bec_88990f8568ff" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_4a950485_645a_4041_9bec_88990f8568ff" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>APB_DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

@@ -524,15 +524,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_063184e3_6790_4ff6_9efe_8c0764b58909" usageCount="9">
+		<ipxact:parameter parameterId="uuid_063184e3_6790_4ff6_9efe_8c0764b58909" kactus2:usageCount="9">
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_068faa15_7407_4589_8a67_706191da2aa4" usageCount="2">
+		<ipxact:parameter parameterId="uuid_068faa15_7407_4589_8a67_706191da2aa4" kactus2:usageCount="2">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_09ba4f4d_7431_4d40_9726_883dbfc290d3" usageCount="3">
+		<ipxact:parameter parameterId="uuid_09ba4f4d_7431_4d40_9726_883dbfc290d3" kactus2:usageCount="3">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

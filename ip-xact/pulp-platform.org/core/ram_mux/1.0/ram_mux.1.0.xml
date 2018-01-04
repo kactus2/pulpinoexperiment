@@ -94,8 +94,8 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:master>
-				<ipxact:addressSpaceRef ipxact:addressSpaceRef="ram_memory">
-					<ipxact:baseAddress ipxact:addressSpaceRef="ram_memory">0</ipxact:baseAddress>
+				<ipxact:addressSpaceRef addressSpaceRef="ram_memory">
+					<ipxact:baseAddress>0</ipxact:baseAddress>
 				</ipxact:addressSpaceRef>
 			</ipxact:master>
 		</ipxact:busInterface>
@@ -278,45 +278,21 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>ram_mux</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_b53e4be6_ae7e_4560_ae74_ad2506511899" usageCount="3" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="3" parameterId="uuid_b53e4be6_ae7e_4560_ae74_ad2506511899" usageType="nontyped">
 						<ipxact:name>ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>uuid_f1d00aea_70d0_4e43_8500_aa0144367083</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_18095ff2_5ffa_498c_9304_391824bb2104" usageCount="3" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="3" parameterId="uuid_18095ff2_5ffa_498c_9304_391824bb2104" usageType="nontyped">
 						<ipxact:name>OUT_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>uuid_cb6fd897_cbf2_41d9_ad17_2bae6e305327</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_c9f9b614_95c0_4eb5_8010_8a32aa62d8c4" usageCount="3" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="3" parameterId="uuid_c9f9b614_95c0_4eb5_8010_8a32aa62d8c4" usageType="nontyped">
 						<ipxact:name>IN0_WIDTH</ipxact:name>
 						<ipxact:description>in widths cannot be bigger than out width</ipxact:description>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>uuid_a6901eb0_59ba_4b51_93e3_5d16ba3d8130</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_5631d0c0_e63a_44bb_9032_c98f16b8bc21" usageCount="3" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="3" parameterId="uuid_5631d0c0_e63a_44bb_9032_c98f16b8bc21" usageType="nontyped">
 						<ipxact:name>IN1_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>uuid_720275b3_8f9a_45e5_979b_1132841274d8</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -683,24 +659,24 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_f1d00aea_70d0_4e43_8500_aa0144367083" resolve="user" usageCount="6">
+		<ipxact:parameter kactus2:usageCount="6" parameterId="uuid_f1d00aea_70d0_4e43_8500_aa0144367083" resolve="user">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_a6901eb0_59ba_4b51_93e3_5d16ba3d8130" resolve="user" usageCount="4">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_a6901eb0_59ba_4b51_93e3_5d16ba3d8130" resolve="user">
 			<ipxact:name>IN0_WIDTH</ipxact:name>
 			<ipxact:description>in widths cannot be bigger than out width</ipxact:description>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_720275b3_8f9a_45e5_979b_1132841274d8" resolve="user" usageCount="4">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_720275b3_8f9a_45e5_979b_1132841274d8" resolve="user">
 			<ipxact:name>IN1_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_cb6fd897_cbf2_41d9_ad17_2bae6e305327" resolve="user" usageCount="9">
+		<ipxact:parameter kactus2:usageCount="9" parameterId="uuid_cb6fd897_cbf2_41d9_ad17_2bae6e305327" resolve="user">
 			<ipxact:name>OUT_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_a50f440a_ad93_47f3_b410_769647fe38ae" resolve="user" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_a50f440a_ad93_47f3_b410_769647fe38ae" resolve="user">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>

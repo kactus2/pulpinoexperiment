@@ -19,13 +19,7 @@
 				<ipxact:moduleName>zeroriscy_cs_registers</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_e5312315_b53b_4005_a11a_485be4545e79" usageType="nontyped">
-						<ipxact:name>N_EXT_CNT</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>N_EXT_CNT</ipxact:name> 
 						<ipxact:value>uuid_edebd14a_48a1_4705_8cbf_843b3bb03095</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -488,94 +482,40 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter imported="true" parameterId="uuid_dc2b6d03_eda1_42c6_a855_d1d32922a1dd">
-			<ipxact:name>MSTATUS_UIE_BITS</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_dc2b6d03_eda1_42c6_a855_d1d32922a1dd">
+			<ipxact:name>MSTATUS_UIE_BITS</ipxact:name> 
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_4c0ea217_7d38_4728_bc70_8ad77b66c435">
-			<ipxact:name>MSTATUS_SIE_BITS</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_4c0ea217_7d38_4728_bc70_8ad77b66c435">
+			<ipxact:name>MSTATUS_SIE_BITS</ipxact:name> 
 			<ipxact:value>1</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_35fe8c71_ffee_4bae_8525_081808e0e9c4">
-			<ipxact:name>MSTATUS_MIE_BITS</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_35fe8c71_ffee_4bae_8525_081808e0e9c4">
+			<ipxact:name>MSTATUS_MIE_BITS</ipxact:name> 
 			<ipxact:value>3</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_89608e0c_fcd1_4304_9a52_c5c07302caea">
-			<ipxact:name>MSTATUS_UPIE_BITS</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_89608e0c_fcd1_4304_9a52_c5c07302caea">
+			<ipxact:name>MSTATUS_UPIE_BITS</ipxact:name> 
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_f0834d64_1a47_4639_bf9e_cdf5f43fc477">
-			<ipxact:name>MSTATUS_SPIE_BITS</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_f0834d64_1a47_4639_bf9e_cdf5f43fc477">
+			<ipxact:name>MSTATUS_SPIE_BITS</ipxact:name> 
 			<ipxact:value>5</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_ff765fae_99fa_472b_880c_62c47891a368">
-			<ipxact:name>MSTATUS_MPIE_BITS</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_ff765fae_99fa_472b_880c_62c47891a368">
+			<ipxact:name>MSTATUS_MPIE_BITS</ipxact:name> 
 			<ipxact:value>7</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_a2f1cad5_65a1_4295_ae6c_438ac0252eb1">
-			<ipxact:name>MSTATUS_SPP_BITS</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_a2f1cad5_65a1_4295_ae6c_438ac0252eb1">
+			<ipxact:name>MSTATUS_SPP_BITS</ipxact:name> 
 			<ipxact:value>8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_7b0e1f98_830e_41db_85f1_d41a8855c39a" type="string">
-			<ipxact:name>MSTATUS_MPP_BITS</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_7b0e1f98_830e_41db_85f1_d41a8855c39a" type="string">
+			<ipxact:name>MSTATUS_MPP_BITS</ipxact:name> 
 			<ipxact:value>&quot;12:11&quot;</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_edebd14a_48a1_4705_8cbf_843b3bb03095" resolve="user" usageCount="2">
-			<ipxact:name>N_EXT_CNT</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_edebd14a_48a1_4705_8cbf_843b3bb03095" resolve="user" kactus2:usageCount="2">
+			<ipxact:name>N_EXT_CNT</ipxact:name> 
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>

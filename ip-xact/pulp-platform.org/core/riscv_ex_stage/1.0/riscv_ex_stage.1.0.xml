@@ -651,43 +651,19 @@
 				<ipxact:moduleName>riscv_ex_stage</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_c6770cdb_9ccb_4d09_890e_06c613d67b88" usageType="nontyped">
-						<ipxact:name>FPU</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>FPU</ipxact:name> 
 						<ipxact:value>uuid_d8fbb971_89a8_47d7_9fa7_5a2ea578d7a8</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_5217423e_f686_46f5_94ec_76342cb2cc3d" usageType="nontyped">
-						<ipxact:name>SHARED_FP</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>SHARED_FP</ipxact:name> 
 						<ipxact:value>uuid_0679de7a_9c73_4e56_8d6a_d4e75bf3fb9d</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_922705c8_6b73_4e8b_a8d9_c946a1e4f928" usageType="nontyped">
-						<ipxact:name>SHARED_DSP_MULT</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>SHARED_DSP_MULT</ipxact:name> 
 						<ipxact:value>uuid_5eddb18c_22f2_43b6_9571_6df53522ca7b</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_9ac89b33_b3bb_4fe2_9892_fc3a5c2d9dc5" usageType="nontyped">
-						<ipxact:name>SHARED_INT_DIV</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>SHARED_INT_DIV</ipxact:name> 
 						<ipxact:value>uuid_663f48d6_a27d_4902_bfc8_fd89f7c4bc59</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -1770,79 +1746,43 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_6f5ecbad_484e_4cc4_8b44_defcc8a26efc" usageCount="1">
-			<ipxact:name>ALU_OP_WIDTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_6f5ecbad_484e_4cc4_8b44_defcc8a26efc" kactus2:usageCount="1">
+			<ipxact:name>ALU_OP_WIDTH</ipxact:name> 
 			<ipxact:value>7</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_c9afaf6c_9273_4642_b515_810a9537adab" usageCount="1">
-			<ipxact:name>C_CMD</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_c9afaf6c_9273_4642_b515_810a9537adab" kactus2:usageCount="1">
+			<ipxact:name>C_CMD</ipxact:name> 
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_0ab101a0_346c_4606_afe5_6b9b8f16d7f9" usageCount="1">
-			<ipxact:name>C_PC</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_0ab101a0_346c_4606_afe5_6b9b8f16d7f9" kactus2:usageCount="1">
+			<ipxact:name>C_PC</ipxact:name> 
 			<ipxact:value>5</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_1b430733_e1ec_4ea9_a2d6_b62367d03cac" usageCount="1">
-			<ipxact:name>C_FFLAG</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_1b430733_e1ec_4ea9_a2d6_b62367d03cac" kactus2:usageCount="1">
+			<ipxact:name>C_FFLAG</ipxact:name> 
 			<ipxact:value>5</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_e5548c7e_35f0_428a_9e2e_45403f0dd27e" usageCount="2">
-			<ipxact:name>WOP_CPU</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_e5548c7e_35f0_428a_9e2e_45403f0dd27e" kactus2:usageCount="2">
+			<ipxact:name>WOP_CPU</ipxact:name> 
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5024b161_ceba_4f45_9d13_64ccee75935f" usageCount="1">
-			<ipxact:name>NDSFLAGS_CPU</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_5024b161_ceba_4f45_9d13_64ccee75935f" kactus2:usageCount="1">
+			<ipxact:name>NDSFLAGS_CPU</ipxact:name> 
 			<ipxact:value>15</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_d8fbb971_89a8_47d7_9fa7_5a2ea578d7a8" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_d8fbb971_89a8_47d7_9fa7_5a2ea578d7a8" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>FPU</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5eddb18c_22f2_43b6_9571_6df53522ca7b" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_5eddb18c_22f2_43b6_9571_6df53522ca7b" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>SHARED_DSP_MULT</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_0679de7a_9c73_4e56_8d6a_d4e75bf3fb9d" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_0679de7a_9c73_4e56_8d6a_d4e75bf3fb9d" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>SHARED_FP</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_663f48d6_a27d_4902_bfc8_fd89f7c4bc59" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_663f48d6_a27d_4902_bfc8_fd89f7c4bc59" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>SHARED_INT_DIV</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>

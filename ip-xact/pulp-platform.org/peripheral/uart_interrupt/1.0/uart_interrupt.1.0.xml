@@ -19,23 +19,11 @@
 				<ipxact:moduleName>uart_interrupt</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_0d882407_8245_4666_9c03_2a714f656506" usageType="nontyped">
-						<ipxact:name>TX_FIFO_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>TX_FIFO_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_aa572b66_70d1_4990_ab65_3b7d48c5fb35</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_49e25c7a_5b90_4781_a7d4_cf1e458074c3" usageType="nontyped">
-						<ipxact:name>RX_FIFO_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>RX_FIFO_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_beb83bb5_f154_4a44_802c_5bb811c3d122</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -235,11 +223,11 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_beb83bb5_f154_4a44_802c_5bb811c3d122" usageCount="2">
+		<ipxact:parameter parameterId="uuid_beb83bb5_f154_4a44_802c_5bb811c3d122" kactus2:usageCount="2">
 			<ipxact:name>RX_FIFO_DEPTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_aa572b66_70d1_4990_ab65_3b7d48c5fb35" usageCount="2">
+		<ipxact:parameter parameterId="uuid_aa572b66_70d1_4990_ab65_3b7d48c5fb35" kactus2:usageCount="2">
 			<ipxact:name>TX_FIFO_DEPTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

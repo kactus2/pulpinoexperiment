@@ -715,34 +715,16 @@
 				<ipxact:moduleName>spi_master_apb_if</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_d64bcd46_e952_43b1_b5c3_0f182056d259" usageType="nontyped">
-						<ipxact:name>BUFFER_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>BUFFER_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_7cf8c1be_f143_4dbd_90e2_ab59ba7cba21</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_309477c9_edef_4433_9569_d1751bf5801c" usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter parameterId="uuid_309477c9_edef_4433_9569_d1751bf5801c" kactus2:usageCount="1" usageType="nontyped">
 						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:description>APB slaves are 4KB by default</ipxact:description>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:description>APB slaves are 4KB by default</ipxact:description> 
 						<ipxact:value>uuid_ed64a94f_52d0_4aec_a6fa_27ff0af299d9</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_415e4291_7dee_4bfa_8187_de1e578668a2" usageCount="4" usageType="nontyped">
-						<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_415e4291_7dee_4bfa_8187_de1e578668a2" kactus2:usageCount="4" usageType="nontyped">
+						<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_f8fb89ba_2123_4073_98f3_f9d1e7c3ca8f</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -1307,66 +1289,66 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter imported="true" parameterId="uuid_a75e19da_521f_4575_8578_3a9302b72433">
+		<ipxact:parameter  parameterId="uuid_a75e19da_521f_4575_8578_3a9302b72433">
 			<ipxact:name>REG_STATUS</ipxact:name>
 			<ipxact:description>BASEREG + 0x00</ipxact:description>
 			<ipxact:value>4'b0000</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_f2cafd27_a8e7_477e_a88b_17fb058c9889">
+		<ipxact:parameter  parameterId="uuid_f2cafd27_a8e7_477e_a88b_17fb058c9889">
 			<ipxact:name>REG_CLKDIV</ipxact:name>
 			<ipxact:description>BASEREG + 0x04</ipxact:description>
 			<ipxact:value>4'b0001</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_1e57159c_a091_45e7_8b73_8284dc53b3c0">
+		<ipxact:parameter  parameterId="uuid_1e57159c_a091_45e7_8b73_8284dc53b3c0">
 			<ipxact:name>REG_SPICMD</ipxact:name>
 			<ipxact:description>BASEREG + 0x08</ipxact:description>
 			<ipxact:value>4'b0010</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_f98edf5a_00fa_4251_acfd_be91344df72b">
+		<ipxact:parameter  parameterId="uuid_f98edf5a_00fa_4251_acfd_be91344df72b">
 			<ipxact:name>REG_SPIADR</ipxact:name>
 			<ipxact:description>BASEREG + 0x0C</ipxact:description>
 			<ipxact:value>4'b0011</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_70637ac6_a4c2_4f14_a3a7_e2122f86b3e7">
+		<ipxact:parameter  parameterId="uuid_70637ac6_a4c2_4f14_a3a7_e2122f86b3e7">
 			<ipxact:name>REG_SPILEN</ipxact:name>
 			<ipxact:description>BASEREG + 0x10</ipxact:description>
 			<ipxact:value>4'b0100</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_19139825_1a14_4db6_8d8b_101433499f07">
+		<ipxact:parameter  parameterId="uuid_19139825_1a14_4db6_8d8b_101433499f07">
 			<ipxact:name>REG_SPIDUM</ipxact:name>
 			<ipxact:description>BASEREG + 0x14</ipxact:description>
 			<ipxact:value>4'b0101</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_20d02106_5292_4f62_b9ae_6abcac55af5e">
+		<ipxact:parameter  parameterId="uuid_20d02106_5292_4f62_b9ae_6abcac55af5e">
 			<ipxact:name>REG_TXFIFO</ipxact:name>
 			<ipxact:description>BASEREG + 0x18</ipxact:description>
 			<ipxact:value>4'b0110</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_9c899eeb_ed45_4bb2_8ed8_7e885d8dbf1d">
+		<ipxact:parameter  parameterId="uuid_9c899eeb_ed45_4bb2_8ed8_7e885d8dbf1d">
 			<ipxact:name>REG_RXFIFO</ipxact:name>
 			<ipxact:description>BASEREG + 0x20</ipxact:description>
 			<ipxact:value>4'b1000</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_4fda29bc_9356_49b2_801c_ba273dd7feeb">
+		<ipxact:parameter  parameterId="uuid_4fda29bc_9356_49b2_801c_ba273dd7feeb">
 			<ipxact:name>REG_INTCFG</ipxact:name>
 			<ipxact:description>BASEREG + 0x24</ipxact:description>
 			<ipxact:value>4'b1001</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_676f1b51_57d2_4809_aa4f_77925ce0f38c">
+		<ipxact:parameter  parameterId="uuid_676f1b51_57d2_4809_aa4f_77925ce0f38c">
 			<ipxact:name>REG_INTSTA</ipxact:name>
 			<ipxact:description>BASEREG + 0x28</ipxact:description>
 			<ipxact:value>4'b1010</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_ed64a94f_52d0_4aec_a6fa_27ff0af299d9" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_ed64a94f_52d0_4aec_a6fa_27ff0af299d9" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_7cf8c1be_f143_4dbd_90e2_ab59ba7cba21" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_7cf8c1be_f143_4dbd_90e2_ab59ba7cba21" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f8fb89ba_2123_4073_98f3_f9d1e7c3ca8f" usageCount="5">
+		<ipxact:parameter parameterId="uuid_f8fb89ba_2123_4073_98f3_f9d1e7c3ca8f" kactus2:usageCount="5">
 			<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>log2(uuid_7cf8c1be_f143_4dbd_90e2_ab59ba7cba21)</ipxact:value>
 		</ipxact:parameter>

@@ -146,34 +146,16 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>spi_master_fifo</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_28543635_a936_40cf_bbb9_d790cfb7c1b3" usageCount="2" usageType="nontyped">
-						<ipxact:name>DATA_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_28543635_a936_40cf_bbb9_d790cfb7c1b3" kactus2:usageCount="2" usageType="nontyped">
+						<ipxact:name>DATA_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_b39c444d_4aa2_412b_a9a2_dc400f4268f1</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_12399703_3207_4888_b903_9c9e50ffaa22" usageType="nontyped">
-						<ipxact:name>BUFFER_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>BUFFER_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_4939aa95_7d73_4053_8aba_12862886aa86</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_cd9fefdf_fab0_4d74_a99d_37c1cea87422" usageCount="1" usageType="nontyped">
-						<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_cd9fefdf_fab0_4d74_a99d_37c1cea87422" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_03593e46_a27c_419a_9aff_022b5496f2b4</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -323,15 +305,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_4939aa95_7d73_4053_8aba_12862886aa86" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_4939aa95_7d73_4053_8aba_12862886aa86" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b39c444d_4aa2_412b_a9a2_dc400f4268f1" resolve="user" usageCount="3">
+		<ipxact:parameter parameterId="uuid_b39c444d_4aa2_412b_a9a2_dc400f4268f1" resolve="user" kactus2:usageCount="3">
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_03593e46_a27c_419a_9aff_022b5496f2b4" usageCount="2">
+		<ipxact:parameter parameterId="uuid_03593e46_a27c_419a_9aff_022b5496f2b4" kactus2:usageCount="2">
 			<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>log2(uuid_4939aa95_7d73_4053_8aba_12862886aa86)</ipxact:value>
 		</ipxact:parameter>

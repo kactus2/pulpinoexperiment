@@ -20,13 +20,7 @@
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_d6d7eb35_097e_4270_ba53_98155b60872d" usageType="nontyped">
 						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:description>APB slaves are 4KB by default</ipxact:description>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:description>APB slaves are 4KB by default</ipxact:description> 
 						<ipxact:value>uuid_16890f9c_4996_401e_997e_0763d9e943f8</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -235,15 +229,9 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_16890f9c_4996_401e_997e_0763d9e943f8" usageCount="2">
+		<ipxact:parameter parameterId="uuid_16890f9c_4996_401e_997e_0763d9e943f8" kactus2:usageCount="2">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-			<ipxact:description>APB slaves are 4KB by default</ipxact:description>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+			<ipxact:description>APB slaves are 4KB by default</ipxact:description> 
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>

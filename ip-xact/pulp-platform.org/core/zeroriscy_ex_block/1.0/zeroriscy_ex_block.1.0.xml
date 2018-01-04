@@ -215,13 +215,7 @@
 				<ipxact:moduleName>zeroriscy_ex_block</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_e9a519a8_5d24_4f81_be79_41272d2b7403" usageType="nontyped">
-						<ipxact:name>RV32M</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>RV32M</ipxact:name> 
 						<ipxact:value>uuid_1dc19b4c_30ce_49fa_bdff_22521de4d6ab</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -516,17 +510,11 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_1dc19b4c_30ce_49fa_bdff_22521de4d6ab" usageCount="1">
-			<ipxact:name>RV32M</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_1dc19b4c_30ce_49fa_bdff_22521de4d6ab" kactus2:usageCount="1">
+			<ipxact:name>RV32M</ipxact:name> 
 			<ipxact:value>1</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_d58b2aaa_383f_4ef5_b595_ef56d4dc4c5b" usageCount="1">
+		<ipxact:parameter parameterId="uuid_d58b2aaa_383f_4ef5_b595_ef56d4dc4c5b" kactus2:usageCount="1">
 			<ipxact:name>ALU_OP_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>

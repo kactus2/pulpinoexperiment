@@ -1029,15 +1029,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter imported="true" parameterId="uuid_86c3d28e_a782_466f_8c1e_bd6e7cc74ccf">
+		<ipxact:parameter  parameterId="uuid_86c3d28e_a782_466f_8c1e_bd6e7cc74ccf">
 			<ipxact:name>SPI_STD</ipxact:name>
 			<ipxact:value>2'b00</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_f9be0bbf_9d5e_42a8_a028_d306e8c32936">
+		<ipxact:parameter  parameterId="uuid_f9be0bbf_9d5e_42a8_a028_d306e8c32936">
 			<ipxact:name>SPI_QUAD_TX</ipxact:name>
 			<ipxact:value>2'b01</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_a54a1442_6fc3_4e05_ad76_9e1d8b9f04c5">
+		<ipxact:parameter  parameterId="uuid_a54a1442_6fc3_4e05_ad76_9e1d8b9f04c5">
 			<ipxact:name>SPI_QUAD_RX</ipxact:name>
 			<ipxact:value>2'b10</ipxact:value>
 		</ipxact:parameter>

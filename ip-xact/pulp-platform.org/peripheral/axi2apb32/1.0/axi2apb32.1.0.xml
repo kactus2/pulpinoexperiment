@@ -732,84 +732,36 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>axi2apb32</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_ac11384a_9e05_4c01_b364_389ccc77b9df" usageCount="2" usageType="nontyped">
-						<ipxact:name>AXI4_ADDRESS_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_ac11384a_9e05_4c01_b364_389ccc77b9df" kactus2:usageCount="2" usageType="nontyped">
+						<ipxact:name>AXI4_ADDRESS_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_b9840922_e209_4985_98e2_79d63b727ed8</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_f00916fc_5786_4ac8_9f28_761c42338907" usageCount="1" usageType="nontyped">
-						<ipxact:name>AXI4_RDATA_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_f00916fc_5786_4ac8_9f28_761c42338907" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>AXI4_RDATA_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_8ce7c5f9_1828_49b4_ade9_40fa22c70a69</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_8928f7ae_9f73_4664_8457_6297b2db64b1" usageCount="1" usageType="nontyped">
-						<ipxact:name>AXI4_WDATA_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_8928f7ae_9f73_4664_8457_6297b2db64b1" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>AXI4_WDATA_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_7171e019_3366_47a6_919a_76a16eebf0f8</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_db249acc_04d5_4542_8dc6_72365cfc5bd8" usageCount="4" usageType="nontyped">
-						<ipxact:name>AXI4_ID_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_db249acc_04d5_4542_8dc6_72365cfc5bd8" kactus2:usageCount="4" usageType="nontyped">
+						<ipxact:name>AXI4_ID_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_285a2113_eaea_43b0_b973_76dbabce53ed</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_58d26065_5ae1_4b10_8ce8_a46e54ac5abf" usageCount="5" usageType="nontyped">
-						<ipxact:name>AXI4_USER_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_58d26065_5ae1_4b10_8ce8_a46e54ac5abf" kactus2:usageCount="5" usageType="nontyped">
+						<ipxact:name>AXI4_USER_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_76515488_4cfc_41cc_9d7a_4e9db311c7ed</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_5834d2af_c597_486b_a587_ba07225c9302" usageCount="1" usageType="nontyped">
-						<ipxact:name>AXI_NUMBYTES</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_5834d2af_c597_486b_a587_ba07225c9302" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>AXI_NUMBYTES</ipxact:name> 
 						<ipxact:value>uuid_6b4fda46_c745_4470_9143_f76ba016365e</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_1d785567_646c_44c2_be74_f2a186e3e284" usageType="nontyped">
-						<ipxact:name>BUFF_DEPTH_SLAVE</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>BUFF_DEPTH_SLAVE</ipxact:name> 
 						<ipxact:value>uuid_ca47c95b_58f3_4890_9801_f8603adc5554</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_a0f4e7a0_e338_472a_aa79_ec9ac829a27d" usageCount="1" usageType="nontyped">
-						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_a0f4e7a0_e338_472a_aa79_ec9ac829a27d" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>APB_ADDR_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_7f4c2c9f_8519_4489_86cf_c19290edc1a6</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -1667,51 +1619,51 @@
 	</ipxact:fileSets>
 	<ipxact:description>This Bridge performs a protocol translation between AXI4 to APB. BURST across the APB are not supported.</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter imported="true" parameterId="uuid_93939c4a_7fc3_4165_b0cc_ee6fd61ed73d">
+		<ipxact:parameter  parameterId="uuid_93939c4a_7fc3_4165_b0cc_ee6fd61ed73d">
 			<ipxact:name>OKAY</ipxact:name>
 			<ipxact:value>2'b00</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_0cb8d81e_a1cd_4c1f_bd06_deb82083f43e">
+		<ipxact:parameter  parameterId="uuid_0cb8d81e_a1cd_4c1f_bd06_deb82083f43e">
 			<ipxact:name>EXOKAY</ipxact:name>
 			<ipxact:value>2'b01</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_c2c2b72c_f1c4_4efa_a6ce_290880511cb0">
+		<ipxact:parameter  parameterId="uuid_c2c2b72c_f1c4_4efa_a6ce_290880511cb0">
 			<ipxact:name>SLVERR</ipxact:name>
 			<ipxact:value>2'b10</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_ee1ca1ae_12b8_4891_b2a9_757be3eb768a">
+		<ipxact:parameter  parameterId="uuid_ee1ca1ae_12b8_4891_b2a9_757be3eb768a">
 			<ipxact:name>DECERR</ipxact:name>
 			<ipxact:value>2'b11</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_7f4c2c9f_8519_4489_86cf_c19290edc1a6" usageCount="1">
+		<ipxact:parameter parameterId="uuid_7f4c2c9f_8519_4489_86cf_c19290edc1a6" kactus2:usageCount="1">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b9840922_e209_4985_98e2_79d63b727ed8" resolve="user" usageCount="4">
+		<ipxact:parameter parameterId="uuid_b9840922_e209_4985_98e2_79d63b727ed8" resolve="user" kactus2:usageCount="4">
 			<ipxact:name>AXI4_ADDRESS_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_285a2113_eaea_43b0_b973_76dbabce53ed" resolve="user" usageCount="5">
+		<ipxact:parameter parameterId="uuid_285a2113_eaea_43b0_b973_76dbabce53ed" resolve="user" kactus2:usageCount="5">
 			<ipxact:name>AXI4_ID_WIDTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_8ce7c5f9_1828_49b4_ade9_40fa22c70a69" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_8ce7c5f9_1828_49b4_ade9_40fa22c70a69" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>AXI4_RDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_76515488_4cfc_41cc_9d7a_4e9db311c7ed" resolve="user" usageCount="6">
+		<ipxact:parameter parameterId="uuid_76515488_4cfc_41cc_9d7a_4e9db311c7ed" resolve="user" kactus2:usageCount="6">
 			<ipxact:name>AXI4_USER_WIDTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_7171e019_3366_47a6_919a_76a16eebf0f8" resolve="user" usageCount="3">
+		<ipxact:parameter parameterId="uuid_7171e019_3366_47a6_919a_76a16eebf0f8" resolve="user" kactus2:usageCount="3">
 			<ipxact:name>AXI4_WDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_6b4fda46_c745_4470_9143_f76ba016365e" usageCount="2">
+		<ipxact:parameter parameterId="uuid_6b4fda46_c745_4470_9143_f76ba016365e" kactus2:usageCount="2">
 			<ipxact:name>AXI_NUMBYTES</ipxact:name>
 			<ipxact:value>uuid_7171e019_3366_47a6_919a_76a16eebf0f8/8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_ca47c95b_58f3_4890_9801_f8603adc5554" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_ca47c95b_58f3_4890_9801_f8603adc5554" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>BUFF_DEPTH_SLAVE</ipxact:name>
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>

@@ -297,15 +297,9 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>apb_event_unit</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_7a843468_15d2_42b4_b8f0_c4c4ce9ff6f6" usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter parameterId="uuid_7a843468_15d2_42b4_b8f0_c4c4ce9ff6f6" kactus2:usageCount="1" usageType="nontyped">
 						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:description>APB slaves are 4KB by default</ipxact:description>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:description>APB slaves are 4KB by default</ipxact:description> 
 						<ipxact:value>uuid_141437f0_8660_4c17_a19f_5fbcc67a0f1b</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -632,7 +626,7 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_141437f0_8660_4c17_a19f_5fbcc67a0f1b" usageCount="2">
+		<ipxact:parameter parameterId="uuid_141437f0_8660_4c17_a19f_5fbcc67a0f1b" kactus2:usageCount="2">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 			<ipxact:value>12</ipxact:value>

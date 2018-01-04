@@ -214,24 +214,12 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>apb2per</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_3c48cbb7_2293_4827_aff1_004a2d5700e9" usageCount="1" usageType="nontyped">
-						<ipxact:name>PER_ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_3c48cbb7_2293_4827_aff1_004a2d5700e9" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>PER_ADDR_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_a72bdca1_c295_439c_b57f_a5e9d7c852b0</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_90f42ca5_4f09_4b50_97ad_a58c5adf5aa2" usageCount="1" usageType="nontyped">
-						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_90f42ca5_4f09_4b50_97ad_a58c5adf5aa2" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>APB_ADDR_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_34cf1aa4_dc9c_4719_bf19_4713d070b68f</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -524,11 +512,11 @@
 	</ipxact:fileSets>
 	<ipxact:description>apb 2 peripheral interconnect protocol adapter</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_a72bdca1_c295_439c_b57f_a5e9d7c852b0" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_a72bdca1_c295_439c_b57f_a5e9d7c852b0" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>PER_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>15</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_34cf1aa4_dc9c_4719_bf19_4713d070b68f" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_34cf1aa4_dc9c_4719_bf19_4713d070b68f" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

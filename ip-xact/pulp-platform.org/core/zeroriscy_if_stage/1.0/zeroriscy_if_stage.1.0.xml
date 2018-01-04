@@ -56,8 +56,8 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:master>
-				<ipxact:addressSpaceRef ipxact:addressSpaceRef="instruction">
-					<ipxact:baseAddress ipxact:addressSpaceRef="instruction">0</ipxact:baseAddress>
+				<ipxact:addressSpaceRef addressSpaceRef="instruction">
+					<ipxact:baseAddress>0</ipxact:baseAddress>
 				</ipxact:addressSpaceRef>
 			</ipxact:master>
 		</ipxact:busInterface>
@@ -263,12 +263,12 @@
 			<ipxact:width>32</ipxact:width>
 			<ipxact:segments>
 				<ipxact:segment>
-					<ipxact:name>Instruction Memory</ipxact:name>
+					<ipxact:name>instructionMemory</ipxact:name>
 					<ipxact:addressOffset>'h0</ipxact:addressOffset>
 					<ipxact:range>'h8000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>Boot ROM</ipxact:name>
+					<ipxact:name>bootROM</ipxact:name>
 					<ipxact:addressOffset>'h8_0000</ipxact:addressOffset>
 					<ipxact:range>'h200</ipxact:range>
 				</ipxact:segment>

@@ -56,8 +56,8 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:master>
-				<ipxact:addressSpaceRef ipxact:addressSpaceRef="instruction">
-					<ipxact:baseAddress ipxact:addressSpaceRef="instruction">0</ipxact:baseAddress>
+				<ipxact:addressSpaceRef addressSpaceRef="instruction">
+					<ipxact:baseAddress>0</ipxact:baseAddress>
 				</ipxact:addressSpaceRef>
 			</ipxact:master>
 		</ipxact:busInterface>
@@ -329,12 +329,12 @@
 			<ipxact:width>32</ipxact:width>
 			<ipxact:segments>
 				<ipxact:segment>
-					<ipxact:name>Instruction Memory</ipxact:name>
+					<ipxact:name>instructionMemory</ipxact:name>
 					<ipxact:addressOffset>'h0</ipxact:addressOffset>
 					<ipxact:range>'h8000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>Boot ROM</ipxact:name>
+					<ipxact:name>bootROM</ipxact:name>
 					<ipxact:addressOffset>'h8_0000</ipxact:addressOffset>
 					<ipxact:range>'h200</ipxact:range>
 				</ipxact:segment>
@@ -356,34 +356,16 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>riscv_if_stage</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_513355b3_7204_4d0b_aaeb_c16372c5bb80" usageCount="4" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="4" parameterId="uuid_513355b3_7204_4d0b_aaeb_c16372c5bb80" usageType="nontyped">
 						<ipxact:name>N_HWLP</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>uuid_11425578_6fd2_48f9_afe9_e31738f12207</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_f1acd8dd_6c4d_493d_a289_9a4ebf2d52c5" usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_f1acd8dd_6c4d_493d_a289_9a4ebf2d52c5" usageType="nontyped">
 						<ipxact:name>RDATA_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>uuid_b9377569_802f_4415_9f98_f96d887fb178</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_a931c837_0366_4581_b460_01530209db84" usageType="nontyped">
 						<ipxact:name>FPU</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>uuid_71727446_4258_424d_84ed_591f4cc2aba0</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -997,15 +979,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_71727446_4258_424d_84ed_591f4cc2aba0" resolve="user" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_71727446_4258_424d_84ed_591f4cc2aba0" resolve="user">
 			<ipxact:name>FPU</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_11425578_6fd2_48f9_afe9_e31738f12207" resolve="user" usageCount="5">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_11425578_6fd2_48f9_afe9_e31738f12207" resolve="user">
 			<ipxact:name>N_HWLP</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b9377569_802f_4415_9f98_f96d887fb178" resolve="user" usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_b9377569_802f_4415_9f98_f96d887fb178" resolve="user">
 			<ipxact:name>RDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

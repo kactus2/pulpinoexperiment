@@ -133,11 +133,11 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_1db8011e_47a6_4c90_8441_c31681eed6af" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_1db8011e_47a6_4c90_8441_c31681eed6af" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_4bd89e1f_bc7b_478f_ac3b_885627b67836" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_4bd89e1f_bc7b_478f_ac3b_885627b67836" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

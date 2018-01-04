@@ -191,7 +191,7 @@
 				<ipxact:range>8</ipxact:range>
 				<ipxact:width>8</ipxact:width>
 				<ipxact:register>
-					<ipxact:name>THR/RBR/DLL</ipxact:name>
+					<ipxact:name>THR_RBR_DLL</ipxact:name>
 					<ipxact:dim>0</ipxact:dim>
 					<ipxact:addressOffset>'h0</ipxact:addressOffset>
 					<ipxact:size>8</ipxact:size>
@@ -202,7 +202,7 @@
 					</ipxact:field>
 				</ipxact:register>
 				<ipxact:register>
-					<ipxact:name>IER/DLH</ipxact:name>
+					<ipxact:name>IER_DLH</ipxact:name>
 					<ipxact:dim>0</ipxact:dim>
 					<ipxact:addressOffset>'h1</ipxact:addressOffset>
 					<ipxact:size>8</ipxact:size>
@@ -213,7 +213,7 @@
 					</ipxact:field>
 				</ipxact:register>
 				<ipxact:register>
-					<ipxact:name>IIR/FCR</ipxact:name>
+					<ipxact:name>IIR_FCR</ipxact:name>
 					<ipxact:dim>0</ipxact:dim>
 					<ipxact:addressOffset>'h2</ipxact:addressOffset>
 					<ipxact:size>8</ipxact:size>
@@ -244,7 +244,7 @@
 						<ipxact:bitWidth>3</ipxact:bitWidth>
 					</ipxact:field>
 					<ipxact:field>
-						<ipxact:name>Word Length</ipxact:name>
+						<ipxact:name>Word_Length</ipxact:name>
 						<ipxact:bitOffset>0</ipxact:bitOffset>
 						<ipxact:bitWidth>3</ipxact:bitWidth>
 					</ipxact:field>
@@ -651,7 +651,7 @@
 	</ipxact:fileSets>
 	<ipxact:description>Contains glue logic from apb_uart.</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_415eaf3f_0bb1_4d21_a338_5cd63fab647a" resolve="user" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_415eaf3f_0bb1_4d21_a338_5cd63fab647a" resolve="user">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>

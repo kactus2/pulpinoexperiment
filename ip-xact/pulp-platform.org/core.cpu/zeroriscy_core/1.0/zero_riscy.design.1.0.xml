@@ -630,15 +630,15 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_e5c44b40_c2d1_4969_8f4f_b4fe1161a0fb" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_e5c44b40_c2d1_4969_8f4f_b4fe1161a0fb" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>N_EXT_PERF_COUNTERS</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_485723fd_2005_4db6_81dc_32722cade3e1" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_485723fd_2005_4db6_81dc_32722cade3e1" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>RV32E</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_49c23975_de32_4d9b_9750_7516a83eaafc" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_49c23975_de32_4d9b_9750_7516a83eaafc" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>RV32M</ipxact:name>
 			<ipxact:value>1</ipxact:value>
 		</ipxact:parameter>

@@ -88,8 +88,8 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:master>
-				<ipxact:addressSpaceRef ipxact:addressSpaceRef="data_and_memory_mapped">
-					<ipxact:baseAddress ipxact:addressSpaceRef="data_and_memory_mapped">'h0010_0000</ipxact:baseAddress>
+				<ipxact:addressSpaceRef addressSpaceRef="data_and_memory_mapped">
+					<ipxact:baseAddress>'h0010_0000</ipxact:baseAddress>
 				</ipxact:addressSpaceRef>
 			</ipxact:master>
 		</ipxact:busInterface>
@@ -331,7 +331,7 @@
 			<ipxact:width>32</ipxact:width>
 			<ipxact:segments>
 				<ipxact:segment>
-					<ipxact:name>Data Memory</ipxact:name>
+					<ipxact:name>dataMemory</ipxact:name>
 					<ipxact:addressOffset>'h0010_0000</ipxact:addressOffset>
 					<ipxact:range>'h8000</ipxact:range>
 				</ipxact:segment>
@@ -346,7 +346,7 @@
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>SPI Master</ipxact:name>
+					<ipxact:name>SPIMaster</ipxact:name>
 					<ipxact:addressOffset>'h1A10_2000</ipxact:addressOffset>
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
@@ -356,12 +356,12 @@
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>Debug Port</ipxact:name>
+					<ipxact:name>DebugPort</ipxact:name>
 					<ipxact:addressOffset>'h1A10_8000</ipxact:addressOffset>
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>SoC Control</ipxact:name>
+					<ipxact:name>SoCControl</ipxact:name>
 					<ipxact:addressOffset>'h1A10_7000</ipxact:addressOffset>
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
@@ -376,7 +376,7 @@
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>Event/Interupt Unit</ipxact:name>
+					<ipxact:name>EventInteruptUnit</ipxact:name>
 					<ipxact:addressOffset>'h1A10_4000</ipxact:addressOffset>
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>

@@ -214,14 +214,8 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>apb_fll_if</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_f18e5523_f30b_4219_bb15_0ea96c790ac4" usageCount="1" usageType="nontyped">
-						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_f18e5523_f30b_4219_bb15_0ea96c790ac4" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>APB_ADDR_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_d12a9225_ea66_4c13_bcab_1c7af8242b73</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -593,7 +587,7 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_d12a9225_ea66_4c13_bcab_1c7af8242b73" usageCount="2">
+		<ipxact:parameter parameterId="uuid_d12a9225_ea66_4c13_bcab_1c7af8242b73" kactus2:usageCount="2">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>

@@ -333,13 +333,7 @@
 				<ipxact:moduleName>zeroriscy_debug_unit</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_aaa64ea7_84a3_40bc_a935_b98dc97a20f9" usageType="nontyped">
-						<ipxact:name>REG_ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>REG_ADDR_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_80536f83_5a61_4dcb_95f7_72bcaed44551</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -852,17 +846,11 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_80536f83_5a61_4dcb_95f7_72bcaed44551" usageCount="3">
-			<ipxact:name>REG_ADDR_WIDTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_80536f83_5a61_4dcb_95f7_72bcaed44551" kactus2:usageCount="3">
+			<ipxact:name>REG_ADDR_WIDTH</ipxact:name> 
 			<ipxact:value>5</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_fcb2ad33_b4e1_40f2_bc2b_7fc39e6caa24" usageCount="1">
+		<ipxact:parameter parameterId="uuid_fcb2ad33_b4e1_40f2_bc2b_7fc39e6caa24" kactus2:usageCount="1">
 			<ipxact:name>DBG_SETS_W</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>

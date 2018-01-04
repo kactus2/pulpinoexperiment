@@ -300,34 +300,16 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>zeroriscy_core</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_a2152f8a_c1e5_45c8_9947_8fc1b2dc338c" usageCount="1" usageType="nontyped">
-						<ipxact:name>N_EXT_PERF_COUNTERS</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_a2152f8a_c1e5_45c8_9947_8fc1b2dc338c" kactus2:usageCount="1" usageType="nontyped">
+						<ipxact:name>N_EXT_PERF_COUNTERS</ipxact:name> 
 						<ipxact:value>uuid_dc765e98_4520_45e0_a6df_e3e7a54c9e5d</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_97a40277_2767_4223_90c3_e8971331bbac" usageType="nontyped">
-						<ipxact:name>RV32E</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>RV32E</ipxact:name> 
 						<ipxact:value>uuid_74e6cc7b_733f_4931_8f77_5bfd6117eb30</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_ec2cd0df_0249_4ccd_9f95_4adfeae3c627" usageType="nontyped">
-						<ipxact:name>RV32M</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>RV32M</ipxact:name> 
 						<ipxact:value>uuid_f93d524a_19c5_4c56_a374_8ede2dc27cdc</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -1039,15 +1021,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_dc765e98_4520_45e0_a6df_e3e7a54c9e5d" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_dc765e98_4520_45e0_a6df_e3e7a54c9e5d" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>N_EXT_PERF_COUNTERS</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_74e6cc7b_733f_4931_8f77_5bfd6117eb30" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_74e6cc7b_733f_4931_8f77_5bfd6117eb30" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>RV32E</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f93d524a_19c5_4c56_a374_8ede2dc27cdc" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_f93d524a_19c5_4c56_a374_8ede2dc27cdc" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>RV32M</ipxact:name>
 			<ipxact:value>1</ipxact:value>
 		</ipxact:parameter>

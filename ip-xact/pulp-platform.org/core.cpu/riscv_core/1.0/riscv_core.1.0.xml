@@ -254,8 +254,8 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:master>
-				<ipxact:addressSpaceRef ipxact:addressSpaceRef="data_and_memory_mapped">
-					<ipxact:baseAddress ipxact:addressSpaceRef="data_and_memory_mapped">'h0010_0000</ipxact:baseAddress>
+				<ipxact:addressSpaceRef addressSpaceRef="data_and_memory_mapped">
+					<ipxact:baseAddress>'h0010_0000</ipxact:baseAddress>
 				</ipxact:addressSpaceRef>
 			</ipxact:master>
 		</ipxact:busInterface>
@@ -394,8 +394,8 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:master>
-				<ipxact:addressSpaceRef ipxact:addressSpaceRef="instruction">
-					<ipxact:baseAddress ipxact:addressSpaceRef="instruction">0</ipxact:baseAddress>
+				<ipxact:addressSpaceRef addressSpaceRef="instruction">
+					<ipxact:baseAddress>0</ipxact:baseAddress>
 				</ipxact:addressSpaceRef>
 			</ipxact:master>
 		</ipxact:busInterface>
@@ -407,12 +407,12 @@
 			<ipxact:width>32</ipxact:width>
 			<ipxact:segments>
 				<ipxact:segment>
-					<ipxact:name>Instruction Memory</ipxact:name>
+					<ipxact:name>instructionMemory</ipxact:name>
 					<ipxact:addressOffset>'h0</ipxact:addressOffset>
 					<ipxact:range>'h8000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>Boot ROM</ipxact:name>
+					<ipxact:name>bootROM</ipxact:name>
 					<ipxact:addressOffset>'h8_0000</ipxact:addressOffset>
 					<ipxact:range>'h200</ipxact:range>
 				</ipxact:segment>
@@ -425,7 +425,7 @@
 			<ipxact:width>32</ipxact:width>
 			<ipxact:segments>
 				<ipxact:segment>
-					<ipxact:name>Data Memory</ipxact:name>
+					<ipxact:name>dataMemory</ipxact:name>
 					<ipxact:addressOffset>'h0010_0000</ipxact:addressOffset>
 					<ipxact:range>'h8000</ipxact:range>
 				</ipxact:segment>
@@ -440,7 +440,7 @@
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>SPI Master</ipxact:name>
+					<ipxact:name>SPIMaster</ipxact:name>
 					<ipxact:addressOffset>'h1A10_2000</ipxact:addressOffset>
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
@@ -450,12 +450,12 @@
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>Debug Port</ipxact:name>
+					<ipxact:name>DebugPort</ipxact:name>
 					<ipxact:addressOffset>'h1A10_8000</ipxact:addressOffset>
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>SoC Control</ipxact:name>
+					<ipxact:name>SoCControl</ipxact:name>
 					<ipxact:addressOffset>'h1A10_7000</ipxact:addressOffset>
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
@@ -470,7 +470,7 @@
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
 				<ipxact:segment>
-					<ipxact:name>Event/Interupt Unit</ipxact:name>
+					<ipxact:name>EventInteruptUnit</ipxact:name>
 					<ipxact:addressOffset>'h1A10_4000</ipxact:addressOffset>
 					<ipxact:range>'h1000</ipxact:range>
 				</ipxact:segment>
@@ -492,94 +492,40 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>riscv_core</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_616a1358_0c83_49aa_ad1f_c4fbf6a43399" usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_616a1358_0c83_49aa_ad1f_c4fbf6a43399" usageType="nontyped">
 						<ipxact:name>N_EXT_PERF_COUNTERS</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>0</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_2a8b45ce_ccc6_4710_81dd_5484cbcf2ba0" usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_2a8b45ce_ccc6_4710_81dd_5484cbcf2ba0" usageType="nontyped">
 						<ipxact:name>INSTR_RDATA_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>uuid_c57481af_e187_44a9_9c6b_eeb5151fc9e1</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_7af9b449_7952_4ab6_aef7_580e74167e00" usageType="nontyped">
 						<ipxact:name>PULP_SECURE</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>0</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_d8930fc5_0a01_4a27_aac9_025be0b32b6f" usageType="nontyped">
 						<ipxact:name>FPU</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>0</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_8d57d4eb_920c_4b8c_aecc_476b4b236e90" usageType="nontyped">
 						<ipxact:name>SHARED_FP</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>0</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_f3f697f9_2c13_4f00_bc15_949b7b1b93b8" usageType="nontyped">
 						<ipxact:name>SHARED_DSP_MULT</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>0</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_fffb1110_6db8_4cda_bfbb_4fe53effade6" usageType="nontyped">
 						<ipxact:name>SHARED_INT_DIV</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>0</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_555c7a11_cd77_4764_83bc_b186b7460ec3" usageType="nontyped">
 						<ipxact:name>SHARED_FP_DIVSQRT</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>0</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_0297a7fa_a1e6_4782_bb07_92904a872fda" usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_0297a7fa_a1e6_4782_bb07_92904a872fda" usageType="nontyped">
 						<ipxact:name>WAPUTYPE</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
 						<ipxact:value>0</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -1629,47 +1575,47 @@
 		</ipxact:cpu>
 	</ipxact:cpus>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_2051596c_90d6_4c3c_b11c_62c5f1fb4e2b" usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_2051596c_90d6_4c3c_b11c_62c5f1fb4e2b">
 			<ipxact:name>WAPUTYPE</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_79cf6367_a465_4475_b0e3_6846b372d0f8" resolve="user" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_79cf6367_a465_4475_b0e3_6846b372d0f8" resolve="user">
 			<ipxact:name>FPU</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_c57481af_e187_44a9_9c6b_eeb5151fc9e1" usageCount="3">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_c57481af_e187_44a9_9c6b_eeb5151fc9e1">
 			<ipxact:name>INSTR_RDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_d2de2338_2f16_4bda_91bb_1b525262ac2c" resolve="user" usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_d2de2338_2f16_4bda_91bb_1b525262ac2c" resolve="user">
 			<ipxact:name>N_EXT_PERF_COUNTERS</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b78a08a0_542c_413d_88c1_93135605cb88" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_b78a08a0_542c_413d_88c1_93135605cb88">
 			<ipxact:name>PULP_SECURE</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_3e7063de_ffb7_4c25_a43e_4cdfdbc93397" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_3e7063de_ffb7_4c25_a43e_4cdfdbc93397">
 			<ipxact:name>SHARED_DSP_MULT</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_dde42b37_44d9_4c78_9839_9598c89ef663" resolve="user" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_dde42b37_44d9_4c78_9839_9598c89ef663" resolve="user">
 			<ipxact:name>SHARED_FP</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_fb2ff88f_c64d_4cde_a206_4e9d208bd4e1" resolve="user" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_fb2ff88f_c64d_4cde_a206_4e9d208bd4e1" resolve="user">
 			<ipxact:name>SHARED_FP_DIVSQRT</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_e00531bc_0f68_401c_a9d7_c0f6c0bd16c2" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_e00531bc_0f68_401c_a9d7_c0f6c0bd16c2">
 			<ipxact:name>SHARED_INT_DIV</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_df768195_7647_40a1_8a0c_d6c399ee9c98" usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_df768195_7647_40a1_8a0c_d6c399ee9c98">
 			<ipxact:name>WOP_CPU</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_30732625_685d_4c51_85aa_2d72de0d3738" usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_30732625_685d_4c51_85aa_2d72de0d3738">
 			<ipxact:name>NDSFLAGS_CPU</ipxact:name>
 			<ipxact:value>15</ipxact:value>
 		</ipxact:parameter>

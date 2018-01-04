@@ -463,43 +463,19 @@
 				<ipxact:moduleName>axi_aw_buffer</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_5fbe451d_fc2c_418f_8329_57abf84f0125" usageType="nontyped">
-						<ipxact:name>ID_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>ID_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_63389f45_6346_47a0_ba54_0748e778653c</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_711bf43f_41eb_4d56_87a2_e3d67e936280" usageType="nontyped">
-						<ipxact:name>ADDR_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>ADDR_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_35cef530_de1d_49cc_a370_12c1e25fe00e</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_b79e1fdf_a714_484f_bcf0_f99aca271c4d" usageType="nontyped">
-						<ipxact:name>USER_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>USER_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_b7c9e776_95ba_48ec_9829_3befd8d7026a</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_d3ce97be_5b66_47b9_94d3_495f7c746402" usageType="nontyped">
-						<ipxact:name>BUFFER_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>BUFFER_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_6a8dd2db_99c8_4209_a349_a0ddf4017234</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -960,44 +936,20 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_63389f45_6346_47a0_ba54_0748e778653c" resolve="user" usageCount="2">
-			<ipxact:name>ID_WIDTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_63389f45_6346_47a0_ba54_0748e778653c" resolve="user" kactus2:usageCount="2">
+			<ipxact:name>ID_WIDTH</ipxact:name> 
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_35cef530_de1d_49cc_a370_12c1e25fe00e" resolve="user" usageCount="2">
-			<ipxact:name>ADDR_WIDTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_35cef530_de1d_49cc_a370_12c1e25fe00e" resolve="user" kactus2:usageCount="2">
+			<ipxact:name>ADDR_WIDTH</ipxact:name> 
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b7c9e776_95ba_48ec_9829_3befd8d7026a" resolve="user" usageCount="2">
-			<ipxact:name>USER_WIDTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_b7c9e776_95ba_48ec_9829_3befd8d7026a" resolve="user" kactus2:usageCount="2">
+			<ipxact:name>USER_WIDTH</ipxact:name> 
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_6a8dd2db_99c8_4209_a349_a0ddf4017234" resolve="user">
-			<ipxact:name>BUFFER_DEPTH</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+			<ipxact:name>BUFFER_DEPTH</ipxact:name> 
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>

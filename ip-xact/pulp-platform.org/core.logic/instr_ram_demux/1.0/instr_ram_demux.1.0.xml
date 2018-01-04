@@ -33,10 +33,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>BE</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>be_i</ipxact:name>
@@ -550,15 +546,15 @@
 	</ipxact:fileSets>
 	<ipxact:description>Container for glue logic in instr_ram_wrap.</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_ab049157_221e_4953_bc43_03690ecbf0e6" usageCount="2">
+		<ipxact:parameter parameterId="uuid_ab049157_221e_4953_bc43_03690ecbf0e6" kactus2:usageCount="2">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_b6572b7f_311f_429f_8eda_4a8934f6167f)</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b6572b7f_311f_429f_8eda_4a8934f6167f" usageCount="2">
+		<ipxact:parameter parameterId="uuid_b6572b7f_311f_429f_8eda_4a8934f6167f" kactus2:usageCount="2">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_251e017b_4f65_4fa9_95ae_86f7002eb5dc" usageCount="4">
+		<ipxact:parameter parameterId="uuid_251e017b_4f65_4fa9_95ae_86f7002eb5dc" kactus2:usageCount="4">
 			<ipxact:name>ROM_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>

@@ -970,27 +970,27 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_7523956d_15f0_49a2_821a_6f08a3d30e07" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_7523956d_15f0_49a2_821a_6f08a3d30e07" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_fbe5ed5d_4cc3_4c02_be8f_50da8be4495a" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_fbe5ed5d_4cc3_4c02_be8f_50da8be4495a" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 			<ipxact:value>64</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_ae508f73_57bf_4cec_a298_2430506a638b" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_ae508f73_57bf_4cec_a298_2430506a638b" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>AXI_MASTER_ID_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_4c187c63_62a8_4e7f_9a65_6626d528a7f2" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_4c187c63_62a8_4e7f_9a65_6626d528a7f2" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>AXI_SLAVE_ID_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_dee8ff14_1e40_41ae_934d_2d2ab788dedf" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_dee8ff14_1e40_41ae_934d_2d2ab788dedf" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_027541c7_b386_4ae7_8f01_2ac63dca7057" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_027541c7_b386_4ae7_8f01_2ac63dca7057" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>ROM_START_ADDR</ipxact:name>
 			<ipxact:value>32'h8000</ipxact:value>
 		</ipxact:parameter>
@@ -998,7 +998,7 @@
 			<ipxact:name>APB_NUM_SLAVES</ipxact:name>
 			<ipxact:value>8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_9298b808_29be_474a_ab68_257da6dc2404" resolve="immediate" usageCount="3">
+		<ipxact:parameter parameterId="uuid_9298b808_29be_474a_ab68_257da6dc2404" resolve="immediate" kactus2:usageCount="3">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

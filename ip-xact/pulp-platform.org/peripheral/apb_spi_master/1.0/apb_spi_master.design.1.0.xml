@@ -369,7 +369,7 @@
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8" resolve="user" usageCount="3">
+		<ipxact:parameter parameterId="uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8" resolve="user" kactus2:usageCount="3">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>

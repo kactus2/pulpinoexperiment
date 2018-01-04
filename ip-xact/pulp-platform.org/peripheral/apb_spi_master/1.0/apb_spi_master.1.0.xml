@@ -669,11 +669,11 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_39b982e0_91a5_4ae9_a598_283f5197a4c9" usageCount="2">
+		<ipxact:parameter parameterId="uuid_39b982e0_91a5_4ae9_a598_283f5197a4c9" kactus2:usageCount="2">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_aef516b1_bf70_49fd_90ad_bc824602cb4a" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_aef516b1_bf70_49fd_90ad_bc824602cb4a" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>

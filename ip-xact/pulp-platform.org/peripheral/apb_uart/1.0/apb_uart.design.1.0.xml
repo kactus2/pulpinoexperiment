@@ -469,11 +469,11 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_3e7ed74d_6677_4794_ac66_d0fe4e70ee8d" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_3e7ed74d_6677_4794_ac66_d0fe4e70ee8d" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>TX_FIFO_DEPTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_9f9f1569_74fc_4adc_8821_35582d1d9962" resolve="user" usageCount="1">
+		<ipxact:parameter parameterId="uuid_9f9f1569_74fc_4adc_8821_35582d1d9962" resolve="user" kactus2:usageCount="1">
 			<ipxact:name>RX_FIFO_DEPTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>

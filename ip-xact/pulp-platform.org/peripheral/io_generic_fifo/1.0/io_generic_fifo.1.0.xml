@@ -96,24 +96,12 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>io_generic_fifo</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_44203595_7a11_4471_90b9_bfa7814b9df2" usageCount="2" usageType="nontyped">
-						<ipxact:name>DATA_WIDTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+					<ipxact:moduleParameter parameterId="uuid_44203595_7a11_4471_90b9_bfa7814b9df2" kactus2:usageCount="2" usageType="nontyped">
+						<ipxact:name>DATA_WIDTH</ipxact:name> 
 						<ipxact:value>uuid_2b4c1de2_03f4_4d7c_af05_caf9bcc53da2</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_a1e4c725_4155_487b_b75d_e157f1316132" usageType="nontyped">
-						<ipxact:name>BUFFER_DEPTH</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>BUFFER_DEPTH</ipxact:name> 
 						<ipxact:value>uuid_b421a922_86d2_4ff3_a216_da1e0351589d</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_40034070_04b1_48cf_8284_68830ee8ec20">
@@ -273,15 +261,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_b421a922_86d2_4ff3_a216_da1e0351589d" resolve="user" usageCount="2">
+		<ipxact:parameter parameterId="uuid_b421a922_86d2_4ff3_a216_da1e0351589d" resolve="user" kactus2:usageCount="2">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_2b4c1de2_03f4_4d7c_af05_caf9bcc53da2" resolve="user" usageCount="3">
+		<ipxact:parameter parameterId="uuid_2b4c1de2_03f4_4d7c_af05_caf9bcc53da2" resolve="user" kactus2:usageCount="3">
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_280521d0_8421_4362_958e_5a1ff4009dcc" usageCount="2">
+		<ipxact:parameter parameterId="uuid_280521d0_8421_4362_958e_5a1ff4009dcc" kactus2:usageCount="2">
 			<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_b421a922_86d2_4ff3_a216_da1e0351589d)</ipxact:value>
 		</ipxact:parameter>

@@ -97,13 +97,7 @@
 				<ipxact:moduleName>spi_slave_controller</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_5a80dfd5_ef94_423a_b3e2_365b52de9f9d" usageType="nontyped">
-						<ipxact:name>DUMMY_CYCLES</ipxact:name>
-						<ipxact:arrays>
-							<ipxact:array>
-								<ipxact:left></ipxact:left>
-								<ipxact:right></ipxact:right>
-							</ipxact:array>
-						</ipxact:arrays>
+						<ipxact:name>DUMMY_CYCLES</ipxact:name> 
 						<ipxact:value>uuid_3220b8aa_df31_4a87_9991_615bca25a6f5</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -443,54 +437,24 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter imported="true" parameterId="uuid_043ad99e_4d66_4dd6_9234_fabdee461944">
-			<ipxact:name>SPI_STD_TX</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_043ad99e_4d66_4dd6_9234_fabdee461944">
+			<ipxact:name>SPI_STD_TX</ipxact:name> 
 			<ipxact:value> 2'b00</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_fdf16dad_90e4_4037_84d7_12c0b7969218">
-			<ipxact:name>SPI_STD_RX</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_fdf16dad_90e4_4037_84d7_12c0b7969218">
+			<ipxact:name>SPI_STD_RX</ipxact:name> 
 			<ipxact:value> 2'b01</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_f4a9e7c7_c8b5_47da_a528_96d47efdaf5b">
-			<ipxact:name>SPI_QUAD_TX</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_f4a9e7c7_c8b5_47da_a528_96d47efdaf5b">
+			<ipxact:name>SPI_QUAD_TX</ipxact:name> 
 			<ipxact:value>2'b10</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter imported="true" parameterId="uuid_10bd381c_87a9_4838_a7d8_23e40aa001bf">
-			<ipxact:name>SPI_QUAD_RX</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter  parameterId="uuid_10bd381c_87a9_4838_a7d8_23e40aa001bf">
+			<ipxact:name>SPI_QUAD_RX</ipxact:name> 
 			<ipxact:value>2'b11</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_3220b8aa_df31_4a87_9991_615bca25a6f5" resolve="user" usageCount="1">
-			<ipxact:name>DUMMY_CYCLES</ipxact:name>
-			<ipxact:arrays>
-				<ipxact:array>
-					<ipxact:left></ipxact:left>
-					<ipxact:right></ipxact:right>
-				</ipxact:array>
-			</ipxact:arrays>
+		<ipxact:parameter parameterId="uuid_3220b8aa_df31_4a87_9991_615bca25a6f5" resolve="user" kactus2:usageCount="1">
+			<ipxact:name>DUMMY_CYCLES</ipxact:name> 
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>
