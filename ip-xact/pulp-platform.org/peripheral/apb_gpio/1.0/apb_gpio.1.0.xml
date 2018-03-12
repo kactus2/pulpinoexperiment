@@ -203,7 +203,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:master/>
+			<ipxact:system>
+				<ipxact:group>irq_source</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:memoryMaps>
@@ -368,9 +370,9 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>apb_gpio</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_2106b92b_df3d_4b09_95c2_31eac54a3ab6" kactus2:usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_2106b92b_df3d_4b09_95c2_31eac54a3ab6" usageType="nontyped">
 						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:description>APB slaves are 4KB by default</ipxact:description> 
+						<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 						<ipxact:value>uuid_d54cfdd8_2eeb_4bf1_a16d_03311edb789e</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -656,87 +658,87 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter  parameterId="uuid_9bd17631_e5c7_4406_9105_3b426cbb96d5">
+		<ipxact:parameter parameterId="uuid_9bd17631_e5c7_4406_9105_3b426cbb96d5">
 			<ipxact:name>REG_PADDIR</ipxact:name>
 			<ipxact:description>BASEADDR+0x00</ipxact:description>
-			<ipxact:value>     4'b0000</ipxact:value>
+			<ipxact:value>4'b0000</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_5544049e_6e6d_4639_bcaf_b0589e340952">
+		<ipxact:parameter parameterId="uuid_5544049e_6e6d_4639_bcaf_b0589e340952">
 			<ipxact:name>REG_PADIN</ipxact:name>
 			<ipxact:description>BASEADDR+0x04</ipxact:description>
-			<ipxact:value>      4'b0001</ipxact:value>
+			<ipxact:value>4'b0001</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_c5e4a5ee_0adc_47e4_af02_155ac25e28d6">
+		<ipxact:parameter parameterId="uuid_c5e4a5ee_0adc_47e4_af02_155ac25e28d6">
 			<ipxact:name>REG_PADOUT</ipxact:name>
 			<ipxact:description>BASEADDR+0x08</ipxact:description>
-			<ipxact:value>     4'b0010</ipxact:value>
+			<ipxact:value>4'b0010</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_3e0dd2fa_db0d_440b_a164_06dfca38292a">
+		<ipxact:parameter parameterId="uuid_3e0dd2fa_db0d_440b_a164_06dfca38292a">
 			<ipxact:name>REG_INTEN</ipxact:name>
 			<ipxact:description>BASEADDR+0x0C</ipxact:description>
-			<ipxact:value>      4'b0011</ipxact:value>
+			<ipxact:value>4'b0011</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_1d8ad9cd_c2eb_4b50_a8a0_361ef2720513">
+		<ipxact:parameter parameterId="uuid_1d8ad9cd_c2eb_4b50_a8a0_361ef2720513">
 			<ipxact:name>REG_INTTYPE0</ipxact:name>
 			<ipxact:description>BASEADDR+0x10</ipxact:description>
-			<ipxact:value>   4'b0100</ipxact:value>
+			<ipxact:value>4'b0100</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_ef351de6_7c2a_47ef_8441_772f37e4bcf6">
+		<ipxact:parameter parameterId="uuid_ef351de6_7c2a_47ef_8441_772f37e4bcf6">
 			<ipxact:name>REG_INTTYPE1</ipxact:name>
 			<ipxact:description>BASEADDR+0x14</ipxact:description>
-			<ipxact:value>   4'b0101</ipxact:value>
+			<ipxact:value>4'b0101</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_b917709c_70aa_4910_ac01_2593f2158952">
+		<ipxact:parameter parameterId="uuid_b917709c_70aa_4910_ac01_2593f2158952">
 			<ipxact:name>REG_INTSTATUS</ipxact:name>
 			<ipxact:description>BASEADDR+0x18</ipxact:description>
-			<ipxact:value>  4'b0110</ipxact:value>
+			<ipxact:value>4'b0110</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_0f657f3d_9780_4346_a8c3_c428b1a0cc35">
+		<ipxact:parameter parameterId="uuid_0f657f3d_9780_4346_a8c3_c428b1a0cc35">
 			<ipxact:name>REG_POWEREVENT</ipxact:name>
 			<ipxact:description>BASEADDR+0x1C</ipxact:description>
 			<ipxact:value> 4'b0111</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_536ffd82_42f9_4b85_bda6_4050db311f2a">
+		<ipxact:parameter parameterId="uuid_536ffd82_42f9_4b85_bda6_4050db311f2a">
 			<ipxact:name>REG_PADCFG0</ipxact:name>
 			<ipxact:description>BASEADDR+0x20</ipxact:description>
-			<ipxact:value>    4'b1000</ipxact:value>
+			<ipxact:value>4'b1000</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_8966e2e4_c4c2_488f_bfab_250c0fd34463">
+		<ipxact:parameter parameterId="uuid_8966e2e4_c4c2_488f_bfab_250c0fd34463">
 			<ipxact:name>REG_PADCFG1</ipxact:name>
 			<ipxact:description>BASEADDR+0x24</ipxact:description>
-			<ipxact:value>    4'b1001</ipxact:value>
+			<ipxact:value>4'b1001</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_5d3641fd_2b43_4587_9054_3353e62afdac">
+		<ipxact:parameter parameterId="uuid_5d3641fd_2b43_4587_9054_3353e62afdac">
 			<ipxact:name>REG_PADCFG2</ipxact:name>
 			<ipxact:description>BASEADDR+0x28</ipxact:description>
-			<ipxact:value>    4'b1010</ipxact:value>
+			<ipxact:value>4'b1010</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_d2393fe0_5b67_47f7_a9ce_ba15b7c9cf21">
+		<ipxact:parameter parameterId="uuid_d2393fe0_5b67_47f7_a9ce_ba15b7c9cf21">
 			<ipxact:name>REG_PADCFG3</ipxact:name>
 			<ipxact:description>BASEADDR+0x2C</ipxact:description>
-			<ipxact:value>    4'b1011</ipxact:value>
+			<ipxact:value>4'b1011</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_dbb881cb_dccf_4fbe_89e3_9646d3d79d7c">
+		<ipxact:parameter parameterId="uuid_dbb881cb_dccf_4fbe_89e3_9646d3d79d7c">
 			<ipxact:name>REG_PADCFG4</ipxact:name>
 			<ipxact:description>BASEADDR+0x30</ipxact:description>
-			<ipxact:value>    4'b1100</ipxact:value>
+			<ipxact:value>4'b1100</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_fc14cb7c_920e_45e1_8a1b_1d380151c32d">
+		<ipxact:parameter parameterId="uuid_fc14cb7c_920e_45e1_8a1b_1d380151c32d">
 			<ipxact:name>REG_PADCFG5</ipxact:name>
 			<ipxact:description>BASEADDR+0x34</ipxact:description>
-			<ipxact:value>    4'b1101</ipxact:value>
+			<ipxact:value>4'b1101</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_0e210d75_f210_472a_85f6_00c8b680c21d">
+		<ipxact:parameter parameterId="uuid_0e210d75_f210_472a_85f6_00c8b680c21d">
 			<ipxact:name>REG_PADCFG6</ipxact:name>
 			<ipxact:description>BASEADDR+0x38</ipxact:description>
-			<ipxact:value>    4'b1110</ipxact:value>
+			<ipxact:value>4'b1110</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_3803f2bc_e80a_43b5_bd81_cf8b9166f4a7">
+		<ipxact:parameter parameterId="uuid_3803f2bc_e80a_43b5_bd81_cf8b9166f4a7">
 			<ipxact:name>REG_PADCFG7</ipxact:name>
 			<ipxact:description>BASEADDR+0x3C</ipxact:description>
-			<ipxact:value>    4'b1111</ipxact:value>
+			<ipxact:value>4'b1111</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_d54cfdd8_2eeb_4bf1_a16d_03311edb789e" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_d54cfdd8_2eeb_4bf1_a16d_03311edb789e">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 			<ipxact:value>12</ipxact:value>

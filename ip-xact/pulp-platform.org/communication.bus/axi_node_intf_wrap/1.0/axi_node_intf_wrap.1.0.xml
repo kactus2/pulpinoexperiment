@@ -1912,8 +1912,6 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:slave>
-				<ipxact:transparentBridge masterRef="master0"/>
-				<ipxact:transparentBridge masterRef="master1"/>
 				<ipxact:transparentBridge masterRef="master2"/>
 			</ipxact:slave>
 		</ipxact:busInterface>
@@ -2279,11 +2277,7 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave>
-				<ipxact:transparentBridge masterRef="master0"/>
-				<ipxact:transparentBridge masterRef="master1"/>
-				<ipxact:transparentBridge masterRef="master2"/>
-			</ipxact:slave>
+			<ipxact:slave/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>slave2</ipxact:name>
@@ -2855,11 +2849,7 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave>
-				<ipxact:transparentBridge masterRef="master0"/>
-				<ipxact:transparentBridge masterRef="master1"/>
-				<ipxact:transparentBridge masterRef="master2"/>
-			</ipxact:slave>
+			<ipxact:slave/>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>

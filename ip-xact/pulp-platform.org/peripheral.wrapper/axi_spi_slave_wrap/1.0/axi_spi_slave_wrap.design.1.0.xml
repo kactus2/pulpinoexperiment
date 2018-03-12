@@ -17,6 +17,7 @@
 			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{c9775c83-e7b6-4168-86a5-bd053bb0f831}</kactus2:uuid>
+				<kactus2:position x="280" y="60"/>
 				<kactus2:portPositions>
 					<kactus2:portPosition busRef="axi_master" x="-110" y="110"/>
 					<kactus2:portPosition busRef="spi" x="110" y="40"/>
@@ -26,7 +27,6 @@
 					<kactus2:adHocVisible portName="axi_aresetn" x="-110" y="50"/>
 					<kactus2:adHocVisible portName="test_mode" x="-110" y="80"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:position x="280" y="60"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 	</ipxact:componentInstances>
@@ -66,19 +66,19 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_fe01f1a5_f873_4e4a_a13a_13dbca694f19" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_fe01f1a5_f873_4e4a_a13a_13dbca694f19" resolve="user">
 			<ipxact:name>AXI_ADDRESS_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_306d0c57_1441_4512_a375_e8031cb194cf" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_306d0c57_1441_4512_a375_e8031cb194cf" resolve="user">
 			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 			<ipxact:value>64</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_2eadb0ea_e4ac_4b68_a83c_62d3880f7f35" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_2eadb0ea_e4ac_4b68_a83c_62d3880f7f35" resolve="user">
 			<ipxact:name>AXI_ID_WIDTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b294215e_7783_45d8_847e_38beedbf8b46" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_b294215e_7783_45d8_847e_38beedbf8b46" resolve="user">
 			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>
@@ -90,7 +90,7 @@
 		</kactus2:kts_attributes>
 		<kactus2:columnLayout>
 			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
-			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
+			<kactus2:column name="Components" contentType="4" allowedItems="10" minWidth="319" width="319" x="120"/>
 			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
 		</kactus2:columnLayout>
 		<kactus2:routes>

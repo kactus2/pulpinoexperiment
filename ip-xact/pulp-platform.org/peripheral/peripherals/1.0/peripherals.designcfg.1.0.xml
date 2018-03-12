@@ -55,7 +55,7 @@
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>periph_bus_i</ipxact:instanceName>
-		<ipxact:view viewRef="flat"/>
+		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>apb2per_debug_i</ipxact:instanceName>

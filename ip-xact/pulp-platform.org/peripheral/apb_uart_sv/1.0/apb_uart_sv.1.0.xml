@@ -54,42 +54,6 @@
 			<ipxact:slave/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
-			<ipxact:name>event</ipxact:name>
-			<ipxact:busType vendor="pulp-platform.org" library="interface" name="irq" version="1.0"/>
-			<ipxact:abstractionTypes>
-				<ipxact:abstractionType>
-					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="irq.absDef" version="1.0"/>
-					<ipxact:portMaps>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>event</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>24</ipxact:left>
-									<ipxact:right>24</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>event_o</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>irq</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>24</ipxact:left>
-									<ipxact:right>24</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>event_o</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-					</ipxact:portMaps>
-				</ipxact:abstractionType>
-			</ipxact:abstractionTypes>
-			<ipxact:master/>
-		</ipxact:busInterface>
-		<ipxact:busInterface>
 			<ipxact:name>apb_slave</ipxact:name>
 			<ipxact:busType vendor="amba.com" library="AMBA3" name="APB" version="r1p0_4"/>
 			<ipxact:abstractionTypes>
@@ -215,6 +179,44 @@
 			</ipxact:abstractionTypes>
 			<ipxact:slave/>
 		</ipxact:busInterface>
+		<ipxact:busInterface>
+			<ipxact:name>event</ipxact:name>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="irq" version="1.0"/>
+			<ipxact:abstractionTypes>
+				<ipxact:abstractionType>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="irq.absDef" version="1.0"/>
+					<ipxact:portMaps>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>event</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>24</ipxact:left>
+									<ipxact:right>24</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>event_o</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>irq</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>24</ipxact:left>
+									<ipxact:right>24</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>event_o</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+					</ipxact:portMaps>
+				</ipxact:abstractionType>
+			</ipxact:abstractionTypes>
+			<ipxact:system>
+				<ipxact:group>irq_source</ipxact:group>
+			</ipxact:system>
+		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>
 		<ipxact:views>
@@ -230,9 +232,9 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>apb_uart_sv</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_07da54f8_ff44_4d9b_99ef_de9a2e369306" kactus2:usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_07da54f8_ff44_4d9b_99ef_de9a2e369306" usageType="nontyped">
 						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:description>APB slaves are 4KB by default</ipxact:description> 
+						<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 						<ipxact:value>uuid_e584bc2d_63ff_450f_b5b2_dae4e876726a</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -242,7 +244,7 @@
 			</ipxact:componentInstantiation>
 			<ipxact:designConfigurationInstantiation>
 				<ipxact:name>design_configuration</ipxact:name>
-				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="peripheral" name="apb_uart.designcfg" version="1.0"/>
+				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="peripheral" name="apb_uart_sv.designcfg" version="1.0"/>
 			</ipxact:designConfigurationInstantiation>
 		</ipxact:instantiations>
 		<ipxact:ports>
@@ -439,7 +441,7 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_e584bc2d_63ff_450f_b5b2_dae4e876726a" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_e584bc2d_63ff_450f_b5b2_dae4e876726a" resolve="user">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>

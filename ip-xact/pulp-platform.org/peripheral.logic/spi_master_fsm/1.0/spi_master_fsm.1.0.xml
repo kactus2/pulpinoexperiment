@@ -7,9 +7,19 @@
 	<ipxact:model>
 		<ipxact:views>
 			<ipxact:view>
-				<ipxact:name>flat</ipxact:name>
+				<ipxact:name>flat_verilog</ipxact:name>
 			</ipxact:view>
 		</ipxact:views>
+		<ipxact:instantiations>
+			<ipxact:componentInstantiation>
+				<ipxact:name>verilog_instantiation</ipxact:name>
+				<ipxact:language>verilog</ipxact:language>
+				<ipxact:moduleName>spi_master_fsm</ipxact:moduleName>
+				<ipxact:fileSetRef>
+					<ipxact:localName>rtl</ipxact:localName>
+				</ipxact:fileSetRef>
+			</ipxact:componentInstantiation>
+		</ipxact:instantiations>
 		<ipxact:ports>
 			<ipxact:port>
 				<ipxact:name>HCLK</ipxact:name>
@@ -145,11 +155,11 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_cc994d3a_6e20_46c7_862c_0e81ce9a4431" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_cc994d3a_6e20_46c7_862c_0e81ce9a4431">
 			<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_541ad88c_5d56_4142_bd55_2fe4c4c5458b)</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_541ad88c_5d56_4142_bd55_2fe4c4c5458b" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_541ad88c_5d56_4142_bd55_2fe4c4c5458b">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>

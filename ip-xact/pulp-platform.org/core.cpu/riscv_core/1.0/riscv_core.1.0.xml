@@ -425,7 +425,7 @@
 			<ipxact:width>32</ipxact:width>
 			<ipxact:segments>
 				<ipxact:segment>
-					<ipxact:name>dataMemory</ipxact:name>
+					<ipxact:name>DataMemory</ipxact:name>
 					<ipxact:addressOffset>'h0010_0000</ipxact:addressOffset>
 					<ipxact:range>'h8000</ipxact:range>
 				</ipxact:segment>

@@ -179,7 +179,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:master/>
+			<ipxact:system>
+				<ipxact:group>irq_source</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:memoryMaps>
@@ -292,14 +294,14 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>apb_timer</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_114eb8a7_bfeb_4e07_aa02_baa701594340" kactus2:usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_114eb8a7_bfeb_4e07_aa02_baa701594340" usageType="nontyped">
 						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:description>APB slaves are 4KB by default</ipxact:description> 
+						<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 						<ipxact:value>12</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_7a39fa2c_1c53_4a02_8ddb_fc18b181e033" kactus2:usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_7a39fa2c_1c53_4a02_8ddb_fc18b181e033" usageType="nontyped">
 						<ipxact:name>TIMER_CNT</ipxact:name>
-						<ipxact:description>how many timers should be instantiated</ipxact:description> 
+						<ipxact:description>how many timers should be instantiated</ipxact:description>
 						<ipxact:value>2</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -497,15 +499,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter  parameterId="uuid_a1f79c2d_b694_41a2_97cb_80afc8052511">
+		<ipxact:parameter parameterId="uuid_a1f79c2d_b694_41a2_97cb_80afc8052511">
 			<ipxact:name>REGS_MAX_ADR</ipxact:name>
 			<ipxact:value>2'd2</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_e0c1b48b_b1c5_4103_8282_92f085b6ba02" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_e0c1b48b_b1c5_4103_8282_92f085b6ba02">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_54ab9832_5306_4aaf_9120_5f51eaaf2e22" kactus2:usageCount="3">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_54ab9832_5306_4aaf_9120_5f51eaaf2e22">
 			<ipxact:name>TIMER_CNT</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>

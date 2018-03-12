@@ -2000,45 +2000,45 @@
 				<ipxact:moduleName>core_region</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_5164dc66_7cfb_48eb_953a_0f647f4ad24e" usageType="nontyped">
-						<ipxact:name>AXI_ADDR_WIDTH</ipxact:name> 
+						<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 						<ipxact:value>uuid_5652918d_2268_41c0_9a1a_8892cddc2caf</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_e36aa67c_3f66_4b57_a993_26a5d3a3cbb5" usageType="nontyped">
-						<ipxact:name>AXI_DATA_WIDTH</ipxact:name> 
+						<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 						<ipxact:value>uuid_2d07ce2f_9e7d_43fd_8af7_802b79c7ece2</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_c972d950_cf6f_42b7_811876fc201f254" usageType="nontyped">
-						<ipxact:name>AXI_ID_MASTER_WIDTH</ipxact:name> 
+						<ipxact:name>AXI_ID_MASTER_WIDTH</ipxact:name>
 						<ipxact:value>uuid_142444ee_92de_430b_8cad_f821468081ff</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_bc8a511d_c913_45ae_851b_e03b8fb26a03" usageType="nontyped">
-						<ipxact:name>AXI_USER_WIDTH</ipxact:name> 
+						<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 						<ipxact:value>uuid_adc47012_45c5_4d54_87a4_7c7ed000d9f4</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_3d60a42d_08a9_4d0d_ab55_64af6881fae4" usageType="nontyped">
 						<ipxact:name>DATA_RAM_SIZE</ipxact:name>
-						<ipxact:description>in bytes</ipxact:description> 
+						<ipxact:description>in bytes</ipxact:description>
 						<ipxact:value>uuid_edb7dff7_5ef8_4abe_b419_d5abc9c6ed58</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_432aefdb_682c_4f40_97e5_74fefcc74f04" usageType="nontyped">
 						<ipxact:name>INSTR_RAM_SIZE</ipxact:name>
-						<ipxact:description>in bytes</ipxact:description> 
+						<ipxact:description>in bytes</ipxact:description>
 						<ipxact:value>uuid_c3ad25d5_fc0f_432f_8efb_a025840f946e</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_ee8008dc_0a89_40a7_a998_067b1b48ae4d" usageType="nontyped">
-						<ipxact:name>USE_ZERO_RISCY</ipxact:name> 
+						<ipxact:name>USE_ZERO_RISCY</ipxact:name>
 						<ipxact:value>uuid_c4ad384b_1d93_4552_97f0_fa7d545dfede</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_62e14d21_5531_4c7c_83ba_88bc25e731b7" usageType="nontyped">
-						<ipxact:name>RISCY_RV32F</ipxact:name> 
+						<ipxact:name>RISCY_RV32F</ipxact:name>
 						<ipxact:value>uuid_67309601_3a68_4c85_ab7a_bf48ad5d4e6b</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_4145a7ff_f834_429c_bacd_0dbb1a6f3d0c" usageType="nontyped">
-						<ipxact:name>ZERO_RV32M</ipxact:name> 
+						<ipxact:name>ZERO_RV32M</ipxact:name>
 						<ipxact:value>uuid_dc7e45be_4fb8_4826_aed2_b55a6ffd8db5</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_35c33f31_e7ab_49ae_92d3_b969ae452e1d" usageType="nontyped">
-						<ipxact:name>ZERO_RV32E</ipxact:name> 
+						<ipxact:name>ZERO_RV32E</ipxact:name>
 						<ipxact:value>uuid_dc7e45be_4fb8_4826_aed2_b55a6ffd8db5</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -4359,21 +4359,21 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_c3ad25d5_fc0f_432f_8efb_a025840f946e" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_c3ad25d5_fc0f_432f_8efb_a025840f946e">
 			<ipxact:name>INSTR_RAM_SIZE</ipxact:name>
 			<ipxact:description>in bytes</ipxact:description>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_edb7dff7_5ef8_4abe_b419_d5abc9c6ed58" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_edb7dff7_5ef8_4abe_b419_d5abc9c6ed58">
 			<ipxact:name>DATA_RAM_SIZE</ipxact:name>
 			<ipxact:description>in bytes</ipxact:description>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_c4ad384b_1d93_4552_97f0_fa7d545dfede" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_c4ad384b_1d93_4552_97f0_fa7d545dfede" resolve="user">
 			<ipxact:name>USE_ZERO_RISCY</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_67309601_3a68_4c85_ab7a_bf48ad5d4e6b" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_67309601_3a68_4c85_ab7a_bf48ad5d4e6b" resolve="user">
 			<ipxact:name>RISCY_RV32F</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
@@ -4381,23 +4381,23 @@
 			<ipxact:name>ZERO_RV32E</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_dc7e45be_4fb8_4826_aed2_b55a6ffd8db5" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_dc7e45be_4fb8_4826_aed2_b55a6ffd8db5" resolve="user">
 			<ipxact:name>ZERO_RV32M</ipxact:name>
 			<ipxact:value>1</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_adc47012_45c5_4d54_87a4_7c7ed000d9f4" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_adc47012_45c5_4d54_87a4_7c7ed000d9f4" resolve="user">
 			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_2d07ce2f_9e7d_43fd_8af7_802b79c7ece2" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_2d07ce2f_9e7d_43fd_8af7_802b79c7ece2" resolve="user">
 			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 			<ipxact:value>64</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5652918d_2268_41c0_9a1a_8892cddc2caf" resolve="user" kactus2:usageCount="9">
+		<ipxact:parameter kactus2:usageCount="9" parameterId="uuid_5652918d_2268_41c0_9a1a_8892cddc2caf" resolve="user">
 			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_142444ee_92de_430b_8cad_f821468081ff" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_142444ee_92de_430b_8cad_f821468081ff" resolve="user">
 			<ipxact:name>AXI_ID_MASTER_WIDTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>

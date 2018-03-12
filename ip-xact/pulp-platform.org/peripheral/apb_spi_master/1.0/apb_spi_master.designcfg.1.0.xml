@@ -7,7 +7,7 @@
 	<ipxact:designRef vendor="pulp-platform.org" library="peripheral" name="apb_spi_master.design" version="1.0"/>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>logic</ipxact:instanceName>
-		<ipxact:view viewRef="flat"/>
+		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>u_spictrl</ipxact:instanceName>

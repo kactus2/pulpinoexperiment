@@ -239,7 +239,9 @@
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:master/>
+			<ipxact:system>
+				<ipxact:group>irq_source</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:memoryMaps>
@@ -509,9 +511,9 @@ the current system clock by the given factor.</ipxact:description>
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>apb_i2c</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_01ae8439_ffee_46f1_a862_fd912aab8148" kactus2:usageCount="1" usageType="nontyped">
+					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_01ae8439_ffee_46f1_a862_fd912aab8148" usageType="nontyped">
 						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
-						<ipxact:description>APB slaves are 4KB by default</ipxact:description> 
+						<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 						<ipxact:value>uuid_c4592b18_9bb7_47ce_bca6_d9bb2f302a08</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -775,37 +777,37 @@ the current system clock by the given factor.</ipxact:description>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter  parameterId="uuid_c7269e08_2098_44b4_b84b_6ba0058f9fd5">
+		<ipxact:parameter parameterId="uuid_c7269e08_2098_44b4_b84b_6ba0058f9fd5">
 			<ipxact:name>REG_CLK_PRESCALER</ipxact:name>
 			<ipxact:description>BASEADDR+0x00</ipxact:description>
 			<ipxact:value>3'b000</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_c7df70f1_c155_4fb9_9380_4ee8fa465e09">
+		<ipxact:parameter parameterId="uuid_c7df70f1_c155_4fb9_9380_4ee8fa465e09">
 			<ipxact:name>REG_CTRL</ipxact:name>
 			<ipxact:description>BASEADDR+0x04</ipxact:description>
-			<ipxact:value>         3'b001</ipxact:value>
+			<ipxact:value>3'b001</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_ba6f8d99_318d_4541_ab6d_94c3127cd96b">
+		<ipxact:parameter parameterId="uuid_ba6f8d99_318d_4541_ab6d_94c3127cd96b">
 			<ipxact:name>REG_RX</ipxact:name>
 			<ipxact:description>BASEADDR+0x08</ipxact:description>
-			<ipxact:value>           3'b010</ipxact:value>
+			<ipxact:value>3'b010</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_6db53da0_9208_4957_a46f_98287b798831">
+		<ipxact:parameter parameterId="uuid_6db53da0_9208_4957_a46f_98287b798831">
 			<ipxact:name>REG_STATUS</ipxact:name>
 			<ipxact:description>BASEADDR+0x0C</ipxact:description>
-			<ipxact:value>       3'b011</ipxact:value>
+			<ipxact:value>3'b011</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_468297ce_6405_4831_be1a_945152b6763c">
+		<ipxact:parameter parameterId="uuid_468297ce_6405_4831_be1a_945152b6763c">
 			<ipxact:name>REG_TX</ipxact:name>
 			<ipxact:description>BASEADDR+0x10</ipxact:description>
-			<ipxact:value>           3'b100</ipxact:value>
+			<ipxact:value>3'b100</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_cff9470e_e592_43b0_bf92_bfb0cf56d86d">
+		<ipxact:parameter parameterId="uuid_cff9470e_e592_43b0_bf92_bfb0cf56d86d">
 			<ipxact:name>REG_CMD</ipxact:name>
 			<ipxact:description>BASEADDR+0x14</ipxact:description>
-			<ipxact:value>          3'b101</ipxact:value>
+			<ipxact:value>3'b101</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_c4592b18_9bb7_47ce_bca6_d9bb2f302a08" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_c4592b18_9bb7_47ce_bca6_d9bb2f302a08">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 			<ipxact:value>12</ipxact:value>

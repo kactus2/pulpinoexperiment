@@ -369,7 +369,7 @@
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8" resolve="user" kactus2:usageCount="3">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8" resolve="user">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>
@@ -391,22 +391,9 @@
 				<kactus2:position x="170" y="140"/>
 				<kactus2:position x="60" y="140"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_txfifo_clr_i" kactus2:offPage="false">
-				<kactus2:position x="390" y="190"/>
-				<kactus2:position x="470" y="190"/>
-				<kactus2:position x="470" y="130"/>
-				<kactus2:position x="490" y="130"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_rxfifo_clr_i" kactus2:offPage="false">
-				<kactus2:position x="390" y="190"/>
-				<kactus2:position x="470" y="190"/>
-				<kactus2:position x="470" y="270"/>
-				<kactus2:position x="490" y="270"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_spictrl_spi_swrst" kactus2:offPage="false">
-				<kactus2:position x="390" y="190"/>
-				<kactus2:position x="810" y="190"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_txfifo_clr_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_rxfifo_clr_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_spictrl_spi_swrst" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="u_axiregs_tx_to_u_txfifo_data_in" kactus2:offPage="false">
 				<kactus2:position x="390" y="150"/>
 				<kactus2:position x="490" y="150"/>
@@ -451,16 +438,8 @@
 				<kactus2:position x="390" y="320"/>
 				<kactus2:position x="810" y="320"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="s_eot" kactus2:offPage="false">
-				<kactus2:position x="1140" y="290"/>
-				<kactus2:position x="1030" y="290"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="logic_events_o_to_events_o" kactus2:offPage="false">
-				<kactus2:position x="1140" y="290"/>
-				<kactus2:position x="1050" y="290"/>
-				<kactus2:position x="1050" y="440"/>
-				<kactus2:position x="1030" y="440"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="s_eot" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="logic_events_o_to_events_o" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="logic_HCLK_to_HCLK" kactus2:offPage="true">
 				<kactus2:position x="90" y="80"/>
 				<kactus2:position x="780" y="430"/>
@@ -469,68 +448,19 @@
 				<kactus2:position x="90" y="110"/>
 				<kactus2:position x="780" y="450"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_spictrl_spi_status_to_logic_spi_ctrl_status" kactus2:offPage="false">
-				<kactus2:position x="810" y="350"/>
-				<kactus2:position x="790" y="350"/>
-				<kactus2:position x="790" y="470"/>
-				<kactus2:position x="810" y="470"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_status_to_logic_spi_status" kactus2:offPage="false">
-				<kactus2:position x="390" y="720"/>
-				<kactus2:position x="810" y="720"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_txfifo_valid_o_to_logic_spi_ctrl_data_tx_valid" kactus2:offPage="false">
-				<kactus2:position x="710" y="120"/>
-				<kactus2:position x="750" y="120"/>
-				<kactus2:position x="750" y="490"/>
-				<kactus2:position x="810" y="490"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_txfifo_ready_o_to_logic_spi_ctrl_data_tx_ready" kactus2:offPage="false">
-				<kactus2:position x="710" y="140"/>
-				<kactus2:position x="760" y="140"/>
-				<kactus2:position x="760" y="510"/>
-				<kactus2:position x="810" y="510"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_rxfifo_ready_o_to_logic_spi_ctrl_data_rx_ready" kactus2:offPage="false">
-				<kactus2:position x="710" y="280"/>
-				<kactus2:position x="770" y="280"/>
-				<kactus2:position x="770" y="550"/>
-				<kactus2:position x="810" y="550"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_rxfifo_valid_o_to_logic_spi_ctrl_data_rx_valid" kactus2:offPage="false">
-				<kactus2:position x="710" y="260"/>
-				<kactus2:position x="780" y="260"/>
-				<kactus2:position x="780" y="530"/>
-				<kactus2:position x="810" y="530"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_en_to_logic_int_cnt_en" kactus2:offPage="false">
-				<kactus2:position x="390" y="580"/>
-				<kactus2:position x="810" y="580"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_tx_to_logic_cnt_tx" kactus2:offPage="false">
-				<kactus2:position x="390" y="600"/>
-				<kactus2:position x="810" y="600"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_rd_sta_to_logic_int_rd_sta" kactus2:offPage="false">
-				<kactus2:position x="390" y="620"/>
-				<kactus2:position x="810" y="620"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_tx_to_logic_th_tx" kactus2:offPage="false">
-				<kactus2:position x="390" y="640"/>
-				<kactus2:position x="810" y="640"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_en_to_logic_int_en" kactus2:offPage="false">
-				<kactus2:position x="390" y="660"/>
-				<kactus2:position x="810" y="660"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_rx_to_logic_cnt_rx" kactus2:offPage="false">
-				<kactus2:position x="390" y="680"/>
-				<kactus2:position x="810" y="680"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_rx_to_logic_th_rx" kactus2:offPage="false">
-				<kactus2:position x="390" y="700"/>
-				<kactus2:position x="810" y="700"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_spictrl_spi_status_to_logic_spi_ctrl_status" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_status_to_logic_spi_status" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_txfifo_valid_o_to_logic_spi_ctrl_data_tx_valid" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_txfifo_ready_o_to_logic_spi_ctrl_data_tx_ready" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_rxfifo_ready_o_to_logic_spi_ctrl_data_rx_ready" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_rxfifo_valid_o_to_logic_spi_ctrl_data_rx_valid" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_en_to_logic_int_cnt_en" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_tx_to_logic_cnt_tx" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_rd_sta_to_logic_int_rd_sta" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_tx_to_logic_th_tx" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_en_to_logic_int_en" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_rx_to_logic_cnt_rx" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_rx_to_logic_th_rx" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="u_spictrl_spi_master_to_spi_master" kactus2:offPage="false">
 				<kactus2:position x="1030" y="100"/>
 				<kactus2:position x="1140" y="100"/>

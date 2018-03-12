@@ -235,7 +235,7 @@
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{609c8063-5308-4a36-acda-46e65ed0fc67}</kactus2:uuid>
 				<kactus2:portPositions>
-					<kactus2:portPosition busRef="debug" x="110" y="250"/>
+					<kactus2:portPosition busRef="debug" x="110" y="210"/>
 					<kactus2:portPosition busRef="id_debug" x="-110" y="80"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
@@ -809,19 +809,19 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_79fb9434_00fc_45e1_8407_426de783fa4d" resolve="immediate" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_79fb9434_00fc_45e1_8407_426de783fa4d" resolve="immediate">
 			<ipxact:name>APU</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5e587afc_409d_4b6e_b9bb_03f817e48680" resolve="user" kactus2:usageCount="4">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_5e587afc_409d_4b6e_b9bb_03f817e48680" resolve="user">
 			<ipxact:name>FPU</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_42e3f7f3_d76e_48b8_bab6_f669ad2198ea" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_42e3f7f3_d76e_48b8_bab6_f669ad2198ea" resolve="user">
 			<ipxact:name>INSTR_RDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_55aa1cb4_4061_4e11_9642_31d03db94a3d" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_55aa1cb4_4061_4e11_9642_31d03db94a3d" resolve="user">
 			<ipxact:name>N_EXT_PERF_COUNTERS</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
@@ -829,27 +829,27 @@
 			<ipxact:name>NDSFLAGS_CPU</ipxact:name>
 			<ipxact:value>15</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_8fd83297_b634_4168_af15_976f7a1b6bad" resolve="immediate" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_8fd83297_b634_4168_af15_976f7a1b6bad" resolve="immediate">
 			<ipxact:name>N_HWLP</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_3b08106c_5654_492e_93ef_76f1f795c36b" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_3b08106c_5654_492e_93ef_76f1f795c36b" resolve="user">
 			<ipxact:name>PULP_SECURE</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_a742cd86_6b63_4217_9ee0_377140a1fe6d" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_a742cd86_6b63_4217_9ee0_377140a1fe6d" resolve="user">
 			<ipxact:name>SHARED_DSP_MULT</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5a59f133_c485_48b7_8eb6_929291f991f6" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_5a59f133_c485_48b7_8eb6_929291f991f6" resolve="user">
 			<ipxact:name>SHARED_FP</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_70f798eb_850a_4407_9ced_789c7f7a31ca" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_70f798eb_850a_4407_9ced_789c7f7a31ca" resolve="user">
 			<ipxact:name>SHARED_FP_DIVSQRT</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b7775ae0_6dde_4cf7_ba04_e6fec44c12df" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_b7775ae0_6dde_4cf7_ba04_e6fec44c12df" resolve="user">
 			<ipxact:name>SHARED_INT_DIV</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
@@ -857,7 +857,7 @@
 			<ipxact:name>WOP_CPU</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_182cb6b4_1d64_477b_8b8f_9cf8a89a1018" resolve="user" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_182cb6b4_1d64_477b_8b8f_9cf8a89a1018" resolve="user">
 			<ipxact:name>WAPUTYPE</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
@@ -918,10 +918,8 @@
 				<kactus2:position x="660" y="160"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="debug_unit_i_debug_to_debug" kactus2:offPage="false">
-				<kactus2:position x="880" y="1330"/>
-				<kactus2:position x="1780" y="1330"/>
-				<kactus2:position x="1780" y="1270"/>
-				<kactus2:position x="1800" y="1270"/>
+				<kactus2:position x="880" y="1290"/>
+				<kactus2:position x="1800" y="1290"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="core_clock_gate_i_clk_o_to_ex_stage_i_clk" kactus2:offPage="true">
 				<kactus2:position x="420" y="100"/>
@@ -1247,7 +1245,7 @@
 		</kactus2:adHocVisibilities>
 		<kactus2:interfaceGraphics>
 			<kactus2:name>debug</kactus2:name>
-			<kactus2:position x="1800" y="1270"/>
+			<kactus2:position x="1800" y="1290"/>
 			<kactus2:direction x="-1" y="0"/>
 		</kactus2:interfaceGraphics>
 		<kactus2:interfaceGraphics>
@@ -1280,6 +1278,14 @@
 				<kactus2:position x="770" y="370"/>
 			</kactus2:associations>
 			<kactus2:timestamp>28.11.2017 12:20:20</kactus2:timestamp>
+		</kactus2:note>
+		<kactus2:note>
+			<kactus2:position x="10" y="180"/>
+			<kactus2:content>Omitted logic for port en_i</kactus2:content>
+			<kactus2:associations>
+				<kactus2:position x="280" y="115"/>
+			</kactus2:associations>
+			<kactus2:timestamp>5.1.2018 12:57:01</kactus2:timestamp>
 		</kactus2:note>
 	</ipxact:vendorExtensions>
 </ipxact:design>
