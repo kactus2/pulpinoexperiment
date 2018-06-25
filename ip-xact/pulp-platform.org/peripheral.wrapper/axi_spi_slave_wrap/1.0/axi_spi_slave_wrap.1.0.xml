@@ -757,7 +757,7 @@
 			<ipxact:port>
 				<ipxact:name>aw_ready</ipxact:name>
 				<ipxact:wire>
-					<ipxact:direction>inout</ipxact:direction>
+					<ipxact:direction>in</ipxact:direction>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>

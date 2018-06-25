@@ -191,20 +191,20 @@
 				<ipxact:moduleName>axi_w_buffer</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_3c8ba716_a278_4425_a25b_fd41392f75a1" usageType="nontyped">
-						<ipxact:name>DATA_WIDTH</ipxact:name> 
+						<ipxact:name>DATA_WIDTH</ipxact:name>
 						<ipxact:value>uuid_bb5217e4_9525_4c6c_8bb1_79bb041cdab9</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_4491e090_af61_40ca_a5da_226243df113a" usageType="nontyped">
-						<ipxact:name>USER_WIDTH</ipxact:name> 
+						<ipxact:name>USER_WIDTH</ipxact:name>
 						<ipxact:value>uuid_ccb7240b_bafe_4deb_a6a7_d068f08d3bf6</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_6671c6f9_4e11_41d1_85f5_ecc96672a9c3" usageType="nontyped">
-						<ipxact:name>BUFFER_DEPTH</ipxact:name> 
+						<ipxact:name>BUFFER_DEPTH</ipxact:name>
 						<ipxact:value>uuid_b4e90f99_af6e_40a4_8d6a_d3874f0a533b</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_920dc918_9ba4_44ce_bc72_e0edea52ea57" usageType="nontyped">
 						<ipxact:name>STRB_WIDTH</ipxact:name>
-						<ipxact:description>DO NOT OVERRIDE</ipxact:description> 
+						<ipxact:description>DO NOT OVERRIDE</ipxact:description>
 						<ipxact:value>uuid_806012e9_5125_4fc1_ae25_f43cab104003</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -424,23 +424,27 @@
 				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice/axi_w_buffer.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/rtl/components/generic_fifo.sv</ipxact:name>
+				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_bb5217e4_9525_4c6c_8bb1_79bb041cdab9" resolve="user" kactus2:usageCount="3">
-			<ipxact:name>DATA_WIDTH</ipxact:name> 
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_bb5217e4_9525_4c6c_8bb1_79bb041cdab9" resolve="user">
+			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>64</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_ccb7240b_bafe_4deb_a6a7_d068f08d3bf6" resolve="user" kactus2:usageCount="2">
-			<ipxact:name>USER_WIDTH</ipxact:name> 
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_ccb7240b_bafe_4deb_a6a7_d068f08d3bf6" resolve="user">
+			<ipxact:name>USER_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter parameterId="uuid_b4e90f99_af6e_40a4_8d6a_d3874f0a533b" resolve="user">
-			<ipxact:name>BUFFER_DEPTH</ipxact:name> 
+			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_806012e9_5125_4fc1_ae25_f43cab104003" kactus2:usageCount="2">
-			<ipxact:name>STRB_WIDTH</ipxact:name> 
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_806012e9_5125_4fc1_ae25_f43cab104003">
+			<ipxact:name>STRB_WIDTH</ipxact:name>
 			<ipxact:value>uuid_bb5217e4_9525_4c6c_8bb1_79bb041cdab9/8</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>

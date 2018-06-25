@@ -6,10 +6,6 @@
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:designRef vendor="pulp-platform.org" library="peripheral" name="apb_spi_master.design" version="1.0"/>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>logic</ipxact:instanceName>
-		<ipxact:view viewRef="flat_verilog"/>
-	</ipxact:viewConfiguration>
-	<ipxact:viewConfiguration>
 		<ipxact:instanceName>u_spictrl</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
@@ -23,6 +19,10 @@
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>u_axiregs</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>fsm</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>

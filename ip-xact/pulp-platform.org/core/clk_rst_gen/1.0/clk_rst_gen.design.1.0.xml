@@ -45,35 +45,35 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>clk_sel_i</ipxact:name>
+			<ipxact:name>clk_sel</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="clk_mux_i" portRef="clk_sel_i"/>
 				<ipxact:externalPortReference portRef="clk_sel_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>clk_i</ipxact:name>
+			<ipxact:name>clk</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="clk_mux_i" portRef="clk0_i"/>
 				<ipxact:externalPortReference portRef="clk_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>rstn_i</ipxact:name>
+			<ipxact:name>rstn_in</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="i_rst_gen_soc" portRef="rst_ni"/>
 				<ipxact:externalPortReference portRef="rstn_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>testmode_i</ipxact:name>
+			<ipxact:name>testmode</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="i_rst_gen_soc" portRef="test_mode_i"/>
 				<ipxact:externalPortReference portRef="testmode_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>rstn_o</ipxact:name>
+			<ipxact:name>rstn</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="i_rst_gen_soc" portRef="rst_no"/>
 				<ipxact:externalPortReference portRef="rstn_o"/>
@@ -126,30 +126,12 @@
 			<kactus2:column name="IO out" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
 		</kactus2:columnLayout>
 		<kactus2:routes>
-			<kactus2:route kactus2:connRef="clk_int" kactus2:offPage="false">
-				<kactus2:position x="500" y="140"/>
-				<kactus2:position x="390" y="140"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="clk_sel_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="140"/>
-				<kactus2:position x="170" y="140"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="clk_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="100"/>
-				<kactus2:position x="170" y="100"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="rstn_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="250"/>
-				<kactus2:position x="170" y="250"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="testmode_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="270"/>
-				<kactus2:position x="170" y="270"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="rstn_o" kactus2:offPage="false">
-				<kactus2:position x="500" y="250"/>
-				<kactus2:position x="390" y="250"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="clk_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk_sel" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="rstn_in" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="testmode" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="rstn" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="_fll_req_i_to_fll_ack_o" kactus2:offPage="false">
 				<kactus2:position x="60" y="400"/>
 				<kactus2:position x="40" y="400"/>
@@ -166,10 +148,7 @@
 				<kactus2:position x="150" y="230"/>
 				<kactus2:position x="170" y="230"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="fll_req_i_to_fll_ack_o" kactus2:offPage="false">
-				<kactus2:position x="60" y="370"/>
-				<kactus2:position x="500" y="370"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="fll_req_i_to_fll_ack_o" kactus2:offPage="false"/>
 		</kactus2:routes>
 		<kactus2:adHocVisibilities>
 			<kactus2:adHocVisible portName="clk_i" x="60" y="100"/>

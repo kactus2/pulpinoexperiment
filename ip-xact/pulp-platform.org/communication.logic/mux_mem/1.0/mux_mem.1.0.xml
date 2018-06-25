@@ -166,6 +166,11 @@
 				<ipxact:name>A_o</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -178,24 +183,44 @@
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
 				<ipxact:name>CEN_o</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
 				<ipxact:name>D_o</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
 				<ipxact:name>grant_R</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -292,6 +317,11 @@
 				<ipxact:name>WEN_o</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -316,6 +346,11 @@
 				<ipxact:name>grant_W</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
 				</ipxact:wire>
 			</ipxact:port>
 		</ipxact:ports>
@@ -336,15 +371,15 @@
 	</ipxact:fileSets>
 	<ipxact:description>Wrapper for mux logic.</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_5cb24dd6_8260_4f9c_84bb_c9c21261bd42" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_5cb24dd6_8260_4f9c_84bb_c9c21261bd42" resolve="user">
 			<ipxact:name>MEM_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_a1ae39a7_825e_4a43_bd1d_80605c267db7" resolve="user" kactus2:usageCount="3">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_a1ae39a7_825e_4a43_bd1d_80605c267db7" resolve="user">
 			<ipxact:name>AXI_NUM_BYTES</ipxact:name>
 			<ipxact:value>uuid_383ce610_2af9_48c6_bb58_caeffd119446/8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_383ce610_2af9_48c6_bb58_caeffd119446" resolve="user" kactus2:usageCount="3">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_383ce610_2af9_48c6_bb58_caeffd119446" resolve="user">
 			<ipxact:name>AXI4_WDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

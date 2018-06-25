@@ -157,7 +157,7 @@
 			</ipxact:abstractionTypes>
 			<ipxact:mirroredSlave>
 				<ipxact:baseAddresses>
-					<ipxact:remapAddress>'h0100_0000</ipxact:remapAddress>
+					<ipxact:remapAddress>'h1A00_0000</ipxact:remapAddress>
 					<ipxact:range>'h0010_0000</ipxact:range>
 				</ipxact:baseAddresses>
 			</ipxact:mirroredSlave>
@@ -304,6 +304,11 @@
 				<ipxact:name>core_lsu_gnt</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>

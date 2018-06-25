@@ -23,11 +23,9 @@
 			<ipxact:logicalName>R_DATA</ipxact:logicalName>
 			<ipxact:wire>
 				<ipxact:onMaster>
-					<ipxact:width>64</ipxact:width>
 					<ipxact:direction>out</ipxact:direction>
 				</ipxact:onMaster>
 				<ipxact:onSlave>
-					<ipxact:width>64</ipxact:width>
 					<ipxact:direction>in</ipxact:direction>
 				</ipxact:onSlave>
 			</ipxact:wire>

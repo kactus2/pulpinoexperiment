@@ -1,44 +1,48 @@
 //-----------------------------------------------------------------------------
-// File          : core_region_demux.v
-// Creation date : 21.08.2017
-// Creation time : 10:09:24
+// File          : core_region_demux.sv
+// Creation date : 25.06.2018
+// Creation time : 12:47:07
 // Description   : 
 // Created by    : pekkarie
-// Tool : Kactus2 3.4.174 32-bit
-// Plugin : Verilog generator 2.0e
+// Tool : Kactus2 3.6.10 64-bit
+// Plugin : Verilog generator 2.2
 // This file was generated based on IP-XACT component pulp-platform.org:core.wrapper:core_region_demux:1.0
-// whose XML file is C:/Users/pekkarie/Local/Data/pulpino/ip-xact/pulp-platform.org/core.wrapper/core_region_demux/1.0/core_region_demux.1.0.xml
+// whose XML file is D:/Data/kactus_test_libraries/pulpinoexperiment/ip-xact/pulp-platform.org/core.wrapper/core_region_demux/1.0/core_region_demux.1.0.xml
 //-----------------------------------------------------------------------------
 
-module core_region_demux(
+module core_region_demux #(
+    parameter                              ADDR_WIDTH       = 32,
+    parameter                              DATA_WIDTH       = 32,
+    parameter                              RAM_SIZE         = 32768
+) (
     // Interface: data_axi_master
     input                               core_axi_gnt,
-    input                               core_axi_rdata,
+    input          [DATA_WIDTH-1:0]     core_axi_rdata,
     input                               core_axi_rvalid,
-    output                              core_axi_addr,
-    output                              core_axi_be,
+    output         [ADDR_WIDTH-1:0]     core_axi_addr,
+    output         [DATA_WIDTH/8-1:0]   core_axi_be,
     output                              core_axi_req,
-    output                              core_axi_wdata,
+    output         [DATA_WIDTH-1:0]     core_axi_wdata,
     output                              core_axi_we,
 
     // Interface: data_core_master
     input                               core_data_gnt,
-    input                               core_data_rdata,
+    input          [DATA_WIDTH-1:0]     core_data_rdata,
     input                               core_data_rvalid,
-    output                              core_data_addr,
-    output                              core_data_be,
+    output         [ADDR_WIDTH-1:0]     core_data_addr,
+    output         [DATA_WIDTH/8-1:0]   core_data_be,
     output                              core_data_req,
-    output                              core_data_wdata,
+    output         [DATA_WIDTH-1:0]     core_data_wdata,
     output                              core_data_we,
 
     // Interface: lsu_data_slave
-    input                               core_lsu_addr,
-    input                               core_lsu_be,
+    input          [ADDR_WIDTH-1:0]     core_lsu_addr,
+    input          [DATA_WIDTH/8-1:0]   core_lsu_be,
     input                               core_lsu_req,
-    input                               core_lsu_wdata,
+    input          [DATA_WIDTH-1:0]     core_lsu_wdata,
     input                               core_lsu_we,
-    output                              core_lsu_gnt,
-    output                              core_lsu_rdata,
+    output logic                        core_lsu_gnt,
+    output         [DATA_WIDTH-1:0]     core_lsu_rdata,
     output                              core_lsu_rvalid,
 
     // These ports are not in any interface
@@ -47,7 +51,6 @@ module core_region_demux(
 );
 
 // WARNING: EVERYTHING ON AND ABOVE THIS LINE MAY BE OVERWRITTEN BY KACTUS2!!!
-
   logic                        is_axi_addr;
   enum logic [0:0] { AXI, RAM } lsu_resp_CS, lsu_resp_NS;
   
@@ -94,5 +97,5 @@ module core_region_demux(
   // route response back to LSU
   assign core_lsu_rdata  = (lsu_resp_CS == AXI) ? core_axi_rdata : core_data_rdata;
   assign core_lsu_rvalid = core_axi_rvalid | core_data_rvalid;
-
+  
 endmodule

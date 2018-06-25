@@ -48,7 +48,7 @@
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
-			<ipxact:instanceName>logic</ipxact:instanceName>
+			<ipxact:instanceName>fsm</ipxact:instanceName>
 			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral.logic" name="spi_master_fsm" version="1.0"/>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{4c302aad-9cc9-449a-8f6c-fb73e172e1df}</kactus2:uuid>
@@ -245,9 +245,9 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>logic_events_o_to_events_o</ipxact:name>
+			<ipxact:name>fsm_events_o_to_events_o</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="logic" portRef="events_o"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="events_o"/>
 				<ipxact:externalPortReference portRef="events_o">
 					<ipxact:partSelect>
 						<ipxact:range>
@@ -259,108 +259,108 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>logic_HCLK_to_HCLK</ipxact:name>
+			<ipxact:name>fsm_HCLK_to_HCLK</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="logic" portRef="HCLK"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="HCLK"/>
 				<ipxact:externalPortReference portRef="HCLK"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>logic_HRESETn_to_HRESETn</ipxact:name>
+			<ipxact:name>fsm_HRESETn_to_HRESETn</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="logic" portRef="HRESETn"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="HRESETn"/>
 				<ipxact:externalPortReference portRef="HRESETn"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_spictrl_spi_status_to_logic_spi_ctrl_status</ipxact:name>
+			<ipxact:name>u_spictrl_spi_status_to_fsm_spi_ctrl_status</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_spictrl" portRef="spi_status"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_status"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="spi_ctrl_status"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_status_to_logic_spi_status</ipxact:name>
+			<ipxact:name>u_axiregs_spi_status_to_fsm_spi_status</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_status"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="spi_status"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="spi_status"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_txfifo_valid_o_to_logic_spi_ctrl_data_tx_valid</ipxact:name>
+			<ipxact:name>u_txfifo_valid_o_to_fsm_spi_ctrl_data_tx_valid</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_txfifo" portRef="valid_o"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_data_tx_valid"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="spi_ctrl_data_tx_valid"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_txfifo_ready_o_to_logic_spi_ctrl_data_tx_ready</ipxact:name>
+			<ipxact:name>u_txfifo_ready_o_to_fsm_spi_ctrl_data_tx_ready</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_txfifo" portRef="ready_o"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_data_tx_ready"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="spi_ctrl_data_tx_ready"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_rxfifo_ready_o_to_logic_spi_ctrl_data_rx_ready</ipxact:name>
+			<ipxact:name>u_rxfifo_ready_o_to_fsm_spi_ctrl_data_rx_ready</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_rxfifo" portRef="ready_o"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_data_rx_ready"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="spi_ctrl_data_rx_ready"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_rxfifo_valid_o_to_logic_spi_ctrl_data_rx_valid</ipxact:name>
+			<ipxact:name>u_rxfifo_valid_o_to_fsm_spi_ctrl_data_rx_valid</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_rxfifo" portRef="valid_o"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="spi_ctrl_data_rx_valid"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="spi_ctrl_data_rx_valid"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_int_cnt_en_to_logic_int_cnt_en</ipxact:name>
+			<ipxact:name>u_axiregs_spi_int_cnt_en_to_fsm_int_cnt_en</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_cnt_en"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="int_cnt_en"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="int_cnt_en"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_int_cnt_tx_to_logic_cnt_tx</ipxact:name>
+			<ipxact:name>u_axiregs_spi_int_cnt_tx_to_fsm_cnt_tx</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_cnt_tx"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="cnt_tx"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="cnt_tx"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_int_rd_sta_to_logic_int_rd_sta</ipxact:name>
+			<ipxact:name>u_axiregs_spi_int_rd_sta_to_fsm_int_rd_sta</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_rd_sta"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="int_rd_sta"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="int_rd_sta"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_int_th_tx_to_logic_th_tx</ipxact:name>
+			<ipxact:name>u_axiregs_spi_int_th_tx_to_fsm_th_tx</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_th_tx"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="th_tx"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="th_tx"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_int_en_to_logic_int_en</ipxact:name>
+			<ipxact:name>u_axiregs_spi_int_en_to_fsm_int_en</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_en"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="int_en"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="int_en"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_int_cnt_rx_to_logic_cnt_rx</ipxact:name>
+			<ipxact:name>u_axiregs_spi_int_cnt_rx_to_fsm_cnt_rx</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_cnt_rx"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="cnt_rx"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="cnt_rx"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_int_th_rx_to_logic_th_rx</ipxact:name>
+			<ipxact:name>u_axiregs_spi_int_th_rx_to_fsm_th_rx</ipxact:name>
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_int_th_rx"/>
-				<ipxact:internalPortReference componentRef="logic" portRef="th_rx"/>
+				<ipxact:internalPortReference componentRef="fsm" portRef="th_rx"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
@@ -439,53 +439,28 @@
 				<kactus2:position x="810" y="320"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="s_eot" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="logic_events_o_to_events_o" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="logic_HCLK_to_HCLK" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="fsm_events_o_to_events_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="fsm_HCLK_to_HCLK" kactus2:offPage="true">
 				<kactus2:position x="90" y="80"/>
 				<kactus2:position x="780" y="430"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="logic_HRESETn_to_HRESETn" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="fsm_HRESETn_to_HRESETn" kactus2:offPage="true">
 				<kactus2:position x="90" y="110"/>
 				<kactus2:position x="780" y="450"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_spictrl_spi_status_to_logic_spi_ctrl_status" kactus2:offPage="false">
-				<kactus2:position x="810" y="350"/>
-				<kactus2:position x="790" y="350"/>
-				<kactus2:position x="790" y="470"/>
-				<kactus2:position x="810" y="470"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_status_to_logic_spi_status" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="u_txfifo_valid_o_to_logic_spi_ctrl_data_tx_valid" kactus2:offPage="false">
-				<kactus2:position x="710" y="120"/>
-				<kactus2:position x="760" y="120"/>
-				<kactus2:position x="760" y="490"/>
-				<kactus2:position x="810" y="490"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_txfifo_ready_o_to_logic_spi_ctrl_data_tx_ready" kactus2:offPage="false">
-				<kactus2:position x="710" y="140"/>
-				<kactus2:position x="750" y="140"/>
-				<kactus2:position x="750" y="510"/>
-				<kactus2:position x="810" y="510"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_rxfifo_ready_o_to_logic_spi_ctrl_data_rx_ready" kactus2:offPage="false">
-				<kactus2:position x="710" y="280"/>
-				<kactus2:position x="730" y="280"/>
-				<kactus2:position x="730" y="550"/>
-				<kactus2:position x="810" y="550"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_rxfifo_valid_o_to_logic_spi_ctrl_data_rx_valid" kactus2:offPage="false">
-				<kactus2:position x="710" y="260"/>
-				<kactus2:position x="740" y="260"/>
-				<kactus2:position x="740" y="530"/>
-				<kactus2:position x="810" y="530"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_en_to_logic_int_cnt_en" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_tx_to_logic_cnt_tx" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_rd_sta_to_logic_int_rd_sta" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_tx_to_logic_th_tx" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_en_to_logic_int_en" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_rx_to_logic_cnt_rx" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_rx_to_logic_th_rx" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_spictrl_spi_status_to_fsm_spi_ctrl_status" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_status_to_fsm_spi_status" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_txfifo_valid_o_to_fsm_spi_ctrl_data_tx_valid" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_txfifo_ready_o_to_fsm_spi_ctrl_data_tx_ready" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_rxfifo_ready_o_to_fsm_spi_ctrl_data_rx_ready" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_rxfifo_valid_o_to_fsm_spi_ctrl_data_rx_valid" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_en_to_fsm_int_cnt_en" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_tx_to_fsm_cnt_tx" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_rd_sta_to_fsm_int_rd_sta" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_tx_to_fsm_th_tx" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_en_to_fsm_int_en" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_cnt_rx_to_fsm_cnt_rx" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="u_axiregs_spi_int_th_rx_to_fsm_th_rx" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="u_spictrl_spi_master_to_spi_master" kactus2:offPage="false">
 				<kactus2:position x="1030" y="100"/>
 				<kactus2:position x="1140" y="100"/>

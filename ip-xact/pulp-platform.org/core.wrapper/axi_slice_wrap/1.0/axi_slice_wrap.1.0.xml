@@ -1007,6 +1007,9 @@
 			<ipxact:componentInstantiation>
 				<ipxact:name>flat_verilog</ipxact:name>
 				<ipxact:moduleName>axi_slice_wrap</ipxact:moduleName>
+				<ipxact:fileSetRef>
+					<ipxact:localName>rtl</ipxact:localName>
+				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
 			<ipxact:designInstantiation>
 				<ipxact:name>design</ipxact:name>

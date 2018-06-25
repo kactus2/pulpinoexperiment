@@ -293,6 +293,14 @@
 				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_tx.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/rtl/components/pulp_clock_inverter.sv</ipxact:name>
+				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/rtl/components/pulp_clock_mux2.sv</ipxact:name>
+				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:vendorExtensions>

@@ -97,11 +97,11 @@
 				<ipxact:moduleName>spi_slave_dc_fifo</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_412f5112_843c_48f6_8416_ed191d1b2be1" usageType="nontyped">
-						<ipxact:name>DATA_WIDTH</ipxact:name> 
+						<ipxact:name>DATA_WIDTH</ipxact:name>
 						<ipxact:value>uuid_ce9fe081_516a_4413_9be7_52731db5e449</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_11e905ce_fbeb_41a5_b864_44014c770f46" usageType="nontyped">
-						<ipxact:name>BUFFER_DEPTH</ipxact:name> 
+						<ipxact:name>BUFFER_DEPTH</ipxact:name>
 						<ipxact:value>uuid_f779df42_ca0a_4143_a902_58494dea899d</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -242,15 +242,39 @@
 				<ipxact:name>../../../../../pulpino/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice_dc/dc_token_ring_fifo_din.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice_dc/dc_token_ring_fifo_dout.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice_dc/dc_full_detector.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice_dc/dc_token_ring.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice_dc/dc_data_buffer.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/ips/axi/axi_slice_dc/dc_synchronizer.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_ce9fe081_516a_4413_9be7_52731db5e449" resolve="user" kactus2:usageCount="3">
-			<ipxact:name>DATA_WIDTH</ipxact:name> 
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_ce9fe081_516a_4413_9be7_52731db5e449" resolve="user">
+			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f779df42_ca0a_4143_a902_58494dea899d" resolve="user" kactus2:usageCount="1">
-			<ipxact:name>BUFFER_DEPTH</ipxact:name> 
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_f779df42_ca0a_4143_a902_58494dea899d" resolve="user">
+			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>8</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>

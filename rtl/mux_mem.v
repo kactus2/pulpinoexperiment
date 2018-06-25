@@ -1,26 +1,26 @@
 //-----------------------------------------------------------------------------
 // File          : mux_mem.v
-// Creation date : 18.09.2017
-// Creation time : 16:51:11
-// Description   : 
+// Creation date : 25.06.2018
+// Creation time : 13:11:21
+// Description   : Wrapper for mux logic.
 // Created by    : pekkarie
-// Tool : Kactus2 3.4.436 32-bit
-// Plugin : Verilog generator 2.0e
+// Tool : Kactus2 3.6.10 64-bit
+// Plugin : Verilog generator 2.2
 // This file was generated based on IP-XACT component pulp-platform.org:communication.logic:mux_mem:1.0
-// whose XML file is C:/Users/pekkarie/Local/Data/pulpino/ip-xact/pulp-platform.org/communication.logic/mux_mem/1.0/mux_mem.1.0.xml
+// whose XML file is D:/Data/kactus_test_libraries/pulpinoexperiment/ip-xact/pulp-platform.org/communication.logic/mux_mem/1.0/mux_mem.1.0.xml
 //-----------------------------------------------------------------------------
 
 module mux_mem #(
-    parameter                              MEM_ADDR_WIDTH   = 32,
     parameter                              AXI4_WDATA_WIDTH = 32,
-    parameter                              AXI_NUM_BYTES    = AXI4_WDATA_WIDTH/8
+    parameter                              AXI_NUM_BYTES    = AXI4_WDATA_WIDTH/8,
+    parameter                              MEM_ADDR_WIDTH   = 32
 ) (
     // Interface: mem
-    output                              A_o,
-    output         [AXI_NUM_BYTES-1:0]  BE_o,
-    output                              CEN_o,
-    output                              D_o,
-    output                              WEN_o,
+    output logic                        A_o,
+    output logic   [AXI_NUM_BYTES-1:0]  BE_o,
+    output logic                        CEN_o,
+    output logic                        D_o,
+    output logic                        WEN_o,
 
     // Interface: read
     input          [MEM_ADDR_WIDTH-1:0] R_addr,
@@ -39,8 +39,8 @@ module mux_mem #(
     input                               ARESETn,
     input                               valid_R,
     input                               valid_W,
-    output                              grant_R,
-    output                              grant_W
+    output logic                        grant_R,
+    output logic                        grant_W
 );
 
 // WARNING: EVERYTHING ON AND ABOVE THIS LINE MAY BE OVERWRITTEN BY KACTUS2!!!
