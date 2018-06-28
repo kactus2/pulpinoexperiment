@@ -27,8 +27,8 @@ module spi_master_fsm #(
     input                               spi_ctrl_data_tx_ready,
     input                               spi_ctrl_data_tx_valid,
     input          [6:0]                spi_ctrl_status,
-    input                               th_rx,
-    input                               th_tx,
+    input          [LOG_BUFFER_DEPTH:0] th_rx,
+    input          [LOG_BUFFER_DEPTH:0] th_tx,
     output                              events_o,
     output         [31:0]               spi_status
 );
@@ -51,8 +51,8 @@ module spi_master_fsm #(
 
     localparam FILL_BITS = 7-LOG_BUFFER_DEPTH;
 
-    assign s_rise_int_tx = (elements_tx <= s_th_tx);
-    assign s_rise_int_rx = (elements_rx >= s_th_rx);
+    assign s_rise_int_tx = (elements_tx <= th_tx);
+    assign s_rise_int_rx = (elements_rx >= th_rx);
 
     assign spi_status = {{FILL_BITS{1'b0}},elements_tx,{FILL_BITS{1'b0}},elements_rx,9'h0,spi_ctrl_status};
 
@@ -81,18 +81,18 @@ module spi_master_fsm #(
         end
         else
         begin
-            if (s_int_cnt_en)
+            if (int_cnt_en)
             begin
                 if (spi_ctrl_data_tx_valid && spi_ctrl_data_tx_ready)
                 begin
-                    if (r_counter_tx == s_cnt_tx-1)
+                    if (r_counter_tx == cnt_tx-1)
                         r_counter_tx <= 'h0;
                     else
                         r_counter_tx <= r_counter_tx + 1;
                 end
                 if (spi_ctrl_data_rx_valid && spi_ctrl_data_rx_ready)
                 begin
-                    if (r_counter_rx == s_cnt_rx-1)
+                    if (r_counter_rx == cnt_rx-1)
                         r_counter_rx <= 'h0;
                     else
                         r_counter_rx <= r_counter_rx + 1;
@@ -114,7 +114,7 @@ module spi_master_fsm #(
         case(r_state_tx)
         INT_TX_ACTIVE:
         begin
-            if (s_rise_int_tx && s_int_en)
+            if (s_rise_int_tx && int_en)
                 s_state_tx_next = GEN_INT_TX;
         end
 
@@ -126,14 +126,14 @@ module spi_master_fsm #(
 
         INT_TX_INACTIVE:
         begin
-            if (s_int_cnt_en)
+            if (int_cnt_en)
             begin
-                if ((spi_ctrl_data_tx_valid && spi_ctrl_data_tx_ready) && (r_counter_tx == s_cnt_tx-1))
+                if ((spi_ctrl_data_tx_valid && spi_ctrl_data_tx_ready) && (r_counter_tx == cnt_tx-1))
                     s_state_tx_next = INT_TX_ACTIVE;
             end
             else
             begin
-                if (s_int_rd_intsta)
+                if (int_rd_sta)
                     s_state_tx_next = INT_TX_ACTIVE;
             end
         end
@@ -155,7 +155,7 @@ module spi_master_fsm #(
         case(r_state_rx)
         INT_RX_ACTIVE:
         begin
-            if (s_rise_int_rx && s_int_en)
+            if (s_rise_int_rx && int_en)
                 s_state_rx_next = GEN_INT_RX;
         end
 
@@ -167,14 +167,14 @@ module spi_master_fsm #(
 
         INT_RX_INACTIVE:
         begin
-            if (s_int_cnt_en)
+            if (int_cnt_en)
             begin
-                if ((spi_ctrl_data_rx_valid && spi_ctrl_data_rx_ready) && (r_counter_rx == s_cnt_rx-1))
+                if ((spi_ctrl_data_rx_valid && spi_ctrl_data_rx_ready) && (r_counter_rx == cnt_rx-1))
                     s_state_rx_next = INT_RX_ACTIVE;
             end
             else
             begin
-              if (s_int_rd_intsta)
+              if (int_rd_sta)
                   s_state_rx_next = INT_RX_ACTIVE;
             end
         end
