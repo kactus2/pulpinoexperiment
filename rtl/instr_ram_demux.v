@@ -1,26 +1,28 @@
 //-----------------------------------------------------------------------------
-// File          : inst_ram_demux.v
-// Creation date : 22.08.2017
-// Creation time : 12:18:40
-// Description   : 
-// Created by    : pekkarie
-// Tool : Kactus2 3.4.172 32-bit
-// Plugin : Verilog generator 2.0e
-// This file was generated based on IP-XACT component pulp-platform.org:core.logic:inst_ram_demux:1.0
-// whose XML file is C:/Users/pekkarie/Local/Data/pulpino/ip-xact/pulp-platform.org/core.logic/inst_ram_demux/1.0/inst_ram_demux.1.0.xml
+// File          : instr_ram_demux.v
+// Creation date : 08.10.2018
+// Creation time : 12:47:06
+// Description   : Container for glue logic in instr_ram_wrap.
+// Created by    : epe
+// Tool : Kactus2 3.6.50 64-bit
+// Plugin : Verilog generator 2.2
+// This file was generated based on IP-XACT component pulp-platform.org:core.logic:instr_ram_demux:1.0
+// whose XML file is /home/epe/pulpino/ip-xact/pulp-platform.org/core.logic/instr_ram_demux/1.0/instr_ram_demux.1.0.xml
 //-----------------------------------------------------------------------------
 
-module inst_ram_demux #(
-    parameter                              RAM_SIZE         = 32768,
+module instr_ram_demux #(
     parameter                              ADDR_WIDTH       = $clog2(RAM_SIZE),
+    parameter                              RAM_SIZE         = 32768,
     parameter                              ROM_ADDR_WIDTH   = 12
 ) (
     // Interface: boot_rom
     input  logic   [31:0]               rdata_boot,
+    output                              enable_boot,
 
     // Interface: inst
     input  logic   [15:0]               addr_i,
     input  logic   [3:0]                be_i,
+    input                               en_i,
     input  logic   [31:0]               wdata_i,
     input  logic                        we_i,
     output logic   [31:0]               rdata_o,
@@ -28,6 +30,7 @@ module inst_ram_demux #(
     // Interface: inst_ram
     input  logic   [31:0]               rdata_ram,
     output logic   [3:0]                be_out,
+    output                              enable_ram,
     output logic   [31:0]               wdata_out,
     output logic                        we_out,
 
@@ -36,10 +39,7 @@ module inst_ram_demux #(
 
     // These ports are not in any interface
     input  logic                        clk,
-    input                               en_i,
-    input  logic                        rst_n,
-    output                              enable_boot,
-    output                              enable_ram
+    input  logic                        rst_n
 );
 
 // WARNING: EVERYTHING ON AND ABOVE THIS LINE MAY BE OVERWRITTEN BY KACTUS2!!!
@@ -47,6 +47,8 @@ module inst_ram_demux #(
   
   assign is_boot = (addr_i[ADDR_WIDTH-1] == 1'b1);
   assign rdata_o = (is_boot_q == 1'b1) ? rdata_boot : rdata_ram;
+  assign be_out = be_i;
+  assign we_out = we_i;
 
   // Delay the boot signal for one clock cycle to correctly select the rdata
   // from boot rom vs normal ram
@@ -59,6 +61,6 @@ module inst_ram_demux #(
   end
   
   assign enable_boot = en_i & is_boot;
-  assign enable_rom = en_i &~is_boot;
+  assign enable_rom = en_i & ~is_boot;
 
 endmodule

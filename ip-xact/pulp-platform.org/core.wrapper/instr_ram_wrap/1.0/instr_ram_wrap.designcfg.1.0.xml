@@ -6,15 +6,15 @@
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:designRef vendor="pulp-platform.org" library="core.wrapper" name="instr_ram_wrap.design" version="1.0"/>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>sp_ram_wrap</ipxact:instanceName>
-		<ipxact:view viewRef="flat_verilog"/>
-	</ipxact:viewConfiguration>
-	<ipxact:viewConfiguration>
 		<ipxact:instanceName>boot_rom_wrap_i</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>inst_ram_demux</ipxact:instanceName>
+		<ipxact:view viewRef="flat_verilog"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>sp_ram_wrap_i</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+	<ipxact:library>core.wrapper</ipxact:library>
+	<ipxact:name>core2axi_wrap.design</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:componentInstances>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>core2axi_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="core2axi_i" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{3eae87e9-89ec-43b9-8381-def5a1fab35d}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="axi" x="-110" y="110"/>
+					<kactus2:portPosition busRef="apb" x="110" y="80"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="70"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="60"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+	</ipxact:componentInstances>
+	<ipxact:interconnections>
+		<ipxact:interconnection>
+			<ipxact:name>core2axi_i_axi_to_master</ipxact:name>
+			<ipxact:activeInterface componentRef="core2axi_i" busRef="axi"/>
+			<ipxact:hierInterface busRef="master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>core2axi_i_apb_to_apb</ipxact:name>
+			<ipxact:activeInterface componentRef="core2axi_i" busRef="apb"/>
+			<ipxact:hierInterface busRef="apb"/>
+		</ipxact:interconnection>
+	</ipxact:interconnections>
+	<ipxact:adHocConnections>
+		<ipxact:adHocConnection>
+			<ipxact:name>core2axi_i_clk_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="core2axi_i" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>core2axi_i_rst_ni_to_rst_ni</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="core2axi_i" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="rst_ni"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+	</ipxact:adHocConnections>
+	<ipxact:vendorExtensions>
+		<kactus2:kts_attributes>
+			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+		</kactus2:kts_attributes>
+		<kactus2:version>3,6,50,0</kactus2:version>
+		<kactus2:columnLayout>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
+			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
+		</kactus2:columnLayout>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>master</kactus2:name>
+			<kactus2:position x="60" y="170"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>apb</kactus2:name>
+			<kactus2:position x="500" y="100"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:adHocVisibilities>
+			<kactus2:adHocVisible portName="clk_i" x="60" y="90"/>
+			<kactus2:adHocVisible portName="rst_ni" x="60" y="130"/>
+		</kactus2:adHocVisibilities>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="core2axi_i_clk_i_to_clk_i" kactus2:offPage="false">
+				<kactus2:position x="170" y="90"/>
+				<kactus2:position x="60" y="90"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="core2axi_i_rst_ni_to_rst_ni" kactus2:offPage="false">
+				<kactus2:position x="170" y="130"/>
+				<kactus2:position x="60" y="130"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="core2axi_i_axi_to_master" kactus2:offPage="false">
+				<kactus2:position x="170" y="170"/>
+				<kactus2:position x="60" y="170"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="core2axi_i_apb_to_apb" kactus2:offPage="false">
+				<kactus2:position x="390" y="140"/>
+				<kactus2:position x="480" y="140"/>
+				<kactus2:position x="480" y="100"/>
+				<kactus2:position x="500" y="100"/>
+			</kactus2:route>
+		</kactus2:routes>
+	</ipxact:vendorExtensions>
+</ipxact:design>

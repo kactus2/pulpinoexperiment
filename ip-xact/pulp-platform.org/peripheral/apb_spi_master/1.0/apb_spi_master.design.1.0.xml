@@ -49,7 +49,11 @@
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
 			<ipxact:instanceName>fsm</ipxact:instanceName>
-			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral.logic" name="spi_master_fsm" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral.logic" name="spi_master_fsm" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_541ad88c_5d56_4142_bd55_2fe4c4c5458b">uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{4c302aad-9cc9-449a-8f6c-fb73e172e1df}</kactus2:uuid>
 				<kactus2:adHocVisibilities>
@@ -369,7 +373,7 @@
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8" resolve="user">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_4e12fd67_766f_4e6a_a86a_46579c9b34e8" resolve="user">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>

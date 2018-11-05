@@ -6,7 +6,7 @@
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:componentInstances>
 		<ipxact:componentInstance>
-			<ipxact:instanceName>axi_slice_0</ipxact:instanceName>
+			<ipxact:instanceName>axi_slice_i</ipxact:instanceName>
 			<ipxact:componentRef vendor="pulp-platform.org" library="core" name="axi_slice" version="1.0">
 				<ipxact:configurableElementValues>
 					<ipxact:configurableElementValue referenceId="uuid_16a5a603_81ae_4abc_912a_c1b5c01bf1c9">uuid_e887ad68_c659_4c92_9c63_b855f24bd48f</ipxact:configurableElementValue>
@@ -19,7 +19,7 @@
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{66d0824e-050d-45b6-b339-259082bba710}</kactus2:uuid>
 				<kactus2:portPositions>
-					<kactus2:portPosition busRef="axi_master" x="-110" y="90"/>
+					<kactus2:portPosition busRef="axi_master" x="-110" y="140"/>
 					<kactus2:portPosition busRef="axi_slave" x="110" y="90"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
@@ -30,94 +30,38 @@
 				<kactus2:position x="280" y="60"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
-		<ipxact:componentInstance>
-			<ipxact:instanceName>axi_slice_1</ipxact:instanceName>
-			<ipxact:componentRef vendor="pulp-platform.org" library="core" name="axi_slice" version="1.0">
-				<ipxact:configurableElementValues>
-					<ipxact:configurableElementValue referenceId="uuid_16a5a603_81ae_4abc_912a_c1b5c01bf1c9">uuid_e887ad68_c659_4c92_9c63_b855f24bd48f</ipxact:configurableElementValue>
-					<ipxact:configurableElementValue referenceId="uuid_a874f0a3_fd15_4bdf_938b_8c2b08092fa7">uuid_56e86309_1f0d_455c_a987_8e031c41e832</ipxact:configurableElementValue>
-					<ipxact:configurableElementValue referenceId="uuid_73bcd6bd_0640_4809_985b_948af0aa0a47">uuid_d3a01fb7_1bdf_48d5_a385_4e6d2d575b84</ipxact:configurableElementValue>
-					<ipxact:configurableElementValue referenceId="uuid_fb5744c5_939e_4128_993f_d867da668040">uuid_e43d6aed_afca_4c7a_bc2b_fcd2d09fa6b0</ipxact:configurableElementValue>
-					<ipxact:configurableElementValue referenceId="uuid_360bd92a_c819_43e5_b2d8_1e2fca48c7cc">uuid_972f1eda_4e8c_4deb_b39a_ddf7055bcd26</ipxact:configurableElementValue>
-				</ipxact:configurableElementValues>
-			</ipxact:componentRef>
-			<ipxact:vendorExtensions>
-				<kactus2:uuid>{c652f1e3-2eac-425e-b307-1195fbd89228}</kactus2:uuid>
-				<kactus2:portPositions>
-					<kactus2:portPosition busRef="axi_master" x="-110" y="90"/>
-					<kactus2:portPosition busRef="axi_slave" x="110" y="90"/>
-				</kactus2:portPositions>
-				<kactus2:adHocVisibilities>
-					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
-					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
-					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
-				</kactus2:adHocVisibilities>
-				<kactus2:position x="280" y="200"/>
-			</ipxact:vendorExtensions>
-		</ipxact:componentInstance>
 	</ipxact:componentInstances>
 	<ipxact:interconnections>
 		<ipxact:interconnection>
-			<ipxact:name>axi_slice_0_axi_master_to_axi_master</ipxact:name>
-			<ipxact:activeInterface componentRef="axi_slice_0" busRef="axi_master"/>
+			<ipxact:name>axi_slice_i_axi_master_to_axi_master</ipxact:name>
+			<ipxact:activeInterface componentRef="axi_slice_i" busRef="axi_master"/>
 			<ipxact:hierInterface busRef="axi_master"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
-			<ipxact:name>axi_slice_0_axi_slave_to_axi_slave</ipxact:name>
-			<ipxact:activeInterface componentRef="axi_slice_0" busRef="axi_slave"/>
-			<ipxact:hierInterface busRef="axi_slave"/>
-		</ipxact:interconnection>
-		<ipxact:interconnection>
-			<ipxact:name>axi_slice_1_axi_master_to_axi_master</ipxact:name>
-			<ipxact:activeInterface componentRef="axi_slice_1" busRef="axi_master"/>
-			<ipxact:hierInterface busRef="axi_master"/>
-		</ipxact:interconnection>
-		<ipxact:interconnection>
-			<ipxact:name>axi_slice_1_axi_slave_to_axi_slave</ipxact:name>
-			<ipxact:activeInterface componentRef="axi_slice_1" busRef="axi_slave"/>
+			<ipxact:name>axi_slice_i_axi_slave_to_axi_slave</ipxact:name>
+			<ipxact:activeInterface componentRef="axi_slice_i" busRef="axi_slave"/>
 			<ipxact:hierInterface busRef="axi_slave"/>
 		</ipxact:interconnection>
 	</ipxact:interconnections>
 	<ipxact:adHocConnections>
 		<ipxact:adHocConnection>
-			<ipxact:name>axi_slice_0_test_en_i_to_test_en_i</ipxact:name>
+			<ipxact:name>axi_slice_i_test_en_i_to_test_en_i</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="axi_slice_0" portRef="test_en_i"/>
+				<ipxact:internalPortReference componentRef="axi_slice_i" portRef="test_en_i"/>
 				<ipxact:externalPortReference portRef="test_en_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>axi_slice_1_test_en_i_to_test_en_i</ipxact:name>
+			<ipxact:name>axi_slice_i_rst_ni_to_rst_ni</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="axi_slice_1" portRef="test_en_i"/>
-				<ipxact:externalPortReference portRef="test_en_i"/>
-			</ipxact:portReferences>
-		</ipxact:adHocConnection>
-		<ipxact:adHocConnection>
-			<ipxact:name>axi_slice_0_rst_ni_to_rst_ni</ipxact:name>
-			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="axi_slice_0" portRef="rst_ni"/>
+				<ipxact:internalPortReference componentRef="axi_slice_i" portRef="rst_ni"/>
 				<ipxact:externalPortReference portRef="rst_ni"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>axi_slice_1_rst_ni_to_rst_ni</ipxact:name>
+			<ipxact:name>axi_slice_i_clk_i_to_clk_i</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="axi_slice_1" portRef="rst_ni"/>
-				<ipxact:externalPortReference portRef="rst_ni"/>
-			</ipxact:portReferences>
-		</ipxact:adHocConnection>
-		<ipxact:adHocConnection>
-			<ipxact:name>axi_slice_0_clk_i_to_clk_i</ipxact:name>
-			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="axi_slice_0" portRef="clk_i"/>
-				<ipxact:externalPortReference portRef="clk_i"/>
-			</ipxact:portReferences>
-		</ipxact:adHocConnection>
-		<ipxact:adHocConnection>
-			<ipxact:name>axi_slice_1_clk_i_to_clk_i</ipxact:name>
-			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="axi_slice_1" portRef="clk_i"/>
+				<ipxact:internalPortReference componentRef="axi_slice_i" portRef="clk_i"/>
 				<ipxact:externalPortReference portRef="clk_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
@@ -155,49 +99,25 @@
 			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
 		</kactus2:columnLayout>
 		<kactus2:routes>
-			<kactus2:route kactus2:connRef="axi_slice_0_test_en_i_to_test_en_i" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="axi_slice_i_test_en_i_to_test_en_i" kactus2:offPage="true">
 				<kactus2:position x="90" y="150"/>
 				<kactus2:position x="140" y="130"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_1_test_en_i_to_test_en_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="150"/>
-				<kactus2:position x="140" y="270"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_0_rst_ni_to_rst_ni" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="axi_slice_i_rst_ni_to_rst_ni" kactus2:offPage="true">
 				<kactus2:position x="90" y="120"/>
 				<kactus2:position x="140" y="110"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_1_rst_ni_to_rst_ni" kactus2:offPage="true">
-				<kactus2:position x="90" y="120"/>
-				<kactus2:position x="140" y="250"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_0_clk_i_to_clk_i" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="axi_slice_i_clk_i_to_clk_i" kactus2:offPage="true">
 				<kactus2:position x="90" y="90"/>
 				<kactus2:position x="140" y="90"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_1_clk_i_to_clk_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="90"/>
-				<kactus2:position x="140" y="230"/>
+			<kactus2:route kactus2:connRef="axi_slice_i_axi_master_to_axi_master" kactus2:offPage="false">
+				<kactus2:position x="170" y="200"/>
+				<kactus2:position x="60" y="200"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_0_axi_master_to_axi_master" kactus2:offPage="false">
-				<kactus2:position x="170" y="150"/>
-				<kactus2:position x="110" y="150"/>
-				<kactus2:position x="110" y="290"/>
-				<kactus2:position x="60" y="290"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_0_axi_slave_to_axi_slave" kactus2:offPage="false">
+			<kactus2:route kactus2:connRef="axi_slice_i_axi_slave_to_axi_slave" kactus2:offPage="false">
 				<kactus2:position x="390" y="150"/>
-				<kactus2:position x="480" y="150"/>
-				<kactus2:position x="480" y="290"/>
-				<kactus2:position x="500" y="290"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_1_axi_master_to_axi_master" kactus2:offPage="false">
-				<kactus2:position x="170" y="290"/>
-				<kactus2:position x="60" y="290"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="axi_slice_1_axi_slave_to_axi_slave" kactus2:offPage="false">
-				<kactus2:position x="390" y="290"/>
-				<kactus2:position x="500" y="290"/>
+				<kactus2:position x="500" y="150"/>
 			</kactus2:route>
 		</kactus2:routes>
 		<kactus2:adHocVisibilities>
@@ -207,12 +127,12 @@
 		</kactus2:adHocVisibilities>
 		<kactus2:interfaceGraphics>
 			<kactus2:name>axi_slave</kactus2:name>
-			<kactus2:position x="500" y="290"/>
+			<kactus2:position x="500" y="150"/>
 			<kactus2:direction x="-1" y="0"/>
 		</kactus2:interfaceGraphics>
 		<kactus2:interfaceGraphics>
 			<kactus2:name>axi_master</kactus2:name>
-			<kactus2:position x="60" y="290"/>
+			<kactus2:position x="60" y="200"/>
 			<kactus2:direction x="1" y="0"/>
 		</kactus2:interfaceGraphics>
 	</ipxact:vendorExtensions>

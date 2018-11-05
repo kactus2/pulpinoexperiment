@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+	<ipxact:library>communication.bus</ipxact:library>
+	<ipxact:name>periph_bus_wrap.design</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:componentInstances>
+		<ipxact:componentInstance>
+			<ipxact:instanceName>apb_node_wrap_i</ipxact:instanceName>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication.bus" name="apb_node_wrap" version="1.0"/>
+			<ipxact:vendorExtensions>
+				<kactus2:uuid>{75baa45e-a839-4393-998b-37b344c1e657}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="apb_master_0" x="110" y="40"/>
+					<kactus2:portPosition busRef="apb_master_3" x="110" y="170"/>
+					<kactus2:portPosition busRef="apb_master_5" x="110" y="260"/>
+					<kactus2:portPosition busRef="apb_master_6" x="110" y="300"/>
+					<kactus2:portPosition busRef="apb_master_7" x="110" y="350"/>
+					<kactus2:portPosition busRef="apb_master_8" x="-110" y="170"/>
+					<kactus2:portPosition busRef="s_slave" x="-110" y="120"/>
+					<kactus2:portPosition busRef="apb_master_4" x="110" y="220"/>
+					<kactus2:portPosition busRef="apb_master_2" x="110" y="120"/>
+					<kactus2:portPosition busRef="apb_master_1" x="110" y="80"/>
+				</kactus2:portPositions>
+				<kactus2:adHocVisibilities>
+					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="rst_ni" x="-110" y="70"/>
+				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="60"/>
+			</ipxact:vendorExtensions>
+		</ipxact:componentInstance>
+	</ipxact:componentInstances>
+	<ipxact:interconnections>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_s_slave_to_apb_slave</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="s_slave"/>
+			<ipxact:hierInterface busRef="apb_slave"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_0_to_uart_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_0"/>
+			<ipxact:hierInterface busRef="uart_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_1_to_gpio_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_1"/>
+			<ipxact:hierInterface busRef="gpio_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_2_to_spi_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_2"/>
+			<ipxact:hierInterface busRef="spi_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_3_to_timer_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_3"/>
+			<ipxact:hierInterface busRef="timer_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_4_to_event_unit_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_4"/>
+			<ipxact:hierInterface busRef="event_unit_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_5_to_i2c_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_5"/>
+			<ipxact:hierInterface busRef="i2c_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_6_to_fll_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_6"/>
+			<ipxact:hierInterface busRef="fll_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_7_to_soc_ctrl_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_7"/>
+			<ipxact:hierInterface busRef="soc_ctrl_master"/>
+		</ipxact:interconnection>
+		<ipxact:interconnection>
+			<ipxact:name>apb_node_wrap_i_apb_master_8_to_debug_master</ipxact:name>
+			<ipxact:activeInterface componentRef="apb_node_wrap_i" busRef="apb_master_8"/>
+			<ipxact:hierInterface busRef="debug_master"/>
+		</ipxact:interconnection>
+	</ipxact:interconnections>
+	<ipxact:adHocConnections>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_node_wrap_i_clk_i_to_clk_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_node_wrap_i" portRef="clk_i"/>
+				<ipxact:externalPortReference portRef="clk_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>apb_node_wrap_i_rst_ni_to_rst_ni</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="apb_node_wrap_i" portRef="rst_ni"/>
+				<ipxact:externalPortReference portRef="rst_ni"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+	</ipxact:adHocConnections>
+	<ipxact:vendorExtensions>
+		<kactus2:version>3,6,50,0</kactus2:version>
+		<kactus2:kts_attributes>
+			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
+		</kactus2:kts_attributes>
+		<kactus2:columnLayout>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
+			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
+			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
+		</kactus2:columnLayout>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_s_slave_to_apb_slave" kactus2:offPage="false">
+				<kactus2:position x="170" y="180"/>
+				<kactus2:position x="60" y="180"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_0_to_uart_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="100"/>
+				<kactus2:position x="500" y="100"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_1_to_gpio_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="140"/>
+				<kactus2:position x="500" y="140"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_2_to_spi_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="180"/>
+				<kactus2:position x="500" y="180"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_3_to_timer_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="230"/>
+				<kactus2:position x="500" y="230"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_4_to_event_unit_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="280"/>
+				<kactus2:position x="500" y="280"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_5_to_i2c_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="320"/>
+				<kactus2:position x="500" y="320"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_6_to_fll_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="360"/>
+				<kactus2:position x="500" y="360"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_7_to_soc_ctrl_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="410"/>
+				<kactus2:position x="500" y="410"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_apb_master_8_to_debug_master" kactus2:offPage="false">
+				<kactus2:position x="170" y="230"/>
+				<kactus2:position x="60" y="230"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_clk_i_to_clk_i" kactus2:offPage="false">
+				<kactus2:position x="60" y="90"/>
+				<kactus2:position x="170" y="90"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="apb_node_wrap_i_rst_ni_to_rst_ni" kactus2:offPage="false">
+				<kactus2:position x="60" y="130"/>
+				<kactus2:position x="170" y="130"/>
+			</kactus2:route>
+		</kactus2:routes>
+		<kactus2:adHocVisibilities>
+			<kactus2:adHocVisible portName="clk_i" x="60" y="90"/>
+			<kactus2:adHocVisible portName="rst_ni" x="60" y="130"/>
+		</kactus2:adHocVisibilities>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>apb_slave</kactus2:name>
+			<kactus2:position x="60" y="180"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>debug_master</kactus2:name>
+			<kactus2:position x="60" y="230"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>event_unit_master</kactus2:name>
+			<kactus2:position x="500" y="280"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>fll_master</kactus2:name>
+			<kactus2:position x="500" y="360"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>gpio_master</kactus2:name>
+			<kactus2:position x="500" y="140"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>i2c_master</kactus2:name>
+			<kactus2:position x="500" y="320"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>soc_ctrl_master</kactus2:name>
+			<kactus2:position x="500" y="410"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>timer_master</kactus2:name>
+			<kactus2:position x="500" y="230"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>uart_master</kactus2:name>
+			<kactus2:position x="500" y="100"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>spi_master</kactus2:name>
+			<kactus2:position x="500" y="180"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+	</ipxact:vendorExtensions>
+</ipxact:design>

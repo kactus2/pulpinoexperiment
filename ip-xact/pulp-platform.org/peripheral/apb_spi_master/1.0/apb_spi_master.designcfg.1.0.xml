@@ -18,11 +18,11 @@
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>u_axiregs</ipxact:instanceName>
+		<ipxact:instanceName>fsm</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>fsm</ipxact:instanceName>
+		<ipxact:instanceName>u_axiregs</ipxact:instanceName>
 		<ipxact:view viewRef="flat_verilog"/>
 	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>

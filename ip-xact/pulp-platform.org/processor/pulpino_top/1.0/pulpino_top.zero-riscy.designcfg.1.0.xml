@@ -10,16 +10,16 @@
 		<ipxact:view viewRef="structural"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
-		<ipxact:instanceName>core_region_i</ipxact:instanceName>
-		<ipxact:view viewRef="zerorisky"/>
-	</ipxact:viewConfiguration>
-	<ipxact:viewConfiguration>
 		<ipxact:instanceName>axi_interconnect_i</ipxact:instanceName>
-		<ipxact:view viewRef="flat_verilog"/>
+		<ipxact:view viewRef="hierarchical"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>clk_rst_gen_i</ipxact:instanceName>
 		<ipxact:view viewRef="structural"/>
+	</ipxact:viewConfiguration>
+	<ipxact:viewConfiguration>
+		<ipxact:instanceName>core_region_i</ipxact:instanceName>
+		<ipxact:view viewRef="zerorisky"/>
 	</ipxact:viewConfiguration>
 	<ipxact:vendorExtensions>
 		<kactus2:version>3,4,834,0</kactus2:version>

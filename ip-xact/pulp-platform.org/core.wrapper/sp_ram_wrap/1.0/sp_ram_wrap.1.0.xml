@@ -52,7 +52,7 @@
 							<ipxact:logicalPort>
 								<ipxact:name>ADDR</ipxact:name>
 								<ipxact:range>
-									<ipxact:left>15</ipxact:left>
+									<ipxact:left>uuid_9f9199b1_b666_4b27_861e_1d9389fc3ac8-1</ipxact:left>
 									<ipxact:right>0</ipxact:right>
 								</ipxact:range>
 							</ipxact:logicalPort>
@@ -60,7 +60,7 @@
 								<ipxact:name>addr_i</ipxact:name>
 								<ipxact:partSelect>
 									<ipxact:range>
-										<ipxact:left>15</ipxact:left>
+										<ipxact:left>uuid_9f9199b1_b666_4b27_861e_1d9389fc3ac8-1</ipxact:left>
 										<ipxact:right>0</ipxact:right>
 									</ipxact:range>
 								</ipxact:partSelect>
@@ -146,15 +146,15 @@
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_16cbec3b_451c_41c3_acc9_50af3dce4a54" usageType="nontyped">
 						<ipxact:name>RAM_SIZE</ipxact:name>
-						<ipxact:description>in bytes</ipxact:description> 
+						<ipxact:description>in bytes</ipxact:description>
 						<ipxact:value>uuid_574169f1_1ee0_4446_b5b1_0ef422182198</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_2781d671_512f_4ca7_b370_6bd9e53b2497" kactus2:usageCount="14" usageType="nontyped">
-						<ipxact:name>ADDR_WIDTH</ipxact:name> 
+					<ipxact:moduleParameter kactus2:usageCount="14" parameterId="uuid_2781d671_512f_4ca7_b370_6bd9e53b2497" usageType="nontyped">
+						<ipxact:name>ADDR_WIDTH</ipxact:name>
 						<ipxact:value>uuid_9f9199b1_b666_4b27_861e_1d9389fc3ac8</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_6d8f8a97_94fb_46e9_abef_df1a758a9186" usageType="nontyped">
-						<ipxact:name>DATA_WIDTH</ipxact:name> 
+						<ipxact:name>DATA_WIDTH</ipxact:name>
 						<ipxact:value>uuid_dedf6673_3402_4d4f_bf3a_24a952b25929</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -333,15 +333,15 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_9f9199b1_b666_4b27_861e_1d9389fc3ac8" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_9f9199b1_b666_4b27_861e_1d9389fc3ac8" resolve="user">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
-			<ipxact:value>$clog2(uuid_574169f1_1ee0_4446_b5b1_0ef422182198)+1</ipxact:value>
+			<ipxact:value>$clog2(uuid_574169f1_1ee0_4446_b5b1_0ef422182198)</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_dedf6673_3402_4d4f_bf3a_24a952b25929" resolve="user" kactus2:usageCount="5">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_dedf6673_3402_4d4f_bf3a_24a952b25929" resolve="user">
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_574169f1_1ee0_4446_b5b1_0ef422182198" resolve="user" kactus2:usageCount="3">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_574169f1_1ee0_4446_b5b1_0ef422182198" resolve="user">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:description>in bytes</ipxact:description>
 			<ipxact:value>32768</ipxact:value>

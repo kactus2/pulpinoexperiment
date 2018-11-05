@@ -10,6 +10,9 @@
 			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="spi_slave_rx" version="1.0"/>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{7cec84a4-8629-407d-afa5-fe578acc2290}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="spi_data" x="-110" y="80"/>
+				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
 					<kactus2:adHocVisible portName="cs" x="-110" y="50"/>
 					<kactus2:adHocVisible portName="en_quad_in" x="-110" y="100"/>
@@ -19,9 +22,6 @@
 					<kactus2:adHocVisible portName="sdi2" x="110" y="110"/>
 					<kactus2:adHocVisible portName="sdi3" x="110" y="140"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:portPositions>
-					<kactus2:portPosition busRef="spi_data" x="-110" y="80"/>
-				</kactus2:portPositions>
 				<kactus2:position x="1240" y="60"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
@@ -30,6 +30,9 @@
 			<ipxact:componentRef vendor="pulp-platform.org" library="peripheral" name="spi_slave_tx" version="1.0"/>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{46560f23-e775-4e32-9d2c-11269518d296}</kactus2:uuid>
+				<kactus2:portPositions>
+					<kactus2:portPosition busRef="spi_data" x="-110" y="100"/>
+				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
 					<kactus2:adHocVisible portName="cs" x="-110" y="50"/>
 					<kactus2:adHocVisible portName="en_quad_in" x="-110" y="120"/>
@@ -40,9 +43,6 @@
 					<kactus2:adHocVisible portName="sdo3" x="110" y="140"/>
 					<kactus2:adHocVisible portName="test_mode" x="-110" y="70"/>
 				</kactus2:adHocVisibilities>
-				<kactus2:portPositions>
-					<kactus2:portPosition busRef="spi_data" x="-110" y="100"/>
-				</kactus2:portPositions>
 				<kactus2:position x="1240" y="250"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
@@ -58,8 +58,8 @@
 				<kactus2:portPositions>
 					<kactus2:portPosition busRef="ctrl_data_rx" x="-110" y="70"/>
 					<kactus2:portPosition busRef="ctrl_data_tx" x="-110" y="400"/>
-					<kactus2:portPosition busRef="tx_data" x="110" y="290"/>
 					<kactus2:portPosition busRef="rx_data" x="110" y="80"/>
+					<kactus2:portPosition busRef="tx_data" x="110" y="290"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
 					<kactus2:adHocVisible portName="cs" x="-110" y="100"/>
@@ -115,6 +115,8 @@
 					<kactus2:adHocVisible portName="rxtx_addr_valid" x="110" y="260"/>
 					<kactus2:adHocVisible portName="start_tx" x="110" y="280"/>
 					<kactus2:adHocVisible portName="wrap_length" x="110" y="320"/>
+					<kactus2:adHocVisible portName="axi_aclk" x="-110" y="30"/>
+					<kactus2:adHocVisible portName="axi_aresetn" x="-110" y="60"/>
 				</kactus2:adHocVisibilities>
 				<kactus2:position x="280" y="60"/>
 			</ipxact:vendorExtensions>
@@ -466,6 +468,20 @@
 				<ipxact:internalPortReference componentRef="u_syncro" portRef="rd_wr"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiplug_axi_aclk_to_axi_aclk</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiplug" portRef="axi_aclk"/>
+				<ipxact:externalPortReference portRef="axi_aclk"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>u_axiplug_axi_aresetn_to_axi_aresetn</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="u_axiplug" portRef="axi_aresetn"/>
+				<ipxact:externalPortReference portRef="axi_aresetn"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
 		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_c97f1b82_0611_42d5_84eb_544c4f5bda53" resolve="user">
@@ -684,6 +700,14 @@
 			<kactus2:route kactus2:connRef="u_slave_sm_tx_data_to_u_txreg_spi_data" kactus2:offPage="false">
 				<kactus2:position x="1030" y="350"/>
 				<kactus2:position x="1130" y="350"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiplug_axi_aclk_to_axi_aclk" kactus2:offPage="false">
+				<kactus2:position x="140" y="90"/>
+				<kactus2:position x="90" y="160"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="u_axiplug_axi_aresetn_to_axi_aresetn" kactus2:offPage="false">
+				<kactus2:position x="140" y="120"/>
+				<kactus2:position x="90" y="190"/>
 			</kactus2:route>
 		</kactus2:routes>
 		<kactus2:adHocVisibilities>

@@ -6,7 +6,7 @@
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:componentInstances>
 		<ipxact:componentInstance>
-			<ipxact:instanceName>sp_ram_wrap</ipxact:instanceName>
+			<ipxact:instanceName>sp_ram_wrap_i</ipxact:instanceName>
 			<ipxact:componentRef vendor="pulp-platform.org" library="core.wrapper" name="sp_ram_wrap" version="1.0">
 				<ipxact:configurableElementValues>
 					<ipxact:configurableElementValue referenceId="uuid_574169f1_1ee0_4446_b5b1_0ef422182198">uuid_1db8011e_47a6_4c90_8441_c31681eed6af</ipxact:configurableElementValue>
@@ -71,8 +71,8 @@
 			<ipxact:hierInterface busRef="instr"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
-			<ipxact:name>sp_ram_wrap_data_to_inst_ram_demux_inst_ram</ipxact:name>
-			<ipxact:activeInterface componentRef="sp_ram_wrap" busRef="data"/>
+			<ipxact:name>sp_ram_wrap_i_data_to_inst_ram_demux_inst_ram</ipxact:name>
+			<ipxact:activeInterface componentRef="sp_ram_wrap_i" busRef="data"/>
 			<ipxact:activeInterface componentRef="inst_ram_demux" busRef="inst_ram"/>
 		</ipxact:interconnection>
 		<ipxact:interconnection>
@@ -83,9 +83,9 @@
 	</ipxact:interconnections>
 	<ipxact:adHocConnections>
 		<ipxact:adHocConnection>
-			<ipxact:name>sp_ram_wrap_clk_to_clk</ipxact:name>
+			<ipxact:name>sp_ram_wrap_i_clk_to_clk</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="sp_ram_wrap" portRef="clk"/>
+				<ipxact:internalPortReference componentRef="sp_ram_wrap_i" portRef="clk"/>
 				<ipxact:externalPortReference portRef="clk"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
@@ -97,9 +97,9 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>sp_ram_wrap_rstn_i_to_rst_n</ipxact:name>
+			<ipxact:name>sp_ram_wrap_i_rstn_i_to_rst_n</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="sp_ram_wrap" portRef="rstn_i"/>
+				<ipxact:internalPortReference componentRef="sp_ram_wrap_i" portRef="rstn_i"/>
 				<ipxact:externalPortReference portRef="rst_n"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
@@ -111,9 +111,9 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
-			<ipxact:name>sp_ram_wrap_bypass_en_i_to_bypass_en_i</ipxact:name>
+			<ipxact:name>sp_ram_wrap_i_bypass_en_i_to_bypass_en_i</ipxact:name>
 			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="sp_ram_wrap" portRef="bypass_en_i"/>
+				<ipxact:internalPortReference componentRef="sp_ram_wrap_i" portRef="bypass_en_i"/>
 				<ipxact:externalPortReference portRef="bypass_en_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
@@ -133,11 +133,11 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_1db8011e_47a6_4c90_8441_c31681eed6af" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_1db8011e_47a6_4c90_8441_c31681eed6af" resolve="user">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_4bd89e1f_bc7b_478f_ac3b_885627b67836" resolve="user" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_4bd89e1f_bc7b_478f_ac3b_885627b67836" resolve="user">
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
@@ -158,7 +158,7 @@
 			<kactus2:column name="Demux" contentType="4" allowedItems="14" minWidth="319" width="319" x="120"/>
 		</kactus2:columnLayout>
 		<kactus2:routes>
-			<kactus2:route kactus2:connRef="sp_ram_wrap_clk_to_clk" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="sp_ram_wrap_i_clk_to_clk" kactus2:offPage="true">
 				<kactus2:position x="90" y="70"/>
 				<kactus2:position x="460" y="90"/>
 			</kactus2:route>
@@ -166,7 +166,7 @@
 				<kactus2:position x="90" y="70"/>
 				<kactus2:position x="460" y="230"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="sp_ram_wrap_rstn_i_to_rst_n" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="sp_ram_wrap_i_rstn_i_to_rst_n" kactus2:offPage="true">
 				<kactus2:position x="90" y="100"/>
 				<kactus2:position x="460" y="110"/>
 			</kactus2:route>
@@ -174,7 +174,7 @@
 				<kactus2:position x="90" y="100"/>
 				<kactus2:position x="460" y="250"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="sp_ram_wrap_bypass_en_i_to_bypass_en_i" kactus2:offPage="true">
+			<kactus2:route kactus2:connRef="sp_ram_wrap_i_bypass_en_i_to_bypass_en_i" kactus2:offPage="true">
 				<kactus2:position x="90" y="130"/>
 				<kactus2:position x="460" y="130"/>
 			</kactus2:route>
@@ -182,7 +182,7 @@
 				<kactus2:position x="170" y="170"/>
 				<kactus2:position x="60" y="170"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="sp_ram_wrap_data_to_inst_ram_demux_inst_ram" kactus2:offPage="false">
+			<kactus2:route kactus2:connRef="sp_ram_wrap_i_data_to_inst_ram_demux_inst_ram" kactus2:offPage="false">
 				<kactus2:position x="490" y="150"/>
 				<kactus2:position x="390" y="150"/>
 			</kactus2:route>

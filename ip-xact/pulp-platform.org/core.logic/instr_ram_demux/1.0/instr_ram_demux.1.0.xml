@@ -537,7 +537,7 @@
 			<ipxact:file>
 				<ipxact:name>../../../../../rtl/instr_ram_demux.v</ipxact:name>
 				<ipxact:fileType>verilogSource</ipxact:fileType>
-				<ipxact:description>Generated at 12:18:49 on 22.08.2017 by Kactus2. </ipxact:description>
+				<ipxact:description>Generated at 12:47:14 on 08.10.2018 by Kactus2. </ipxact:description>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>efa1e1a9be13ec159eb86de150174db247f652f4</kactus2:hash>
 				</ipxact:vendorExtensions>
@@ -546,15 +546,15 @@
 	</ipxact:fileSets>
 	<ipxact:description>Container for glue logic in instr_ram_wrap.</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_ab049157_221e_4953_bc43_03690ecbf0e6" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_ab049157_221e_4953_bc43_03690ecbf0e6">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_b6572b7f_311f_429f_8eda_4a8934f6167f)</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b6572b7f_311f_429f_8eda_4a8934f6167f" kactus2:usageCount="2">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_b6572b7f_311f_429f_8eda_4a8934f6167f">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_251e017b_4f65_4fa9_95ae_86f7002eb5dc" kactus2:usageCount="4">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_251e017b_4f65_4fa9_95ae_86f7002eb5dc">
 			<ipxact:name>ROM_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
