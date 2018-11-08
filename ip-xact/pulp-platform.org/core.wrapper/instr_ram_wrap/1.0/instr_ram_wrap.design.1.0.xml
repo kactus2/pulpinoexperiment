@@ -48,7 +48,12 @@
 		</ipxact:componentInstance>
 		<ipxact:componentInstance>
 			<ipxact:instanceName>inst_ram_demux</ipxact:instanceName>
-			<ipxact:componentRef vendor="pulp-platform.org" library="core.logic" name="instr_ram_demux" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="core.logic" name="instr_ram_demux" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_b6572b7f_311f_429f_8eda_4a8934f6167f">uuid_1db8011e_47a6_4c90_8441_c31681eed6af</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_ab049157_221e_4953_bc43_03690ecbf0e6">uuid_3b2d2abe_b5de_4145_901b_ed2eb6715e26</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{9b7db824-5e22-4c07-a1ea-73ee0cfe452e}</kactus2:uuid>
 				<kactus2:portPositions>
@@ -133,7 +138,7 @@
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_1db8011e_47a6_4c90_8441_c31681eed6af" resolve="user">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_1db8011e_47a6_4c90_8441_c31681eed6af" resolve="user">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
@@ -141,7 +146,7 @@
 			<ipxact:name>DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_3b2d2abe_b5de_4145_901b_ed2eb6715e26" resolve="user">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_3b2d2abe_b5de_4145_901b_ed2eb6715e26" resolve="user">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_1db8011e_47a6_4c90_8441_c31681eed6af)</ipxact:value>
 		</ipxact:parameter>

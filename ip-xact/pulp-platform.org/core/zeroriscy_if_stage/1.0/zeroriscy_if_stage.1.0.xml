@@ -248,6 +248,14 @@
 								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>INSTR_REQ</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>req_i</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>

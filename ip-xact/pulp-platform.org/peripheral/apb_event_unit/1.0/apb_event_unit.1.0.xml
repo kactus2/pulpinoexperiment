@@ -45,6 +45,10 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>PADDR</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>11</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>PADDR</ipxact:name>

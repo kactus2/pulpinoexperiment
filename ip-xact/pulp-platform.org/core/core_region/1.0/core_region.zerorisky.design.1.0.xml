@@ -804,6 +804,8 @@
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="data_ram_mux_i_ram_to_data_mem_data" kactus2:offPage="false">
 				<kactus2:position x="710" y="310"/>
+				<kactus2:position x="790" y="310"/>
+				<kactus2:position x="790" y="310"/>
 				<kactus2:position x="810" y="310"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="data_mem_bypass_en_i_to_testmode_i" kactus2:offPage="true">
@@ -841,17 +843,21 @@
 			<kactus2:route kactus2:connRef="demux_data_core_master_to_data_ram_mux_i_port1" kactus2:offPage="false">
 				<kactus2:position x="710" y="400"/>
 				<kactus2:position x="730" y="400"/>
-				<kactus2:position x="730" y="340"/>
-				<kactus2:position x="470" y="340"/>
+				<kactus2:position x="730" y="330"/>
+				<kactus2:position x="470" y="330"/>
 				<kactus2:position x="470" y="310"/>
 				<kactus2:position x="490" y="310"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="demux_data_axi_master_to_core2axi_i_apb" kactus2:offPage="false">
 				<kactus2:position x="710" y="460"/>
+				<kactus2:position x="1110" y="460"/>
+				<kactus2:position x="1110" y="460"/>
 				<kactus2:position x="1130" y="460"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="demux_lsu_data_slave_to_RISCV_CORE_data" kactus2:offPage="false">
 				<kactus2:position x="490" y="440"/>
+				<kactus2:position x="410" y="440"/>
+				<kactus2:position x="410" y="440"/>
 				<kactus2:position x="390" y="440"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="demux_clk_to_clk" kactus2:offPage="true">

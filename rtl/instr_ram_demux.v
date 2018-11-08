@@ -60,7 +60,8 @@ module instr_ram_demux #(
       is_boot_q <= is_boot;
   end
   
+  assign addr_out = addr_i;
   assign enable_boot = en_i & is_boot;
-  assign enable_rom = en_i & ~is_boot;
+  assign enable_ram = en_i & ~is_boot;
 
 endmodule

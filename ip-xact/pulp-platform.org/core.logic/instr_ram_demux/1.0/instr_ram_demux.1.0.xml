@@ -42,7 +42,7 @@
 							<ipxact:logicalPort>
 								<ipxact:name>ADDR</ipxact:name>
 								<ipxact:range>
-									<ipxact:left>15</ipxact:left>
+									<ipxact:left>uuid_ab049157_221e_4953_bc43_03690ecbf0e6-1</ipxact:left>
 									<ipxact:right>0</ipxact:right>
 								</ipxact:range>
 							</ipxact:logicalPort>
@@ -50,7 +50,7 @@
 								<ipxact:name>addr_i</ipxact:name>
 								<ipxact:partSelect>
 									<ipxact:range>
-										<ipxact:left>15</ipxact:left>
+										<ipxact:left>uuid_ab049157_221e_4953_bc43_03690ecbf0e6-1</ipxact:left>
 										<ipxact:right>0</ipxact:right>
 									</ipxact:range>
 								</ipxact:partSelect>
@@ -78,18 +78,12 @@
 							<ipxact:logicalPort>
 								<ipxact:name>RDATA</ipxact:name>
 								<ipxact:range>
-									<ipxact:left>11</ipxact:left>
-									<ipxact:right>0</ipxact:right>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
 								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>rdata_o</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>11</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -363,7 +357,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>15</ipxact:left>
+							<ipxact:left>uuid_ab049157_221e_4953_bc43_03690ecbf0e6-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -448,7 +442,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>15</ipxact:left>
+							<ipxact:left>uuid_ab049157_221e_4953_bc43_03690ecbf0e6-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -546,11 +540,11 @@
 	</ipxact:fileSets>
 	<ipxact:description>Container for glue logic in instr_ram_wrap.</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_ab049157_221e_4953_bc43_03690ecbf0e6">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_ab049157_221e_4953_bc43_03690ecbf0e6" resolve="user">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_b6572b7f_311f_429f_8eda_4a8934f6167f)</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_b6572b7f_311f_429f_8eda_4a8934f6167f">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_b6572b7f_311f_429f_8eda_4a8934f6167f" resolve="user">
 			<ipxact:name>RAM_SIZE</ipxact:name>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>

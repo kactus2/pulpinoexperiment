@@ -102,7 +102,7 @@
 				<ipxact:abstractionType>
 					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="sp_ram.absDef" version="1.0"/>
 					<ipxact:portMaps>
-						<ipxact:portMap>
+						<ipxact:portMap invert="false">
 							<ipxact:logicalPort>
 								<ipxact:name>REQ</ipxact:name>
 							</ipxact:logicalPort>
@@ -130,15 +130,21 @@
 							<ipxact:logicalPort>
 								<ipxact:name>ADDR</ipxact:name>
 								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
+									<ipxact:left>uuid_f1d00aea_70d0_4e43_8500_aa0144367083-1</ipxact:left>
+									<ipxact:right>uuid_2cd32f00_f95d_4624_bca0_cc6f85dab579+1</ipxact:right>
 								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>port0_addr_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>uuid_f1d00aea_70d0_4e43_8500_aa0144367083-1</ipxact:left>
+										<ipxact:right>uuid_2cd32f00_f95d_4624_bca0_cc6f85dab579+1</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
-						<ipxact:portMap>
+						<ipxact:portMap invert="false">
 							<ipxact:logicalPort>
 								<ipxact:name>WE</ipxact:name>
 							</ipxact:logicalPort>
@@ -370,6 +376,11 @@
 							<ipxact:typeName>logic</ipxact:typeName>
 						</ipxact:wireTypeDef>
 					</ipxact:wireTypeDefs>
+					<ipxact:drivers>
+						<ipxact:driver>
+							<ipxact:defaultValue>0</ipxact:defaultValue>
+						</ipxact:driver>
+					</ipxact:drivers>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -482,6 +493,11 @@
 							<ipxact:typeName>logic</ipxact:typeName>
 						</ipxact:wireTypeDef>
 					</ipxact:wireTypeDefs>
+					<ipxact:drivers>
+						<ipxact:driver>
+							<ipxact:defaultValue>0</ipxact:defaultValue>
+						</ipxact:driver>
+					</ipxact:drivers>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -493,6 +509,11 @@
 							<ipxact:typeName>logic</ipxact:typeName>
 						</ipxact:wireTypeDef>
 					</ipxact:wireTypeDefs>
+					<ipxact:drivers>
+						<ipxact:driver>
+							<ipxact:defaultValue>1'b0</ipxact:defaultValue>
+						</ipxact:driver>
+					</ipxact:drivers>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -510,6 +531,11 @@
 							<ipxact:typeName>logic</ipxact:typeName>
 						</ipxact:wireTypeDef>
 					</ipxact:wireTypeDefs>
+					<ipxact:drivers>
+						<ipxact:driver>
+							<ipxact:defaultValue>'1</ipxact:defaultValue>
+						</ipxact:driver>
+					</ipxact:drivers>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -544,6 +570,11 @@
 							<ipxact:typeName>logic</ipxact:typeName>
 						</ipxact:wireTypeDef>
 					</ipxact:wireTypeDefs>
+					<ipxact:drivers>
+						<ipxact:driver>
+							<ipxact:defaultValue>'0</ipxact:defaultValue>
+						</ipxact:driver>
+					</ipxact:drivers>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -651,7 +682,7 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter kactus2:usageCount="7" parameterId="uuid_f1d00aea_70d0_4e43_8500_aa0144367083" resolve="user">
+		<ipxact:parameter kactus2:usageCount="9" parameterId="uuid_f1d00aea_70d0_4e43_8500_aa0144367083" resolve="user">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
@@ -668,7 +699,7 @@
 			<ipxact:name>OUT_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_2cd32f00_f95d_4624_bca0_cc6f85dab579">
+		<ipxact:parameter kactus2:usageCount="9" parameterId="uuid_2cd32f00_f95d_4624_bca0_cc6f85dab579">
 			<ipxact:name>B_WIDTH</ipxact:name>
 			<ipxact:value>$clog2(32/8)</ipxact:value>
 		</ipxact:parameter>

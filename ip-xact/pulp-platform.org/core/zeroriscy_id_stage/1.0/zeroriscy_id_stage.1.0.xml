@@ -510,24 +510,6 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>DATA_RDATA_EX</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>31</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_rdata_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>31</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>DATA_REQ_EX</ipxact:name>
 								<ipxact:range>
 									<ipxact:left>0</ipxact:left>
@@ -833,11 +815,11 @@
 				<ipxact:moduleName>zeroriscy_id_stage</ipxact:moduleName>
 				<ipxact:moduleParameters>
 					<ipxact:moduleParameter parameterId="uuid_df71f1e0_b23a_4cb4_a353_b5dad51a5ae9" usageType="nontyped">
-						<ipxact:name>RV32M</ipxact:name> 
+						<ipxact:name>RV32M</ipxact:name>
 						<ipxact:value>uuid_7d38a6f4_fdc0_40c0_a86e_e7b0c99bf78e</ipxact:value>
 					</ipxact:moduleParameter>
 					<ipxact:moduleParameter parameterId="uuid_ccee92dd_7497_4199_b8f2_c3e9686f00a6" usageType="nontyped">
-						<ipxact:name>RV32E</ipxact:name> 
+						<ipxact:name>RV32E</ipxact:name>
 						<ipxact:value>uuid_f1ee34a1_d41e_4c08_9a83_43ad0cf69965</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -1872,31 +1854,31 @@
 	</ipxact:fileSets>
 	<ipxact:description>Decode stage of the core. It decodes the instructions and hosts the register file.</ipxact:description>
 	<ipxact:parameters>
-		<ipxact:parameter  parameterId="uuid_307072d5_9516_4497_9595_a4d40b2ba0b1" type="string">
-			<ipxact:name>REG_S1</ipxact:name> 
+		<ipxact:parameter parameterId="uuid_307072d5_9516_4497_9595_a4d40b2ba0b1" type="string">
+			<ipxact:name>REG_S1</ipxact:name>
 			<ipxact:value>&quot;19:15&quot;</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_94325afc_78a0_47ec_8188_bf3079be2498" type="string">
-			<ipxact:name>REG_S2</ipxact:name> 
+		<ipxact:parameter parameterId="uuid_94325afc_78a0_47ec_8188_bf3079be2498" type="string">
+			<ipxact:name>REG_S2</ipxact:name>
 			<ipxact:value>&quot;24:20&quot;</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter  parameterId="uuid_bf787f44_fb74_476d_9e3a_a5ea2a8122a9" type="string">
-			<ipxact:name>REG_D</ipxact:name> 
+		<ipxact:parameter parameterId="uuid_bf787f44_fb74_476d_9e3a_a5ea2a8122a9" type="string">
+			<ipxact:name>REG_D</ipxact:name>
 			<ipxact:value>&quot;11:07&quot;</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_7d38a6f4_fdc0_40c0_a86e_e7b0c99bf78e" resolve="user" kactus2:usageCount="1">
-			<ipxact:name>RV32M</ipxact:name> 
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_7d38a6f4_fdc0_40c0_a86e_e7b0c99bf78e" resolve="user">
+			<ipxact:name>RV32M</ipxact:name>
 			<ipxact:value>1</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f1ee34a1_d41e_4c08_9a83_43ad0cf69965" resolve="user" kactus2:usageCount="1">
-			<ipxact:name>RV32E</ipxact:name> 
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_f1ee34a1_d41e_4c08_9a83_43ad0cf69965" resolve="user">
+			<ipxact:name>RV32E</ipxact:name>
 			<ipxact:value>0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_baf4ec85_725b_4238_be29_d504cc034a36" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_baf4ec85_725b_4238_be29_d504cc034a36">
 			<ipxact:name>ALU_OP_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_0194dbc1_e08c_4ef5_a5de_135cfbe0481b" kactus2:usageCount="1">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_0194dbc1_e08c_4ef5_a5de_135cfbe0481b">
 			<ipxact:name>DBG_SETS_W</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>

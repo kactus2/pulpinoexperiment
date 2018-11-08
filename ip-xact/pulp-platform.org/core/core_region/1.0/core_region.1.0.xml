@@ -6,99 +6,7 @@
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:busInterfaces>
 		<ipxact:busInterface>
-			<ipxact:name>jtag</ipxact:name>
-			<ipxact:busType vendor="accellera.org" library="ieee1149.1" name="JTAG" version="2001-1.0"/>
-			<ipxact:abstractionTypes>
-				<ipxact:abstractionType>
-					<ipxact:abstractionRef vendor="accellera.org" library="ieee1149.1" name="JTAG_rtl" version="2001-1.0"/>
-					<ipxact:portMaps>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>TCK</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>tck_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>NTRST</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>trstn_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>TDI</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>tdi_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>TMS</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>tms_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>TDO</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>tdo_o</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-					</ipxact:portMaps>
-				</ipxact:abstractionType>
-			</ipxact:abstractionTypes>
-			<ipxact:slave/>
-		</ipxact:busInterface>
-		<ipxact:busInterface>
-			<ipxact:name>instr_slave</ipxact:name>
+			<ipxact:name>core_master</ipxact:name>
 			<ipxact:busType vendor="pulp-platform.org" library="interface" name="amba_AXI4" version="1.0"/>
 			<ipxact:abstractionTypes>
 				<ipxact:abstractionType>
@@ -106,278 +14,10 @@
 					<ipxact:portMaps>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>ar_addr</ipxact:name>
+								<ipxact:name>aw_region</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_addr</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_burst</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_burst</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_lock</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_lock</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_ready</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_size</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_size</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_valid</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_addr</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_addr</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_burst</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_burst</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_lock</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_lock</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_ready</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_size</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_size</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_valid</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>b_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_b_ready</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>b_resp</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_b_resp</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>b_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_b_valid</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_last</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_r_last</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_r_ready</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_resp</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_r_resp</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_r_valid</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_last</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_w_last</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_w_ready</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_w_valid</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_id</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_id</ipxact:name>
+								<ipxact:name>core_master_aw_region</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -385,7 +25,31 @@
 								<ipxact:name>aw_len</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_len</ipxact:name>
+								<ipxact:name>core_master_aw_len</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_size</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_aw_size</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_burst</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_aw_burst</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_lock</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_aw_lock</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -393,95 +57,15 @@
 								<ipxact:name>aw_cache</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_cache</ipxact:name>
+								<ipxact:name>core_master_aw_cache</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>aw_prot</ipxact:name>
+								<ipxact:name>aw_qos</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_prot</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_data</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_w_data</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_strb</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_w_strb</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_len</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_len</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_cache</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_cache</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_prot</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_prot</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_data</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_r_data</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_w_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>b_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_b_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_user</ipxact:name>
+								<ipxact:name>core_master_aw_qos</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -489,23 +73,207 @@
 								<ipxact:name>aw_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>instr_aw_id</ipxact:name>
+								<ipxact:name>core_master_aw_id</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>b_id</ipxact:name>
+								<ipxact:name>aw_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>instr_b_id</ipxact:name>
+								<ipxact:name>core_master_aw_ready</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>r_user</ipxact:name>
+								<ipxact:name>ar_valid</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>instr_r_user</ipxact:name>
+								<ipxact:name>core_master_ar_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_addr</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_addr</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_prot</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_prot</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_region</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_region</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_len</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_len</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_size</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_size</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_burst</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_burst</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_lock</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_lock</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_cache</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_cache</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_qos</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_qos</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_id</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_id</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_aw_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_ready</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_ar_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_valid</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_w_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_data</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_w_data</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_strb</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_w_strb</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_w_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_last</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_w_last</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_ready</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_w_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_valid</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_r_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_data</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_r_data</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_resp</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_r_resp</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_last</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_r_last</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -513,13 +281,93 @@
 								<ipxact:name>r_id</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>instr_r_id</ipxact:name>
+								<ipxact:name>core_master_r_id</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_ready</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_r_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_valid</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_b_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_resp</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_b_resp</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_id</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_b_id</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_ready</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_b_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_addr</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_aw_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_prot</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_aw_prot</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_valid</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_aw_addr</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_b_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>core_master_r_user</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:slave/>
+			<ipxact:master/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>data_slave</ipxact:name>
@@ -954,7 +802,7 @@
 			<ipxact:slave/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
-			<ipxact:name>core_master</ipxact:name>
+			<ipxact:name>instr_slave</ipxact:name>
 			<ipxact:busType vendor="pulp-platform.org" library="interface" name="amba_AXI4" version="1.0"/>
 			<ipxact:abstractionTypes>
 				<ipxact:abstractionType>
@@ -962,314 +810,70 @@
 					<ipxact:portMaps>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>aw_region</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_region</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_len</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_len</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_size</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_size</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_burst</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_burst</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_lock</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_lock</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_cache</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_cache</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_qos</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_qos</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_id</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_id</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_ready</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_ready</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_valid</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_valid</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>ar_addr</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_addr</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_prot</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_prot</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_region</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_region</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_len</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_len</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_size</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_size</ipxact:name>
+								<ipxact:name>instr_ar_addr</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_burst</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_burst</ipxact:name>
+								<ipxact:name>instr_ar_burst</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_lock</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_lock</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_cache</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_cache</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_qos</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_qos</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_id</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_id</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>ar_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>aw_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_user</ipxact:name>
+								<ipxact:name>instr_ar_lock</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_ready</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_ar_ready</ipxact:name>
+								<ipxact:name>instr_ar_ready</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>w_valid</ipxact:name>
+								<ipxact:name>ar_size</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_w_valid</ipxact:name>
+								<ipxact:name>instr_ar_size</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>w_data</ipxact:name>
+								<ipxact:name>ar_valid</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_w_data</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_strb</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_w_strb</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_w_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_last</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_w_last</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>w_ready</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_w_ready</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_valid</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_r_valid</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_data</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_r_data</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_resp</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_r_resp</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_last</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_r_last</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_id</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_r_id</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>r_ready</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_r_ready</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>b_valid</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_b_valid</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>b_resp</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_b_resp</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>b_id</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_b_id</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>b_ready</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>core_master_b_ready</ipxact:name>
+								<ipxact:name>instr_ar_valid</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -1277,7 +881,223 @@
 								<ipxact:name>aw_addr</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_valid</ipxact:name>
+								<ipxact:name>instr_aw_addr</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_burst</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_burst</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_lock</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_lock</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_ready</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_size</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_size</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_valid</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_valid</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_ready</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_b_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_resp</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_b_resp</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_valid</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_b_valid</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_last</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_r_last</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_ready</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_r_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_resp</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_r_resp</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_valid</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_r_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_last</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_w_last</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_ready</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_w_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_valid</ipxact:name>
+								<ipxact:range>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_w_valid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_id</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_ar_id</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_len</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_len</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_cache</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_cache</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -1285,15 +1105,71 @@
 								<ipxact:name>aw_prot</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_prot</ipxact:name>
+								<ipxact:name>instr_aw_prot</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>aw_valid</ipxact:name>
+								<ipxact:name>w_data</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_aw_addr</ipxact:name>
+								<ipxact:name>instr_w_data</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_strb</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_w_strb</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_len</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_ar_len</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_cache</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_ar_cache</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_prot</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_ar_prot</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_data</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_r_data</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>w_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_w_user</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -1301,7 +1177,31 @@
 								<ipxact:name>b_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_b_user</ipxact:name>
+								<ipxact:name>instr_b_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_ar_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_id</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_aw_id</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_id</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_b_id</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -1309,75 +1209,107 @@
 								<ipxact:name>r_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>core_master_r_user</ipxact:name>
+								<ipxact:name>instr_r_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_id</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>instr_r_id</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
-			<ipxact:master/>
+			<ipxact:slave/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
-			<ipxact:name>debug</ipxact:name>
-			<ipxact:busType vendor="pulp-platform.org" library="interface" name="debug_bus" version="1.0"/>
+			<ipxact:name>jtag</ipxact:name>
+			<ipxact:busType vendor="accellera.org" library="ieee1149.1" name="JTAG" version="2001-1.0"/>
 			<ipxact:abstractionTypes>
 				<ipxact:abstractionType>
-					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="debug_bus.absDef" version="1.0"/>
+					<ipxact:abstractionRef vendor="accellera.org" library="ieee1149.1" name="JTAG_rtl" version="2001-1.0"/>
 					<ipxact:portMaps>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>reg</ipxact:name>
+								<ipxact:name>TCK</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>debug_req</ipxact:name>
+								<ipxact:name>tck_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>gnt</ipxact:name>
+								<ipxact:name>NTRST</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>debug_gnt</ipxact:name>
+								<ipxact:name>trstn_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>rvalid</ipxact:name>
+								<ipxact:name>TDI</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>debug_rvalid</ipxact:name>
+								<ipxact:name>tdi_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>addr</ipxact:name>
+								<ipxact:name>TMS</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>debug_addr</ipxact:name>
+								<ipxact:name>tms_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>we</ipxact:name>
+								<ipxact:name>TDO</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>debug_we</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>wdata</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>debug_wdata</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>rdata</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>debug_rdata</ipxact:name>
+								<ipxact:name>tdo_o</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
@@ -1748,6 +1680,74 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:master/>
+		</ipxact:busInterface>
+		<ipxact:busInterface>
+			<ipxact:name>debug</ipxact:name>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="debug_bus" version="1.0"/>
+			<ipxact:abstractionTypes>
+				<ipxact:abstractionType>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="debug_bus.absDef" version="1.0"/>
+					<ipxact:portMaps>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>reg</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>debug_req</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>gnt</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>debug_gnt</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>rvalid</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>debug_rvalid</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>addr</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>debug_addr</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>we</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>debug_we</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>wdata</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>debug_wdata</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>rdata</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>debug_rdata</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+					</ipxact:portMaps>
+				</ipxact:abstractionType>
+			</ipxact:abstractionTypes>
+			<ipxact:slave/>
 		</ipxact:busInterface>
 	</ipxact:busInterfaces>
 	<ipxact:model>
