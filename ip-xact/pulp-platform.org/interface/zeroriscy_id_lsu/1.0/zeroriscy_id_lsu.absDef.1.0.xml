@@ -112,21 +112,6 @@
 			</ipxact:wire>
 		</ipxact:port>
 		<ipxact:port>
-			<ipxact:logicalName>ADDER_RESULT_EX</ipxact:logicalName>
-			<ipxact:wire>
-				<ipxact:onSystem>
-					<ipxact:group>idStage</ipxact:group>
-					<ipxact:width>32</ipxact:width>
-					<ipxact:direction>out</ipxact:direction>
-				</ipxact:onSystem>
-				<ipxact:onSystem>
-					<ipxact:group>loadStoreUnit</ipxact:group>
-					<ipxact:width>32</ipxact:width>
-					<ipxact:direction>in</ipxact:direction>
-				</ipxact:onSystem>
-			</ipxact:wire>
-		</ipxact:port>
-		<ipxact:port>
 			<ipxact:logicalName>DATA_MISALIGNED</ipxact:logicalName>
 			<ipxact:wire>
 				<ipxact:onSystem>
