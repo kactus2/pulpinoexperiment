@@ -35,7 +35,7 @@ module zero_riscy_logic(
 // WARNING: EVERYTHING ON AND ABOVE THIS LINE MAY BE OVERWRITTEN BY KACTUS2!!!
 
   //core busy signals
-  logic        core_ctrl_firstfetch, core_busy_int, core_busy_q;
+  logic        core_busy_int, core_busy_q;
   logic        dbg_busy;
 
   assign core_busy_int = (data_load_event_ex & data_req_i) ? if_busy : (if_busy | ctrl_busy | lsu_busy);
@@ -53,7 +53,7 @@ module zero_riscy_logic(
 
   assign dbg_busy    = dbg_req | dbg_csr_req | dbg_jump_req | dbg_reg_wreq | debug_req_i;
 
-  assign clock_en    = clk_en_i | core_busy_o | dbg_busy;
+  assign clk_en    = clk_en_i | core_busy_o | dbg_busy;
 
   assign sleeping    = (~fetch_enable) & (~core_busy_o);
 

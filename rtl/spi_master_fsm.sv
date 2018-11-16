@@ -15,8 +15,10 @@ module spi_master_fsm #(
     parameter                              LOG_BUFFER_DEPTH = $clog2(BUFFER_DEPTH)
 ) (
     // These ports are not in any interface
-    input          [LOG_BUFFER_DEPTH:0] cnt_rx,
-    input          [LOG_BUFFER_DEPTH:0] cnt_tx,
+    input          [LOG_BUFFER_DEPTH:0]       cnt_rx,
+    input          [LOG_BUFFER_DEPTH:0]       cnt_tx,
+    input          [LOG_BUFFER_DEPTH:0]       elements_rx,
+    input          [LOG_BUFFER_DEPTH:0]       elements_tx,
     input                               HCLK,
     input                               HRESETn,
     input                               int_cnt_en,
@@ -27,16 +29,13 @@ module spi_master_fsm #(
     input                               spi_ctrl_data_tx_ready,
     input                               spi_ctrl_data_tx_valid,
     input          [6:0]                spi_ctrl_status,
-    input          [LOG_BUFFER_DEPTH:0] th_rx,
-    input          [LOG_BUFFER_DEPTH:0] th_tx,
+    input          [LOG_BUFFER_DEPTH:0]       th_rx,
+    input          [LOG_BUFFER_DEPTH:0]       th_tx,
     output                              events_o,
     output         [31:0]               spi_status
 );
 
 // WARNING: EVERYTHING ON AND ABOVE THIS LINE MAY BE OVERWRITTEN BY KACTUS2!!!
-    logic [LOG_BUFFER_DEPTH:0] elements_tx;
-    logic [LOG_BUFFER_DEPTH:0] elements_rx;
-
     logic [LOG_BUFFER_DEPTH:0] r_counter_tx;
     logic [LOG_BUFFER_DEPTH:0] r_counter_rx;
 

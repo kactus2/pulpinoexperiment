@@ -998,17 +998,17 @@
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../pulpino/ips/zero-riscy/zeroriscy_register_file.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>db6d919fb2e2f6de2f069140a8740382</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/zero-riscy/zeroriscy_register_file_ff.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>a5ff82c5d41c4bc2eec18dd9e61734bf</kactus2:hash>
+				</ipxact:vendorExtensions>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/ips/zero-riscy/zeroriscy_register_file.sv</ipxact:name>
+				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>db6d919fb2e2f6de2f069140a8740382</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>

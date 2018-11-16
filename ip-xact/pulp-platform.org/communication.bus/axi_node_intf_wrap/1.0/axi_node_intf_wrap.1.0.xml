@@ -264,24 +264,6 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>aw_region</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>3</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>instr_ar_len</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>3</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>aw_size</ipxact:name>
 								<ipxact:range>
 									<ipxact:left>2</ipxact:left>
@@ -1180,6 +1162,38 @@
 								<ipxact:name>aw_len</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_qos</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>aw_qos</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>aw_region</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>aw_region</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_region</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>ar_region</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>ar_qos</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>ar_qos</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
@@ -1490,14 +1504,6 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>b_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>dbg_r_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>r_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
@@ -1530,18 +1536,26 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>r_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>dbg_b_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>b_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>dbg_b_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>dbg_r_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>dbg_b_user</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
@@ -2792,14 +2806,6 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>b_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>slave_r_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>r_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
@@ -2832,18 +2838,26 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>r_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>slave_b_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>b_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>slave_b_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>slave_r_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>slave_b_user</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
@@ -5991,6 +6005,54 @@
 					<ipxact:vectors>
 						<ipxact:vector>
 							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>ar_region</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>3</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>ar_qos</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>3</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>aw_region</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>3</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>aw_qos</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>3</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>

@@ -1,13 +1,13 @@
 //-----------------------------------------------------------------------------
 // File          : mux_mem.v
-// Creation date : 25.06.2018
-// Creation time : 13:11:21
+// Creation date : 13.11.2018
+// Creation time : 12:35:19
 // Description   : Wrapper for mux logic.
-// Created by    : pekkarie
-// Tool : Kactus2 3.6.10 64-bit
+// Created by    : epe
+// Tool : Kactus2 3.6.91 64-bit
 // Plugin : Verilog generator 2.2
 // This file was generated based on IP-XACT component pulp-platform.org:communication.logic:mux_mem:1.0
-// whose XML file is D:/Data/kactus_test_libraries/pulpinoexperiment/ip-xact/pulp-platform.org/communication.logic/mux_mem/1.0/mux_mem.1.0.xml
+// whose XML file is /home/epe/pulpino/ip-xact/pulp-platform.org/communication.logic/mux_mem/1.0/mux_mem.1.0.xml
 //-----------------------------------------------------------------------------
 
 module mux_mem #(
@@ -16,23 +16,23 @@ module mux_mem #(
     parameter                              MEM_ADDR_WIDTH   = 32
 ) (
     // Interface: mem
-    output logic                        A_o,
-    output logic   [AXI_NUM_BYTES-1:0]  BE_o,
+    output logic   [MEM_ADDR_WIDTH-1:0]       A_o,
+    output logic   [AXI_NUM_BYTES-1:0]       BE_o,
     output logic                        CEN_o,
     output logic                        D_o,
     output logic                        WEN_o,
 
     // Interface: read
-    input          [MEM_ADDR_WIDTH-1:0] R_addr,
-    input          [AXI_NUM_BYTES-1:0]  R_be,
+    input          [MEM_ADDR_WIDTH-1:0]       R_addr,
+    input          [AXI_NUM_BYTES-1:0]       R_be,
     input                               R_cen,
-    input          [AXI4_WDATA_WIDTH-1:0] R_wdata,
+    input          [AXI4_WDATA_WIDTH-1:0]       R_wdata,
 
     // Interface: write
-    input          [MEM_ADDR_WIDTH-1:0] W_addr,
-    input          [AXI_NUM_BYTES-1:0]  W_be,
+    input          [MEM_ADDR_WIDTH-1:0]       W_addr,
+    input          [AXI_NUM_BYTES-1:0]       W_be,
     input                               W_cen,
-    input          [AXI4_WDATA_WIDTH-1:0] W_wdata,
+    input          [AXI4_WDATA_WIDTH-1:0]       W_wdata,
 
     // These ports are not in any interface
     input                               ACLK,

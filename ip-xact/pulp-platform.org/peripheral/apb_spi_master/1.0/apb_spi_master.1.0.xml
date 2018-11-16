@@ -6,38 +6,6 @@
 	<ipxact:version>1.0</ipxact:version>
 	<ipxact:busInterfaces>
 		<ipxact:busInterface>
-			<ipxact:name>event</ipxact:name>
-			<ipxact:busType vendor="pulp-platform.org" library="interface" name="irq" version="1.0"/>
-			<ipxact:abstractionTypes>
-				<ipxact:abstractionType>
-					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="irq.absDef" version="1.0"/>
-					<ipxact:portMaps>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>event</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>28</ipxact:left>
-									<ipxact:right>27</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>events_o</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>1</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-					</ipxact:portMaps>
-				</ipxact:abstractionType>
-			</ipxact:abstractionTypes>
-			<ipxact:system>
-				<ipxact:group>irq_source</ipxact:group>
-			</ipxact:system>
-		</ipxact:busInterface>
-		<ipxact:busInterface>
 			<ipxact:name>spi_master</ipxact:name>
 			<ipxact:busType vendor="pulp-platform.org" library="interface" name="qspi" version="1.0"/>
 			<ipxact:abstractionTypes>
@@ -160,6 +128,38 @@
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
 			<ipxact:master/>
+		</ipxact:busInterface>
+		<ipxact:busInterface>
+			<ipxact:name>event</ipxact:name>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="irq" version="1.0"/>
+			<ipxact:abstractionTypes>
+				<ipxact:abstractionType>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="irq.absDef" version="1.0"/>
+					<ipxact:portMaps>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>event</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>28</ipxact:left>
+									<ipxact:right>27</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>events_o</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>1</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+					</ipxact:portMaps>
+				</ipxact:abstractionType>
+			</ipxact:abstractionTypes>
+			<ipxact:system>
+				<ipxact:group>irq_source</ipxact:group>
+			</ipxact:system>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
 			<ipxact:name>spi_bus</ipxact:name>

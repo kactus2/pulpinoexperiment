@@ -1,13 +1,13 @@
 //-----------------------------------------------------------------------------
 // File          : csr_mux.v
-// Creation date : 09.11.2018
-// Creation time : 09:58:33
+// Creation date : 13.11.2018
+// Creation time : 13:27:49
 // Description   : 
 // Created by    : pekkarie
-// Tool : Kactus2 3.6.90 64-bit
+// Tool : Kactus2 3.6.91 64-bit
 // Plugin : Verilog generator 2.2
 // This file was generated based on IP-XACT component pulp-platform.org:core.logic:csr_mux:1.0
-// whose XML file is D:/Data/kactus_test_libraries/pulpinoexperiment/pulp-platform.org/core.logic/csr_mux/1.0/csr_mux.1.0.xml
+// whose XML file is /home/epe/pulpino/ip-xact/pulp-platform.org/core.logic/csr_mux/1.0/csr_mux.1.0.xml
 //-----------------------------------------------------------------------------
 
 import zeroriscy_defines::*;
@@ -16,16 +16,16 @@ module csr_mux(
     // These ports are not in any interface
     input          [31:0]               alu_operand_a_ex,
     input          [11:0]               alu_operand_b_ex,
-    input          [11:0]               dbg_csr_addr,
     input                               csr_access_ex,
     input          [1:0]                csr_op_ex,
+    input          [11:0]               dbg_csr_addr,
     input                               dbg_csr_req,
     input                               dbg_csr_wdata,
     input                               dbg_csr_we,
     output                              csr_access,
     output         [11:0]               csr_addr,
     output         [1:0]                csr_op,
-    output                              csr_wdata
+    output         [31:0]               csr_wdata
 );
 
 // WARNING: EVERYTHING ON AND ABOVE THIS LINE MAY BE OVERWRITTEN BY KACTUS2!!!

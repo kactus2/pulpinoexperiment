@@ -263,6 +263,7 @@
 					<kactus2:adHocVisible portName="debug_halt_i" x="-110" y="200"/>
 					<kactus2:adHocVisible portName="debug_resume_i" x="-110" y="220"/>
 					<kactus2:adHocVisible portName="fetch_enable_i" x="-110" y="160"/>
+					<kactus2:adHocVisible portName="irq_i" x="-110" y="350"/>
 					<kactus2:adHocVisible portName="rst_ni" x="-110" y="50"/>
 					<kactus2:adHocVisible portName="test_en_i" x="-110" y="70"/>
 				</kactus2:adHocVisibilities>
@@ -635,6 +636,13 @@
 				<ipxact:externalPortReference portRef="clock_gating_i"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
+		<ipxact:adHocConnection>
+			<ipxact:name>RISCV_CORE_irq_i_to_irq_i</ipxact:name>
+			<ipxact:portReferences>
+				<ipxact:internalPortReference componentRef="RISCV_CORE" portRef="irq_i"/>
+				<ipxact:externalPortReference portRef="irq_i"/>
+			</ipxact:portReferences>
+		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
 	<ipxact:parameters>
 		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_f609b284_b06a_4ff0_af2d_4b0006957d1e" resolve="user">
@@ -731,7 +739,7 @@
 				<kactus2:position x="1100" y="570"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="axi_slice_core2axi_test_en_i_to_testmode_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="150"/>
+				<kactus2:position x="90" y="160"/>
 				<kactus2:position x="1100" y="590"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="instr_mem_clk_to_clk" kactus2:offPage="true">
@@ -743,7 +751,7 @@
 				<kactus2:position x="780" y="120"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="instr_mem_bypass_en_i_to_testmode_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="150"/>
+				<kactus2:position x="90" y="160"/>
 				<kactus2:position x="780" y="140"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="instr_mem_instr_to_instr_ram_mux_i_ram" kactus2:offPage="false">
@@ -771,7 +779,7 @@
 				<kactus2:position x="1100" y="120"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="instr_mem_axi_if_test_en_i_to_testmode_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="150"/>
+				<kactus2:position x="90" y="160"/>
 				<kactus2:position x="1100" y="140"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="data_ram_mux_i_clk_to_clk" kactus2:offPage="true">
@@ -791,7 +799,7 @@
 				<kactus2:position x="1100" y="270"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="data_mem_axi_if_test_en_i_to_testmode_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="150"/>
+				<kactus2:position x="90" y="160"/>
 				<kactus2:position x="1100" y="290"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="data_mem_axi_if_slave_to_data_slave" kactus2:offPage="false">
@@ -804,12 +812,10 @@
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="data_ram_mux_i_ram_to_data_mem_data" kactus2:offPage="false">
 				<kactus2:position x="710" y="310"/>
-				<kactus2:position x="790" y="310"/>
-				<kactus2:position x="790" y="310"/>
 				<kactus2:position x="810" y="310"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="data_mem_bypass_en_i_to_testmode_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="150"/>
+				<kactus2:position x="90" y="160"/>
 				<kactus2:position x="780" y="290"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="data_mem_rstn_i_to_rst_n" kactus2:offPage="true">
@@ -837,7 +843,7 @@
 				<kactus2:position x="140" y="610"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="adv_dbg_if_i_test_mode_i_to_testmode_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="150"/>
+				<kactus2:position x="90" y="160"/>
 				<kactus2:position x="140" y="630"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="demux_data_core_master_to_data_ram_mux_i_port1" kactus2:offPage="false">
@@ -850,14 +856,10 @@
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="demux_data_axi_master_to_core2axi_i_apb" kactus2:offPage="false">
 				<kactus2:position x="710" y="460"/>
-				<kactus2:position x="1110" y="460"/>
-				<kactus2:position x="1110" y="460"/>
 				<kactus2:position x="1130" y="460"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="demux_lsu_data_slave_to_RISCV_CORE_data" kactus2:offPage="false">
 				<kactus2:position x="490" y="440"/>
-				<kactus2:position x="410" y="440"/>
-				<kactus2:position x="410" y="440"/>
 				<kactus2:position x="390" y="440"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="demux_clk_to_clk" kactus2:offPage="true">
@@ -868,20 +870,9 @@
 				<kactus2:position x="90" y="110"/>
 				<kactus2:position x="460" y="420"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="RISCV_CORE_core_busy_o_to_core_busy_o" kactus2:offPage="false">
-				<kactus2:position x="60" y="360"/>
-				<kactus2:position x="170" y="360"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="RISCV_CORE_boot_addr_i_to_boot_addr_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="300"/>
-				<kactus2:position x="170" y="300"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="RISCV_CORE_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="240"/>
-				<kactus2:position x="150" y="240"/>
-				<kactus2:position x="150" y="220"/>
-				<kactus2:position x="170" y="220"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="RISCV_CORE_core_busy_o_to_core_busy_o" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="RISCV_CORE_boot_addr_i_to_boot_addr_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="RISCV_CORE_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="RISCV_CORE_clk_i_to_clk" kactus2:offPage="true">
 				<kactus2:position x="90" y="70"/>
 				<kactus2:position x="140" y="90"/>
@@ -891,7 +882,7 @@
 				<kactus2:position x="140" y="110"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="RISCV_CORE_test_en_i_to_testmode_i" kactus2:offPage="true">
-				<kactus2:position x="90" y="150"/>
+				<kactus2:position x="90" y="160"/>
 				<kactus2:position x="140" y="130"/>
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="instr_ram_mux_i_clk_to_clk" kactus2:offPage="true">
@@ -910,9 +901,10 @@
 				<kactus2:position x="90" y="110"/>
 				<kactus2:position x="1100" y="420"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="RISCV_CORE_clock_en_i_to_clock_gating_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="200"/>
-				<kactus2:position x="170" y="200"/>
+			<kactus2:route kactus2:connRef="RISCV_CORE_clock_en_i_to_clock_gating_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="RISCV_CORE_irq_i_to_irq_i" kactus2:offPage="false">
+				<kactus2:position x="60" y="410"/>
+				<kactus2:position x="170" y="410"/>
 			</kactus2:route>
 		</kactus2:routes>
 		<kactus2:adHocVisibilities>
@@ -921,8 +913,9 @@
 			<kactus2:adHocVisible portName="clock_gating_i" x="60" y="200"/>
 			<kactus2:adHocVisible portName="core_busy_o" x="60" y="360"/>
 			<kactus2:adHocVisible portName="fetch_enable_i" x="60" y="240"/>
+			<kactus2:adHocVisible portName="irq_i" x="60" y="410"/>
 			<kactus2:adHocVisible portName="rst_n" x="60" y="110"/>
-			<kactus2:adHocVisible portName="testmode_i" x="60" y="150"/>
+			<kactus2:adHocVisible portName="testmode_i" x="60" y="160"/>
 		</kactus2:adHocVisibilities>
 		<kactus2:interfaceGraphics>
 			<kactus2:name>core_master</kactus2:name>

@@ -802,6 +802,98 @@
 			<ipxact:slave/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
+			<ipxact:name>jtag</ipxact:name>
+			<ipxact:busType vendor="accellera.org" library="ieee1149.1" name="JTAG" version="2001-1.0"/>
+			<ipxact:abstractionTypes>
+				<ipxact:abstractionType>
+					<ipxact:abstractionRef vendor="accellera.org" library="ieee1149.1" name="JTAG_rtl" version="2001-1.0"/>
+					<ipxact:portMaps>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>TCK</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>tck_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>NTRST</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>trstn_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>TDI</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>tdi_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>TMS</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>0</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>tms_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>0</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>TDO</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>tdo_o</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+					</ipxact:portMaps>
+				</ipxact:abstractionType>
+			</ipxact:abstractionTypes>
+			<ipxact:slave/>
+		</ipxact:busInterface>
+		<ipxact:busInterface>
 			<ipxact:name>instr_slave</ipxact:name>
 			<ipxact:busType vendor="pulp-platform.org" library="interface" name="amba_AXI4" version="1.0"/>
 			<ipxact:abstractionTypes>
@@ -1226,98 +1318,6 @@
 			<ipxact:slave/>
 		</ipxact:busInterface>
 		<ipxact:busInterface>
-			<ipxact:name>jtag</ipxact:name>
-			<ipxact:busType vendor="accellera.org" library="ieee1149.1" name="JTAG" version="2001-1.0"/>
-			<ipxact:abstractionTypes>
-				<ipxact:abstractionType>
-					<ipxact:abstractionRef vendor="accellera.org" library="ieee1149.1" name="JTAG_rtl" version="2001-1.0"/>
-					<ipxact:portMaps>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>TCK</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>tck_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>NTRST</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>trstn_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>TDI</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>tdi_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>TMS</ipxact:name>
-								<ipxact:range>
-									<ipxact:left>0</ipxact:left>
-									<ipxact:right>0</ipxact:right>
-								</ipxact:range>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>tms_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>0</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
-								<ipxact:name>TDO</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>tdo_o</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-					</ipxact:portMaps>
-				</ipxact:abstractionType>
-			</ipxact:abstractionTypes>
-			<ipxact:slave/>
-		</ipxact:busInterface>
-		<ipxact:busInterface>
 			<ipxact:name>dbg_master</ipxact:name>
 			<ipxact:busType vendor="pulp-platform.org" library="interface" name="amba_AXI4" version="1.0"/>
 			<ipxact:abstractionTypes>
@@ -1622,14 +1622,6 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>b_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>dbg_r_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>r_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
@@ -1662,18 +1654,26 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>r_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>dbg_b_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>b_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>dbg_b_ready</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>r_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>dbg_r_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>dbg_b_user</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
