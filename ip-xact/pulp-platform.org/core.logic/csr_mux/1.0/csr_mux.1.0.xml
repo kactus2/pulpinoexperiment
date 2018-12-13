@@ -64,6 +64,12 @@
 				<ipxact:name>dbg_csr_wdata</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>31</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>

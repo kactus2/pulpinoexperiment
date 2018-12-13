@@ -740,6 +740,11 @@
 				<ipxact:designInstantiationRef>design</ipxact:designInstantiationRef>
 				<ipxact:designConfigurationInstantiationRef>design_configuration</ipxact:designConfigurationInstantiationRef>
 			</ipxact:view>
+			<ipxact:view>
+				<ipxact:name>flat_verilog</ipxact:name>
+				<ipxact:envIdentifier>Verilog:kactus2.cs.tut.fi:</ipxact:envIdentifier>
+				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
+			</ipxact:view>
 		</ipxact:views>
 		<ipxact:instantiations>
 			<ipxact:componentInstantiation>
@@ -786,7 +791,16 @@
 			</ipxact:componentInstantiation>
 			<ipxact:designInstantiation>
 				<ipxact:name>design</ipxact:name>
-				<ipxact:designRef vendor="pulp-platform.org" library="communication" name="axi_mem_if_SP.design" version="1.0"/>
+				<ipxact:designRef vendor="pulp-platform.org" library="communication" name="axi_mem_if_SP.design" version="1.0">
+					<ipxact:configurableElementValues>
+						<ipxact:configurableElementValue referenceId="uuid_f5f1661a_f4eb_4683_acde_53c2738c3621">uuid_37598e08_6f12_413e_9174_c6cd93f7e2ba</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_795461dd_410d_4309_9afe_bd86361249e5">uuid_1cf93aed_fff3_48a6_af79_9ca96fcabe2c</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_e0cd858b_f537_411f_9f12_b00fcd254469">uuid_e8c0178b_1c30_4fc2_8b41_9e973ae85ce6</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_80bc31f8_aa3d_41f6_aa11_d05238e831fb">uuid_8041c119_5a96_489f_a5b5_f6a905c25530</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_18b2a47d_bd77_46fa_9ce0_12634e82ed89">uuid_fb331230_118e_4d09_89e4_171952d882b2</ipxact:configurableElementValue>
+						<ipxact:configurableElementValue referenceId="uuid_1ec16164_dba7_4d19_a38c_82908174ae2c">uuid_11aa22bb_cac7_459a_a759_2eab2efd02ae</ipxact:configurableElementValue>
+					</ipxact:configurableElementValues>
+				</ipxact:designRef>
 			</ipxact:designInstantiation>
 			<ipxact:designConfigurationInstantiation>
 				<ipxact:name>design_configuration</ipxact:name>
@@ -1606,31 +1620,31 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_11aa22bb_cac7_459a_a759_2eab2efd02ae" resolve="user">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_11aa22bb_cac7_459a_a759_2eab2efd02ae" resolve="user">
 			<ipxact:name>AXI4_ADDRESS_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_8041c119_5a96_489f_a5b5_f6a905c25530" resolve="user">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_8041c119_5a96_489f_a5b5_f6a905c25530" resolve="user">
 			<ipxact:name>AXI4_RDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_1cf93aed_fff3_48a6_af79_9ca96fcabe2c" resolve="user">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_1cf93aed_fff3_48a6_af79_9ca96fcabe2c" resolve="user">
 			<ipxact:name>AXI4_WDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_fb331230_118e_4d09_89e4_171952d882b2" resolve="user">
+		<ipxact:parameter kactus2:usageCount="9" parameterId="uuid_fb331230_118e_4d09_89e4_171952d882b2" resolve="user">
 			<ipxact:name>AXI4_ID_WIDTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_e8c0178b_1c30_4fc2_8b41_9e973ae85ce6" resolve="user">
+		<ipxact:parameter kactus2:usageCount="11" parameterId="uuid_e8c0178b_1c30_4fc2_8b41_9e973ae85ce6" resolve="user">
 			<ipxact:name>AXI4_USER_WIDTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_4e2a0afd_d9c3_4d20_92a2_d65168046f95">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_4e2a0afd_d9c3_4d20_92a2_d65168046f95">
 			<ipxact:name>AXI_NUMBYTES</ipxact:name>
 			<ipxact:value>uuid_1cf93aed_fff3_48a6_af79_9ca96fcabe2c/8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_37598e08_6f12_413e_9174_c6cd93f7e2ba" resolve="user">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_37598e08_6f12_413e_9174_c6cd93f7e2ba" resolve="user">
 			<ipxact:name>MEM_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>13</ipxact:value>
 		</ipxact:parameter>

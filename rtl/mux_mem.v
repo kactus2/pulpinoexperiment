@@ -19,7 +19,7 @@ module mux_mem #(
     output logic   [MEM_ADDR_WIDTH-1:0]       A_o,
     output logic   [AXI_NUM_BYTES-1:0]       BE_o,
     output logic                        CEN_o,
-    output logic                        D_o,
+    output logic   [AXI4_WDATA_WIDTH-1:0]                     D_o,
     output logic                        WEN_o,
 
     // Interface: read

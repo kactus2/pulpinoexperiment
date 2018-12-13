@@ -20,7 +20,7 @@ module csr_mux(
     input          [1:0]                csr_op_ex,
     input          [11:0]               dbg_csr_addr,
     input                               dbg_csr_req,
-    input                               dbg_csr_wdata,
+    input          [31:0]               dbg_csr_wdata,
     input                               dbg_csr_we,
     output                              csr_access,
     output         [11:0]               csr_addr,

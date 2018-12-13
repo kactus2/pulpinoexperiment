@@ -1227,7 +1227,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_16bb6818_e63a_4d5d_bac2_f3eca0df0b53-1</ipxact:left>
+							<ipxact:left>uuid_16bb6818_e63a_4d5d_bac2_f3eca0df0b53/8-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>

@@ -193,7 +193,7 @@
 	<ipxact:parameters>
 		<ipxact:parameter kactus2:usageCount="6" parameterId="uuid_cc994d3a_6e20_46c7_862c_0e81ce9a4431">
 			<ipxact:name>LOG_BUFFER_DEPTH</ipxact:name>
-			<ipxact:value>$clog2(uuid_541ad88c_5d56_4142_bd55_2fe4c4c5458b)</ipxact:value>
+			<ipxact:value>$clog2(uuid_541ad88c_5d56_4142_bd55_2fe4c4c5458b)+1</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_541ad88c_5d56_4142_bd55_2fe4c4c5458b" resolve="user">
 			<ipxact:name>BUFFER_DEPTH</ipxact:name>

@@ -42,18 +42,12 @@
 							<ipxact:logicalPort>
 								<ipxact:name>ar_len</ipxact:name>
 								<ipxact:range>
-									<ipxact:left>7</ipxact:left>
-									<ipxact:right>0</ipxact:right>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
 								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>slave_arlen_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>7</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -122,18 +116,12 @@
 							<ipxact:logicalPort>
 								<ipxact:name>aw_len</ipxact:name>
 								<ipxact:range>
-									<ipxact:left>7</ipxact:left>
-									<ipxact:right>0</ipxact:right>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
 								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>slave_awlen_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>7</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -6882,7 +6870,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>31</ipxact:left>
+							<ipxact:left>uuid_f677f86f_c82d_481e_8769_66ecc32f78db-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -6894,7 +6882,7 @@
 				</ipxact:wire>
 				<ipxact:arrays>
 					<ipxact:array>
-						<ipxact:left>uuid_f677f86f_c82d_481e_8769_66ecc32f78db-1</ipxact:left>
+						<ipxact:left>uuid_e9072ec4_2f09_47da_99ec_2c6c60c28271-1</ipxact:left>
 						<ipxact:right>0</ipxact:right>
 					</ipxact:array>
 				</ipxact:arrays>
@@ -6905,7 +6893,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>31</ipxact:left>
+							<ipxact:left>uuid_f677f86f_c82d_481e_8769_66ecc32f78db-1</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -6917,7 +6905,7 @@
 				</ipxact:wire>
 				<ipxact:arrays>
 					<ipxact:array>
-						<ipxact:left>uuid_f677f86f_c82d_481e_8769_66ecc32f78db-1</ipxact:left>
+						<ipxact:left>uuid_e9072ec4_2f09_47da_99ec_2c6c60c28271-1</ipxact:left>
 						<ipxact:right>0</ipxact:right>
 					</ipxact:array>
 				</ipxact:arrays>
@@ -6968,6 +6956,363 @@
 					</ipxact:array>
 				</ipxact:arrays>
 			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_awaddr_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_eba9dc1f_2ebe_4f50_81bd_b2c6ed1d0aac-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_awvalid_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_awready_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_wdata_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_6b13ec66_0ead_4869_89b0_b30950eba011-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_wstrb_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_18dea8b5_a9a8_4300_b2bf_843acb9cbdd0-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_wvalid_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_wready_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_bresp_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_bvalid_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_bready_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_araddr_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_eba9dc1f_2ebe_4f50_81bd_b2c6ed1d0aac-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_arvalid_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_arready_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_rdata_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_6b13ec66_0ead_4869_89b0_b30950eba011-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_rresp_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_rvalid_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>cfg_rready_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>HCLK</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>HRESETn</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>PADDR_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_a1c809cf_5c9c_4206_9543_5d84c3978c53-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>PWDATA_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_714dd66a_2071_45b4_bc6f_8b764d09aa73-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>PWRITE_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>PSEL_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>PENABLE_i</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>in</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>PRDATA_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_714dd66a_2071_45b4_bc6f_8b764d09aa73-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>PREADY_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
+			<ipxact:port>
+				<ipxact:name>PSLVERR_o</ipxact:name>
+				<ipxact:wire>
+					<ipxact:direction>out</ipxact:direction>
+					<ipxact:wireTypeDefs>
+						<ipxact:wireTypeDef>
+							<ipxact:typeName>logic</ipxact:typeName>
+						</ipxact:wireTypeDef>
+					</ipxact:wireTypeDefs>
+				</ipxact:wire>
+			</ipxact:port>
 		</ipxact:ports>
 	</ipxact:model>
 	<ipxact:fileSets>
@@ -6983,63 +7328,63 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_e576b8a4_6f4b_486b_84aa_581a9a74655b" resolve="user">
+		<ipxact:parameter kactus2:usageCount="15" parameterId="uuid_e576b8a4_6f4b_486b_84aa_581a9a74655b" resolve="user">
 			<ipxact:name>AXI_ADDRESS_W</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="6" parameterId="uuid_7baf017e_075a_4c1d_9e0a_9a62f705b557" resolve="user">
+		<ipxact:parameter kactus2:usageCount="18" parameterId="uuid_7baf017e_075a_4c1d_9e0a_9a62f705b557" resolve="user">
 			<ipxact:name>AXI_DATA_W</ipxact:name>
 			<ipxact:value>64</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_a33a1d49_f39b_4046_80da_c3378c48f055">
+		<ipxact:parameter kactus2:usageCount="9" parameterId="uuid_a33a1d49_f39b_4046_80da_c3378c48f055">
 			<ipxact:name>AXI_NUMBYTES</ipxact:name>
 			<ipxact:value>uuid_7baf017e_075a_4c1d_9e0a_9a62f705b557/8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="11" parameterId="uuid_b5072231_334a_4ae0_a2b8_ace2047c67cf" resolve="user">
+		<ipxact:parameter kactus2:usageCount="33" parameterId="uuid_b5072231_334a_4ae0_a2b8_ace2047c67cf" resolve="user">
 			<ipxact:name>AXI_USER_W</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_eba9dc1f_2ebe_4f50_81bd_b2c6ed1d0aac" resolve="immediate">
+		<ipxact:parameter kactus2:usageCount="7" parameterId="uuid_eba9dc1f_2ebe_4f50_81bd_b2c6ed1d0aac" resolve="immediate">
 			<ipxact:name>AXI_LITE_ADDRESS_W</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_6b13ec66_0ead_4869_89b0_b30950eba011" resolve="immediate">
+		<ipxact:parameter kactus2:usageCount="10" parameterId="uuid_6b13ec66_0ead_4869_89b0_b30950eba011" resolve="immediate">
 			<ipxact:name>AXI_LITE_DATA_W</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_18dea8b5_a9a8_4300_b2bf_843acb9cbdd0">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_18dea8b5_a9a8_4300_b2bf_843acb9cbdd0">
 			<ipxact:name>AXI_LITE_BE_W</ipxact:name>
 			<ipxact:value>uuid_6b13ec66_0ead_4869_89b0_b30950eba011/8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_a1c809cf_5c9c_4206_9543_5d84c3978c53" resolve="immediate">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_a1c809cf_5c9c_4206_9543_5d84c3978c53" resolve="immediate">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_714dd66a_2071_45b4_bc6f_8b764d09aa73" resolve="immediate">
+		<ipxact:parameter kactus2:usageCount="7" parameterId="uuid_714dd66a_2071_45b4_bc6f_8b764d09aa73" resolve="immediate">
 			<ipxact:name>APB_DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="49" parameterId="uuid_f677f86f_c82d_481e_8769_66ecc32f78db" resolve="user">
+		<ipxact:parameter kactus2:usageCount="147" parameterId="uuid_f677f86f_c82d_481e_8769_66ecc32f78db" resolve="user">
 			<ipxact:name>N_MASTER_PORT</ipxact:name>
 			<ipxact:value>8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="46" parameterId="uuid_aafad7b9_6b8b_49d1_ba61_f01526f9f113" resolve="user">
+		<ipxact:parameter kactus2:usageCount="138" parameterId="uuid_aafad7b9_6b8b_49d1_ba61_f01526f9f113" resolve="user">
 			<ipxact:name>N_SLAVE_PORT</ipxact:name>
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="6" parameterId="uuid_d98b6b9c_a00b_4bc2_bf7d_7fca7fb12a75" resolve="user">
+		<ipxact:parameter kactus2:usageCount="18" parameterId="uuid_d98b6b9c_a00b_4bc2_bf7d_7fca7fb12a75" resolve="user">
 			<ipxact:name>AXI_ID_IN</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_dd32652c_b7fd_4d0d_8435_ac096fe3886e">
+		<ipxact:parameter kactus2:usageCount="15" parameterId="uuid_dd32652c_b7fd_4d0d_8435_ac096fe3886e">
 			<ipxact:name>AXI_ID_OUT</ipxact:name>
-			<ipxact:value>uuid_d98b6b9c_a00b_4bc2_bf7d_7fca7fb12a75 + $clog2(uuid_aafad7b9_6b8b_49d1_ba61_f01526f9f113)</ipxact:value>
+			<ipxact:value>uuid_d98b6b9c_a00b_4bc2_bf7d_7fca7fb12a75 +</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_c98054bd_46ac_42d9_a434_595326077382" resolve="user">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_c98054bd_46ac_42d9_a434_595326077382" resolve="user">
 			<ipxact:name>FIFO_DEPTH_DW</ipxact:name>
 			<ipxact:value>8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_e9072ec4_2f09_47da_99ec_2c6c60c28271" resolve="user">
+		<ipxact:parameter kactus2:usageCount="13" parameterId="uuid_e9072ec4_2f09_47da_99ec_2c6c60c28271" resolve="user">
 			<ipxact:name>N_REGION</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>

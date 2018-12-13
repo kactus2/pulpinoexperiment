@@ -139,9 +139,7 @@
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
 					<kactus2:adHocVisible portName="clk" x="-110" y="40"/>
-					<kactus2:adHocVisible portName="end_addr_i" x="-110" y="150"/>
 					<kactus2:adHocVisible portName="rst_n" x="-110" y="70"/>
-					<kactus2:adHocVisible portName="start_addr_i" x="-110" y="130"/>
 					<kactus2:adHocVisible portName="test_en_i" x="-110" y="100"/>
 				</kactus2:adHocVisibilities>
 				<kactus2:position x="600" y="60"/>
@@ -455,26 +453,11 @@
 			<kactus2:column name="Interconnect" contentType="4" allowedItems="14" minWidth="319" width="319" x="440"/>
 		</kactus2:columnLayout>
 		<kactus2:routes>
-			<kactus2:route kactus2:connRef="clk_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="90"/>
-				<kactus2:position x="170" y="90"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="rst_n_i" kactus2:offPage="false">
-				<kactus2:position x="60" y="180"/>
-				<kactus2:position x="170" y="180"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="clk_sel" kactus2:offPage="false">
-				<kactus2:position x="60" y="120"/>
-				<kactus2:position x="170" y="120"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="clk_standalone" kactus2:offPage="false">
-				<kactus2:position x="60" y="150"/>
-				<kactus2:position x="170" y="150"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="scan_enable" kactus2:offPage="false">
-				<kactus2:position x="60" y="270"/>
-				<kactus2:position x="170" y="270"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="clk_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="rst_n_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk_sel" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="clk_standalone" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="scan_enable" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="clk_rst_gen_i_testmode_i_to_testmode_i" kactus2:offPage="true">
 				<kactus2:position x="90" y="210"/>
 				<kactus2:position x="140" y="210"/>
@@ -507,18 +490,9 @@
 				<kactus2:position x="390" y="490"/>
 				<kactus2:position x="810" y="490"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="pad_cfg_o_int" kactus2:offPage="false">
-				<kactus2:position x="1140" y="710"/>
-				<kactus2:position x="1030" y="710"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="pad_mux_o_int" kactus2:offPage="false">
-				<kactus2:position x="1140" y="750"/>
-				<kactus2:position x="1030" y="750"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="gpio_padcfg_o" kactus2:offPage="false">
-				<kactus2:position x="1140" y="670"/>
-				<kactus2:position x="1030" y="670"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="pad_cfg_o_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="pad_mux_o_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="gpio_padcfg_o" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="peripherals_i_debug_to_core_region_i_debug" kactus2:offPage="false">
 				<kactus2:position x="810" y="420"/>
 				<kactus2:position x="760" y="420"/>
@@ -565,44 +539,16 @@
 				<kactus2:position x="1030" y="140"/>
 				<kactus2:position x="1140" y="140"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="fetch_enable_int" kactus2:offPage="false">
-				<kactus2:position x="1030" y="400"/>
-				<kactus2:position x="1050" y="400"/>
-				<kactus2:position x="1050" y="210"/>
-				<kactus2:position x="1030" y="210"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="irq_to_core_int" kactus2:offPage="false">
-				<kactus2:position x="1030" y="380"/>
-				<kactus2:position x="1090" y="380"/>
-				<kactus2:position x="1090" y="230"/>
-				<kactus2:position x="1030" y="230"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="fetch_enable" kactus2:offPage="false">
-				<kactus2:position x="60" y="530"/>
-				<kactus2:position x="810" y="530"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="core_busy_int" kactus2:offPage="false">
-				<kactus2:position x="1030" y="360"/>
-				<kactus2:position x="1080" y="360"/>
-				<kactus2:position x="1080" y="250"/>
-				<kactus2:position x="1030" y="250"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="fetch_enable_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="irq_to_core_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="fetch_enable" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="core_busy_int" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="peripherals_i_spi_to_spi" kactus2:offPage="false">
 				<kactus2:position x="1030" y="630"/>
 				<kactus2:position x="1140" y="630"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="clk_gate_core_int" kactus2:offPage="false">
-				<kactus2:position x="1030" y="420"/>
-				<kactus2:position x="1070" y="420"/>
-				<kactus2:position x="1070" y="190"/>
-				<kactus2:position x="1030" y="190"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="boot_addr_int" kactus2:offPage="false">
-				<kactus2:position x="1030" y="440"/>
-				<kactus2:position x="1060" y="440"/>
-				<kactus2:position x="1060" y="170"/>
-				<kactus2:position x="1030" y="170"/>
-			</kactus2:route>
+			<kactus2:route kactus2:connRef="clk_gate_core_int" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="boot_addr_int" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="clk_rst_gen_i_clk_o_to_core_region_i_clk" kactus2:offPage="true">
 				<kactus2:position x="420" y="100"/>
 				<kactus2:position x="780" y="100"/>

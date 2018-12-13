@@ -96,6 +96,14 @@
 								<ipxact:name>R_wdata</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>GNT</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>grant_R</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
 					</ipxact:portMaps>
 				</ipxact:abstractionType>
 			</ipxact:abstractionTypes>
@@ -138,6 +146,14 @@
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>W_wdata</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>GNT</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>grant_W</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
@@ -211,6 +227,12 @@
 				<ipxact:name>D_o</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_383ce610_2af9_48c6_bb58_caeffd119446-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
 					<ipxact:wireTypeDefs>
 						<ipxact:wireTypeDef>
 							<ipxact:typeName>logic</ipxact:typeName>
@@ -385,7 +407,7 @@
 			<ipxact:name>AXI_NUM_BYTES</ipxact:name>
 			<ipxact:value>uuid_383ce610_2af9_48c6_bb58_caeffd119446/8</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_383ce610_2af9_48c6_bb58_caeffd119446" resolve="user">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_383ce610_2af9_48c6_bb58_caeffd119446" resolve="user">
 			<ipxact:name>AXI4_WDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

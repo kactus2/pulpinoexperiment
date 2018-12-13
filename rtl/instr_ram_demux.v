@@ -49,6 +49,7 @@ module instr_ram_demux #(
   assign rdata_o = (is_boot_q == 1'b1) ? rdata_boot : rdata_ram;
   assign be_out = be_i;
   assign we_out = we_i;
+  assign wdata_out = wdata_i;
 
   // Delay the boot signal for one clock cycle to correctly select the rdata
   // from boot rom vs normal ram

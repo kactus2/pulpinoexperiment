@@ -217,9 +217,19 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ADDR</ipxact:name>
+								<ipxact:range>
+									<ipxact:left>uuid_f1d00aea_70d0_4e43_8500_aa0144367083-1</ipxact:left>
+									<ipxact:right>0</ipxact:right>
+								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>port1_addr_i</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>uuid_f1d00aea_70d0_4e43_8500_aa0144367083-1</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -682,7 +692,7 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter kactus2:usageCount="9" parameterId="uuid_f1d00aea_70d0_4e43_8500_aa0144367083" resolve="user">
+		<ipxact:parameter kactus2:usageCount="11" parameterId="uuid_f1d00aea_70d0_4e43_8500_aa0144367083" resolve="user">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>

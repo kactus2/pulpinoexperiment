@@ -12,7 +12,7 @@
 
 module spi_master_fsm #(
     parameter                              BUFFER_DEPTH     = 10,
-    parameter                              LOG_BUFFER_DEPTH = $clog2(BUFFER_DEPTH)
+    parameter                              LOG_BUFFER_DEPTH = $clog2(BUFFER_DEPTH)+1
 ) (
     // These ports are not in any interface
     input          [LOG_BUFFER_DEPTH:0]       cnt_rx,

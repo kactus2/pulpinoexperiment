@@ -7,12 +7,21 @@
 	<ipxact:componentInstances>
 		<ipxact:componentInstance>
 			<ipxact:instanceName>core2axi_i</ipxact:instanceName>
-			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="core2axi_i" version="1.0"/>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication" name="core2axi_i" version="1.0">
+				<ipxact:configurableElementValues>
+					<ipxact:configurableElementValue referenceId="uuid_9479c4c9_f8ac_46fd_afbf_690f654c25e4">uuid_b2e4dd29_716e_4f2b_99f2_68afaff43737</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_67a38751_48ab_4c75_86f9_663f6aa3fd92">uuid_d0f294f2_a852_453c_a129_e7b92b0466c7</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_f5c707d5_e770_4e9e_a861_b327f4fe6b2f">uuid_8b13766e_6888_4898_99f1_31d9a09aaf36</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_457f279f_342c_4a82_bd9f_5da9ce520cf3">uuid_d857ff94_82a3_4394_a784_1619c27a5021</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_b21e765e_2d26_404e_98a4_2639452007e9">uuid_d0f294f2_a852_453c_a129_e7b92b0466c7</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_6988b69c_8ed4_4117_91b2_712a3478a30b">uuid_7801c37c_53a4_462c_8a3e_77b556cce0b1</ipxact:configurableElementValue>
+				</ipxact:configurableElementValues>
+			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{3eae87e9-89ec-43b9-8381-def5a1fab35d}</kactus2:uuid>
 				<kactus2:portPositions>
-					<kactus2:portPosition busRef="axi" x="-110" y="110"/>
-					<kactus2:portPosition busRef="apb" x="110" y="80"/>
+					<kactus2:portPosition busRef="apb" x="-110" y="110"/>
+					<kactus2:portPosition busRef="axi" x="110" y="110"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
 					<kactus2:adHocVisible portName="clk_i" x="-110" y="30"/>
@@ -50,49 +59,69 @@
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 	</ipxact:adHocConnections>
+	<ipxact:parameters>
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_7801c37c_53a4_462c_8a3e_77b556cce0b1" resolve="user">
+			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
+			<ipxact:value>32</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_d0f294f2_a852_453c_a129_e7b92b0466c7" resolve="user">
+			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
+			<ipxact:value>32</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_d857ff94_82a3_4394_a784_1619c27a5021" resolve="user">
+			<ipxact:name>AXI_ID_WIDTH</ipxact:name>
+			<ipxact:value>6</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_8b13766e_6888_4898_99f1_31d9a09aaf36" resolve="user">
+			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
+			<ipxact:value>6</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_b2e4dd29_716e_4f2b_99f2_68afaff43737" resolve="user">
+			<ipxact:name>REGISTERED_GRANT</ipxact:name>
+			<ipxact:value>&quot;FALSE&quot;</ipxact:value>
+		</ipxact:parameter>
+	</ipxact:parameters>
 	<ipxact:vendorExtensions>
+		<kactus2:version>3,6,50,0</kactus2:version>
 		<kactus2:kts_attributes>
 			<kactus2:kts_implementation>HW</kactus2:kts_implementation>
 		</kactus2:kts_attributes>
-		<kactus2:version>3,6,50,0</kactus2:version>
 		<kactus2:columnLayout>
 			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="440"/>
 			<kactus2:column name="Components" contentType="2" allowedItems="2" minWidth="319" width="319" x="120"/>
 			<kactus2:column name="IO" contentType="0" allowedItems="1" minWidth="119" width="119" x="0"/>
 		</kactus2:columnLayout>
-		<kactus2:interfaceGraphics>
-			<kactus2:name>master</kactus2:name>
-			<kactus2:position x="60" y="170"/>
-			<kactus2:direction x="1" y="0"/>
-		</kactus2:interfaceGraphics>
-		<kactus2:interfaceGraphics>
-			<kactus2:name>apb</kactus2:name>
-			<kactus2:position x="500" y="100"/>
-			<kactus2:direction x="-1" y="0"/>
-		</kactus2:interfaceGraphics>
+		<kactus2:routes>
+			<kactus2:route kactus2:connRef="core2axi_i_clk_i_to_clk_i" kactus2:offPage="false">
+				<kactus2:position x="60" y="90"/>
+				<kactus2:position x="170" y="90"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="core2axi_i_rst_ni_to_rst_ni" kactus2:offPage="false">
+				<kactus2:position x="60" y="130"/>
+				<kactus2:position x="170" y="130"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="core2axi_i_axi_to_master" kactus2:offPage="false">
+				<kactus2:position x="390" y="170"/>
+				<kactus2:position x="500" y="170"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="core2axi_i_apb_to_apb" kactus2:offPage="false">
+				<kactus2:position x="170" y="170"/>
+				<kactus2:position x="60" y="170"/>
+			</kactus2:route>
+		</kactus2:routes>
 		<kactus2:adHocVisibilities>
 			<kactus2:adHocVisible portName="clk_i" x="60" y="90"/>
 			<kactus2:adHocVisible portName="rst_ni" x="60" y="130"/>
 		</kactus2:adHocVisibilities>
-		<kactus2:routes>
-			<kactus2:route kactus2:connRef="core2axi_i_clk_i_to_clk_i" kactus2:offPage="false">
-				<kactus2:position x="170" y="90"/>
-				<kactus2:position x="60" y="90"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="core2axi_i_rst_ni_to_rst_ni" kactus2:offPage="false">
-				<kactus2:position x="170" y="130"/>
-				<kactus2:position x="60" y="130"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="core2axi_i_axi_to_master" kactus2:offPage="false">
-				<kactus2:position x="170" y="170"/>
-				<kactus2:position x="60" y="170"/>
-			</kactus2:route>
-			<kactus2:route kactus2:connRef="core2axi_i_apb_to_apb" kactus2:offPage="false">
-				<kactus2:position x="390" y="140"/>
-				<kactus2:position x="480" y="140"/>
-				<kactus2:position x="480" y="100"/>
-				<kactus2:position x="500" y="100"/>
-			</kactus2:route>
-		</kactus2:routes>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>master</kactus2:name>
+			<kactus2:position x="500" y="170"/>
+			<kactus2:direction x="-1" y="0"/>
+		</kactus2:interfaceGraphics>
+		<kactus2:interfaceGraphics>
+			<kactus2:name>apb</kactus2:name>
+			<kactus2:position x="60" y="170"/>
+			<kactus2:direction x="1" y="0"/>
+		</kactus2:interfaceGraphics>
 	</ipxact:vendorExtensions>
 </ipxact:design>

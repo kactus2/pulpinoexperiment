@@ -1397,27 +1397,27 @@
 			<ipxact:name>DECERR</ipxact:name>
 			<ipxact:value>2'b11</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="8" parameterId="uuid_6988b69c_8ed4_4117_91b2_712a3478a30b">
+		<ipxact:parameter kactus2:usageCount="8" parameterId="uuid_6988b69c_8ed4_4117_91b2_712a3478a30b" resolve="user">
 			<ipxact:name>AXI4_ADDRESS_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_b21e765e_2d26_404e_98a4_2639452007e9">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_b21e765e_2d26_404e_98a4_2639452007e9" resolve="user">
 			<ipxact:name>AXI4_RDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="6" parameterId="uuid_67a38751_48ab_4c75_86f9_663f6aa3fd92">
+		<ipxact:parameter kactus2:usageCount="6" parameterId="uuid_67a38751_48ab_4c75_86f9_663f6aa3fd92" resolve="user">
 			<ipxact:name>AXI4_WDATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="10" parameterId="uuid_457f279f_342c_4a82_bd9f_5da9ce520cf3">
+		<ipxact:parameter kactus2:usageCount="10" parameterId="uuid_457f279f_342c_4a82_bd9f_5da9ce520cf3" resolve="user">
 			<ipxact:name>AXI4_ID_WIDTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="12" parameterId="uuid_f5c707d5_e770_4e9e_a861_b327f4fe6b2f">
+		<ipxact:parameter kactus2:usageCount="12" parameterId="uuid_f5c707d5_e770_4e9e_a861_b327f4fe6b2f" resolve="user">
 			<ipxact:name>AXI4_USER_WIDTH</ipxact:name>
 			<ipxact:value>10</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="64" parameterId="uuid_9479c4c9_f8ac_46fd_afbf_690f654c25e4">
+		<ipxact:parameter kactus2:usageCount="64" parameterId="uuid_9479c4c9_f8ac_46fd_afbf_690f654c25e4" resolve="user">
 			<ipxact:name>REGISTERED_GRANT</ipxact:name>
 			<ipxact:description>&quot;TRUE&quot;|&quot;FALSE&quot;</ipxact:description>
 			<ipxact:value>&quot;FALSE&quot;</ipxact:value>

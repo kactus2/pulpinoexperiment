@@ -60,18 +60,12 @@
 							<ipxact:logicalPort>
 								<ipxact:name>WDATA</ipxact:name>
 								<ipxact:range>
-									<ipxact:left>11</ipxact:left>
-									<ipxact:right>0</ipxact:right>
+									<ipxact:left></ipxact:left>
+									<ipxact:right></ipxact:right>
 								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>wdata_i</ipxact:name>
-								<ipxact:partSelect>
-									<ipxact:range>
-										<ipxact:left>11</ipxact:left>
-										<ipxact:right>0</ipxact:right>
-									</ipxact:range>
-								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -243,6 +237,30 @@
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>enable_boot</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>WDATA</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>wdata_out</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>WE</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>we_out</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>BE</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>be_out</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
@@ -542,7 +560,7 @@
 	<ipxact:parameters>
 		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_ab049157_221e_4953_bc43_03690ecbf0e6" resolve="user">
 			<ipxact:name>ADDR_WIDTH</ipxact:name>
-			<ipxact:value>$clog2(uuid_b6572b7f_311f_429f_8eda_4a8934f6167f)</ipxact:value>
+			<ipxact:value>$clog2(uuid_b6572b7f_311f_429f_8eda_4a8934f6167f)+1</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_b6572b7f_311f_429f_8eda_4a8934f6167f" resolve="user">
 			<ipxact:name>RAM_SIZE</ipxact:name>

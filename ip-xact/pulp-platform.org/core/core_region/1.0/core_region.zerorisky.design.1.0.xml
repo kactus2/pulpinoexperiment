@@ -55,7 +55,6 @@
 			<ipxact:instanceName>instr_ram_mux_i</ipxact:instanceName>
 			<ipxact:componentRef vendor="pulp-platform.org" library="core" name="ram_mux" version="1.0">
 				<ipxact:configurableElementValues>
-					<ipxact:configurableElementValue referenceId="uuid_a50f440a_ad93_47f3_b410_769647fe38ae">uuid_41560677_bcd5_48d4_9855_3e8e793739a3</ipxact:configurableElementValue>
 					<ipxact:configurableElementValue referenceId="uuid_f1d00aea_70d0_4e43_8500_aa0144367083">uuid_1b355aca_90f3_4a71_87a5_b4fc9342e9bd</ipxact:configurableElementValue>
 					<ipxact:configurableElementValue referenceId="uuid_a6901eb0_59ba_4b51_93e3_5d16ba3d8130">uuid_3c45f36d_b30d_4c17_8538_10338b436095</ipxact:configurableElementValue>
 					<ipxact:configurableElementValue referenceId="uuid_cb6fd897_cbf2_41d9_ad17_2bae6e305327">uuid_3c45f36d_b30d_4c17_8538_10338b436095</ipxact:configurableElementValue>
@@ -131,7 +130,6 @@
 					<ipxact:configurableElementValue referenceId="uuid_cb6fd897_cbf2_41d9_ad17_2bae6e305327">uuid_3c45f36d_b30d_4c17_8538_10338b436095</ipxact:configurableElementValue>
 					<ipxact:configurableElementValue referenceId="uuid_a6901eb0_59ba_4b51_93e3_5d16ba3d8130">uuid_3c45f36d_b30d_4c17_8538_10338b436095</ipxact:configurableElementValue>
 					<ipxact:configurableElementValue referenceId="uuid_f1d00aea_70d0_4e43_8500_aa0144367083">uuid_d8c94f29_36be_40c1_919c_9a91827f4fcc</ipxact:configurableElementValue>
-					<ipxact:configurableElementValue referenceId="uuid_a50f440a_ad93_47f3_b410_769647fe38ae">uuid_944cb23c_7645_432c_8824_d08fed754933</ipxact:configurableElementValue>
 				</ipxact:configurableElementValues>
 			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
@@ -669,12 +667,12 @@
 			<ipxact:name>DATA_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>$clog2(uuid_944cb23c_7645_432c_8824_d08fed754933)</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_944cb23c_7645_432c_8824_d08fed754933">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_944cb23c_7645_432c_8824_d08fed754933">
 			<ipxact:name>DATA_RAM_SIZE</ipxact:name>
 			<ipxact:description>in bytes</ipxact:description>
 			<ipxact:value>32768</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_41560677_bcd5_48d4_9855_3e8e793739a3">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_41560677_bcd5_48d4_9855_3e8e793739a3">
 			<ipxact:name>INSTR_RAM_SIZE</ipxact:name>
 			<ipxact:description>in bytes</ipxact:description>
 			<ipxact:value>32768</ipxact:value>
@@ -870,9 +868,20 @@
 				<kactus2:position x="90" y="110"/>
 				<kactus2:position x="460" y="420"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="RISCV_CORE_core_busy_o_to_core_busy_o" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="RISCV_CORE_boot_addr_i_to_boot_addr_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="RISCV_CORE_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="RISCV_CORE_core_busy_o_to_core_busy_o" kactus2:offPage="false">
+				<kactus2:position x="60" y="360"/>
+				<kactus2:position x="170" y="360"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="RISCV_CORE_boot_addr_i_to_boot_addr_i" kactus2:offPage="false">
+				<kactus2:position x="60" y="300"/>
+				<kactus2:position x="170" y="300"/>
+			</kactus2:route>
+			<kactus2:route kactus2:connRef="RISCV_CORE_fetch_enable_i_to_fetch_enable_i" kactus2:offPage="false">
+				<kactus2:position x="60" y="240"/>
+				<kactus2:position x="150" y="240"/>
+				<kactus2:position x="150" y="220"/>
+				<kactus2:position x="170" y="220"/>
+			</kactus2:route>
 			<kactus2:route kactus2:connRef="RISCV_CORE_clk_i_to_clk" kactus2:offPage="true">
 				<kactus2:position x="90" y="70"/>
 				<kactus2:position x="140" y="90"/>
@@ -901,7 +910,10 @@
 				<kactus2:position x="90" y="110"/>
 				<kactus2:position x="1100" y="420"/>
 			</kactus2:route>
-			<kactus2:route kactus2:connRef="RISCV_CORE_clock_en_i_to_clock_gating_i" kactus2:offPage="false"/>
+			<kactus2:route kactus2:connRef="RISCV_CORE_clock_en_i_to_clock_gating_i" kactus2:offPage="false">
+				<kactus2:position x="60" y="200"/>
+				<kactus2:position x="170" y="200"/>
+			</kactus2:route>
 			<kactus2:route kactus2:connRef="RISCV_CORE_irq_i_to_irq_i" kactus2:offPage="false">
 				<kactus2:position x="60" y="410"/>
 				<kactus2:position x="170" y="410"/>

@@ -255,7 +255,7 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>apb_pulpino</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter kactus2:usageCount="1" parameterId="uuid_dc605956_732e_4c70_b33f_dbb79f96d76e" usageType="nontyped">
+					<ipxact:moduleParameter parameterId="uuid_dc605956_732e_4c70_b33f_dbb79f96d76e" usageType="nontyped">
 						<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 						<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 						<ipxact:value>uuid_7b1543a9_bc63_4ae6_97e3_f2c73cd1efee</ipxact:value>
@@ -520,102 +520,102 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_b9d4d3ec_6da1_4730_85a3_a79140c1a2e9">
+		<ipxact:parameter imported="true" parameterId="uuid_b9d4d3ec_6da1_4730_85a3_a79140c1a2e9">
 			<ipxact:name>REG_PAD_MUX</ipxact:name>
 			<ipxact:value>     4'b0000</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_65e3b59c_5273_46d6_a295_0bb4f20c3d4f">
+		<ipxact:parameter imported="true" parameterId="uuid_65e3b59c_5273_46d6_a295_0bb4f20c3d4f">
 			<ipxact:name>REG_CLK_GATE</ipxact:name>
 			<ipxact:value>    4'b0001</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b46e0496_e80d_405d_9f4b_3487960d326a">
+		<ipxact:parameter imported="true" parameterId="uuid_b46e0496_e80d_405d_9f4b_3487960d326a">
 			<ipxact:name>REG_BOOT_ADR</ipxact:name>
 			<ipxact:value>    4'b0010</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_a52351a2_d2f5_4662_9771_cc92d615f7f5">
+		<ipxact:parameter imported="true" parameterId="uuid_a52351a2_d2f5_4662_9771_cc92d615f7f5">
 			<ipxact:name>REG_INFO</ipxact:name>
 			<ipxact:value>        4'b0100</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5734ef58_5db4_4fb2_bc11_c53aeb1b4467">
+		<ipxact:parameter imported="true" parameterId="uuid_5734ef58_5db4_4fb2_bc11_c53aeb1b4467">
 			<ipxact:name>REG_STATUS</ipxact:name>
 			<ipxact:value>      4'b0101</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_3a09dbd7_3347_4026_a4fc_0cbce5ab1f81">
+		<ipxact:parameter imported="true" parameterId="uuid_3a09dbd7_3347_4026_a4fc_0cbce5ab1f81">
 			<ipxact:name>REG_PADCFG0</ipxact:name>
 			<ipxact:description>BASEADDR+0x20</ipxact:description>
 			<ipxact:value>    4'b1000</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_debae9b5_63b0_4823_a089_50dadc76f408">
+		<ipxact:parameter imported="true" parameterId="uuid_debae9b5_63b0_4823_a089_50dadc76f408">
 			<ipxact:name>REG_PADCFG1</ipxact:name>
 			<ipxact:description>BASEADDR+0x24</ipxact:description>
 			<ipxact:value>    4'b1001</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_731c010d_2bf2_43a3_b363_a04247ad3d78">
+		<ipxact:parameter imported="true" parameterId="uuid_731c010d_2bf2_43a3_b363_a04247ad3d78">
 			<ipxact:name>REG_PADCFG2</ipxact:name>
 			<ipxact:description>BASEADDR+0x28</ipxact:description>
 			<ipxact:value>    4'b1010</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5943a1af_17ec_4d15_a274_ad48c20d0936">
+		<ipxact:parameter imported="true" parameterId="uuid_5943a1af_17ec_4d15_a274_ad48c20d0936">
 			<ipxact:name>REG_PADCFG3</ipxact:name>
 			<ipxact:description>BASEADDR+0x2C</ipxact:description>
 			<ipxact:value>    4'b1011</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_60a70bdc_1597_4942_87db_3f9baae80174">
+		<ipxact:parameter imported="true" parameterId="uuid_60a70bdc_1597_4942_87db_3f9baae80174">
 			<ipxact:name>REG_PADCFG4</ipxact:name>
 			<ipxact:description>BASEADDR+0x30</ipxact:description>
 			<ipxact:value>    4'b1100</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_707a6a62_585b_409a_88ca_cec4f9e7e337">
+		<ipxact:parameter imported="true" parameterId="uuid_707a6a62_585b_409a_88ca_cec4f9e7e337">
 			<ipxact:name>REG_PADCFG5</ipxact:name>
 			<ipxact:description>BASEADDR+0x34</ipxact:description>
 			<ipxact:value>    4'b1101</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_9fe2abd8_9ef4_4fb2_bb9f_1b179661a8a1">
+		<ipxact:parameter imported="true" parameterId="uuid_9fe2abd8_9ef4_4fb2_bb9f_1b179661a8a1">
 			<ipxact:name>REG_PADCFG6</ipxact:name>
 			<ipxact:description>BASEADDR+0x38</ipxact:description>
 			<ipxact:value>    4'b1110</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_1c76b619_6235_4fe0_90cb_1089118a7672">
+		<ipxact:parameter imported="true" parameterId="uuid_1c76b619_6235_4fe0_90cb_1089118a7672">
 			<ipxact:name>REG_PADCFG7</ipxact:name>
 			<ipxact:description>BASEADDR+0x3C</ipxact:description>
 			<ipxact:value>    4'b1111</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_7919bb99_c891_4d82_a260_db585db639a2">
+		<ipxact:parameter imported="true" parameterId="uuid_7919bb99_c891_4d82_a260_db585db639a2">
 			<ipxact:name>VERSION</ipxact:name>
 			<ipxact:description>Version number 1.0</ipxact:description>
 			<ipxact:value>         5'b00010</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_5cae2c3b_ae82_41ac_8c4b_d7776497a1fb">
+		<ipxact:parameter imported="true" parameterId="uuid_5cae2c3b_ae82_41ac_8c4b_d7776497a1fb">
 			<ipxact:name>DATA_RAM</ipxact:name>
 			<ipxact:description>size of data ram in multiples of 8 kBye</ipxact:description>
 			<ipxact:value>        8'b00000100</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_1bcaa6ab_d930_4044_8157_c9f9169ab536">
+		<ipxact:parameter imported="true" parameterId="uuid_1bcaa6ab_d930_4044_8157_c9f9169ab536">
 			<ipxact:name>INSTR_RAM</ipxact:name>
 			<ipxact:description>size of instr ram in multiples of 8 kBye</ipxact:description>
 			<ipxact:value>       8'b00000100</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_b21c9f60_f32e_425b_adcd_b6447e922dc9">
+		<ipxact:parameter imported="true" parameterId="uuid_b21c9f60_f32e_425b_adcd_b6447e922dc9">
 			<ipxact:name>ROM</ipxact:name>
 			<ipxact:description>size of ROM in kByte - floor to nearest</ipxact:description>
 			<ipxact:value>             5'b00000</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_396d450e_d168_4d67_b0ff_5fb27f56ad03">
+		<ipxact:parameter imported="true" parameterId="uuid_396d450e_d168_4d67_b0ff_5fb27f56ad03">
 			<ipxact:name>ICACHE</ipxact:name>
 			<ipxact:description>has instruction cache</ipxact:description>
 			<ipxact:value>          1'b0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_9fd86138_7990_4c29_a34d_1c6c195d1581">
+		<ipxact:parameter imported="true" parameterId="uuid_9fd86138_7990_4c29_a34d_1c6c195d1581">
 			<ipxact:name>DCACHE</ipxact:name>
 			<ipxact:description>has data cache</ipxact:description>
 			<ipxact:value>          1'b0</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_7b1543a9_bc63_4ae6_97e3_f2c73cd1efee">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_7b1543a9_bc63_4ae6_97e3_f2c73cd1efee">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:description>APB slaves are 4KB by default</ipxact:description>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_d50bccc8_bf2c_4236_9635_84ca621d719b" resolve="user">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_d50bccc8_bf2c_4236_9635_84ca621d719b" resolve="user">
 			<ipxact:name>BOOT_ADDR</ipxact:name>
 			<ipxact:value>32'h8000</ipxact:value>
 		</ipxact:parameter>

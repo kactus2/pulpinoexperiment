@@ -1307,10 +1307,6 @@
 				<ipxact:name>flat_verilog</ipxact:name>
 				<ipxact:componentInstantiationRef>verilog_instantiation</ipxact:componentInstantiationRef>
 			</ipxact:view>
-			<ipxact:view>
-				<ipxact:name>hierarchical</ipxact:name>
-				<ipxact:designConfigurationInstantiationRef>_design_configuration</ipxact:designConfigurationInstantiationRef>
-			</ipxact:view>
 		</ipxact:views>
 		<ipxact:instantiations>
 			<ipxact:componentInstantiation>
@@ -1333,10 +1329,6 @@
 					<ipxact:localName>apb_node</ipxact:localName>
 				</ipxact:fileSetRef>
 			</ipxact:componentInstantiation>
-			<ipxact:designConfigurationInstantiation>
-				<ipxact:name>_design_configuration</ipxact:name>
-				<ipxact:designConfigurationRef vendor="pulp-platform.org" library="communication.bus" name="periph_bus_wrap.designcfg" version="1.0"/>
-			</ipxact:designConfigurationInstantiation>
 		</ipxact:instantiations>
 		<ipxact:ports>
 			<ipxact:port>
@@ -1361,6 +1353,12 @@
 				<ipxact:name>apb_slave_paddr</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_56537cdb_ef97_44c9_94cc_1e64e2838388-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -1385,12 +1383,24 @@
 				<ipxact:name>apb_slave_prdata</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>out</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_4a950485_645a_4041_9bec_88990f8568ff-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
 				<ipxact:name>apb_slave_pwdata</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>uuid_4a950485_645a_4041_9bec_88990f8568ff-1</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -2401,24 +2411,16 @@
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
 			<ipxact:file>
-				<ipxact:name>../../../../../pulpino/rtl/periph_bus_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:isStructural>true</ipxact:isStructural>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>888013caf776d590e5f1876c72b6968f</kactus2:hash>
-				</ipxact:vendorExtensions>
+				<ipxact:name>../../../../../rtl/periph_bus_wrap.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../rtl/apb_node_wrap.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
 			</ipxact:file>
 		</ipxact:fileSet>
 		<ipxact:fileSet>
 			<ipxact:name>apb_node</ipxact:name>
-			<ipxact:file>
-				<ipxact:name>../../../../../pulpino/ips/apb/apb_node/apb_node_wrap.sv</ipxact:name>
-				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
-				<ipxact:isStructural>true</ipxact:isStructural>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/apb/apb_node/apb_node.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
@@ -2436,11 +2438,11 @@
 		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_56537cdb_ef97_44c9_94cc_1e64e2838388" resolve="user">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_56537cdb_ef97_44c9_94cc_1e64e2838388" resolve="user">
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_4a950485_645a_4041_9bec_88990f8568ff" resolve="user">
+		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_4a950485_645a_4041_9bec_88990f8568ff" resolve="user">
 			<ipxact:name>APB_DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
