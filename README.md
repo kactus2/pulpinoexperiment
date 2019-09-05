@@ -1,7 +1,7 @@
 # pulpinoexperiment
-An experimental repository containing IP-XACT packaging of PULPino RISC-V core by pulp-project.org: https://github.com/pulp-platform/pulpino
+An experimental repository containing IP-XACT packaging of PULPino RISC-V microcontroller by pulp-project.org: https://github.com/pulp-platform/pulpino
 
-Based on PULPino release in August 2017
+Based on PULPino release in August 2017.
 
 ## Setup
 
@@ -14,31 +14,41 @@ Update all pulpino IPs, see README.md in pulpino for full instructions:
 
     cd pulpino
     ./update-ips.py
+    
+## Directories
 
-## Notes
+- ip-xact: IP-XACT description files
+- pulpino: Submodule directory for original PULPino implementation
+- rtl: RTL implementation files for glue logic and wrappers
 
-Problems faced in the design in IP-XACT point of view:
+## Notes on packaging
+
+The following lists problems faced in the design in IP-XACT point of view:
 - top.sv, peripherals.sv:
-	-- gpio_padcfg is 2-dimensional([6][32]) - Can't be used in bus definition
-	== Left as ad-hoc port
-- axi_node_intf_wrap:
-	-- a vector of buses
-	-- declared explicitly
-	-- requires a new wrapper
-	== Defined staticly 3 different bus interfaces, removed extra wrapper
-- Riscv-core:
-	-- N_EXT_PERF_COUNTERS = 0 => signal ext_perf_counters_i width is 0	
-	-- Set signal width to 1, not connected
-- Zero-riscy-core: zeroriscy_cs_registers
-	-- N_EXT_CNT = 0 => signal ext_counters_i width is 0
-	-- Set signal width to 1, not connected
+	- gpio_padcfg is 2-dimensional([6][32]) - Can't be used in bus definition
+	- Left as ad-hoc port
+- axi_node_intf_wrap.sv:
+	- a vector of buses declared - Cant' be expressed in bus interfaces
+	- Within the project the number of interfaces is always a constant
+	- Created a new wrapper with bare ports and a set number of interfaces
+- riscv-core.sv:
+	- Parameter N_EXT_PERF_COUNTERS = 0 => signal ext_perf_counters_i boundaries are [-1:0] - IP-XACT port boundaries must be positive
+	- Set default value to 1 which sets signal width to 1, not connected
+- zero-riscy-core: zeroriscy_cs_registers
+	- Parameter N_EXT_CNT = 0 => signal ext_counters_i boundaries are [-1:0] 
+	- Set default value to 1 which sets signal width to 1, not connected
 - ifdefs
-	-- To be replaced with design configurations
-	-- Omitting for now
-- generate loops replaced with static instances
-- hierarchical components with additional logic, usually muxes
-	-- Split stray logic into new components located in directory rtl
+	- To be replaced with design configurations and isPresent attribute
+- generate loops - IP-XACT cannot express n instances
+	- Replaced with static number of instances
+- hierarchical modules with additional logic, usually muxes
+	-- Split stray(glue) logic into new components in directory rtl
 
 New RTL components split from stray logic in hierarchical files:
-- axi_mem_if_DP_mem_mux (check)
-- axi_mem_if_SP_mem_mux (check)
+- core_region_demux
+- csr_logic
+- csr_mux
+- mux_mem
+- spi_master_fsm
+- uart_registers
+- zero_riscy_registers
