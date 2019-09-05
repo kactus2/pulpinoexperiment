@@ -10,6 +10,8 @@
 // whose XML file is /home/epe/pulpino/ip-xact/pulp-platform.org/core.logic/csr_mux/1.0/csr_mux.1.0.xml
 //-----------------------------------------------------------------------------
 
+`include "zeroriscy_config.sv"
+
 import zeroriscy_defines::*;
 
 module csr_mux(

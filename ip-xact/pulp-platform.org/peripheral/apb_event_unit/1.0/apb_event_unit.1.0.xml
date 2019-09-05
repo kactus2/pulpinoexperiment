@@ -584,6 +584,13 @@
 		<ipxact:fileSet>
 			<ipxact:name>apb_event_unit</ipxact:name>
 			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_event_unit/README.md</ipxact:name>
+				<ipxact:fileType user="textFile">user</ipxact:fileType>
+				<ipxact:vendorExtensions>
+					<kactus2:hash>01fef73296666982bd6039cdf1d5e94f</kactus2:hash>
+				</ipxact:vendorExtensions>
+			</ipxact:file>
+			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/apb/apb_event_unit/apb_event_unit.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
@@ -598,10 +605,10 @@
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
-				<ipxact:name>../../../../../pulpino/ips/apb/apb_event_unit/README.md</ipxact:name>
-				<ipxact:fileType user="textFile">user</ipxact:fileType>
+				<ipxact:name>../../../../../pulpino/ips/apb/apb_event_unit/src_files.yml</ipxact:name>
+				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>01fef73296666982bd6039cdf1d5e94f</kactus2:hash>
+					<kactus2:hash>8173dbe9600f1e8fb98d2641fe50b794</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
@@ -609,13 +616,6 @@
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>f7fa57d71170d38f60e48593e90d54f5</kactus2:hash>
-				</ipxact:vendorExtensions>
-			</ipxact:file>
-			<ipxact:file>
-				<ipxact:name>../../../../../pulpino/ips/apb/apb_event_unit/src_files.yml</ipxact:name>
-				<ipxact:fileType>unknown</ipxact:fileType>
-				<ipxact:vendorExtensions>
-					<kactus2:hash>8173dbe9600f1e8fb98d2641fe50b794</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>

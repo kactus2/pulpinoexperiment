@@ -21,7 +21,7 @@ module apb_node_wrap_0 #(
     input  logic         [31:0]         apb_master_0_prdata,
     input  logic                        apb_master_0_pready,
     input  logic                        apb_master_0_pslverr,
-    output logic         [11:0]         apb_master_0_paddr,
+    output logic         [31:0]         apb_master_0_paddr,
     output logic                        apb_master_0_penable,
     output logic                        apb_master_0_psel,
     output logic         [31:0]         apb_master_0_pwdata,
@@ -31,7 +31,7 @@ module apb_node_wrap_0 #(
     input  logic         [31:0]         apb_master_1_prdata,
     input  logic                        apb_master_1_pready,
     input  logic                        apb_master_1_pslverr,
-    output logic         [11:0]         apb_master_1_paddr,
+    output logic         [31:0]         apb_master_1_paddr,
     output logic                        apb_master_1_penable,
     output logic                        apb_master_1_psel,
     output logic         [31:0]         apb_master_1_pwdata,
@@ -41,7 +41,7 @@ module apb_node_wrap_0 #(
     input  logic         [31:0]         apb_master_2_prdata,
     input  logic                        apb_master_2_pready,
     input  logic                        apb_master_2_pslverr,
-    output logic         [11:0]         apb_master_2_paddr,
+    output logic         [31:0]         apb_master_2_paddr,
     output logic                        apb_master_2_penable,
     output logic                        apb_master_2_psel,
     output logic         [31:0]         apb_master_2_pwdata,
@@ -51,7 +51,7 @@ module apb_node_wrap_0 #(
     input  logic         [31:0]         apb_master_3_prdata,
     input  logic                        apb_master_3_pready,
     input  logic                        apb_master_3_pslverr,
-    output logic         [11:0]         apb_master_3_paddr,
+    output logic         [31:0]         apb_master_3_paddr,
     output logic                        apb_master_3_penable,
     output logic                        apb_master_3_psel,
     output logic         [31:0]         apb_master_3_pwdata,
@@ -61,7 +61,7 @@ module apb_node_wrap_0 #(
     input  logic         [31:0]         apb_master_4_prdata,
     input  logic                        apb_master_4_pready,
     input  logic                        apb_master_4_pslverr,
-    output logic         [11:0]         apb_master_4_paddr,
+    output logic         [31:0]         apb_master_4_paddr,
     output logic                        apb_master_4_penable,
     output logic                        apb_master_4_psel,
     output logic         [31:0]         apb_master_4_pwdata,
@@ -71,7 +71,7 @@ module apb_node_wrap_0 #(
     input  logic         [31:0]         apb_master_5_prdata,
     input  logic                        apb_master_5_pready,
     input  logic                        apb_master_5_pslverr,
-    output logic         [11:0]         apb_master_5_paddr,
+    output logic         [31:0]         apb_master_5_paddr,
     output logic                        apb_master_5_penable,
     output logic                        apb_master_5_psel,
     output logic         [31:0]         apb_master_5_pwdata,
@@ -81,7 +81,7 @@ module apb_node_wrap_0 #(
     input  logic         [31:0]         apb_master_6_prdata,
     input  logic                        apb_master_6_pready,
     input  logic                        apb_master_6_pslverr,
-    output logic         [11:0]         apb_master_6_paddr,
+    output logic         [31:0]         apb_master_6_paddr,
     output logic                        apb_master_6_penable,
     output logic                        apb_master_6_psel,
     output logic         [31:0]         apb_master_6_pwdata,
@@ -91,7 +91,7 @@ module apb_node_wrap_0 #(
     input  logic         [31:0]         apb_master_7_prdata,
     input  logic                        apb_master_7_pready,
     input  logic                        apb_master_7_pslverr,
-    output logic         [11:0]         apb_master_7_paddr,
+    output logic         [31:0]         apb_master_7_paddr,
     output logic                        apb_master_7_penable,
     output logic                        apb_master_7_psel,
     output logic         [31:0]         apb_master_7_pwdata,
@@ -235,7 +235,7 @@ module apb_node_wrap_0 #(
   logic [NB_MASTER-1:0][APB_ADDR_WIDTH-1:0] s_end_addr;
 
     // Assignments for the ports of the encompassing component:
-    assign apb_master_0_paddr = apb_node_i_apb_master_0_to_apb_master_0_PADDR[11:0];
+    assign apb_master_0_paddr = apb_node_i_apb_master_0_to_apb_master_0_PADDR;
     assign apb_master_0_penable = apb_node_i_apb_master_0_to_apb_master_0_PENABLE;
     assign apb_node_i_apb_master_0_to_apb_master_0_PRDATA = apb_master_0_prdata;
     assign apb_node_i_apb_master_0_to_apb_master_0_PREADY = apb_master_0_pready;
@@ -243,7 +243,7 @@ module apb_node_wrap_0 #(
     assign apb_node_i_apb_master_0_to_apb_master_0_PSLVERR = apb_master_0_pslverr;
     assign apb_master_0_pwdata = apb_node_i_apb_master_0_to_apb_master_0_PWDATA;
     assign apb_master_0_pwrite = apb_node_i_apb_master_0_to_apb_master_0_PWRITE;
-    assign apb_master_1_paddr = apb_node_i_apb_master_1_to_apb_master_1_PADDR[11:0];
+    assign apb_master_1_paddr = apb_node_i_apb_master_1_to_apb_master_1_PADDR;
     assign apb_master_1_penable = apb_node_i_apb_master_1_to_apb_master_1_PENABLE;
     assign apb_node_i_apb_master_1_to_apb_master_1_PRDATA = apb_master_1_prdata;
     assign apb_node_i_apb_master_1_to_apb_master_1_PREADY = apb_master_1_pready;
@@ -251,7 +251,7 @@ module apb_node_wrap_0 #(
     assign apb_node_i_apb_master_1_to_apb_master_1_PSLVERR = apb_master_1_pslverr;
     assign apb_master_1_pwdata = apb_node_i_apb_master_1_to_apb_master_1_PWDATA;
     assign apb_master_1_pwrite = apb_node_i_apb_master_1_to_apb_master_1_PWRITE;
-    assign apb_master_2_paddr = apb_node_i_apb_master_2_to_apb_master_2_PADDR[11:0];
+    assign apb_master_2_paddr = apb_node_i_apb_master_2_to_apb_master_2_PADDR;
     assign apb_master_2_penable = apb_node_i_apb_master_2_to_apb_master_2_PENABLE;
     assign apb_node_i_apb_master_2_to_apb_master_2_PRDATA = apb_master_2_prdata;
     assign apb_node_i_apb_master_2_to_apb_master_2_PREADY = apb_master_2_pready;
@@ -259,7 +259,7 @@ module apb_node_wrap_0 #(
     assign apb_node_i_apb_master_2_to_apb_master_2_PSLVERR = apb_master_2_pslverr;
     assign apb_master_2_pwdata = apb_node_i_apb_master_2_to_apb_master_2_PWDATA;
     assign apb_master_2_pwrite = apb_node_i_apb_master_2_to_apb_master_2_PWRITE;
-    assign apb_master_3_paddr = apb_node_i_apb_master_3_to_apb_master_3_PADDR[11:0];
+    assign apb_master_3_paddr = apb_node_i_apb_master_3_to_apb_master_3_PADDR;
     assign apb_master_3_penable = apb_node_i_apb_master_3_to_apb_master_3_PENABLE;
     assign apb_node_i_apb_master_3_to_apb_master_3_PRDATA = apb_master_3_prdata;
     assign apb_node_i_apb_master_3_to_apb_master_3_PREADY = apb_master_3_pready;
@@ -267,7 +267,7 @@ module apb_node_wrap_0 #(
     assign apb_node_i_apb_master_3_to_apb_master_3_PSLVERR = apb_master_3_pslverr;
     assign apb_master_3_pwdata = apb_node_i_apb_master_3_to_apb_master_3_PWDATA;
     assign apb_master_3_pwrite = apb_node_i_apb_master_3_to_apb_master_3_PWRITE;
-    assign apb_master_4_paddr = apb_node_i_apb_master_4_to_apb_master_4_PADDR[11:0];
+    assign apb_master_4_paddr = apb_node_i_apb_master_4_to_apb_master_4_PADDR;
     assign apb_master_4_penable = apb_node_i_apb_master_4_to_apb_master_4_PENABLE;
     assign apb_node_i_apb_master_4_to_apb_master_4_PRDATA = apb_master_4_prdata;
     assign apb_node_i_apb_master_4_to_apb_master_4_PREADY = apb_master_4_pready;
@@ -275,7 +275,7 @@ module apb_node_wrap_0 #(
     assign apb_node_i_apb_master_4_to_apb_master_4_PSLVERR = apb_master_4_pslverr;
     assign apb_master_4_pwdata = apb_node_i_apb_master_4_to_apb_master_4_PWDATA;
     assign apb_master_4_pwrite = apb_node_i_apb_master_4_to_apb_master_4_PWRITE;
-    assign apb_master_5_paddr = apb_node_i_apb_master_5_to_apb_master_5_PADDR[11:0];
+    assign apb_master_5_paddr = apb_node_i_apb_master_5_to_apb_master_5_PADDR;
     assign apb_master_5_penable = apb_node_i_apb_master_5_to_apb_master_5_PENABLE;
     assign apb_node_i_apb_master_5_to_apb_master_5_PRDATA = apb_master_5_prdata;
     assign apb_node_i_apb_master_5_to_apb_master_5_PREADY = apb_master_5_pready;
@@ -283,7 +283,7 @@ module apb_node_wrap_0 #(
     assign apb_node_i_apb_master_5_to_apb_master_5_PSLVERR = apb_master_5_pslverr;
     assign apb_master_5_pwdata = apb_node_i_apb_master_5_to_apb_master_5_PWDATA;
     assign apb_master_5_pwrite = apb_node_i_apb_master_5_to_apb_master_5_PWRITE;
-    assign apb_master_6_paddr = apb_node_i_apb_master_6_to_apb_master_6_PADDR[11:0];
+    assign apb_master_6_paddr = apb_node_i_apb_master_6_to_apb_master_6_PADDR;
     assign apb_master_6_penable = apb_node_i_apb_master_6_to_apb_master_6_PENABLE;
     assign apb_node_i_apb_master_6_to_apb_master_6_PRDATA = apb_master_6_prdata;
     assign apb_node_i_apb_master_6_to_apb_master_6_PREADY = apb_master_6_pready;
@@ -291,7 +291,7 @@ module apb_node_wrap_0 #(
     assign apb_node_i_apb_master_6_to_apb_master_6_PSLVERR = apb_master_6_pslverr;
     assign apb_master_6_pwdata = apb_node_i_apb_master_6_to_apb_master_6_PWDATA;
     assign apb_master_6_pwrite = apb_node_i_apb_master_6_to_apb_master_6_PWRITE;
-    assign apb_master_7_paddr = apb_node_i_apb_master_7_to_apb_master_7_PADDR[11:0];
+    assign apb_master_7_paddr = apb_node_i_apb_master_7_to_apb_master_7_PADDR;
     assign apb_master_7_penable = apb_node_i_apb_master_7_to_apb_master_7_PENABLE;
     assign apb_node_i_apb_master_7_to_apb_master_7_PRDATA = apb_master_7_prdata;
     assign apb_node_i_apb_master_7_to_apb_master_7_PREADY = apb_master_7_pready;

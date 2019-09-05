@@ -47,7 +47,7 @@ module mux_mem #(
     logic RR_FLAG;
 
 	always_comb
-	begin : _MUX_MEM_
+	_MUX_MEM_ : begin
 		  if(valid_R & grant_R)
 		  begin
 		    CEN_o   = R_cen   ;
@@ -78,9 +78,13 @@ begin
   1'b0: //Priority on Write
   begin
     if(valid_W)
-      grant_W = 1'b1;
+      begin
+        grant_W = 1'b1;
+      end
     else
-      grant_R = 1'b1;
+      begin
+        grant_R = 1'b1;
+      end
   end
 
 

@@ -41,11 +41,10 @@
 					<kactus2:portPosition busRef="tx" x="-110" y="40"/>
 				</kactus2:portPositions>
 				<kactus2:adHocVisibilities>
-					<kactus2:adHocVisible portName="eot" x="110" y="230"/>
-					<kactus2:adHocVisible portName="spi_status" x="-110" y="300"/>
-					<kactus2:adHocVisible portName="spi_swrst" x="-110" y="130"/>
 					<kactus2:adHocVisible portName="clk" x="-110" y="70"/>
+					<kactus2:adHocVisible portName="eot" x="110" y="230"/>
 					<kactus2:adHocVisible portName="rstn" x="-110" y="90"/>
+					<kactus2:adHocVisible portName="spi_status" x="-110" y="300"/>
 				</kactus2:adHocVisibilities>
 				<kactus2:position x="920" y="60"/>
 			</ipxact:vendorExtensions>
@@ -189,13 +188,6 @@
 			<ipxact:portReferences>
 				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_swrst"/>
 				<ipxact:internalPortReference componentRef="u_rxfifo" portRef="clr_i"/>
-			</ipxact:portReferences>
-		</ipxact:adHocConnection>
-		<ipxact:adHocConnection>
-			<ipxact:name>u_axiregs_spi_swrst_to_u_spictrl_spi_swrst</ipxact:name>
-			<ipxact:portReferences>
-				<ipxact:internalPortReference componentRef="u_axiregs" portRef="spi_swrst"/>
-				<ipxact:internalPortReference componentRef="u_spictrl" portRef="spi_swrst"/>
 			</ipxact:portReferences>
 		</ipxact:adHocConnection>
 		<ipxact:adHocConnection>
@@ -431,7 +423,6 @@
 			</kactus2:route>
 			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_txfifo_clr_i" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_rxfifo_clr_i" kactus2:offPage="false"/>
-			<kactus2:route kactus2:connRef="u_axiregs_spi_swrst_to_u_spictrl_spi_swrst" kactus2:offPage="false"/>
 			<kactus2:route kactus2:connRef="u_axiregs_tx_to_u_txfifo_data_in" kactus2:offPage="false">
 				<kactus2:position x="390" y="150"/>
 				<kactus2:position x="490" y="150"/>

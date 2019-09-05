@@ -1294,7 +1294,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>31</ipxact:left>
+							<ipxact:left>5</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -1306,7 +1306,7 @@
 				</ipxact:wire>
 				<ipxact:arrays>
 					<ipxact:array>
-						<ipxact:left>5</ipxact:left>
+						<ipxact:left>31</ipxact:left>
 						<ipxact:right>0</ipxact:right>
 					</ipxact:array>
 				</ipxact:arrays>
@@ -1372,7 +1372,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>31</ipxact:left>
+							<ipxact:left>5</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -1384,7 +1384,7 @@
 				</ipxact:wire>
 				<ipxact:arrays>
 					<ipxact:array>
-						<ipxact:left>5</ipxact:left>
+						<ipxact:left>31</ipxact:left>
 						<ipxact:right>0</ipxact:right>
 					</ipxact:array>
 				</ipxact:arrays>
@@ -1411,12 +1411,98 @@
 	<ipxact:fileSets>
 		<ipxact:fileSet>
 			<ipxact:name>rtl</ipxact:name>
+			<ipxact:group>generatedFiles</ipxact:group>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/rtl/pulpino_top.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
 					<kactus2:hash>3eaf49fd831e1a9356ad7e4f8a2002eb</kactus2:hash>
 				</ipxact:vendorExtensions>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/pulpino_top.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/clk_rst_gen_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/core_region_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/peripherals_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/instr_ram_wrap_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi_mem_if_SP_wrap_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi_mem_if_SP_wrap_1.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/core2axi_wrap_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi_slice_wrap_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/zeroriscy_core_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/apb_spi_master_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi_spi_slave_wrap_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi2apb_wrap_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi_mem_if_SP_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi_mem_if_SP_1.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi_slice_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
+			</ipxact:file>
+			<ipxact:file>
+				<ipxact:name>../../../../../generation/axi_spi_slave_0.v</ipxact:name>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+				<ipxact:description>Generated at 12:04:35 on 02.05.2019 by Kactus2. </ipxact:description>
 			</ipxact:file>
 		</ipxact:fileSet>
 		<ipxact:fileSet>

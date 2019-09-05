@@ -30,7 +30,7 @@ module uart_registers #(
     input                               rst_n,
     input          [8:0]                fifo_rx_data,
     input                               fifo_rx_valid,
-    input                               tx_elements,
+    input          [$clog2(TX_FIFO_DEPTH):0]                     tx_elements,
     input                               tx_ready,
     input                               IIR_i,
     output                              cfg_bits_o,
@@ -59,7 +59,7 @@ module uart_registers #(
     logic             rx_fifo_clr_n;
     logic [2:0]       register_adr;
     logic [1:0]       trigger_level_n;
-    logic             [$clog2(TX_FIFO_DEPTH):0] tx_elements;
+    logic			  apb_rx_ready;
 
     // register write and update logic
     always_comb
@@ -178,9 +178,9 @@ module uart_registers #(
     end
 
     // synchronouse part
-    always_ff @(posedge CLK, negedge RSTN)
+    always_ff @(posedge clk, negedge rst_n)
     begin
-        if(~RSTN)
+        if(~rst_n)
         begin
 
             regs_q[IER]       <= 8'h0;

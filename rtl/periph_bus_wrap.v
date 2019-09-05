@@ -38,7 +38,7 @@ module periph_bus_wrap #(
     input  logic         [31:0]         PRDATA_1,
     input  logic                        PREADY_1,
     input  logic                        PSLVERR_1,
-    output logic         [11:0]         PADDR_1,
+    output logic         [31:0]         PADDR_1,
     output logic                        PENABLE_1,
     output logic                        PSEL_1,
     output logic         [31:0]         PWDATA_1,
@@ -48,7 +48,7 @@ module periph_bus_wrap #(
     input  logic         [31:0]         PRDATA_2,
     input  logic                        PREADY_2,
     input  logic                        PSLVERR_2,
-    output logic         [11:0]         PADDR_2,
+    output logic         [31:0]         PADDR_2,
     output logic                        PENABLE_2,
     output logic                        PSEL_2,
     output logic         [31:0]         PWDATA_2,
@@ -58,7 +58,7 @@ module periph_bus_wrap #(
     input  logic         [31:0]         PRDATA_3,
     input  logic                        PREADY_3,
     input  logic                        PSLVERR_3,
-    output logic         [11:0]         PADDR_3,
+    output logic         [31:0]         PADDR_3,
     output logic                        PENABLE_3,
     output logic                        PSEL_3,
     output logic         [31:0]         PWDATA_3,
@@ -68,7 +68,7 @@ module periph_bus_wrap #(
     input  logic         [31:0]         i2c_master_prdata,
     input  logic                        i2c_master_pready,
     input  logic                        i2c_master_pslverr,
-    output logic         [11:0]         i2c_master_paddr,
+    output logic         [31:0]         i2c_master_paddr,
     output logic                        i2c_master_penable,
     output logic                        i2c_master_psel,
     output logic         [31:0]         i2c_master_pwdata,
@@ -78,7 +78,7 @@ module periph_bus_wrap #(
     input  logic         [31:0]         PRDATA_5,
     input  logic                        PREADY_5,
     input  logic                        PSLVERR_5,
-    output logic         [11:0]         PADDR_5,
+    output logic         [31:0]         PADDR_5,
     output logic                        PENABLE_5,
     output logic                        PSEL_5,
     output logic         [31:0]         PWDATA_5,
@@ -88,7 +88,7 @@ module periph_bus_wrap #(
     input  logic         [31:0]         PRDATA_8,
     input  logic                        PREADY_8,
     input  logic                        PSLVERR_8,
-    output logic         [11:0]         PADDR_8,
+    output logic         [31:0]         PADDR_8,
     output logic                        PENABLE_8,
     output logic                        PSEL_8,
     output logic         [31:0]         PWDATA_8,
@@ -98,7 +98,7 @@ module periph_bus_wrap #(
     input  logic         [31:0]         PRDATA_6,
     input  logic                        PREADY_6,
     input  logic                        PSLVERR_6,
-    output logic         [11:0]         PADDR_6,
+    output logic         [31:0]         PADDR_6,
     output logic                        PENABLE_6,
     output logic                        PSEL_6,
     output logic         [31:0]         PWDATA_6,
@@ -108,7 +108,7 @@ module periph_bus_wrap #(
     input  logic         [31:0]         PRDATA_7,
     input  logic                        PREADY_7,
     input  logic                        PSLVERR_7,
-    output logic         [11:0]         PADDR_7,
+    output logic         [31:0]         PADDR_7,
     output logic                        PENABLE_7,
     output logic                        PSEL_7,
     output logic         [31:0]         PWDATA_7,
@@ -129,7 +129,7 @@ module periph_bus_wrap #(
     wire [31:0] apb_node_wrap_i_s_slave_to_apb_slave_PWDATA;
     wire       apb_node_wrap_i_s_slave_to_apb_slave_PWRITE;
     // apb_node_wrap_i_apb_master_0_to_uart_master wires:
-    wire [11:0] apb_node_wrap_i_apb_master_0_to_uart_master_PADDR;
+    wire [31:0] apb_node_wrap_i_apb_master_0_to_uart_master_PADDR;
     wire       apb_node_wrap_i_apb_master_0_to_uart_master_PENABLE;
     wire [31:0] apb_node_wrap_i_apb_master_0_to_uart_master_PRDATA;
     wire       apb_node_wrap_i_apb_master_0_to_uart_master_PREADY;
@@ -138,7 +138,7 @@ module periph_bus_wrap #(
     wire [31:0] apb_node_wrap_i_apb_master_0_to_uart_master_PWDATA;
     wire       apb_node_wrap_i_apb_master_0_to_uart_master_PWRITE;
     // apb_node_wrap_i_apb_master_1_to_gpio_master wires:
-    wire [11:0] apb_node_wrap_i_apb_master_1_to_gpio_master_PADDR;
+    wire [31:0] apb_node_wrap_i_apb_master_1_to_gpio_master_PADDR;
     wire       apb_node_wrap_i_apb_master_1_to_gpio_master_PENABLE;
     wire [31:0] apb_node_wrap_i_apb_master_1_to_gpio_master_PRDATA;
     wire       apb_node_wrap_i_apb_master_1_to_gpio_master_PREADY;
@@ -147,7 +147,7 @@ module periph_bus_wrap #(
     wire [31:0] apb_node_wrap_i_apb_master_1_to_gpio_master_PWDATA;
     wire       apb_node_wrap_i_apb_master_1_to_gpio_master_PWRITE;
     // apb_node_wrap_i_apb_master_2_to_spi_master wires:
-    wire [11:0] apb_node_wrap_i_apb_master_2_to_spi_master_PADDR;
+    wire [31:0] apb_node_wrap_i_apb_master_2_to_spi_master_PADDR;
     wire       apb_node_wrap_i_apb_master_2_to_spi_master_PENABLE;
     wire [31:0] apb_node_wrap_i_apb_master_2_to_spi_master_PRDATA;
     wire       apb_node_wrap_i_apb_master_2_to_spi_master_PREADY;
@@ -156,7 +156,7 @@ module periph_bus_wrap #(
     wire [31:0] apb_node_wrap_i_apb_master_2_to_spi_master_PWDATA;
     wire       apb_node_wrap_i_apb_master_2_to_spi_master_PWRITE;
     // apb_node_wrap_i_apb_master_3_to_timer_master wires:
-    wire [11:0] apb_node_wrap_i_apb_master_3_to_timer_master_PADDR;
+    wire [31:0] apb_node_wrap_i_apb_master_3_to_timer_master_PADDR;
     wire       apb_node_wrap_i_apb_master_3_to_timer_master_PENABLE;
     wire [31:0] apb_node_wrap_i_apb_master_3_to_timer_master_PRDATA;
     wire       apb_node_wrap_i_apb_master_3_to_timer_master_PREADY;
@@ -165,7 +165,7 @@ module periph_bus_wrap #(
     wire [31:0] apb_node_wrap_i_apb_master_3_to_timer_master_PWDATA;
     wire       apb_node_wrap_i_apb_master_3_to_timer_master_PWRITE;
     // apb_node_wrap_i_apb_master_4_to_event_unit_master wires:
-    wire [11:0] apb_node_wrap_i_apb_master_4_to_event_unit_master_PADDR;
+    wire [31:0] apb_node_wrap_i_apb_master_4_to_event_unit_master_PADDR;
     wire       apb_node_wrap_i_apb_master_4_to_event_unit_master_PENABLE;
     wire [31:0] apb_node_wrap_i_apb_master_4_to_event_unit_master_PRDATA;
     wire       apb_node_wrap_i_apb_master_4_to_event_unit_master_PREADY;
@@ -174,7 +174,7 @@ module periph_bus_wrap #(
     wire [31:0] apb_node_wrap_i_apb_master_4_to_event_unit_master_PWDATA;
     wire       apb_node_wrap_i_apb_master_4_to_event_unit_master_PWRITE;
     // apb_node_wrap_i_apb_master_5_to_i2c_master wires:
-    wire [11:0] apb_node_wrap_i_apb_master_5_to_i2c_master_PADDR;
+    wire [31:0] apb_node_wrap_i_apb_master_5_to_i2c_master_PADDR;
     wire       apb_node_wrap_i_apb_master_5_to_i2c_master_PENABLE;
     wire [31:0] apb_node_wrap_i_apb_master_5_to_i2c_master_PRDATA;
     wire       apb_node_wrap_i_apb_master_5_to_i2c_master_PREADY;
@@ -183,7 +183,7 @@ module periph_bus_wrap #(
     wire [31:0] apb_node_wrap_i_apb_master_5_to_i2c_master_PWDATA;
     wire       apb_node_wrap_i_apb_master_5_to_i2c_master_PWRITE;
     // apb_node_wrap_i_apb_master_6_to_fll_master wires:
-    wire [11:0] apb_node_wrap_i_apb_master_6_to_fll_master_PADDR;
+    wire [31:0] apb_node_wrap_i_apb_master_6_to_fll_master_PADDR;
     wire       apb_node_wrap_i_apb_master_6_to_fll_master_PENABLE;
     wire [31:0] apb_node_wrap_i_apb_master_6_to_fll_master_PRDATA;
     wire       apb_node_wrap_i_apb_master_6_to_fll_master_PREADY;
@@ -192,7 +192,7 @@ module periph_bus_wrap #(
     wire [31:0] apb_node_wrap_i_apb_master_6_to_fll_master_PWDATA;
     wire       apb_node_wrap_i_apb_master_6_to_fll_master_PWRITE;
     // apb_node_wrap_i_apb_master_7_to_soc_ctrl_master wires:
-    wire [11:0] apb_node_wrap_i_apb_master_7_to_soc_ctrl_master_PADDR;
+    wire [31:0] apb_node_wrap_i_apb_master_7_to_soc_ctrl_master_PADDR;
     wire       apb_node_wrap_i_apb_master_7_to_soc_ctrl_master_PENABLE;
     wire [31:0] apb_node_wrap_i_apb_master_7_to_soc_ctrl_master_PRDATA;
     wire       apb_node_wrap_i_apb_master_7_to_soc_ctrl_master_PREADY;
@@ -215,7 +215,7 @@ module periph_bus_wrap #(
     wire       apb_node_wrap_i_rst_ni_to_rst_ni;
 
     // apb_node_wrap_i port wires:
-    wire [11:0] apb_node_wrap_i_apb_master_0_paddr;
+    wire [31:0] apb_node_wrap_i_apb_master_0_paddr;
     wire       apb_node_wrap_i_apb_master_0_penable;
     wire [31:0] apb_node_wrap_i_apb_master_0_prdata;
     wire       apb_node_wrap_i_apb_master_0_pready;
@@ -223,7 +223,7 @@ module periph_bus_wrap #(
     wire       apb_node_wrap_i_apb_master_0_pslverr;
     wire [31:0] apb_node_wrap_i_apb_master_0_pwdata;
     wire       apb_node_wrap_i_apb_master_0_pwrite;
-    wire [11:0] apb_node_wrap_i_apb_master_1_paddr;
+    wire [31:0] apb_node_wrap_i_apb_master_1_paddr;
     wire       apb_node_wrap_i_apb_master_1_penable;
     wire [31:0] apb_node_wrap_i_apb_master_1_prdata;
     wire       apb_node_wrap_i_apb_master_1_pready;
@@ -231,7 +231,7 @@ module periph_bus_wrap #(
     wire       apb_node_wrap_i_apb_master_1_pslverr;
     wire [31:0] apb_node_wrap_i_apb_master_1_pwdata;
     wire       apb_node_wrap_i_apb_master_1_pwrite;
-    wire [11:0] apb_node_wrap_i_apb_master_2_paddr;
+    wire [31:0] apb_node_wrap_i_apb_master_2_paddr;
     wire       apb_node_wrap_i_apb_master_2_penable;
     wire [31:0] apb_node_wrap_i_apb_master_2_prdata;
     wire       apb_node_wrap_i_apb_master_2_pready;
@@ -239,7 +239,7 @@ module periph_bus_wrap #(
     wire       apb_node_wrap_i_apb_master_2_pslverr;
     wire [31:0] apb_node_wrap_i_apb_master_2_pwdata;
     wire       apb_node_wrap_i_apb_master_2_pwrite;
-    wire [11:0] apb_node_wrap_i_apb_master_3_paddr;
+    wire [31:0] apb_node_wrap_i_apb_master_3_paddr;
     wire       apb_node_wrap_i_apb_master_3_penable;
     wire [31:0] apb_node_wrap_i_apb_master_3_prdata;
     wire       apb_node_wrap_i_apb_master_3_pready;
@@ -247,7 +247,7 @@ module periph_bus_wrap #(
     wire       apb_node_wrap_i_apb_master_3_pslverr;
     wire [31:0] apb_node_wrap_i_apb_master_3_pwdata;
     wire       apb_node_wrap_i_apb_master_3_pwrite;
-    wire [11:0] apb_node_wrap_i_apb_master_4_paddr;
+    wire [31:0] apb_node_wrap_i_apb_master_4_paddr;
     wire       apb_node_wrap_i_apb_master_4_penable;
     wire [31:0] apb_node_wrap_i_apb_master_4_prdata;
     wire       apb_node_wrap_i_apb_master_4_pready;
@@ -255,7 +255,7 @@ module periph_bus_wrap #(
     wire       apb_node_wrap_i_apb_master_4_pslverr;
     wire [31:0] apb_node_wrap_i_apb_master_4_pwdata;
     wire       apb_node_wrap_i_apb_master_4_pwrite;
-    wire [11:0] apb_node_wrap_i_apb_master_5_paddr;
+    wire [31:0] apb_node_wrap_i_apb_master_5_paddr;
     wire       apb_node_wrap_i_apb_master_5_penable;
     wire [31:0] apb_node_wrap_i_apb_master_5_prdata;
     wire       apb_node_wrap_i_apb_master_5_pready;
@@ -263,7 +263,7 @@ module periph_bus_wrap #(
     wire       apb_node_wrap_i_apb_master_5_pslverr;
     wire [31:0] apb_node_wrap_i_apb_master_5_pwdata;
     wire       apb_node_wrap_i_apb_master_5_pwrite;
-    wire [11:0] apb_node_wrap_i_apb_master_6_paddr;
+    wire [31:0] apb_node_wrap_i_apb_master_6_paddr;
     wire       apb_node_wrap_i_apb_master_6_penable;
     wire [31:0] apb_node_wrap_i_apb_master_6_prdata;
     wire       apb_node_wrap_i_apb_master_6_pready;
@@ -271,7 +271,7 @@ module periph_bus_wrap #(
     wire       apb_node_wrap_i_apb_master_6_pslverr;
     wire [31:0] apb_node_wrap_i_apb_master_6_pwdata;
     wire       apb_node_wrap_i_apb_master_6_pwrite;
-    wire [11:0] apb_node_wrap_i_apb_master_7_paddr;
+    wire [31:0] apb_node_wrap_i_apb_master_7_paddr;
     wire       apb_node_wrap_i_apb_master_7_penable;
     wire [31:0] apb_node_wrap_i_apb_master_7_prdata;
     wire       apb_node_wrap_i_apb_master_7_pready;

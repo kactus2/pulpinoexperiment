@@ -427,6 +427,12 @@
 				<ipxact:name>tx_elements</ipxact:name>
 				<ipxact:wire>
 					<ipxact:direction>in</ipxact:direction>
+					<ipxact:vectors>
+						<ipxact:vector>
+							<ipxact:left>$clog2(uuid_fb66732f_bb4a_4033_a920_d76d3235dfbd)</ipxact:left>
+							<ipxact:right>0</ipxact:right>
+						</ipxact:vector>
+					</ipxact:vectors>
 				</ipxact:wire>
 			</ipxact:port>
 			<ipxact:port>
@@ -655,7 +661,7 @@
 			<ipxact:name>APB_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>12</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_fb66732f_bb4a_4033_a920_d76d3235dfbd" resolve="user">
+		<ipxact:parameter kactus2:usageCount="1" parameterId="uuid_fb66732f_bb4a_4033_a920_d76d3235dfbd" resolve="user">
 			<ipxact:name>TX_FIFO_DEPTH</ipxact:name>
 			<ipxact:value>16</ipxact:value>
 		</ipxact:parameter>

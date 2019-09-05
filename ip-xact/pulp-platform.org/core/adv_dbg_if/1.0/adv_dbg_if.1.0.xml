@@ -494,24 +494,24 @@
 				<ipxact:language>Verilog</ipxact:language>
 				<ipxact:moduleName>adv_dbg_if</ipxact:moduleName>
 				<ipxact:moduleParameters>
-					<ipxact:moduleParameter parameterId="uuid_de31a720_1519_4f51_8c4b_05632b62192b" kactus2:usageCount="10" usageType="nontyped">
-						<ipxact:name>NB_CORES</ipxact:name> 
+					<ipxact:moduleParameter kactus2:usageCount="10" parameterId="uuid_de31a720_1519_4f51_8c4b_05632b62192b" usageType="nontyped">
+						<ipxact:name>NB_CORES</ipxact:name>
 						<ipxact:value>uuid_2a11eafd_c738_41cc_a786_660fd3ce5f7b</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_4eb099f8_6c37_4c03_a3d0_2a1a4cfd4f2e" kactus2:usageCount="2" usageType="nontyped">
-						<ipxact:name>AXI_ADDR_WIDTH</ipxact:name> 
+					<ipxact:moduleParameter kactus2:usageCount="2" parameterId="uuid_4eb099f8_6c37_4c03_a3d0_2a1a4cfd4f2e" usageType="nontyped">
+						<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 						<ipxact:value>uuid_072ff35c_c4a5_4aba_8527_5d5b731c2680</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_0fb8ee08_58e6_415c_8a4d_f48454ef2a18" kactus2:usageCount="3" usageType="nontyped">
-						<ipxact:name>AXI_DATA_WIDTH</ipxact:name> 
+					<ipxact:moduleParameter kactus2:usageCount="3" parameterId="uuid_0fb8ee08_58e6_415c_8a4d_f48454ef2a18" usageType="nontyped">
+						<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 						<ipxact:value>uuid_d07e117e_bc7b_4413_b5df_2d76cdd0f73d</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_d76ef7e7_11f9_4ea3_bc1d_662baf4ac55b" kactus2:usageCount="5" usageType="nontyped">
-						<ipxact:name>AXI_USER_WIDTH</ipxact:name> 
+					<ipxact:moduleParameter kactus2:usageCount="5" parameterId="uuid_d76ef7e7_11f9_4ea3_bc1d_662baf4ac55b" usageType="nontyped">
+						<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 						<ipxact:value>uuid_f0167d72_8838_4b81_b335_43b7472505d7</ipxact:value>
 					</ipxact:moduleParameter>
-					<ipxact:moduleParameter parameterId="uuid_9ef384f3_ee6f_4edf_8f2f_e11ea15f108f" kactus2:usageCount="4" usageType="nontyped">
-						<ipxact:name>AXI_ID_WIDTH</ipxact:name> 
+					<ipxact:moduleParameter kactus2:usageCount="4" parameterId="uuid_9ef384f3_ee6f_4edf_8f2f_e11ea15f108f" usageType="nontyped">
+						<ipxact:name>AXI_ID_WIDTH</ipxact:name>
 						<ipxact:value>uuid_f70c225d_54bd_4261_8e22_effa8ec17626</ipxact:value>
 					</ipxact:moduleParameter>
 				</ipxact:moduleParameters>
@@ -1519,7 +1519,7 @@
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/README.md</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>9002dfcdde602d6228814c4095271481</kactus2:hash>
+					<kactus2:hash>2c1f80681bd315bce7b7f5a1870bb3a0</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
@@ -1550,7 +1550,7 @@
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_axi_biu.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>5cc32539880ce0c3c42915e0e5cd6102</kactus2:hash>
+					<kactus2:hash>4643a9b75f4a43168c35b0f2ba7f2ee59e06f62e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
@@ -1564,14 +1564,14 @@
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_axi_module.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>7e81b19e53a7ed0fa4eb786996444534</kactus2:hash>
+					<kactus2:hash>c345b9b1f09c5a25587e604cd232f2f3dd1789ae</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_axionly_top.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>98a97dd1bda949e5bedb03cb485cf503</kactus2:hash>
+					<kactus2:hash>19be5aa227993df9900434cb33cb1942edc87e58</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
@@ -1592,7 +1592,7 @@
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_lint_biu.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>c092cb42cc33e0c5babe0cddf9eb4474</kactus2:hash>
+					<kactus2:hash>4534792100193642c5b33662f4a2a5736968dc7e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
@@ -1606,21 +1606,21 @@
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_lint_module.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>c1e1acf23e85162a6101aa39c278eb3d</kactus2:hash>
+					<kactus2:hash>6a00d4e4ad303da02d81accddb48e4f93795365f</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>4738b910b4bbe8dddde750d1b1089604</kactus2:hash>
+					<kactus2:hash>535d1b494bbcb5e97386f5b4d8bc824312d75ff6</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>bdbdd106f1a3611d495e9f68de776844</kactus2:hash>
+					<kactus2:hash>b91e133b30712aece67d4c0fe7dc69508b8a303e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
@@ -1634,14 +1634,14 @@
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_or1k_module.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>3fc04d30f007b0ebb45af3282ec0b925</kactus2:hash>
+					<kactus2:hash>39d9de64c52c0ef4731363c659fe8eeb2dd0c70a</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>28d29348ee3641596ac83516164ecc4d</kactus2:hash>
+					<kactus2:hash>9620f33b5e1490ceeab04adbf12d6895aa8ff72f</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
@@ -1662,14 +1662,14 @@
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_top.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>16fe810a91f1487c438813ec16652d51</kactus2:hash>
+					<kactus2:hash>87fb458f982019e6ffe822dad01ca4b699ffa76f</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/adv_dbg_if/rtl/adv_dbg_if.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>400eba4dbaa4796b19de2aac491ab4ca</kactus2:hash>
+					<kactus2:hash>2c881c4e9e5945b0f61a4dd9de38d441af056e26</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
@@ -1694,37 +1694,38 @@
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>
+		<ipxact:fileSet>
+			<ipxact:name>includes</ipxact:name>
+			<ipxact:file>
+				<ipxact:name>../../../../../pulpino/rtl/components/cluster_clock_inverter.sv</ipxact:name>
+				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
+				<ipxact:fileType>verilogSource</ipxact:fileType>
+			</ipxact:file>
+		</ipxact:fileSet>
 	</ipxact:fileSets>
 	<ipxact:parameters>
-		<ipxact:parameter parameterId="uuid_072ff35c_c4a5_4aba_8527_5d5b731c2680" resolve="user" kactus2:usageCount="3">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_072ff35c_c4a5_4aba_8527_5d5b731c2680" resolve="user">
 			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_d07e117e_bc7b_4413_b5df_2d76cdd0f73d" resolve="user" kactus2:usageCount="4">
+		<ipxact:parameter kactus2:usageCount="4" parameterId="uuid_d07e117e_bc7b_4413_b5df_2d76cdd0f73d" resolve="user">
 			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f70c225d_54bd_4261_8e22_effa8ec17626" resolve="user" kactus2:usageCount="5">
+		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_f70c225d_54bd_4261_8e22_effa8ec17626" resolve="user">
 			<ipxact:name>AXI_ID_WIDTH</ipxact:name>
 			<ipxact:value>3</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_f0167d72_8838_4b81_b335_43b7472505d7" resolve="user" kactus2:usageCount="6">
+		<ipxact:parameter kactus2:usageCount="6" parameterId="uuid_f0167d72_8838_4b81_b335_43b7472505d7" resolve="user">
 			<ipxact:name>AXI_USER_WIDTH</ipxact:name>
 			<ipxact:value>6</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter parameterId="uuid_2a11eafd_c738_41cc_a786_660fd3ce5f7b" resolve="user" kactus2:usageCount="11">
+		<ipxact:parameter kactus2:usageCount="11" parameterId="uuid_2a11eafd_c738_41cc_a786_660fd3ce5f7b" resolve="user">
 			<ipxact:name>NB_CORES</ipxact:name>
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>
-		<kactus2:fileDependencies>
-			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
-				<kactus2:fileRef1>../../../../../ips/adv_dbg_if/rtl/adbg_tap_top.v</kactus2:fileRef1>
-				<kactus2:fileRef2>../../../../../ips/adv_dbg_if/rtl/adbg_tap_defines.v</kactus2:fileRef2>
-				<ipxact:description>Include reference to adbg_tap_defines.v</ipxact:description>
-			</kactus2:fileDependency>
-		</kactus2:fileDependencies>
 		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
 			<kactus2:kts_productHier>IP</kactus2:kts_productHier>
@@ -1732,5 +1733,57 @@
 			<kactus2:kts_firmness>Mutable</kactus2:kts_firmness>
 		</kactus2:kts_attributes>
 		<kactus2:license>LGPL2</kactus2:license>
+		<kactus2:fileDependencies>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_axi_module.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_axi_module.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_axi_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_axi_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_axionly_top.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_lint_module.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_lint_module.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_lint_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_lint_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_or1k_module.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_or1k_module.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_or1k_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_or1k_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_or1k_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_or1k_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+			<kactus2:fileDependency manual="false" bidirectional="false" locked="false">
+				<kactus2:fileRef1>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_top.sv</kactus2:fileRef1>
+				<kactus2:fileRef2>../../../../../pulpino/ips/adv_dbg_if/rtl/adbg_defines.v</kactus2:fileRef2>
+				<ipxact:description>Include reference to adbg_defines.v</ipxact:description>
+			</kactus2:fileDependency>
+		</kactus2:fileDependencies>
 	</ipxact:vendorExtensions>
 </ipxact:component>

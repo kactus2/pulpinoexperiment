@@ -12,7 +12,7 @@
 
 module spi_master_fsm #(
     parameter                              BUFFER_DEPTH     = 10,
-    parameter                              LOG_BUFFER_DEPTH = $clog2(BUFFER_DEPTH)+1
+    parameter                              LOG_BUFFER_DEPTH = $clog2(BUFFER_DEPTH)
 ) (
     // These ports are not in any interface
     input          [LOG_BUFFER_DEPTH:0]       cnt_rx,
@@ -71,7 +71,7 @@ module spi_master_fsm #(
         end
     end
 
-    always_ff @(posedge INT_TX_ACTIVE, negedge HRESETn)
+    always_ff @(posedge HCLK, negedge HRESETn)
     begin
         if(~HRESETn)
         begin

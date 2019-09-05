@@ -520,14 +520,6 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>b_user</ipxact:name>
-							</ipxact:logicalPort>
-							<ipxact:physicalPort>
-								<ipxact:name>r_user</ipxact:name>
-							</ipxact:physicalPort>
-						</ipxact:portMap>
-						<ipxact:portMap>
-							<ipxact:logicalPort>
 								<ipxact:name>r_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
@@ -560,18 +552,26 @@
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>r_user</ipxact:name>
+								<ipxact:name>b_ready</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>b_user</ipxact:name>
+								<ipxact:name>b_ready</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
 							<ipxact:logicalPort>
-								<ipxact:name>b_ready</ipxact:name>
+								<ipxact:name>r_user</ipxact:name>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
-								<ipxact:name>b_ready</ipxact:name>
+								<ipxact:name>r_user</ipxact:name>
+							</ipxact:physicalPort>
+						</ipxact:portMap>
+						<ipxact:portMap>
+							<ipxact:logicalPort>
+								<ipxact:name>b_user</ipxact:name>
+							</ipxact:logicalPort>
+							<ipxact:physicalPort>
+								<ipxact:name>b_user</ipxact:name>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 					</ipxact:portMaps>
