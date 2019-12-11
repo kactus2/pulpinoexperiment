@@ -8,295 +8,292 @@
 // Plugin : Verilog generator 2.2
 //-----------------------------------------------------------------------------
 
-`include "axi_bus.sv"
-
-module axi_node_intf_wrap
-  #(
-    parameter NB_MASTER      = 4,
-    parameter NB_SLAVE       = 4,
-    parameter AXI_ADDR_WIDTH = 32,
-    parameter AXI_DATA_WIDTH = 32,
-    parameter AXI_ID_WIDTH   = 10,
-    parameter AXI_USER_WIDTH = 0,
-    parameter AXI_STRB_WIDTH   = AXI_DATA_WIDTH/8
-    )
-  (
+module axi_node_intf_wrap #(
+    parameter                              AXI_ADDR_WIDTH   = 32,
+    parameter                              AXI_DATA_WIDTH   = 32,
+    parameter                              AXI_ID_WIDTH     = 10,
+    
+    parameter                              AXI_STRB_WIDTH   = AXI_DATA_WIDTH/8,
+    parameter                              AXI_USER_WIDTH   = 1,
+    parameter                              NB_MASTER        = 4,
+    parameter                              NB_SLAVE         = 4,
+    parameter                              AXI_ID_WIDTH_INIT = AXI_ID_WIDTH+$clog2(NB_SLAVE)
+) (
     // Interface: master0
     input                               instr_ar_ready,
     input                               instr_aw_ready,
-    input          [AXI_ID_WIDTH-1:0]   instr_b_id,
-    input          [1:0]                instr_b_resp,
-    input          [AXI_USER_WIDTH-1:0] instr_b_user,
+    input                [AXI_ID_WIDTH_INIT-1:0] instr_b_id,
+    input                [1:0]          instr_b_resp,
+    input                [AXI_USER_WIDTH-1:0] instr_b_user,
     input                               instr_b_valid,
-    input          [AXI_DATA_WIDTH-1:0] instr_r_data,
-    input          [AXI_ID_WIDTH-1:0]   instr_r_id,
+    input                [AXI_DATA_WIDTH-1:0] instr_r_data,
+    input                [AXI_ID_WIDTH_INIT-1:0] instr_r_id,
     input                               instr_r_last,
-    input          [1:0]                instr_r_resp,
-    input          [AXI_USER_WIDTH-1:0] instr_r_user,
+    input                [1:0]          instr_r_resp,
+    input                [AXI_USER_WIDTH-1:0] instr_r_user,
     input                               instr_r_valid,
     input                               instr_w_ready,
-    output         [AXI_ADDR_WIDTH-1:0] instr_ar_addr,
-    output         [1:0]                instr_ar_burst,
-    output         [3:0]                instr_ar_cache,
-    output         [AXI_ID_WIDTH-1:0]   instr_ar_id,
-    output         [7:0]                instr_ar_len,
+    output               [AXI_ADDR_WIDTH-1:0] instr_ar_addr,
+    output               [1:0]          instr_ar_burst,
+    output               [3:0]          instr_ar_cache,
+    output               [AXI_ID_WIDTH_INIT-1:0] instr_ar_id,
+    output               [7:0]          instr_ar_len,
     output                              instr_ar_lock,
-    output         [2:0]                instr_ar_prot,
-    output         [3:0]                instr_ar_qos,
-    output         [2:0]                instr_ar_size,
-    output         [3:0]                instr_ar_region,
-    output         [AXI_USER_WIDTH-1:0] instr_ar_user,
+    output               [2:0]          instr_ar_prot,
+    output               [3:0]          instr_ar_qos,
+    output               [3:0]          instr_ar_region,
+    output               [2:0]          instr_ar_size,
+    output               [AXI_USER_WIDTH-1:0] instr_ar_user,
     output                              instr_ar_valid,
-    output         [AXI_ADDR_WIDTH-1:0] instr_aw_addr,
-    output         [1:0]                instr_aw_burst,
-    output         [3:0]                instr_aw_cache,
-    output         [AXI_ID_WIDTH-1:0]   instr_aw_id,
-    output         [7:0]                instr_aw_len,
+    output               [AXI_ADDR_WIDTH-1:0] instr_aw_addr,
+    output               [1:0]          instr_aw_burst,
+    output               [3:0]          instr_aw_cache,
+    output               [AXI_ID_WIDTH_INIT-1:0] instr_aw_id,
+    output               [7:0]          instr_aw_len,
     output                              instr_aw_lock,
-    output         [2:0]                instr_aw_prot,
-    output         [2:0]                instr_aw_size,
-    output         [3:0]                instr_aw_qos,
-    output         [3:0]                instr_aw_region,
-    output         [AXI_USER_WIDTH-1:0] instr_aw_user,
+    output               [2:0]          instr_aw_prot,
+    output               [3:0]          instr_aw_qos,
+    output               [3:0]          instr_aw_region,
+    output               [2:0]          instr_aw_size,
+    output               [AXI_USER_WIDTH-1:0] instr_aw_user,
     output                              instr_aw_valid,
     output                              instr_b_ready,
     output                              instr_r_ready,
-    output         [AXI_DATA_WIDTH-1:0] instr_w_data,
+    output               [AXI_DATA_WIDTH-1:0] instr_w_data,
     output                              instr_w_last,
-    output         [AXI_STRB_WIDTH-1:0] instr_w_strb,
-    output         [AXI_USER_WIDTH-1:0] instr_w_user,
+    output               [AXI_STRB_WIDTH-1:0] instr_w_strb,
+    output               [AXI_USER_WIDTH-1:0] instr_w_user,
     output                              instr_w_valid,
 
     // Interface: master1
     input                               data_ar_ready,
     input                               data_aw_ready,
-    input          [AXI_ID_WIDTH-1:0]   data_b_id,
-    input          [1:0]                data_b_resp,
-    input          [AXI_USER_WIDTH-1:0] data_b_user,
+    input                [AXI_ID_WIDTH_INIT-1:0] data_b_id,
+    input                [1:0]          data_b_resp,
+    input                [AXI_USER_WIDTH-1:0] data_b_user,
     input                               data_b_valid,
-    input          [AXI_DATA_WIDTH-1:0] data_r_data,
-    input          [AXI_ID_WIDTH-1:0]   data_r_id,
+    input                [AXI_DATA_WIDTH-1:0] data_r_data,
+    input                [AXI_ID_WIDTH_INIT-1:0] data_r_id,
     input                               data_r_last,
-    input          [1:0]                data_r_resp,
-    input          [AXI_USER_WIDTH-1:0] data_r_user,
+    input                [1:0]          data_r_resp,
+    input                [AXI_USER_WIDTH-1:0] data_r_user,
     input                               data_r_valid,
     input                               data_w_ready,
-    output         [AXI_ADDR_WIDTH-1:0] data_ar_addr,
-    output         [1:0]                data_ar_burst,
-    output         [3:0]                data_ar_cache,
-    output         [3:0]                data_ar_qos,
-    output         [3:0]                data_ar_region,
-    output         [AXI_ID_WIDTH-1:0]   data_ar_id,
-    output         [7:0]                data_ar_len,
+    output               [AXI_ADDR_WIDTH-1:0] data_ar_addr,
+    output               [1:0]          data_ar_burst,
+    output               [3:0]          data_ar_cache,
+    output               [AXI_ID_WIDTH_INIT-1:0] data_ar_id,
+    output               [7:0]          data_ar_len,
     output                              data_ar_lock,
-    output         [2:0]                data_ar_prot,
-    output         [2:0]                data_ar_size,
-    output         [AXI_USER_WIDTH-1:0] data_ar_user,
+    output               [2:0]          data_ar_prot,
+    output               [3:0]          data_ar_qos,
+    output               [3:0]          data_ar_region,
+    output               [2:0]          data_ar_size,
+    output               [AXI_USER_WIDTH-1:0] data_ar_user,
     output                              data_ar_valid,
-    output         [AXI_ADDR_WIDTH-1:0] data_aw_addr,
-    output         [1:0]                data_aw_burst,
-    output         [3:0]                data_aw_cache,
-    output         [3:0]                data_aw_qos,
-    output         [3:0]                data_aw_region,
-    output         [AXI_ID_WIDTH-1:0]   data_aw_id,
-    output         [7:0]                data_aw_len,
+    output               [AXI_ADDR_WIDTH-1:0] data_aw_addr,
+    output               [1:0]          data_aw_burst,
+    output               [3:0]          data_aw_cache,
+    output               [AXI_ID_WIDTH_INIT-1:0] data_aw_id,
+    output               [7:0]          data_aw_len,
     output                              data_aw_lock,
-    output         [2:0]                data_aw_prot,
-    output         [2:0]                data_aw_size,
-    output         [AXI_USER_WIDTH-1:0] data_aw_user,
+    output               [2:0]          data_aw_prot,
+    output               [3:0]          data_aw_qos,
+    output               [3:0]          data_aw_region,
+    output               [2:0]          data_aw_size,
+    output               [AXI_USER_WIDTH-1:0] data_aw_user,
     output                              data_aw_valid,
     output                              data_b_ready,
     output                              data_r_ready,
-    output         [AXI_DATA_WIDTH-1:0] data_w_data,
+    output               [AXI_DATA_WIDTH-1:0] data_w_data,
     output                              data_w_last,
-    output         [AXI_STRB_WIDTH-1:0] data_w_strb,
-    output         [AXI_USER_WIDTH-1:0] data_w_user,
+    output               [AXI_STRB_WIDTH-1:0] data_w_strb,
+    output               [AXI_USER_WIDTH-1:0] data_w_user,
     output                              data_w_valid,
 
     // Interface: master2
     input                               slave_ar_ready,
     input                               slave_aw_ready,
-    input          [AXI_ID_WIDTH-1:0]   slave_b_id,
-    input          [1:0]                slave_b_resp,
-    input          [AXI_USER_WIDTH-1:0] slave_b_user,
+    input                [AXI_ID_WIDTH_INIT-1:0] slave_b_id,
+    input                [1:0]          slave_b_resp,
+    input                [AXI_USER_WIDTH-1:0] slave_b_user,
     input                               slave_b_valid,
-    input          [AXI_DATA_WIDTH-1:0] slave_r_data,
-    input          [AXI_ID_WIDTH-1:0]   slave_r_id,
+    input                [AXI_DATA_WIDTH-1:0] slave_r_data,
+    input                [AXI_ID_WIDTH_INIT-1:0] slave_r_id,
     input                               slave_r_last,
-    input          [1:0]                slave_r_resp,
-    input          [AXI_USER_WIDTH-1:0] slave_r_user,
+    input                [1:0]          slave_r_resp,
+    input                [AXI_USER_WIDTH-1:0] slave_r_user,
     input                               slave_r_valid,
     input                               slave_w_ready,
-    output         [AXI_ADDR_WIDTH-1:0] slave_ar_addr,
-    output         [1:0]                slave_ar_burst,
-    output         [3:0]                slave_ar_cache,
-    output         [AXI_ID_WIDTH-1:0]   slave_ar_id,
-    output         [7:0]                slave_ar_len,
+    output               [AXI_ADDR_WIDTH-1:0] slave_ar_addr,
+    output               [1:0]          slave_ar_burst,
+    output               [3:0]          slave_ar_cache,
+    output               [AXI_ID_WIDTH_INIT-1:0] slave_ar_id,
+    output               [7:0]          slave_ar_len,
     output                              slave_ar_lock,
-    output         [2:0]                slave_ar_prot,
-    output         [3:0]                slave_ar_qos,
-    output         [3:0]                slave_ar_region,
-    output         [2:0]                slave_ar_size,
-    output         [AXI_USER_WIDTH-1:0] slave_ar_user,
+    output               [2:0]          slave_ar_prot,
+    output               [3:0]          slave_ar_qos,
+    output               [3:0]          slave_ar_region,
+    output               [2:0]          slave_ar_size,
+    output               [AXI_USER_WIDTH-1:0] slave_ar_user,
     output                              slave_ar_valid,
-    output         [AXI_ADDR_WIDTH-1:0] slave_aw_addr,
-    output         [1:0]                slave_aw_burst,
-    output         [3:0]                slave_aw_cache,
-    output         [AXI_ID_WIDTH-1:0]   slave_aw_id,
-    output         [7:0]                slave_aw_len,
+    output               [AXI_ADDR_WIDTH-1:0] slave_aw_addr,
+    output               [1:0]          slave_aw_burst,
+    output               [3:0]          slave_aw_cache,
+    output               [AXI_ID_WIDTH_INIT-1:0] slave_aw_id,
+    output               [7:0]          slave_aw_len,
     output                              slave_aw_lock,
-    output         [2:0]                slave_aw_prot,
-    output         [3:0]                slave_aw_qos,
-    output         [3:0]                slave_aw_region,
-    output         [2:0]                slave_aw_size,
-    output         [AXI_USER_WIDTH-1:0] slave_aw_user,
+    output               [2:0]          slave_aw_prot,
+    output               [3:0]          slave_aw_qos,
+    output               [3:0]          slave_aw_region,
+    output               [2:0]          slave_aw_size,
+    output               [AXI_USER_WIDTH-1:0] slave_aw_user,
     output                              slave_aw_valid,
     output                              slave_b_ready,
     output                              slave_r_ready,
-    output         [AXI_DATA_WIDTH-1:0] slave_w_data,
+    output               [AXI_DATA_WIDTH-1:0] slave_w_data,
     output                              slave_w_last,
-    output         [AXI_STRB_WIDTH-1:0] slave_w_strb,
-    output         [AXI_USER_WIDTH-1:0] slave_w_user,
+    output               [AXI_STRB_WIDTH-1:0] slave_w_strb,
+    output               [AXI_USER_WIDTH-1:0] slave_w_user,
     output                              slave_w_valid,
 
     // Interface: slave0
-    input          [AXI_ADDR_WIDTH-1:0] core_master_ar_addr,
-    input          [1:0]                core_master_ar_burst,
-    input          [3:0]                core_master_ar_cache,
-    input          [AXI_ID_WIDTH-1:0]   core_master_ar_id,
-    input          [7:0]                core_master_ar_len,
+    input                [AXI_ADDR_WIDTH-1:0] core_master_ar_addr,
+    input                [1:0]          core_master_ar_burst,
+    input                [3:0]          core_master_ar_cache,
+    input                [AXI_ID_WIDTH-1:0] core_master_ar_id,
+    input                [7:0]          core_master_ar_len,
     input                               core_master_ar_lock,
-    input          [2:0]                core_master_ar_prot,
-    input          [3:0]                core_master_ar_qos,
-    input          [3:0]                core_master_ar_region,
-    input          [2:0]                core_master_ar_size,
-    input          [AXI_USER_WIDTH-1:0] core_master_ar_user,
+    input                [2:0]          core_master_ar_prot,
+    input                [3:0]          core_master_ar_qos,
+    input                [3:0]          core_master_ar_region,
+    input                [2:0]          core_master_ar_size,
+    input                [AXI_USER_WIDTH-1:0] core_master_ar_user,
     input                               core_master_ar_valid,
-    input          [AXI_ADDR_WIDTH-1:0] core_master_aw_addr,
-    input          [1:0]                core_master_aw_burst,
-    input          [3:0]                core_master_aw_cache,
-    input          [AXI_ID_WIDTH-1:0]   core_master_aw_id,
-    input          [7:0]                core_master_aw_len,
+    input                [AXI_ADDR_WIDTH-1:0] core_master_aw_addr,
+    input                [1:0]          core_master_aw_burst,
+    input                [3:0]          core_master_aw_cache,
+    input                [AXI_ID_WIDTH-1:0] core_master_aw_id,
+    input                [7:0]          core_master_aw_len,
     input                               core_master_aw_lock,
-    input          [2:0]                core_master_aw_prot,
-    input          [3:0]                core_master_aw_qos,
-    input          [3:0]                core_master_aw_region,
-    input          [2:0]                core_master_aw_size,
-    input          [AXI_USER_WIDTH-1:0] core_master_aw_user,
+    input                [2:0]          core_master_aw_prot,
+    input                [3:0]          core_master_aw_qos,
+    input                [3:0]          core_master_aw_region,
+    input                [2:0]          core_master_aw_size,
+    input                [AXI_USER_WIDTH-1:0] core_master_aw_user,
     input                               core_master_aw_valid,
     input                               core_master_b_ready,
     input                               core_master_r_ready,
-    input          [AXI_DATA_WIDTH-1:0] core_master_w_data,
+    input                [AXI_DATA_WIDTH-1:0] core_master_w_data,
     input                               core_master_w_last,
-    input          [AXI_STRB_WIDTH-1:0] core_master_w_strb,
-    input          [AXI_USER_WIDTH-1:0] core_master_w_user,
+    input                [AXI_STRB_WIDTH-1:0] core_master_w_strb,
+    input                [AXI_USER_WIDTH-1:0] core_master_w_user,
     input                               core_master_w_valid,
     output                              core_master_ar_ready,
     output                              core_master_aw_ready,
-    output         [AXI_ID_WIDTH-1:0]   core_master_b_id,
-    output         [1:0]                core_master_b_resp,
-    output         [AXI_USER_WIDTH-1:0] core_master_b_user,
+    output               [AXI_ID_WIDTH-1:0] core_master_b_id,
+    output               [1:0]          core_master_b_resp,
+    output               [AXI_USER_WIDTH-1:0] core_master_b_user,
     output                              core_master_b_valid,
-    output         [AXI_DATA_WIDTH-1:0] core_master_r_data,
-    output         [AXI_ID_WIDTH-1:0]   core_master_r_id,
+    output               [AXI_DATA_WIDTH-1:0] core_master_r_data,
+    output               [AXI_ID_WIDTH-1:0] core_master_r_id,
     output                              core_master_r_last,
-    output         [1:0]                core_master_r_resp,
-    output         [AXI_USER_WIDTH-1:0] core_master_r_user,
+    output               [1:0]          core_master_r_resp,
+    output               [AXI_USER_WIDTH-1:0] core_master_r_user,
     output                              core_master_r_valid,
     output                              core_master_w_ready,
 
     // Interface: slave1
-    input          [AXI_ADDR_WIDTH-1:0] dbg_ar_addr,
-    input          [1:0]                dbg_ar_burst,
-    input          [3:0]                dbg_ar_cache,
-    input          [AXI_ID_WIDTH-1:0]   dbg_ar_id,
-    input          [7:0]                dbg_ar_len,
+    input                [AXI_ADDR_WIDTH-1:0] dbg_ar_addr,
+    input                [1:0]          dbg_ar_burst,
+    input                [3:0]          dbg_ar_cache,
+    input                [AXI_ID_WIDTH-1:0] dbg_ar_id,
+    input                [7:0]          dbg_ar_len,
     input                               dbg_ar_lock,
-    input          [2:0]                dbg_ar_prot,
-    input          [3:0]                dbg_ar_qos,
-    input          [3:0]                dbg_ar_region,
-    input          [2:0]                dbg_ar_size,
-    input          [AXI_USER_WIDTH-1:0] dbg_ar_user,
+    input                [2:0]          dbg_ar_prot,
+    input                [3:0]          dbg_ar_qos,
+    input                [3:0]          dbg_ar_region,
+    input                [2:0]          dbg_ar_size,
+    input                [AXI_USER_WIDTH-1:0] dbg_ar_user,
     input                               dbg_ar_valid,
-    input          [AXI_ADDR_WIDTH-1:0] dbg_aw_addr,
-    input          [1:0]                dbg_aw_burst,
-    input          [3:0]                dbg_aw_cache,
-    input          [AXI_ID_WIDTH-1:0]   dbg_aw_id,
-    input          [7:0]                dbg_aw_len,
+    input                [AXI_ADDR_WIDTH-1:0] dbg_aw_addr,
+    input                [1:0]          dbg_aw_burst,
+    input                [3:0]          dbg_aw_cache,
+    input                [AXI_ID_WIDTH-1:0] dbg_aw_id,
+    input                [7:0]          dbg_aw_len,
     input                               dbg_aw_lock,
-    input          [2:0]                dbg_aw_prot,
-    input          [3:0]                dbg_aw_qos,
-    input          [3:0]                dbg_aw_region,
-    input          [2:0]                dbg_aw_size,
-    input          [AXI_USER_WIDTH-1:0] dbg_aw_user,
+    input                [2:0]          dbg_aw_prot,
+    input                [3:0]          dbg_aw_qos,
+    input                [3:0]          dbg_aw_region,
+    input                [2:0]          dbg_aw_size,
+    input                [AXI_USER_WIDTH-1:0] dbg_aw_user,
     input                               dbg_aw_valid,
     input                               dbg_b_ready,
     input                               dbg_r_ready,
-    input          [AXI_DATA_WIDTH-1:0] dbg_w_data,
+    input                [AXI_DATA_WIDTH-1:0] dbg_w_data,
     input                               dbg_w_last,
-    input          [AXI_STRB_WIDTH-1:0] dbg_w_strb,
-    input          [AXI_USER_WIDTH-1:0] dbg_w_user,
+    input                [AXI_STRB_WIDTH-1:0] dbg_w_strb,
+    input                [AXI_USER_WIDTH-1:0] dbg_w_user,
     input                               dbg_w_valid,
     output                              dbg_ar_ready,
     output                              dbg_aw_ready,
-    output         [AXI_ID_WIDTH-1:0]   dbg_b_id,
-    output         [1:0]                dbg_b_resp,
-    output         [AXI_USER_WIDTH-1:0] dbg_b_user,
+    output               [AXI_ID_WIDTH-1:0] dbg_b_id,
+    output               [1:0]          dbg_b_resp,
+    output               [AXI_USER_WIDTH-1:0] dbg_b_user,
     output                              dbg_b_valid,
-    output         [AXI_DATA_WIDTH-1:0] dbg_r_data,
-    output         [AXI_ID_WIDTH-1:0]   dbg_r_id,
+    output               [AXI_DATA_WIDTH-1:0] dbg_r_data,
+    output               [AXI_ID_WIDTH-1:0] dbg_r_id,
     output                              dbg_r_last,
-    output         [1:0]                dbg_r_resp,
-    output         [AXI_USER_WIDTH-1:0] dbg_r_user,
+    output               [1:0]          dbg_r_resp,
+    output               [AXI_USER_WIDTH-1:0] dbg_r_user,
     output                              dbg_r_valid,
     output                              dbg_w_ready,
 
     // Interface: slave2
-    input          [AXI_ADDR_WIDTH-1:0] ar_addr,
-    input          [1:0]                ar_burst,
-    input          [3:0]                ar_cache,
-    input          [AXI_ID_WIDTH-1:0]   ar_id,
-    input          [7:0]                ar_len,
+    input                [AXI_ADDR_WIDTH-1:0] ar_addr,
+    input                [1:0]          ar_burst,
+    input                [3:0]          ar_cache,
+    input                [AXI_ID_WIDTH-1:0] ar_id,
+    input                [7:0]          ar_len,
     input                               ar_lock,
-    input          [2:0]                ar_prot,
-    input          [3:0]                ar_qos,
-    input          [3:0]                ar_region,
-    input          [2:0]                ar_size,
-    input          [AXI_USER_WIDTH-1:0] ar_user,
+    input                [2:0]          ar_prot,
+    input                [3:0]          ar_qos,
+    input                [3:0]          ar_region,
+    input                [2:0]          ar_size,
+    input                [AXI_USER_WIDTH-1:0] ar_user,
     input                               ar_valid,
-    input          [AXI_ADDR_WIDTH-1:0] aw_addr,
-    input          [1:0]                aw_burst,
-    input          [3:0]                aw_cache,
-    input          [AXI_ID_WIDTH-1:0]   aw_id,
-    input          [7:0]                aw_len,
+    input                [AXI_ADDR_WIDTH-1:0] aw_addr,
+    input                [1:0]          aw_burst,
+    input                [3:0]          aw_cache,
+    input                [AXI_ID_WIDTH-1:0] aw_id,
+    input                [7:0]          aw_len,
     input                               aw_lock,
-    input          [2:0]                aw_prot,
-    input          [3:0]                aw_qos,
-    input          [3:0]                aw_region,
-    input          [2:0]                aw_size,
-    input          [AXI_USER_WIDTH-1:0] aw_user,
+    input                [2:0]          aw_prot,
+    input                [3:0]          aw_qos,
+    input                [3:0]          aw_region,
+    input                [2:0]          aw_size,
+    input                [AXI_USER_WIDTH-1:0] aw_user,
     input                               aw_valid,
     input                               b_ready,
     input                               r_ready,
-    input          [AXI_DATA_WIDTH-1:0] w_data,
+    input                [AXI_DATA_WIDTH-1:0] w_data,
     input                               w_last,
-    input          [AXI_STRB_WIDTH-1:0] w_strb,
-    input          [AXI_USER_WIDTH-1:0] w_user,
+    input                [AXI_STRB_WIDTH-1:0] w_strb,
+    input                [AXI_USER_WIDTH-1:0] w_user,
     input                               w_valid,
     output                              ar_ready,
     output                              aw_ready,
-    output         [AXI_ID_WIDTH-1:0]   b_id,
-    output         [1:0]                b_resp,
-    output         [AXI_USER_WIDTH-1:0] b_user,
+    output               [AXI_ID_WIDTH-1:0] b_id,
+    output               [1:0]          b_resp,
+    output               [AXI_USER_WIDTH-1:0] b_user,
     output                              b_valid,
-    output         [AXI_DATA_WIDTH-1:0] r_data,
-    output         [AXI_ID_WIDTH-1:0]   r_id,
+    output               [AXI_DATA_WIDTH-1:0] r_data,
+    output               [AXI_ID_WIDTH-1:0] r_id,
     output                              r_last,
-    output         [1:0]                r_resp,
-    output         [AXI_USER_WIDTH-1:0] r_user,
+    output               [1:0]          r_resp,
+    output               [AXI_USER_WIDTH-1:0] r_user,
     output                              r_valid,
     output                              w_ready,
-
     // These ports are not in any interface
     input                               clk,
     input                               rst_n,
@@ -311,7 +308,7 @@ module axi_node_intf_wrap
 
   // AXI ID WIDTHs for master and slave IPS
   localparam AXI_ID_WIDTH_TARG =   AXI_ID_WIDTH;
-  localparam AXI_ID_WIDTH_INIT =   AXI_ID_WIDTH_TARG + $clog2(NB_SLAVE);
+  //localparam AXI_ID_WIDTH_INIT =   AXI_ID_WIDTH_TARG + $clog2(NB_SLAVE);
 
   // Signals to slave periperhals
   logic [NB_MASTER-1:0][AXI_ID_WIDTH_INIT-1:0] s_master_aw_id;
@@ -419,8 +416,8 @@ module axi_node_intf_wrap
   logic [NB_REGION-1:0][NB_MASTER-1:0]                     s_valid_rule;
   logic [NB_SLAVE-1:0][NB_MASTER-1:0]                      s_connectivity_map;
 
-  // Slave 0
-  assign                        instr_aw_id[AXI_ID_WIDTH_TARG-1:0] = s_master_aw_id[0];
+  // Master 0
+  assign                        instr_aw_id[AXI_ID_WIDTH_INIT-1:0] = s_master_aw_id[0];
   assign                        instr_aw_addr                      = s_master_aw_addr[0];
   assign                        instr_aw_len                       = s_master_aw_len[0];
   assign                        instr_aw_size                      = s_master_aw_size[0];
@@ -432,9 +429,9 @@ module axi_node_intf_wrap
   assign                        instr_aw_user                      = s_master_aw_user[0];
   assign                        instr_aw_qos                       = s_master_aw_qos[0];
   assign                        instr_aw_valid                     = s_master_aw_valid[0];
-  assign s_master_aw_ready[0] = instr_aw_ready;
+  assign 						s_master_aw_ready[0] 			   = instr_aw_ready;
 
-  assign                        instr_ar_id[AXI_ID_WIDTH_TARG-1:0] = s_master_ar_id[0];
+  assign                        instr_ar_id[AXI_ID_WIDTH_INIT-1:0] = s_master_ar_id[0];
   assign                        instr_ar_addr                      = s_master_ar_addr[0];
   assign                        instr_ar_len                       = s_master_ar_len[0];
   assign                        instr_ar_size                      = s_master_ar_size[0];
@@ -446,34 +443,34 @@ module axi_node_intf_wrap
   assign                        instr_ar_user                      = s_master_ar_user[0];
   assign                        instr_ar_qos                       = s_master_ar_qos[0];
   assign                        instr_ar_valid                     = s_master_ar_valid[0];
-  assign s_master_ar_ready[0] = instr_ar_ready;
+  assign 						s_master_ar_ready[0] 			   = instr_ar_ready;
 
   assign                        instr_w_data  = s_master_w_data[0];
   assign                        instr_w_strb  = s_master_w_strb[0];
   assign                        instr_w_last  = s_master_w_last[0];
   assign                        instr_w_user  = s_master_w_user[0];
   assign                        instr_w_valid = s_master_w_valid[0];
-  assign s_master_w_ready[0]  = instr_w_ready;
+  assign 						s_master_w_ready[0]  = instr_w_ready;
 
-  assign s_master_b_id[0]     = instr_b_id[AXI_ID_WIDTH_TARG-1:0];
+  assign s_master_b_id[0]     = instr_b_id[AXI_ID_WIDTH_INIT-1:0];
   assign s_master_b_resp[0]   = instr_b_resp;
   assign s_master_b_valid[0]  = instr_b_valid;
   assign s_master_b_user[0]   = instr_b_user;
-  assign                        instr_b_ready = s_master_b_ready[0];
+  assign instr_b_ready 		  = s_master_b_ready[0];
 
-  assign s_master_r_id[0]     = instr_r_id[AXI_ID_WIDTH_TARG-1:0];
+  assign s_master_r_id[0]     = instr_r_id[AXI_ID_WIDTH_INIT-1:0];
   assign s_master_r_data[0]   = instr_r_data;
   assign s_master_r_resp[0]   = instr_r_resp;
   assign s_master_r_last[0]   = instr_r_last;
   assign s_master_r_user[0]   = instr_r_user;
   assign s_master_r_valid[0]  = instr_r_valid;
-  assign                        instr_r_ready = s_master_r_ready[0];
+  assign instr_r_ready 		  = s_master_r_ready[0];
 
   assign s_start_addr[0][0] = start_addr_i[0];
   assign s_end_addr[0][0]   = end_addr_i[0];
 
-  // Slave 1
-  assign                        data_aw_id[AXI_ID_WIDTH_TARG-1:0] = s_master_aw_id[1];
+  // Master 1
+  assign                        data_aw_id[AXI_ID_WIDTH_INIT-1:0] = s_master_aw_id[1];
   assign                        data_aw_addr                      = s_master_aw_addr[1];
   assign                        data_aw_len                       = s_master_aw_len[1];
   assign                        data_aw_size                      = s_master_aw_size[1];
@@ -485,9 +482,9 @@ module axi_node_intf_wrap
   assign                        data_aw_user                      = s_master_aw_user[1];
   assign                        data_aw_qos                       = s_master_aw_qos[1];
   assign                        data_aw_valid                     = s_master_aw_valid[1];
-  assign s_master_aw_ready[1] = data_aw_ready;
+  assign 						s_master_aw_ready[1] 			  = data_aw_ready;
 
-  assign                        data_ar_id[AXI_ID_WIDTH_TARG-1:0] = s_master_ar_id[1];
+  assign                        data_ar_id[AXI_ID_WIDTH_INIT-1:0] = s_master_ar_id[1];
   assign                        data_ar_addr                      = s_master_ar_addr[1];
   assign                        data_ar_len                       = s_master_ar_len[1];
   assign                        data_ar_size                      = s_master_ar_size[1];
@@ -499,22 +496,22 @@ module axi_node_intf_wrap
   assign                        data_ar_user                      = s_master_ar_user[1];
   assign                        data_ar_qos                       = s_master_ar_qos[1];
   assign                        data_ar_valid                     = s_master_ar_valid[1];
-  assign s_master_ar_ready[1] = data_ar_ready;
+  assign 						s_master_ar_ready[1] 			  = data_ar_ready;
 
   assign                        data_w_data  = s_master_w_data[1];
   assign                        data_w_strb  = s_master_w_strb[1];
   assign                        data_w_last  = s_master_w_last[1];
   assign                        data_w_user  = s_master_w_user[1];
   assign                        data_w_valid = s_master_w_valid[1];
-  assign s_master_w_ready[1]  = data_w_ready;
+  assign 						s_master_w_ready[1]  = data_w_ready;
 
-  assign s_master_b_id[1]     = data_b_id[AXI_ID_WIDTH_TARG-1:0];
+  assign s_master_b_id[1]     = data_b_id[AXI_ID_WIDTH_INIT-1:0];
   assign s_master_b_resp[1]   = data_b_resp;
   assign s_master_b_valid[1]  = data_b_valid;
   assign s_master_b_user[1]   = data_b_user;
   assign                        data_b_ready = s_master_b_ready[1];
 
-  assign s_master_r_id[1]     = data_r_id[AXI_ID_WIDTH_TARG-1:0];
+  assign s_master_r_id[1]     = data_r_id[AXI_ID_WIDTH_INIT-1:0];
   assign s_master_r_data[1]   = data_r_data;
   assign s_master_r_resp[1]   = data_r_resp;
   assign s_master_r_last[1]   = data_r_last;
@@ -525,8 +522,8 @@ module axi_node_intf_wrap
   assign s_start_addr[0][1] = start_addr_i[1];
   assign s_end_addr[0][1]   = end_addr_i[1];
 
-  // Slave 2
-  assign                        slave_aw_id[AXI_ID_WIDTH_TARG-1:0] = s_master_aw_id[2];
+  // Master 2
+  assign                        slave_aw_id[AXI_ID_WIDTH_INIT-1:0] = s_master_aw_id[2];
   assign                        slave_aw_addr                      = s_master_aw_addr[2];
   assign                        slave_aw_len                       = s_master_aw_len[2];
   assign                        slave_aw_size                      = s_master_aw_size[2];
@@ -540,7 +537,7 @@ module axi_node_intf_wrap
   assign                        slave_aw_valid                     = s_master_aw_valid[2];
   assign s_master_aw_ready[2] = slave_aw_ready;
 
-  assign                        slave_ar_id[AXI_ID_WIDTH_TARG-1:0] = s_master_ar_id[2];
+  assign                        slave_ar_id[AXI_ID_WIDTH_INIT-1:0] = s_master_ar_id[2];
   assign                        slave_ar_addr                      = s_master_ar_addr[2];
   assign                        slave_ar_len                       = s_master_ar_len[2];
   assign                        slave_ar_size                      = s_master_ar_size[2];
@@ -561,13 +558,13 @@ module axi_node_intf_wrap
   assign                        slave_w_valid = s_master_w_valid[2];
   assign s_master_w_ready[2]  = slave_w_ready;
 
-  assign s_master_b_id[2]     = slave_b_id[AXI_ID_WIDTH_TARG-1:0];
+  assign s_master_b_id[2]     = slave_b_id[AXI_ID_WIDTH_INIT-1:0];
   assign s_master_b_resp[2]   = slave_b_resp;
   assign s_master_b_valid[2]  = slave_b_valid;
   assign s_master_b_user[2]   = slave_b_user;
   assign                        slave_b_ready = s_master_b_ready[2];
 
-  assign s_master_r_id[2]     = slave_r_id[AXI_ID_WIDTH_TARG-1:0];
+  assign s_master_r_id[2]     = slave_r_id[AXI_ID_WIDTH_INIT-1:0];
   assign s_master_r_data[2]   = slave_r_data;
   assign s_master_r_resp[2]   = slave_r_resp;
   assign s_master_r_last[2]   = slave_r_last;
@@ -578,7 +575,7 @@ module axi_node_intf_wrap
   assign s_start_addr[0][2] = start_addr_i[2];
   assign s_end_addr[0][2]   = end_addr_i[2];
 
-  // Master 0
+  // Slave 0
   assign s_slave_aw_id[0]     = core_master_aw_id[AXI_ID_WIDTH_TARG-1:0];
   assign s_slave_aw_addr[0]   = core_master_aw_addr;
   assign s_slave_aw_len[0]    = core_master_aw_len;
@@ -628,7 +625,7 @@ module axi_node_intf_wrap
   assign                        core_master_r_valid                     = s_slave_r_valid[0];
   assign s_slave_r_ready[0]   = core_master_r_ready;
 
-  // Master 1
+  // Slave 1
   assign s_slave_aw_id[1]     = dbg_aw_id[AXI_ID_WIDTH_TARG-1:0];
   assign s_slave_aw_addr[1]   = dbg_aw_addr;
   assign s_slave_aw_len[1]    = dbg_aw_len;
@@ -688,7 +685,7 @@ module axi_node_intf_wrap
   assign s_slave_aw_cache[2]  = aw_cache;
   assign s_slave_aw_prot[2]   = aw_prot;
   assign s_slave_aw_region[2] = aw_region;
-  assign s_slave_aw_user[2]   = dbg_aw_user;
+  assign s_slave_aw_user[2]   = aw_user;
   assign s_slave_aw_qos[2]    = aw_qos;
   assign s_slave_aw_valid[2]  = aw_valid;
   assign aw_ready = s_slave_aw_ready[2];

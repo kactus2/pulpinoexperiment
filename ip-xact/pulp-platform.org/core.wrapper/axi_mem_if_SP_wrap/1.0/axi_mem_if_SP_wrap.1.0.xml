@@ -1246,7 +1246,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_cce9413b_111c_4d2b_adb9_783a778fd7ee-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -1258,7 +1258,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_cce9413b_111c_4d2b_adb9_783a778fd7ee-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -1270,7 +1270,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_cce9413b_111c_4d2b_adb9_783a778fd7ee-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -1282,7 +1282,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_cce9413b_111c_4d2b_adb9_783a778fd7ee-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>

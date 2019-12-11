@@ -51,7 +51,7 @@ module core_region_demux #(
 );
 
 // WARNING: EVERYTHING ON AND ABOVE THIS LINE MAY BE OVERWRITTEN BY KACTUS2!!!
-  logic                        is_axi_addr;
+  logic  is_axi_addr;
   enum logic [0:0] { AXI, RAM } lsu_resp_CS, lsu_resp_NS;
   
   assign is_axi_addr     = (core_lsu_addr[31:20] != 12'h001);

@@ -66,49 +66,48 @@ module mux_mem #(
 		  end
 	end
 
+	//Low Priority RR Arbiter
+	always_comb
+	begin
+	  grant_R = 1'b0;
+	  grant_W = 1'b0;
 
-//Low Priority RR Arbiter
-always_comb
-begin
-  grant_R = 1'b0;
-  grant_W = 1'b0;
+	  case (RR_FLAG)
 
-  case (RR_FLAG)
-
-  1'b0: //Priority on Write
-  begin
-    if(valid_W)
-      begin
-        grant_W = 1'b1;
-      end
-    else
-      begin
-        grant_R = 1'b1;
-      end
-  end
-
-
-  1'b1: //Priority on Read
-  begin
-    if(valid_R)
-      grant_R = 1'b1;
-    else
-      grant_W = 1'b1;
-  end
-  endcase
-end
+	  1'b0: //Priority on Write
+	  begin
+		if(valid_W)
+		  begin
+			grant_W = 1'b1;
+		  end
+		else
+		  begin
+			grant_R = 1'b1;
+		  end
+	  end
 
 
-always_ff @(posedge ACLK or negedge ARESETn)
-begin
-  if(~ARESETn) begin
-     RR_FLAG <= 0;
-  end
-  else
-  begin
-  		if(CEN_o == 1'b0)
-      	   RR_FLAG  <= ~RR_FLAG;
-  end
-end
+	  1'b1: //Priority on Read
+	  begin
+		if(valid_R)
+		  grant_R = 1'b1;
+		else
+		  grant_W = 1'b1;
+	  end
+	  endcase
+	end
+
+
+	always_ff @(posedge ACLK or negedge ARESETn)
+	begin
+	  if(~ARESETn) begin
+		 RR_FLAG <= 0;
+	  end
+	  else
+	  begin
+		if(CEN_o == 1'b0)
+		   RR_FLAG  <= ~RR_FLAG;
+	  end
+	end
 
 endmodule

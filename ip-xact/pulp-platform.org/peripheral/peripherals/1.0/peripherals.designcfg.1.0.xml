@@ -15,7 +15,7 @@
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>apb_spi_master_i</ipxact:instanceName>
-		<ipxact:view viewRef="structural"/>
+		<ipxact:view viewRef="flat"/>
 	</ipxact:viewConfiguration>
 	<ipxact:viewConfiguration>
 		<ipxact:instanceName>apb_pulpino_i</ipxact:instanceName>

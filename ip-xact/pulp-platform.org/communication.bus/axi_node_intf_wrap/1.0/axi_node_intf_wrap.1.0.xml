@@ -627,10 +627,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_burst</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>ar_burst</ipxact:name>
@@ -639,10 +635,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_cache</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>ar_cache</ipxact:name>
@@ -651,10 +643,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_lock</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>ar_lock</ipxact:name>
@@ -663,10 +651,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_prot</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>ar_prot</ipxact:name>
@@ -675,10 +659,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>ar_ready</ipxact:name>
@@ -687,10 +667,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_size</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>ar_size</ipxact:name>
@@ -707,10 +683,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>ar_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>ar_valid</ipxact:name>
@@ -727,10 +699,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>aw_burst</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>aw_burst</ipxact:name>
@@ -739,10 +707,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>aw_cache</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>aw_cache</ipxact:name>
@@ -751,10 +715,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>aw_lock</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>aw_lock</ipxact:name>
@@ -763,10 +723,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>aw_prot</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>aw_prot</ipxact:name>
@@ -775,10 +731,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>aw_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>aw_ready</ipxact:name>
@@ -787,10 +739,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>aw_size</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>aw_size</ipxact:name>
@@ -807,10 +755,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>aw_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>aw_valid</ipxact:name>
@@ -827,10 +771,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>b_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>b_ready</ipxact:name>
@@ -839,10 +779,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>b_resp</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>b_resp</ipxact:name>
@@ -859,10 +795,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>b_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>b_valid</ipxact:name>
@@ -887,10 +819,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>r_last</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>r_last</ipxact:name>
@@ -899,10 +827,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>r_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>r_ready</ipxact:name>
@@ -911,10 +835,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>r_resp</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>r_resp</ipxact:name>
@@ -931,10 +851,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>r_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>r_valid</ipxact:name>
@@ -951,10 +867,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>w_last</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>w_last</ipxact:name>
@@ -963,10 +875,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>w_ready</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>w_ready</ipxact:name>
@@ -991,10 +899,6 @@
 						<ipxact:portMap>
 							<ipxact:logicalPort>
 								<ipxact:name>w_valid</ipxact:name>
-								<ipxact:range>
-									<ipxact:left></ipxact:left>
-									<ipxact:right></ipxact:right>
-								</ipxact:range>
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>w_valid</ipxact:name>
@@ -3357,7 +3261,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3369,7 +3273,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3381,7 +3285,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3393,7 +3297,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3885,7 +3789,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3897,7 +3801,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3909,7 +3813,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -3921,7 +3825,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4053,7 +3957,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4197,7 +4101,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4365,7 +4269,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4425,7 +4329,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4545,7 +4449,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4689,7 +4593,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4857,7 +4761,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -4905,7 +4809,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -5109,7 +5013,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -5253,7 +5157,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -5421,7 +5325,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -5481,7 +5385,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -5949,7 +5853,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -5961,7 +5865,7 @@
 					<ipxact:direction>in</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -5973,7 +5877,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -6033,7 +5937,7 @@
 					<ipxact:direction>out</ipxact:direction>
 					<ipxact:vectors>
 						<ipxact:vector>
-							<ipxact:left>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2-1</ipxact:left>
+							<ipxact:left>10</ipxact:left>
 							<ipxact:right>0</ipxact:right>
 						</ipxact:vector>
 					</ipxact:vectors>
@@ -6242,13 +6146,17 @@
 			<ipxact:name>AXI_DATA_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="12" parameterId="uuid_7f831334_56a6_4d0e_99de_ff4a94beaaf8" resolve="user">
+		<ipxact:parameter kactus2:usageCount="13" parameterId="uuid_7f831334_56a6_4d0e_99de_ff4a94beaaf8" resolve="user">
 			<ipxact:name>AXI_ADDR_WIDTH</ipxact:name>
 			<ipxact:value>32</ipxact:value>
 		</ipxact:parameter>
 		<ipxact:parameter kactus2:usageCount="5" parameterId="uuid_3600bdcd_05b0_4885_974b_20f007129fd8" resolve="immediate">
 			<ipxact:name>AXI_STRB_WIDTH</ipxact:name>
 			<ipxact:value>uuid_9e5cdbcd_7c4c_4b18_a1ec_7e4b63774af9/8</ipxact:value>
+		</ipxact:parameter>
+		<ipxact:parameter parameterId="uuid_098a097b_72e7_475a_b653_f8d09369546a">
+			<ipxact:name>AXI_ID_MASTER_WIDTH</ipxact:name>
+			<ipxact:value>uuid_ca7d4ddd_319d_40ce_8eb5_915e8d2838e2</ipxact:value>
 		</ipxact:parameter>
 	</ipxact:parameters>
 	<ipxact:vendorExtensions>

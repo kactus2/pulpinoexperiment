@@ -22,6 +22,12 @@
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>PADDR</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>2</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>

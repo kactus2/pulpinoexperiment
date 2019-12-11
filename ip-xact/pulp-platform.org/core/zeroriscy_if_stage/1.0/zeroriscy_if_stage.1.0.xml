@@ -730,6 +730,12 @@
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
+	<ipxact:cpus>
+		<ipxact:cpu>
+			<ipxact:name>zero_riscy</ipxact:name>
+			<ipxact:addressSpaceRef addressSpaceRef="instruction"/>
+		</ipxact:cpu>
+	</ipxact:cpus>
 	<ipxact:vendorExtensions>
 		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>

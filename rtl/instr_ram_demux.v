@@ -11,8 +11,8 @@
 //-----------------------------------------------------------------------------
 
 module instr_ram_demux #(
-    parameter                              ADDR_WIDTH       = $clog2(RAM_SIZE),
     parameter                              RAM_SIZE         = 32768,
+	parameter                              ADDR_WIDTH       = $clog2(RAM_SIZE),
     parameter                              ROM_ADDR_WIDTH   = 12
 ) (
     // Interface: boot_rom

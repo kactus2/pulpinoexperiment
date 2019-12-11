@@ -125,6 +125,7 @@
 					<ipxact:configurableElementValue referenceId="uuid_f757be87_b4a6_479b_918d_f5b9bdd9612e">3</ipxact:configurableElementValue>
 					<ipxact:configurableElementValue referenceId="uuid_9e5cdbcd_7c4c_4b18_a1ec_7e4b63774af9">uuid_4c7cc342_8075_4cd0_a6d8_8e3f5e5094c5</ipxact:configurableElementValue>
 					<ipxact:configurableElementValue referenceId="uuid_7f831334_56a6_4d0e_99de_ff4a94beaaf8">uuid_996f7e7f_249f_4ef5_89c7_82343a75bc63</ipxact:configurableElementValue>
+					<ipxact:configurableElementValue referenceId="uuid_2f166336_fbc8_45d5_9e94_b4077bd8bf76">uuid_bf080cfd_ac02_41b6_82fe_8aef56393615</ipxact:configurableElementValue>
 				</ipxact:configurableElementValues>
 			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
@@ -415,7 +416,7 @@
 			<ipxact:name>AXI_ID_MASTER_WIDTH</ipxact:name>
 			<ipxact:value>2</ipxact:value>
 		</ipxact:parameter>
-		<ipxact:parameter kactus2:usageCount="2" parameterId="uuid_bf080cfd_ac02_41b6_82fe_8aef56393615" resolve="user">
+		<ipxact:parameter kactus2:usageCount="3" parameterId="uuid_bf080cfd_ac02_41b6_82fe_8aef56393615" resolve="user">
 			<ipxact:name>AXI_ID_SLAVE_WIDTH</ipxact:name>
 			<ipxact:value>4</ipxact:value>
 		</ipxact:parameter>

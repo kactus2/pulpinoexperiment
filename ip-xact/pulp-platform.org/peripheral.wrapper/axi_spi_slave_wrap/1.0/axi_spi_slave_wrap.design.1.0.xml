@@ -17,7 +17,6 @@
 			</ipxact:componentRef>
 			<ipxact:vendorExtensions>
 				<kactus2:uuid>{c9775c83-e7b6-4168-86a5-bd053bb0f831}</kactus2:uuid>
-				<kactus2:position x="280" y="60"/>
 				<kactus2:portPositions>
 					<kactus2:portPosition busRef="axi_master" x="-110" y="110"/>
 					<kactus2:portPosition busRef="spi" x="110" y="40"/>
@@ -27,6 +26,7 @@
 					<kactus2:adHocVisible portName="axi_aresetn" x="-110" y="50"/>
 					<kactus2:adHocVisible portName="test_mode" x="-110" y="80"/>
 				</kactus2:adHocVisibilities>
+				<kactus2:position x="280" y="60"/>
 			</ipxact:vendorExtensions>
 		</ipxact:componentInstance>
 	</ipxact:componentInstances>

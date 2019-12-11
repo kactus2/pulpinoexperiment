@@ -178,6 +178,12 @@
 							</ipxact:logicalPort>
 							<ipxact:physicalPort>
 								<ipxact:name>PADDR</ipxact:name>
+								<ipxact:partSelect>
+									<ipxact:range>
+										<ipxact:left>11</ipxact:left>
+										<ipxact:right>0</ipxact:right>
+									</ipxact:range>
+								</ipxact:partSelect>
 							</ipxact:physicalPort>
 						</ipxact:portMap>
 						<ipxact:portMap>
@@ -299,6 +305,10 @@
 				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
 				<ipxact:designInstantiationRef>design</ipxact:designInstantiationRef>
 				<ipxact:designConfigurationInstantiationRef>design_configuration</ipxact:designConfigurationInstantiationRef>
+			</ipxact:view>
+			<ipxact:view>
+				<ipxact:name>flat</ipxact:name>
+				<ipxact:componentInstantiationRef>verilog_implementation</ipxact:componentInstantiationRef>
 			</ipxact:view>
 		</ipxact:views>
 		<ipxact:instantiations>
@@ -648,28 +658,28 @@
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:isStructural>true</ipxact:isStructural>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
+					<kactus2:hash>ec2e819e4cc00d911b438bf45284da202352dd10</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/apb/apb_spi_master/README.md</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
+					<kactus2:hash>3a7e1af7312cac35aacda2d4208ac67e</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/apb/apb_spi_master/spi_master_apb_if.sv</ipxact:name>
 				<ipxact:fileType>systemVerilogSource</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
+					<kactus2:hash>36a6bd5b080d0d75c9dfe32a2c39e2336e18db32</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 			<ipxact:file>
 				<ipxact:name>../../../../../pulpino/ips/apb/apb_spi_master/src_files.yml</ipxact:name>
 				<ipxact:fileType>unknown</ipxact:fileType>
 				<ipxact:vendorExtensions>
-					<kactus2:hash>d41d8cd98f00b204e9800998ecf8427e</kactus2:hash>
+					<kactus2:hash>9d9612e71283c66c5047eb6418f7c329</kactus2:hash>
 				</ipxact:vendorExtensions>
 			</ipxact:file>
 		</ipxact:fileSet>

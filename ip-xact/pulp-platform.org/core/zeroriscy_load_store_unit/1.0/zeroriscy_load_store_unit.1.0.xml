@@ -754,6 +754,12 @@
 			</ipxact:file>
 		</ipxact:fileSet>
 	</ipxact:fileSets>
+	<ipxact:cpus>
+		<ipxact:cpu>
+			<ipxact:name>store</ipxact:name>
+			<ipxact:addressSpaceRef addressSpaceRef="data_and_memory_mapped"/>
+		</ipxact:cpu>
+	</ipxact:cpus>
 	<ipxact:vendorExtensions>
 		<kactus2:author>pekkarie</kactus2:author>
 		<kactus2:kts_attributes>
